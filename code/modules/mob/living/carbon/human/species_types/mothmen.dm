@@ -3,6 +3,7 @@
 	plural_form = "Mothmen"
 	id = SPECIES_MOTH
 	inherent_traits = list(
+		TRAIT_MUTANT_COLORS, /// NAAKAS-LOUNGE EDIT: we're forcing this to the top of the stack to try and avoid fuckery...
 		TRAIT_HAS_MARKINGS,
 		TRAIT_CAN_USE_FLIGHT_POTION,
 		TRAIT_TACKLING_WINGED_ATTACKER,

@@ -39,6 +39,7 @@
 
 	var/eye_color_left = "" //set to a hex code to override a mob's left eye color
 	var/eye_color_right = "" //set to a hex code to override a mob's right eye color
+	var/eye_icon_file = 'icons/mob/human/human_face.dmi' /// NAAKAS-LOUNGE EDIT: modularize displayed eyes into their own files
 	var/eye_icon_state = "eyes"
 	/// The color of the previous left eye before this one was inserted
 	var/old_eye_color_left = "fff"
@@ -137,6 +138,8 @@
 		return list()
 
 	var/eye_icon = parent.dna?.species.eyes_icon || 'icons/mob/human/human_face.dmi' // SKYRAT EDIT ADDITION
+	if(eye_icon_file) /// NAAKAS-LOUNGE ADDITION
+		eye_icon = eye_icon_file
 
 	var/mutable_appearance/eye_left = mutable_appearance(eye_icon, "[eye_icon_state]_l", -eyes_layer) // SKYRAT EDIT CHANGE - Customization - ORIGINAL: var/mutable_appearance/eye_left = mutable_appearance('icons/mob/human/human_face.dmi', "[eye_icon_state]_l", -BODY_LAYER)
 	var/mutable_appearance/eye_right = mutable_appearance(eye_icon, "[eye_icon_state]_r", -eyes_layer) // SKYRAT EDIT CHANGE - Customization - ORIGINAL: var/mutable_appearance/eye_right = mutable_appearance('icons/mob/human/human_face.dmi', "[eye_icon_state]_r", -BODY_LAYER)

@@ -184,12 +184,6 @@
 		return
 	. += mutable_appearance(overlay_icon, base_state)
 
-
-//SKYRAT EDIT ADDITION BEGIN - AESTHETICS
-#define LIGHT_ON_DELAY_UPPER (2 SECONDS)
-#define LIGHT_ON_DELAY_LOWER (0.25 SECONDS)
-//SKYRAT EDIT END
-
 // Area sensitivity is traditionally tied directly to power use, as an optimization
 // But since we want it for fire reacting, we disregard that
 /obj/machinery/light/setup_area_power_relationship()
@@ -210,16 +204,15 @@
 
 /obj/machinery/light/proc/handle_fire(area/source, new_fire)
 	SIGNAL_HANDLER
-	update(instant = TRUE, play_sound = FALSE) //SKYRAT EDIT CHANGE
+	update()
 
 // update the icon_state and luminosity of the light depending on its state
-/obj/machinery/light/proc/update(trigger = TRUE, instant = FALSE, play_sound = TRUE) //SKYRAT EDIT CHANGE
+/obj/machinery/light/proc/update(trigger = TRUE)
 	switch(status)
 		if(LIGHT_BROKEN,LIGHT_BURNED,LIGHT_EMPTY)
 			on = FALSE
 	low_power_mode = FALSE
 	if(on)
-	/* SKYRAT EDIT ORIGINAL
 		var/brightness_set = brightness
 		var/power_set = bulb_power
 		var/color_set = bulb_colour
@@ -252,17 +245,6 @@
 					l_power = power_set,
 					l_color = color_set
 					)
-		*/
-		//SKYRAT EDIT CHANGE BEGIN - AESTHETICS
-		if(instant)
-			turn_on(trigger, play_sound)
-		else if(maploaded)
-			turn_on(trigger, play_sound)
-			maploaded = FALSE
-		else if(!turning_on)
-			turning_on = TRUE
-			addtimer(CALLBACK(src, PROC_REF(turn_on), trigger, play_sound), rand(LIGHT_ON_DELAY_LOWER, LIGHT_ON_DELAY_UPPER))
-		//SKYRAT EDIT END
 	else if(has_emergency_power(LIGHT_EMERGENCY_POWER_USE) && !turned_off())
 		use_power = IDLE_POWER_USE
 		low_power_mode = TRUE
@@ -273,12 +255,6 @@
 	update_appearance()
 	update_current_power_usage()
 	broken_sparks(start_only=TRUE)
-
-
-//SKYRAT EDIT ADDITION BEGIN - AESTHETICS
-#undef LIGHT_ON_DELAY_UPPER
-#undef LIGHT_ON_DELAY_LOWER
-//SKYRAT EDIT END
 
 /obj/machinery/light/update_current_power_usage()
 	if(!on && static_power_used > 0) //Light is off but still powered
@@ -476,7 +452,7 @@
 // if a light is turned off, it won't activate emergency power
 /obj/machinery/light/proc/turned_off()
 	var/area/local_area = get_room_area(src)
-	return !local_area.lightswitch && local_area.power_light || flickering || constant_flickering //SKYRAT EDIT CHANGE
+	return !local_area.lightswitch && local_area.power_light || flickering
 
 // returns whether this light has power
 // true if area has power and lightswitch is on
@@ -527,13 +503,13 @@
 			if(status != LIGHT_OK || !has_power())
 				break
 			on = !on
-			update(FALSE, TRUE) //SKYRAT EDIT CHANGE
+			update(FALSE)
 			sleep(rand(5, 15))
 		if(has_power())
 			on = (status == LIGHT_OK)
 		else
 			on = FALSE
-		update(FALSE, TRUE) // SKYRAT EDIT CHANGE
+		update(FALSE)
 		. = TRUE //did we actually flicker?
 	flickering = FALSE
 
