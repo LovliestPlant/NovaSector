@@ -39,7 +39,7 @@
 
 	var/eye_color_left = "" //set to a hex code to override a mob's left eye color
 	var/eye_color_right = "" //set to a hex code to override a mob's right eye color
-	var/eye_icon_file = 'icons/mob/human/human_face.dmi' /// NAAKAS-LOUNGE EDIT: modularize displayed eyes into their own files
+	var/eye_icon_file = null /// NAAKAS-LOUNGE EDIT: modularize displayed eyes into their own files
 	var/eye_icon_state = "eyes"
 	/// The color of the previous left eye before this one was inserted
 	var/old_eye_color_left = "fff"
