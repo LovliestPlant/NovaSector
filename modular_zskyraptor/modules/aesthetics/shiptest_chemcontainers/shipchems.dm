@@ -41,9 +41,9 @@
 		return
 	else
 		if(cap_on)
-			. += "<span class='notice'>The cap is firmly on to prevent spilling. Alt-click to remove the cap.</span>"
+			. += "<span class='notice'>The cap is firmly on to prevent spilling. Alt-right-click to remove the cap.</span>"
 		else
-			. += "<span class='notice'>The cap has been taken off. Alt-click to put a cap on.</span>"
+			. += "<span class='notice'>The cap has been taken off. Alt-right-click to put a cap on.</span>"
 
 /// Stops injectability, drawability, refilling, draining, and so on
 /obj/item/reagent_containers/is_injectable(mob/user, allowmobs = TRUE)
@@ -64,7 +64,7 @@
 	return ..()
 
 /// Adds alt-clicking to take the cap on or off
-/obj/item/reagent_containers/AltClick(mob/user)
+/obj/item/reagent_containers/alt_click_secondary(mob/user)
 	. = ..()
 	if(can_have_cap)
 		if(cap_on)
