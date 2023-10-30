@@ -162,3 +162,31 @@
 	cap_on = FALSE
 	can_have_cap = FALSE
 	cap_icon_state = null
+
+
+
+/// Bluespace spray bottles, a funny late-game option for OMEGA CHEMS
+/obj/item/reagent_containers/spray/bluespace
+	name = "bluespace spray bottle"
+	icon = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/shipchems.dmi'
+	icon_state = "spraybluespace"
+	inhand_icon_state = "spraybluespace"
+	lefthand_file = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/shipchems_left.dmi'
+	righthand_file = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/shipchems_right.dmi'
+	volume = 300
+	amount_per_transfer_from_this = 1
+	possible_transfer_amounts = list(1,2,5)
+
+	unique_reskin = list("Ruggedized" = "spraybluespace",
+						"Orange" = "spraybluespace_orange",
+						"Lime" = "spraybluespace_lime",
+						"Violet" = "spraybluespace_violet",
+						"Aqua" = "spraybluespace_aqua")
+
+/obj/item/reagent_containers/spray/bluespace/AltClick(mob/user)
+	reskin_obj(user)
+
+/obj/item/reagent_containers/spray/bluespace/reskin_obj(mob/M)
+	..()
+	inhand_icon_state = icon_state
+	M.update_held_items()
