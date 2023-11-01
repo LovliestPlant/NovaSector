@@ -265,6 +265,8 @@
 		While it is indeed a big red button, pressing it outside of an emergency \
 		will probably get the engineering department out for your blood."
 	icon = 'modular_skyrat/modules/delam_emergency_stop/icons/scram.dmi'
+	icon_state = "button" /// NAAKAS-LOUNGE EDIT
+	base_icon_state = "button" /// NAAKAS-LOUNGE EDIT
 	can_alter_skin = FALSE
 	silicon_access_disabled = TRUE
 	resistance_flags = FREEZE_PROOF | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
