@@ -30,6 +30,7 @@
 GLOBAL_LIST_INIT(uglass_recipes, list ( \
 	new/datum/stack_recipe("directional window", /obj/structure/window/uranium/unanchored, time = 0.5 SECONDS, on_solid_ground = TRUE, check_direction = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile window", /obj/structure/window/uranium/fulltile/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
+	new/datum/stack_recipe("fulltile diagonalizing window", /obj/structure/window/uranium/fulltile/diagonal/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("uranium glass shard", /obj/item/shard/uranium, time = 20, on_solid_ground = TRUE, category = CAT_MISC), \
 	new/datum/stack_recipe("uranium glass tile", /obj/item/stack/tile/glass/uranium, 1, 4, 20, category = CAT_TILES) \
 ))
@@ -85,6 +86,7 @@ GLOBAL_LIST_INIT(uglass_recipes, list ( \
 GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/uranium/unanchored, time = 0.5 SECONDS, on_solid_ground = TRUE, check_direction = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/uranium/fulltile/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
+	new/datum/stack_recipe("fulltile diagonalizing reinforced window", /obj/structure/window/reinforced/uranium/fulltile/diagonal/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("uranium glass shard", /obj/item/shard/uranium, time = 40, on_solid_ground = TRUE, category = CAT_MISC), \
 	new/datum/stack_recipe("reinforced uranium glass tile", /obj/item/stack/tile/rglass/uranium, 1, 4, 20, category = CAT_TILES) \
 ))
