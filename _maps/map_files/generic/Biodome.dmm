@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/open/misc/asteroid/snow/indestructible/planet,
+/turf/open/misc/asteroid/snow/standard_air,
 /area/centcom/holding/cafebuild)
 "c" = (
 /obj/structure/window/reinforced/uranium/fulltile/diagonal,
@@ -16,15 +16,29 @@
 "f" = (
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
+"g" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/tdome/arena)
+"h" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Interlink Access"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/tdome/observation)
 "k" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/tdome/observation)
-"l" = (
-/turf/closed/wall/mineral/wood,
+"n" = (
+/turf/open/floor/iron/dark/pavement{
+	dir = 4
+	},
 /area/centcom/tdome/arena)
+"o" = (
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/tdome/observation)
 "p" = (
 /obj/structure/railing{
 	dir = 1
@@ -39,17 +53,15 @@
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/holding/cafebuild)
 "s" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Interlink Access"
-	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
-/area/centcom/tdome/arena)
+/area/centcom/tdome/observation)
 "t" = (
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/arena)
 "v" = (
 /obj/structure/fans/tiny,
-/turf/open/floor/iron/dark,
+/turf/open/floor/iron/dark/pavement,
 /area/centcom/tdome/observation)
 "w" = (
 /obj/effect/turf_decal/stripes/line{
@@ -62,35 +74,41 @@
 	dir = 1
 	},
 /obj/item/kirbyplants/random,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
 "B" = (
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/tdome/observation)
+"C" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/tdome/observation)
 "D" = (
 /obj/structure/window/reinforced/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/icemoon,
 /area/centcom/tdome/arena)
-"F" = (
-/turf/open/floor/iron/dark/pavement{
-	dir = 4
-	},
+"E" = (
+/turf/open/floor/iron/dark/pavement,
 /area/centcom/tdome/arena)
+"F" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/dark,
+/area/centcom/tdome/observation)
 "G" = (
 /turf/open/misc/grass/planet,
 /area/centcom/tdome/arena)
 "H" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /obj/docking_port/stationary{
 	dir = 8;
 	dwidth = 1;
 	height = 13;
-	name = "biodome dock";
-	roundstart_template = /datum/map_template/shuttle/arrivals_skyrat;
-	shuttle_id = "arrivals_shuttle";
+	name = "biodome";
+	shuttle_id = "arrivals_stationary";
 	width = 5
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/tdome/observation)
@@ -114,8 +132,8 @@
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Interlink Access"
 	},
-/turf/open/floor/iron/dark,
-/area/centcom/tdome/observation)
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/tdome/arena)
 "Q" = (
 /obj/structure/window/reinforced/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
@@ -133,11 +151,9 @@
 	dir = 4
 	},
 /obj/item/kirbyplants/random,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/tdome/observation)
-"V" = (
-/turf/open/floor/iron/dark/pavement,
-/area/centcom/tdome/arena)
 "W" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -31295,7 +31311,7 @@ B
 d
 f
 f
-f
+F
 f
 f
 K
@@ -31554,15 +31570,15 @@ N
 f
 f
 f
-f
+C
 K
 K
-l
-V
-V
-F
-F
-F
+g
+E
+E
+n
+n
+n
 G
 G
 G
@@ -31812,14 +31828,14 @@ f
 f
 f
 f
-P
+h
 v
-s
-V
-V
-F
-F
-F
+P
+E
+E
+n
+n
+n
 G
 G
 G
@@ -32069,14 +32085,14 @@ f
 f
 f
 f
-f
+o
 v
-t
-V
-V
-F
-F
-F
+E
+E
+E
+n
+n
+n
 G
 G
 G
@@ -32328,12 +32344,12 @@ f
 f
 K
 K
-l
-V
-V
-F
-F
-F
+g
+E
+E
+n
+n
+n
 G
 G
 G
@@ -32588,9 +32604,9 @@ S
 Q
 Z
 Z
-F
-F
-F
+n
+n
+n
 G
 G
 G
@@ -32842,12 +32858,12 @@ f
 f
 K
 K
-l
-V
-V
-F
-F
-F
+g
+E
+E
+n
+n
+n
 G
 G
 G
@@ -33097,14 +33113,14 @@ f
 f
 f
 f
-P
+h
 v
-s
-V
-V
-F
-F
-F
+P
+E
+E
+n
+n
+n
 G
 G
 G
@@ -33354,14 +33370,14 @@ f
 f
 f
 f
-f
+o
 v
-t
-V
-V
-F
-F
-F
+E
+E
+E
+n
+n
+n
 G
 G
 G
@@ -33610,15 +33626,15 @@ N
 f
 f
 f
-f
+C
 K
 K
-l
-V
-V
-F
-F
-F
+g
+E
+E
+n
+n
+n
 G
 G
 G
@@ -33865,7 +33881,7 @@ B
 d
 f
 f
-f
+s
 f
 f
 K
