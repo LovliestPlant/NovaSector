@@ -1,13 +1,14 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"af" = (
-/mob/living/simple_animal/bot/medbot/stationary{
-	maints_access_required = null;
-	damagetype_healer = "toxin";
-	medkit_type = /obj/item/storage/medkit/toxin;
-	name = "\improper Discount Liver"
-	},
+"ad" = (
+/obj/machinery/smartfridge/organ,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
+/area/centcom/biodome/medical)
+"af" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment1)
 "ah" = (
 /obj/structure/window/reinforced/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
@@ -19,6 +20,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"ak" = (
+/obj/machinery/deepfryer,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "as" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/item/paper_bin{
@@ -29,10 +34,53 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"aO" = (
-/obj/machinery/light/cold/directional/east,
+"ax" = (
+/obj/structure/bed/medical/anchored{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
+/area/centcom/biodome/medical/offices)
+"aB" = (
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"aE" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/computer/records/medical/laptop{
+	dir = 4
+	},
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"aI" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"aN" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment1)
+"aO" = (
+/obj/structure/dresser,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment1)
+"aP" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"aQ" = (
+/obj/machinery/door/airlock/silver/glass{
+	name = "Lounge"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
 "aY" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -41,31 +89,24 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"aZ" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/lobby)
 "bb" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/light/floor,
-/obj/item/wrench/medical,
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_y = 4;
-	pixel_x = 8
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"bf" = (
-/obj/machinery/computer/operating{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"bi" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/turf/open/floor/iron/white/small,
+/turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
+"bd" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/stasis,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"bm" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 2
+	},
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "bz" = (
 /obj/structure/sink/directional/west,
 /obj/machinery/door/window/survival_pod{
@@ -73,44 +114,57 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/apartment3)
+"bH" = (
+/obj/machinery/chem_dispenser{
+	layer = 2.7
+	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"bR" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"bU" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment3)
+"bV" = (
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"cb" = (
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "ce" = (
 /turf/closed/wall,
-/area/centcom/biodome/apartments/apartment4)
-"ck" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Main Receptions";
-	dir = 1
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_main_shutters";
-	name = "Reception Shutters"
-	},
+/area/centcom/biodome/townhall/meeting)
+"ci" = (
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"cm" = (
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment4)
-"cn" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 2
-	},
+/area/centcom/biodome/medical/chemistry)
+"cl" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/microwave/engineering/cell_included,
+/obj/effect/spawner/random/food_or_drink/donkpockets,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"cv" = (
+/area/centcom/biodome/medical/offices)
+"cw" = (
 /obj/machinery/light/cold/directional/north,
+/obj/structure/chair/sofa/corp,
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/medical/offices)
+"cA" = (
+/obj/structure/bed/medical/anchored,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
 "cG" = (
 /turf/open/floor/iron/dark/pavement{
 	dir = 4
 	},
 /area/centcom/biodome/interior)
-"cM" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
+"cJ" = (
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
 "cO" = (
@@ -120,14 +174,34 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
 "cR" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/defibrillator/loaded,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment3)
+"cT" = (
+/obj/structure/table,
+/obj/item/food/stuffed_muli_pod{
+	pixel_x = 4;
+	pixel_y = 8
+	},
+/obj/item/food/stuffed_muli_pod{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/obj/item/food/stuffed_muli_pod{
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/obj/item/food/sweet_piru_noodles,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "dw" = (
-/obj/machinery/light_switch/directional/south,
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
+/area/centcom/biodome/medical)
 "dy" = (
 /obj/structure/railing,
 /obj/structure/table/reinforced/uraniumrglass,
@@ -143,21 +217,16 @@
 	},
 /turf/open/floor/iron/dark/textured_edge,
 /area/centcom/biodome/apartments/apartment4)
-"dM" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/computer/operating{
-	dir = 1
-	},
-/obj/machinery/defibrillator_mount/charging{
-	pixel_y = -28
+"dJ" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/light/floor,
+/obj/item/wrench/medical,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_y = 4;
+	pixel_x = 8
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"dO" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
+/area/centcom/biodome/medical)
 "dP" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	dir = 8;
@@ -167,77 +236,36 @@
 	dir = 4
 	},
 /area/centcom/biodome/townhall)
-"dR" = (
-/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+"ea" = (
+/obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"dV" = (
-/obj/structure/chair/office/light{
-	dir = 1
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"eh" = (
+/obj/structure/chair{
+	dir = 8
 	},
-/obj/machinery/button/door/directional/north{
-	id = "med_reception_emergency_shutters";
-	name = "reception shutters control";
-	pixel_x = -24
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"er" = (
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment1)
-"es" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Hospital"
-	},
-/turf/open/floor/iron/white/smooth_edge{
-	dir = 1
-	},
-/area/centcom/biodome/medical/lobby)
-"ex" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/right/directional/south{
-	name = "First Aid Supplies"
-	},
-/obj/item/storage/medkit/toxin{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/medkit/toxin,
-/obj/item/storage/medkit/toxin{
-	pixel_x = -3;
-	pixel_y = -3
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "eC" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Care Room";
-	dir = 1
-	},
+/obj/machinery/anesthetic_machine,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"eH" = (
-/obj/machinery/door/airlock/silver{
-	name = "Coroner's Station"
+/area/centcom/biodome/medical/icu)
+"eT" = (
+/obj/machinery/light/cold/directional/north,
+/obj/structure/closet/secure_closet/medical3{
+	req_access = null
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"eO" = (
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment1)
-"eT" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
-"eX" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/apartment2)
+"fi" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "fk" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -245,46 +273,64 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/apartment4)
-"fm" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments)
+"fn" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/apartment3)
 "fo" = (
-/obj/structure/closet/crate/freezer/blood,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/obj/structure/sink/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "fp" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
 /turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment1)
-"fq" = (
-/obj/machinery/stasis{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"fu" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/bigapartment2)
+"fD" = (
+/obj/structure/dresser,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment4)
 "fM" = (
-/obj/machinery/recharge_station,
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/obj/structure/window/reinforced/tinted/spawner/directional/north,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment3)
 "fT" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /obj/machinery/shower/directional/west,
 /obj/machinery/light/cold/directional/north,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment2)
-"gi" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/interior)
+"fY" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2,
+/obj/structure/closet/secure_closet/medical2{
+	req_access = null
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"gj" = (
+/obj/structure/bed/double{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/item/bedsheet/green/double{
+	dir = 1
+	},
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"gr" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/computer/records/medical/laptop{
+	dir = 8
+	},
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
 "gs" = (
 /obj/structure/fake_stairs{
 	dir = 1
@@ -293,21 +339,47 @@
 	dir = 1
 	},
 /area/centcom/biodome/townhall/meeting)
-"gz" = (
+"gx" = (
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"gI" = (
+/obj/structure/streetlamp,
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
+"gR" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/reagentgrinder{
+	pixel_y = 12;
+	pixel_x = -1
+	},
+/obj/item/reagent_containers/cup/beaker/large{
+	pixel_x = -9;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/cup/beaker/large{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/stack/sheet/mineral/plasma{
+	pixel_x = -2;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"gW" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/black/double,
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
-"gB" = (
-/obj/machinery/light_switch/directional/west,
-/obj/machinery/light/cold/directional/west,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"gI" = (
-/obj/structure/streetlamp,
-/turf/open/misc/grass/planet,
-/area/centcom/biodome/interior)
+"hg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "hm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -320,15 +392,61 @@
 "hs" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"ht" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/item/storage/medkit/brute{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/brute{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "hw" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/centcom/biodome/arrivals)
-"hU" = (
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
+"hx" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment1)
+"hE" = (
+/obj/structure/chair/sofa/corp/right,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"hM" = (
+/obj/machinery/door/airlock/silver{
+	name = "Treatment 1"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"hO" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"hP" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/chemical{
+	req_access = null
+	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"hV" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment4)
 "ia" = (
 /obj/structure/toilet{
 	dir = 8
@@ -337,73 +455,102 @@
 /area/centcom/biodome/apartments/apartment3)
 "ig" = (
 /turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"ih" = (
-/obj/machinery/door/airlock/silver/glass{
-	name = "Chem Lab"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"ii" = (
-/obj/machinery/light/cold/directional/north,
-/obj/structure/closet/secure_closet/medical3{
-	req_access = null
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/apartments)
+"il" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"ip" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/icu)
 "iq" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
+/area/centcom/biodome/apartments)
+"iz" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
 "iB" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
-"iD" = (
-/obj/structure/bed/double,
-/obj/item/bedsheet/black/double,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment4)
-"iF" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/apartment4)
-"iL" = (
-/turf/open/misc/sandy_dirt/icemoon,
-/area/centcom/biodome/exterior)
-"iR" = (
 /obj/machinery/door/airlock/silver{
 	name = "ICU 1"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
-"iS" = (
+"iE" = (
+/obj/structure/chair/sofa/corp{
+	dir = 1
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"iF" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/apartment2)
+"iL" = (
+/turf/open/misc/sandy_dirt/icemoon,
+/area/centcom/biodome/exterior)
+"iO" = (
 /obj/structure/window/reinforced/tinted/fulltile,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"iV" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 2
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "ja" = (
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"jp" = (
-/obj/structure/chair/office/light{
-	dir = 1
-	},
-/obj/machinery/button/door/directional/north{
-	id = "med_reception_main_shutters";
-	name = "reception shutters control";
-	pixel_x = 24
+"je" = (
+/mob/living/simple_animal/bot/medbot/stationary{
+	maints_access_required = null;
+	medkit_type = /obj/item/storage/medkit/brute;
+	name = "\improper Kisses-the-BooBoos"
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"jv" = (
-/obj/structure/closet/secure_closet/medical1{
-	req_access = null
+"jl" = (
+/obj/machinery/chem_master,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"jr" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/stack/ducts/fifty{
+	pixel_y = -4
 	},
+/obj/item/stack/ducts/fifty{
+	pixel_y = -1
+	},
+/obj/item/stack/ducts/fifty{
+	pixel_y = 2
+	},
+/obj/item/stack/ducts/fifty{
+	pixel_y = 5
+	},
+/obj/item/stack/ducts/fifty{
+	pixel_y = 8
+	},
+/obj/item/stack/ducts/fifty{
+	pixel_y = 11
+	},
+/obj/item/plunger,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
+/area/centcom/biodome/medical/chemistry)
+"jy" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/bigapartment1)
+"jz" = (
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
 "jD" = (
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
@@ -411,8 +558,9 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"jJ" = (
-/obj/machinery/light/cold/directional/south,
+"jL" = (
+/obj/machinery/rnd/production/techfab/department/medical,
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "jQ" = (
@@ -421,54 +569,54 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"jZ" = (
-/obj/machinery/light/cold/directional/north,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"ka" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = -10
-	},
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = -5
-	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = 5
-	},
-/obj/item/stack/sheet/iron/fifty{
-	pixel_x = 10
-	},
-/obj/item/construction/plumbing{
-	pixel_x = -7;
-	pixel_y = 9
-	},
-/obj/item/construction/plumbing{
-	pixel_x = 3;
-	pixel_y = 9
-	},
+"jS" = (
+/obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
+/area/centcom/biodome/medical/offices)
+"jT" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"jY" = (
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
 "kc" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 2
-	},
-/obj/machinery/light_switch/directional/east,
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"ky" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
+"kl" = (
+/obj/structure/table/reinforced/rglass,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"kq" = (
+/obj/machinery/stasis,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"ku" = (
+/obj/machinery/vending/drugs,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"kE" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "pharmacy_shutters_biodome";
+	name = "Pharmacy Shutters"
 	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment2)
-"kF" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
-"kI" = (
-/turf/closed/wall,
-/area/centcom/biodome/apartments/apartment1)
+/obj/item/folder/white{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/structure/desk_bell{
+	pixel_y = -2
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"kG" = (
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
 "kK" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/structure/window/reinforced/uranium/spawner/directional/east,
@@ -479,29 +627,73 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"kL" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/bigapartment1)
 "kM" = (
 /obj/structure/streetlamp,
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/biodome/interior)
-"kP" = (
-/obj/machinery/light/cold/directional/south,
+"kN" = (
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
+/area/centcom/biodome/medical/icu)
 "kT" = (
 /obj/structure/railing/corner/end,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
-"lo" = (
-/obj/machinery/light_switch/directional/west,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"lu" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2,
-/obj/structure/closet/secure_closet/medical2{
-	req_access = null
+"kU" = (
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment4)
+"la" = (
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
+	},
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"li" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Emergency Receptions";
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_emergency_shutters";
+	name = "Reception Shutters"
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/medical/lobby)
+"lo" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_emergency_shutters";
+	name = "Reception Shutters"
+	},
+/obj/item/storage/box/bandages{
+	pixel_y = 9
+	},
+/obj/item/storage/box/bandages{
+	pixel_y = -1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"lr" = (
+/obj/structure/table,
+/obj/structure/sink/kitchen/directional/east,
+/obj/item/kitchen/rollingpin,
+/obj/item/knife/kitchen,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"lE" = (
+/obj/machinery/door/airlock/silver/glass{
+	name = "Chem Lab"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
 "lF" = (
 /obj/machinery/door/airlock/silver{
 	name = "ICU 2"
@@ -509,36 +701,21 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
-"lK" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
-	id = "pharmacy_shutters_biodome";
-	name = "Pharmacy Shutters"
-	},
-/obj/structure/desk_bell{
-	pixel_y = 11
-	},
-/obj/item/folder/white{
-	pixel_x = 6;
-	pixel_y = -1
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"lR" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"lS" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+"lQ" = (
+/obj/structure/cable,
+/obj/machinery/light_switch/directional/south,
+/obj/machinery/rnd/production/protolathe/department/medical,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
 "lX" = (
 /obj/machinery/door/window/survival_pod{
 	dir = 1
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/bigapartment1)
+"mc" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment2)
 "mh" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/dark,
@@ -549,19 +726,16 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"ms" = (
+"mo" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"mu" = (
+/obj/structure/closet/secure_closet/personal,
 /turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
-"mw" = (
-/obj/structure/bed/double{
-	dir = 1
-	},
-/obj/item/bedsheet/black/double{
-	dir = 1
-	},
-/obj/machinery/light_switch/directional/west,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment3)
+/area/centcom/biodome/apartments/apartment1)
 "mA" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/structure/sink/directional/east,
@@ -589,52 +763,159 @@
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
-"mU" = (
-/obj/machinery/medipen_refiller,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"mY" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+"mL" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/apartment1)
+"mV" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment1)
 "na" = (
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 8
 	},
 /area/centcom/biodome/townhall/meeting)
-"nb" = (
-/turf/closed/wall,
+"nf" = (
+/obj/structure/table/optable,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"ni" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/pharmacy)
+"nm" = (
+/turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/bigapartment1)
-"nj" = (
-/obj/structure/bed/double{
-	dir = 1
-	},
-/obj/item/bedsheet/black/double{
-	dir = 1
-	},
-/obj/machinery/light_switch/directional/west,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment1)
 "nn" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/apartment2)
-"nq" = (
-/obj/machinery/light/cold/directional/east,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
 "nu" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
+"nz" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical)
+"nK" = (
+/obj/structure/closet/secure_closet/medical3{
+	req_access = null
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"nO" = (
+/obj/structure/table,
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/item/food/lizard_surf_n_turf,
+/obj/item/food/lizard_surf_n_turf{
+	pixel_y = 5
+	},
+/obj/item/food/lizard_surf_n_turf{
+	pixel_y = 10
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "nU" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment Grand 2"
 	},
 /turf/open/floor/iron/dark/textured_edge,
 /area/centcom/biodome/apartments/bigapartment2)
+"nZ" = (
+/obj/structure/chair/pillow_small,
+/obj/item/toy/plush/skyrat/borbplushie{
+	attack_verb_simple = list("peep");
+	attack_verb_continuous = list("peeps");
+	name = "A Leathery Egg";
+	icon = 'icons/obj/food/egg.dmi';
+	icon_state = "egg";
+	inhand_icon_state = null;
+	lefthand_file = 'icons/mob/inhands/items/food_lefthand.dmi';
+	righthand_file = 'icons/mob/inhands/items/food_righthand.dmi';
+	color = "#91995b";
+	transform = matrix()*1.5;
+	desc = "A large, leathery egg.  You feel like its occupant is peeping at you, faintly.";
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/toy/plush/skyrat/borbplushie{
+	attack_verb_simple = list("peep");
+	attack_verb_continuous = list("peeps");
+	name = "A Leathery Egg";
+	icon = 'icons/obj/food/egg.dmi';
+	icon_state = "egg";
+	inhand_icon_state = null;
+	lefthand_file = 'icons/mob/inhands/items/food_lefthand.dmi';
+	righthand_file = 'icons/mob/inhands/items/food_righthand.dmi';
+	color = "#91795b";
+	transform = matrix()*1.5;
+	desc = "A large, leathery egg.  You feel like its occupant is peeping at you, faintly.";
+	pixel_y = -5;
+	pixel_x = -3
+	},
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"oc" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"oh" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 1
+	},
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"ol" = (
+/obj/structure/closet/secure_closet/freezer/kitchen{
+	req_access = null
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
 "oo" = (
 /turf/open/misc/asteroid/snow/standard_air,
 /area/centcom/biodome/exterior)
+"ot" = (
+/obj/machinery/chem_heater/withbuffer,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"ou" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"oz" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"oA" = (
+/obj/machinery/light/cold/directional/west,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/chemistry)
+"oI" = (
+/obj/structure/dresser,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"oO" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment1)
+"oS" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment3)
 "oT" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/structure/window/reinforced/uranium/spawner/directional/east,
@@ -643,7 +924,217 @@
 /obj/structure/desk_bell,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"pc" = (
+"pa" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/black/double,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment4)
+"pq" = (
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
+"pu" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/interior)
+"pE" = (
+/obj/machinery/light/cold/directional/west,
+/obj/structure/table/reinforced/rglass,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"pG" = (
+/obj/machinery/door/window/survival_pod,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/bigapartment2)
+"pK" = (
+/obj/machinery/stasis,
+/obj/machinery/light/directional/east,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"pL" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment1)
+"pR" = (
+/turf/open/floor/plating/snowed/icemoon,
+/area/centcom/biodome/arrivals)
+"pS" = (
+/obj/machinery/cryo_cell{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"pX" = (
+/obj/structure/chair/sofa/corp,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"qb" = (
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"qg" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment4)
+"qn" = (
+/obj/structure/window/reinforced/tinted/spawner/directional/south,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/bigapartment2)
+"qs" = (
+/obj/machinery/vending/medical,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"qt" = (
+/obj/machinery/shower/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/railing/corner/end/flip,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"qu" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/machinery/holopad/secure,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"qw" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"re" = (
+/obj/structure/chair/pillow_small,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"rk" = (
+/obj/item/kirbyplants/organic/plant21,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"rl" = (
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"rt" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/arrivals)
+"rz" = (
+/obj/item/storage/box/rxglasses,
+/obj/structure/closet/secure_closet/medical1{
+	req_access = null
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"rA" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Care Room";
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"rK" = (
+/obj/machinery/light/cold/directional/north,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"rT" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/apartment4)
+"rU" = (
+/obj/machinery/stasis{
+	dir = 4
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"rY" = (
+/obj/structure/dresser,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment1)
+"sc" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/silver{
+	name = "Bedroom"
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"se" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall/meeting)
+"sf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"sm" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/defibrillator/loaded,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"sv" = (
+/obj/structure/fans/tiny,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/silver{
+	name = "Casa de Ko"
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"sx" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/medical_kiosk,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"sy" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"sA" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment3)
+"sC" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/arrivals)
+"sL" = (
+/obj/machinery/door/airlock/silver/glass{
+	name = "Pharmacy"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"sW" = (
+/obj/machinery/door/airlock/service/glass{
+	name = "Town Hall"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/cent_com,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"tf" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"th" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Emergency Receptions"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"tj" = (
 /obj/structure/chair/office/light{
 	dir = 4
 	},
@@ -655,285 +1146,52 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
-"pi" = (
-/obj/machinery/vending/medical,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"pj" = (
+"tk" = (
 /obj/structure/table/reinforced/rglass,
-/obj/item/surgery_tray/full/advanced,
-/obj/item/defibrillator/loaded,
-/obj/item/reagent_containers/blood/o_minus,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"pq" = (
-/turf/open/misc/grass/planet,
-/area/centcom/biodome/interior)
-"pu" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/interior)
-"pC" = (
-/obj/machinery/chem_dispenser,
-/obj/machinery/light/cold/directional/east,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"pG" = (
-/obj/machinery/door/window/survival_pod,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/bigapartment2)
-"pJ" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/medical_kiosk,
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"pR" = (
-/turf/open/floor/plating/snowed/icemoon,
-/area/centcom/biodome/arrivals)
-"qa" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment2)
-"qb" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/structure/railing{
-	dir = 10
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = -10
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"qe" = (
-/obj/structure/chair/sofa/corp/right,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"qo" = (
-/obj/structure/chair/sofa/corp/left,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"qv" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/west,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_main_shutters";
-	name = "Reception Shutters"
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = -5
 	},
-/obj/item/storage/box/bandages{
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = 5
+	},
+/obj/item/stack/sheet/iron/fifty{
+	pixel_x = 10
+	},
+/obj/item/construction/plumbing{
+	pixel_x = -7;
 	pixel_y = 9
 	},
-/obj/item/storage/box/bandages{
-	pixel_y = -1
+/obj/item/construction/plumbing{
+	pixel_x = 3;
+	pixel_y = 9
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"qI" = (
-/obj/structure/toilet{
-	dir = 4
+/area/centcom/biodome/medical/chemistry)
+"tL" = (
+/turf/closed/wall,
+/area/centcom/biodome/townhall)
+"tP" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
 	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment4)
-"rc" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/offices)
-"rf" = (
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment3)
+"tT" = (
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment2)
+"uc" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Treatment Centres";
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"rt" = (
-/obj/structure/fans/tiny,
-/turf/open/floor/iron/dark/pavement,
-/area/centcom/biodome/arrivals)
-"ru" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
-"rx" = (
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall/meeting)
-"rK" = (
-/obj/machinery/light/cold/directional/north,
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"rW" = (
-/obj/machinery/smartfridge/organ,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"se" = (
-/obj/machinery/light/cold/directional/east,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall/meeting)
-"sk" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/computer/records/medical/laptop{
-	dir = 8
-	},
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"sr" = (
-/obj/machinery/light/cold/directional/north,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/apartments)
-"sx" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"sy" = (
-/obj/machinery/light/cold/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"sC" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/arrivals)
-"sV" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment3)
-"sW" = (
-/obj/machinery/door/airlock/service/glass{
-	name = "Town Hall"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/cent_com,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"tc" = (
-/obj/machinery/door/airlock/silver/glass{
-	name = "Pharmacy"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"tl" = (
-/obj/structure/dresser,
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"tr" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"tK" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"tP" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
-"tQ" = (
-/obj/machinery/suit_storage_unit/medical,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"tT" = (
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment2)
-"uh" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"ux" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Interlink Access"
-	},
-/turf/open/floor/iron/dark/pavement,
-/area/centcom/biodome/interior)
-"uK" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment4)
-"uX" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/apartment3)
-"vb" = (
-/obj/structure/bed/double,
-/obj/item/bedsheet/black/double,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment2)
-"vc" = (
-/obj/machinery/anesthetic_machine,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"vg" = (
-/mob/living/simple_animal/bot/medbot/stationary{
-	maints_access_required = null;
-	medkit_type = /obj/item/storage/medkit/brute;
-	name = "\improper Kisses-the-BooBoos"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"vm" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
-"vN" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"wr" = (
-/mob/living/simple_animal/bot/medbot/stationary{
-	maints_access_required = null;
-	damagetype_healer = "burn";
-	medkit_type = /obj/item/storage/medkit/burn;
-	name = "\improper Ointment von Honkerton"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"wu" = (
-/obj/structure/flora/tree/jungle/style_random,
-/turf/open/misc/grass/planet,
-/area/centcom/biodome/interior)
-"wG" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_main_shutters";
-	name = "Reception Shutters"
-	},
-/obj/item/folder/white,
-/obj/structure/desk_bell{
-	pixel_y = 11
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"wI" = (
-/obj/structure/dresser,
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
-"wL" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/item/storage/medkit/regular{
-	pixel_x = 3;
-	pixel_y = 4
-	},
-/obj/item/storage/medkit/regular,
-/obj/item/storage/medkit/regular{
-	pixel_x = -3;
-	pixel_y = -3
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"xa" = (
-/obj/machinery/light/cold/directional/south,
-/obj/structure/chair/comfy/lime{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall/meeting)
-"xb" = (
-/obj/machinery/light/cold/directional/north,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"xf" = (
+"ug" = (
 /obj/structure/bed/double{
 	dir = 1
 	},
@@ -942,33 +1200,196 @@
 	},
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment2)
-"xh" = (
-/obj/structure/table/wood/fancy/black,
+/area/centcom/biodome/apartments/apartment3)
+"uh" = (
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"uq" = (
+/obj/machinery/suit_storage_unit/medical,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"ur" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/medkit/coroner{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_y = 4
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"ux" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Interlink Access"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/interior)
+"uC" = (
+/obj/structure/chair/pillow_small,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"uO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"vb" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/black/double,
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/apartment2)
+"vc" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"vk" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/window/right/directional/south{
+	name = "First Aid Supplies"
+	},
+/obj/item/storage/medkit/toxin{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/toxin{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"vA" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/surgery)
+"vM" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/surgery_tray/full/advanced,
+/obj/item/reagent_containers/blood/o_minus,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"vO" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment1)
+"vQ" = (
+/obj/structure/table/reinforced/uraniumrglass,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"wq" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/surgery_tray/full/advanced,
+/obj/item/defibrillator/loaded,
+/obj/item/reagent_containers/blood/o_minus,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"wt" = (
+/obj/item/surgery_tray/full/advanced,
+/obj/structure/table/reinforced/rglass,
+/obj/item/reagent_containers/blood/o_minus,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"wu" = (
+/obj/structure/flora/tree/jungle/style_random,
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
+"wx" = (
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"wS" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/chemistry)
+"wU" = (
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"wV" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/orange/double,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"wZ" = (
+/obj/structure/dresser,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment2)
+"xa" = (
+/obj/machinery/light/cold/directional/south,
+/obj/structure/chair/comfy/lime{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall/meeting)
+"xg" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment1)
 "xk" = (
 /obj/structure/window/reinforced/uranium/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/biodome/arrivals)
+"xo" = (
+/obj/structure/chair/sofa/corp/left,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
 "xp" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/apartment2)
 "xr" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"xx" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Main Receptions"
+/obj/machinery/cryo_cell{
+	dir = 8
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
+/area/centcom/biodome/medical/icu)
+"xw" = (
+/obj/machinery/reagentgrinder{
+	pixel_x = -5;
+	pixel_y = 16
+	},
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/item/reagent_containers/cup/bottle/formaldehyde{
+	pixel_y = 12;
+	pixel_x = 9
+	},
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/reagent_containers/cup/bottle/multiver{
+	pixel_x = 8;
+	pixel_y = 0
+	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
 "xD" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/structure/sink/directional/east,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/bigapartment1)
+"xX" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/item/storage/medkit/o2{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/o2{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"xY" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/bigapartment2)
 "xZ" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -978,57 +1399,119 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"yq" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
+"yb" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
-"yw" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
-"yG" = (
-/obj/structure/toilet{
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"yg" = (
+/obj/structure/bed/double,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment1)
-"yK" = (
-/obj/machinery/door/airlock/silver/glass{
-	name = "Chem Lab"
+/obj/item/bedsheet/purple/double,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"yk" = (
+/obj/machinery/door/airlock/silver{
+	name = "Primary Surgical Theatre"
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"yT" = (
-/obj/machinery/light_switch/directional/west,
+/area/centcom/biodome/medical/surgery)
+"yo" = (
+/obj/structure/closet/secure_closet/medical3{
+	req_access = null
+	},
+/obj/item/storage/medkit/regular,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/tactical,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"yq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"yr" = (
+/obj/structure/closet/secure_closet/medical2{
+	req_access = null
+	},
+/obj/machinery/anesthetic_machine,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"yt" = (
+/obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/medical/lobby)
+"yA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/silver{
+	name = "Bedroom"
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"yH" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment3)
+"yI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/machinery/door/airlock/silver{
+	name = "Master Bedroom"
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"yL" = (
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
+	},
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
 "zd" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
 	pixel_y = 3
 	},
 /turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment1)
+/area/centcom/biodome/apartments/apartment2)
 "zf" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/bigapartment1)
-"zk" = (
+"zl" = (
 /turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment2)
+/area/centcom/biodome/interior)
+"zo" = (
+/obj/machinery/shower/directional/east,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"zr" = (
+/obj/structure/closet/crate/freezer/blood,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"zw" = (
+/obj/machinery/chem_heater/withbuffer,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"zx" = (
+/obj/machinery/chem_master,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
 "zA" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
+/obj/machinery/iv_drip,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
 "zF" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	dir = 4;
@@ -1038,64 +1521,49 @@
 	dir = 4
 	},
 /area/centcom/biodome/townhall)
-"zG" = (
-/obj/machinery/door/airlock/silver{
-	name = "Morgue"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
 "zH" = (
-/turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/interior)
-"zJ" = (
 /obj/structure/table/reinforced/rglass,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
-	id = "pharmacy_shutters_biodome";
-	name = "Pharmacy Shutters"
-	},
-/obj/item/folder/white{
-	pixel_x = 6;
-	pixel_y = 7
-	},
-/obj/structure/desk_bell{
-	pixel_y = -2
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"zN" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment4)
-"Ac" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/left/directional/south{
+/obj/machinery/door/window/right/directional/south{
 	name = "First Aid Supplies";
-	dir = 8
-	},
-/obj/item/storage/medkit/advanced{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/medkit/advanced,
-/obj/item/storage/medkit/advanced{
-	pixel_x = -3;
-	pixel_y = -3
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Ao" = (
-/obj/machinery/light/cold/directional/west,
+"zJ" = (
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"zT" = (
+/obj/structure/railing/corner/end,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Al" = (
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall/meeting)
+"Ar" = (
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Aq" = (
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
+/area/centcom/biodome/medical/chemistry)
+"Av" = (
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
+	},
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"Ay" = (
+/obj/structure/bed/double{
+	dir = 1
+	},
+/obj/item/bedsheet/black/double{
+	dir = 1
+	},
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment1)
 "Az" = (
-/obj/machinery/light/cold/directional/east,
-/obj/structure/chair/sofa/corp/corner,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
+/obj/machinery/shower/directional/west,
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/apartments/bigapartment1)
 "AA" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment 2"
@@ -1104,55 +1572,97 @@
 	dir = 1
 	},
 /area/centcom/biodome/apartments/apartment2)
-"Ba" = (
-/obj/structure/chair/sofa/corp/left{
+"AF" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"AG" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment1)
+"AJ" = (
+/obj/machinery/computer/operating{
 	dir = 8
 	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"AK" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"AQ" = (
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Bb" = (
-/obj/machinery/door/airlock/silver{
-	name = "Primary Surgical Theatre"
+/area/centcom/biodome/medical/pharmacy)
+"AT" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "pharmacy_shutters_biodome";
+	name = "Pharmacy Shutters"
+	},
+/obj/structure/desk_bell{
+	pixel_y = 11
+	},
+/obj/item/folder/white{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"AV" = (
+/obj/machinery/computer/operating{
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"Bd" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 1
-	},
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Bg" = (
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
-"Bu" = (
-/obj/structure/chair/sofa/corp{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Bv" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/window/reinforced/spawner/directional/west,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Bx" = (
+"AX" = (
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/apartments/bigapartment1)
-"BG" = (
-/obj/item/surgery_tray/full/advanced,
-/obj/structure/table/reinforced/rglass,
-/obj/item/reagent_containers/blood/o_minus,
+"Bq" = (
+/obj/machinery/recharge_station,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"Br" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko)
+"Bx" = (
+/obj/structure/dresser,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"BC" = (
+/obj/machinery/light/cold/directional/south,
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"BI" = (
-/obj/machinery/light/cold/directional/west,
+"BD" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/apartment4)
+"BK" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/machinery/button/door/directional/north{
+	id = "med_reception_main_shutters";
+	name = "reception shutters control";
+	pixel_x = 24
+	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
+/area/centcom/biodome/medical/lobby)
 "BQ" = (
 /obj/structure/sink/directional/west,
 /obj/machinery/door/window/survival_pod,
@@ -1173,188 +1683,222 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Ce" = (
-/obj/machinery/rnd/production/techfab/department/medical,
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Cw" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/reagentgrinder{
-	pixel_y = 12;
-	pixel_x = -1
+"BZ" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
 	},
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = -9;
-	pixel_y = 2
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"Cb" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Cc" = (
+/obj/structure/chair/office/light{
+	dir = 4
 	},
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = 9;
-	pixel_y = 2
-	},
-/obj/item/stack/sheet/mineral/plasma{
-	pixel_x = -2;
-	pixel_y = -3
+/obj/machinery/button/door/directional/north{
+	id = "pharmacy_shutters_biodome";
+	name = "pharmacy shutters control";
+	pixel_x = 24
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
+"Cd" = (
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Co" = (
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"Cs" = (
+/obj/structure/sink/directional/west,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
 "CB" = (
 /obj/machinery/light/cold/directional/south,
 /obj/structure/filingcabinet,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"CC" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
 "CG" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/biodome/arrivals)
-"CK" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/storage/toolbox/mechanical{
-	pixel_y = 5
-	},
-/obj/item/clothing/head/utility/welding,
-/obj/machinery/light/cold/directional/east,
-/obj/item/clothing/glasses/science,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"CP" = (
-/obj/structure/chair/comfy/black{
+"CH" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/stasis{
 	dir = 4
 	},
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment2)
-"CT" = (
-/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"CU" = (
-/obj/machinery/smartfridge/chemistry/preloaded,
+/area/centcom/biodome/medical/icu)
+"CM" = (
+/mob/living/simple_animal/bot/medbot/stationary{
+	maints_access_required = null;
+	damagetype_healer = "toxin";
+	medkit_type = /obj/item/storage/medkit/toxin;
+	name = "\improper Discount Liver"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"CY" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment3)
+"CZ" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Treatment Centres";
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Di" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
+"Db" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Dk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"Dm" = (
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
+	pixel_y = 3
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
-"Dq" = (
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/apartments)
-"Dw" = (
-/obj/structure/closet/secure_closet/personal,
+"DB" = (
+/obj/structure/dresser,
 /turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
+/area/centcom/biodome/apartments/apartment3)
 "DJ" = (
 /obj/machinery/light/cold/directional/north,
 /obj/structure/filingcabinet/security,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"DM" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/bigapartment2)
-"DQ" = (
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/apartments)
-"DY" = (
-/obj/machinery/light/cold/directional/north,
+"DV" = (
+/obj/structure/table/wood/fancy/black,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment4)
+"Eb" = (
+/obj/item/surgery_tray/full/morgue,
+/obj/structure/table/reinforced,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
+/area/centcom/biodome/medical)
+"Ej" = (
+/obj/structure/closet/secure_closet/freezer/meat{
+	req_access = null
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
 "Eo" = (
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"Ez" = (
+/area/centcom/biodome/apartments/bigapartment2)
+"Er" = (
 /obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/right/directional/south{
-	name = "First Aid Supplies";
-	dir = 8
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_main_shutters";
+	name = "Reception Shutters"
 	},
-/obj/item/emergency_bed,
-/obj/item/emergency_bed{
-	pixel_y = 3
-	},
-/obj/item/emergency_bed{
-	pixel_y = 6
+/obj/item/folder/white,
+/obj/structure/desk_bell{
+	pixel_y = 11
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/medical/lobby)
+"Et" = (
+/obj/machinery/light/floor,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/chemistry)
 "EB" = (
 /obj/structure/railing{
 	dir = 10
 	},
 /obj/machinery/light/cold/directional/north,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/bigapartment2)
 "ED" = (
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"EJ" = (
-/obj/machinery/chem_mass_spec,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"EQ" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"ET" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/clothing/neck/stethoscope,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Fb" = (
-/obj/structure/bed/medical/anchored{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"FG" = (
-/obj/machinery/cell_charger,
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"FN" = (
-/obj/machinery/cryo_cell{
-	dir = 4
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"FP" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/spawner/directional/west,
-/obj/item/storage/medkit/brute{
-	pixel_x = 3;
+/obj/structure/table/wood/fancy/black,
+/obj/item/flashlight/lamp{
 	pixel_y = 3
 	},
-/obj/item/storage/medkit/brute,
-/obj/item/storage/medkit/brute{
-	pixel_x = -3;
-	pixel_y = -3
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment1)
+"EF" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"EO" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/apartment2)
+"EP" = (
+/obj/structure/table,
+/obj/machinery/processor,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"ES" = (
+/obj/structure/chair/comfy/black{
+	dir = 8
 	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment1)
+"Fd" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Ff" = (
+/obj/machinery/light_switch/directional/west,
+/obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"FR" = (
-/turf/closed/wall,
+"FB" = (
+/obj/structure/bed/double{
+	dir = 1
+	},
+/obj/item/bedsheet/black/double{
+	dir = 1
+	},
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
-"FU" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/apartments)
-"Gf" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/apartment1)
+"FC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"FN" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment2)
+"FQ" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment4)
+"FZ" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"Gb" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "Gh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -1364,30 +1908,28 @@
 "Gs" = (
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/biodome/arrivals)
-"Gx" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
+"Gy" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
 	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment1)
-"GJ" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"GH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "GM" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_emergency_shutters";
-	name = "Reception Shutters"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"GP" = (
-/obj/machinery/light/cold/directional/west,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"GO" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
 "Hb" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment Grand 1"
@@ -1396,23 +1938,12 @@
 	dir = 1
 	},
 /area/centcom/biodome/apartments/bigapartment1)
-"Hf" = (
-/obj/machinery/computer/operating{
-	dir = 1
+"Hp" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"Hk" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment3)
-"Hq" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
 "Hz" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartments"
@@ -1421,21 +1952,23 @@
 	dir = 8
 	},
 /area/centcom/biodome/apartments)
-"HE" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment2)
-"HJ" = (
-/obj/machinery/vending/drugs,
+"HL" = (
+/obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
+/area/centcom/biodome/medical/pharmacy)
 "HM" = (
 /obj/machinery/shower/directional/west,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/bigapartment2)
+"HU" = (
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"HZ" = (
+/obj/machinery/anesthetic_machine,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
 "Ib" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -1448,13 +1981,11 @@
 "Ic" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment3)
+/area/centcom/biodome/apartments/apartment4)
 "If" = (
-/obj/machinery/door/airlock/silver{
-	name = "Treatment 2"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
+/obj/structure/table/wood/fancy/black,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment1)
 "Ig" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -1463,50 +1994,30 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"Ix" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Emergency Receptions";
-	dir = 1
-	},
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_emergency_shutters";
-	name = "Reception Shutters"
+"Ih" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Ik" = (
+/obj/structure/closet/secure_closet/medical1{
+	req_access = null
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Iz" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/microwave/engineering/cell_included,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"ID" = (
-/turf/closed/wall,
-/area/centcom/biodome/townhall/meeting)
-"IF" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_emergency_shutters";
-	name = "Reception Shutters"
-	},
-/obj/item/folder/white,
-/obj/structure/desk_bell{
-	pixel_y = 11
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
+/area/centcom/biodome/medical/icu)
+"It" = (
+/obj/structure/table/wood/fancy/black,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment1)
 "IJ" = (
 /obj/structure/chair/comfy/lime{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"IQ" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
+"IN" = (
+/obj/machinery/chem_mass_spec,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
 "IR" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Receptions"
@@ -1523,9 +2034,16 @@
 	dir = 8
 	},
 /area/centcom/biodome/townhall/meeting)
-"Je" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
+"Jc" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/bigapartment1)
+"Jd" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
 "Jh" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/carpet/black,
@@ -1535,19 +2053,32 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment2)
+/area/centcom/biodome/apartments/bigapartment2)
 "Jt" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"JA" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "JJ" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /obj/machinery/shower/directional/east,
 /obj/machinery/light/cold/directional/north,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment1)
+"JO" = (
+/obj/machinery/door/airlock/bathroom,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
 "JS" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
@@ -1557,6 +2088,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
+"JV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/machinery/door/airlock/silver{
+	name = "Lounge"
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
 "Ka" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Administrative Access"
@@ -1564,293 +2104,47 @@
 /obj/effect/mapping_helpers/airlock/access/all/cent_com,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Kc" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/icu)
 "Kl" = (
-/obj/structure/window/reinforced/tinted/spawner/directional/south,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/bigapartment2)
-"Kt" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/reagent_containers/cup/beaker/cryoxadone{
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Km" = (
+/obj/structure/table,
+/obj/item/food/kiri_curry{
 	pixel_x = -6;
-	pixel_y = 10
+	pixel_y = 15
 	},
-/obj/item/reagent_containers/cup/beaker/cryoxadone{
-	pixel_x = 6;
-	pixel_y = 10
+/obj/item/food/kiri_curry{
+	pixel_x = 7;
+	pixel_y = 8
 	},
-/obj/item/storage/pill_bottle/mannitol,
-/obj/item/reagent_containers/dropper{
-	pixel_y = 6
+/obj/item/food/kiri_curry{
+	pixel_x = -6;
+	pixel_y = 1
 	},
-/obj/machinery/light_switch/directional/north,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Kn" = (
+/obj/structure/chair/sofa/corp{
+	dir = 8
+	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"Kw" = (
-/obj/machinery/door/airlock/silver/glass{
-	name = "Lounge"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Kx" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/defibrillator/loaded,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
+/area/centcom/biodome/medical/lobby)
 "Ky" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /obj/machinery/shower/directional/west,
 /obj/machinery/light/cold/directional/south,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment4)
-"KA" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment4)
-"KF" = (
-/turf/open/floor/iron/dark/textured_edge{
-	dir = 4
-	},
-/area/centcom/biodome/townhall)
-"KJ" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/computer/crew{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Lb" = (
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"Lc" = (
-/obj/structure/chair/sofa/corp/right,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Lx" = (
-/obj/machinery/anesthetic_machine,
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"Ly" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	dir = 8;
-	name = "Town Hall"
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall/meeting)
-"LJ" = (
-/obj/structure/sink/directional/east,
-/obj/machinery/door/window/survival_pod{
-	dir = 1
-	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment4)
-"Ma" = (
-/obj/machinery/cryo_cell{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"Mk" = (
-/obj/machinery/door/airlock/service{
-	name = "Apartment 1"
-	},
-/turf/open/floor/iron/dark/textured_edge{
-	dir = 1
-	},
-/area/centcom/biodome/apartments/apartment1)
-"Mp" = (
-/obj/machinery/door/airlock/silver/glass{
-	name = "Storage"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Ms" = (
-/obj/structure/railing/corner/end/flip,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"MJ" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment1)
-"MR" = (
-/obj/structure/window/reinforced/tinted/spawner/directional/south,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment2)
-"MS" = (
+"KE" = (
 /obj/structure/table/reinforced/rglass,
-/obj/machinery/computer/records/medical/laptop{
-	dir = 4
-	},
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"MU" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment4)
-"MX" = (
-/obj/structure/filingcabinet/employment,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"Ne" = (
-/obj/machinery/light/cold/directional/west,
-/obj/structure/chair/sofa/corp/right,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"No" = (
-/turf/closed/wall,
-/area/centcom/biodome/townhall)
-"Nr" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/medical/lobby)
-"NC" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/right/directional/south{
-	name = "First Aid Supplies"
-	},
-/obj/item/storage/medkit/fire{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/storage/medkit/fire,
-/obj/item/storage/medkit/fire{
-	pixel_x = -3;
-	pixel_y = -3
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"NJ" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Interlink Access"
-	},
-/turf/open/floor/iron/dark/pavement,
-/area/centcom/biodome/arrivals)
-"NN" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/chemistry)
-"NQ" = (
-/obj/structure/bed/double,
-/obj/item/bedsheet/black/double,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment1)
-"NS" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment2)
-"NX" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/surgery_tray/full/advanced,
-/obj/item/reagent_containers/blood/o_minus,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"Oc" = (
-/obj/machinery/light/cold/directional/south,
-/obj/structure/table/optable,
-/obj/machinery/defibrillator_mount/charging{
-	pixel_y = -28
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"Oh" = (
-/obj/structure/chair/sofa/corp/left,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"On" = (
-/obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Ou" = (
-/obj/item/surgery_tray/full/morgue,
-/obj/structure/table/reinforced,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Oz" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment3)
-"OC" = (
-/obj/structure/closet/crate/freezer/surplus_limbs,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"OM" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical)
-"OR" = (
-/obj/item/kirbyplants/organic/plant21,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"OY" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"Pc" = (
+/obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 1;
 	id = "med_reception_main_shutters";
-	name = "Reception Shutters"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Pe" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"Pu" = (
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"PB" = (
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"PK" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/turf/open/floor/plating/snowed/icemoon,
-/area/centcom/biodome/arrivals)
-"PW" = (
-/obj/structure/railing{
-	dir = 5
-	},
-/obj/machinery/light/floor,
-/obj/effect/turf_decal/siding/dark/end{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/textured_corner,
-/area/centcom/biodome/townhall/meeting)
-"Qd" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/stasis,
-/obj/machinery/defibrillator_mount/charging{
-	pixel_y = -28
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"Qg" = (
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/east,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 1;
-	id = "med_reception_emergency_shutters";
 	name = "Reception Shutters"
 	},
 /obj/item/storage/box/bandages{
@@ -1861,209 +2155,38 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"Ql" = (
-/obj/machinery/vending/coffee,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Qx" = (
-/obj/structure/chair/comfy/lime{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"QA" = (
-/turf/open/floor/iron/white/smooth_edge{
-	dir = 1
-	},
-/area/centcom/biodome/medical/lobby)
-"QF" = (
-/obj/structure/closet/secure_closet/chemical{
-	req_access = null
-	},
-/obj/item/storage/bag/chemistry,
-/obj/item/storage/bag/chemistry,
-/obj/item/clothing/glasses/science,
-/obj/item/clothing/glasses/science,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"QN" = (
-/obj/machinery/iv_drip,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"QV" = (
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"QZ" = (
-/obj/structure/dresser,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment2)
-"Rb" = (
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/townhall/meeting)
-"Rr" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/apartments/bigapartment1)
-"Rx" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"RL" = (
-/obj/machinery/light/cold/directional/east,
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/apartments)
-"RX" = (
-/obj/machinery/light/cold/directional/east,
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"RZ" = (
-/obj/machinery/light/cold/directional/south,
-/obj/machinery/stasis{
+"KF" = (
+/turf/open/floor/iron/dark/textured_edge{
 	dir = 4
 	},
-/obj/machinery/defibrillator_mount/charging{
-	pixel_y = -28
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/icu)
-"Sd" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/machinery/door/window/survival_pod{
-	dir = 4;
-	name = "Receptions Lock"
-	},
-/obj/machinery/light/floor,
-/turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Se" = (
-/obj/structure/chair/sofa/corp,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
-"Sf" = (
-/obj/machinery/shower/directional/west,
-/turf/open/floor/iron/pool,
-/area/centcom/biodome/apartments/bigapartment1)
-"Sh" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/bigapartment2)
-"Sl" = (
-/obj/structure/bodycontainer/morgue{
-	dir = 2
-	},
-/obj/machinery/light/cold/directional/north,
+"KI" = (
+/obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"St" = (
-/obj/machinery/light/floor,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"SF" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Emergency Receptions"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"SU" = (
-/obj/structure/chair/office/light{
-	dir = 4
-	},
-/obj/machinery/button/door/directional/north{
-	id = "pharmacy_shutters_biodome";
-	name = "pharmacy shutters control";
-	pixel_x = 24
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"Tb" = (
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"Tf" = (
-/obj/structure/chair/office/light{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"Tk" = (
-/turf/closed/wall,
-/area/centcom/biodome/apartments/apartment3)
-"To" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/machinery/shower/directional/east,
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/pool,
-/area/centcom/biodome/apartments/apartment3)
-"Tp" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 1
-	},
-/obj/machinery/light/cold/directional/south,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Tr" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/arrivals)
-"Ty" = (
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment1)
-"TB" = (
-/obj/machinery/iv_drip,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"TH" = (
-/turf/open/misc/sandy_dirt/planet,
-/area/centcom/biodome/interior)
-"TK" = (
-/obj/structure/window/reinforced/fulltile/diagonal,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/centcom/biodome/interior)
-"TL" = (
+"KL" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/holopad/secure,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"KN" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"TM" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/bigapartment1)
-"TR" = (
-/obj/machinery/light/cold/directional/west,
-/obj/structure/table/reinforced/rglass,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Um" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment4)
-"Uo" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/door/window/right/directional/south{
-	name = "First Aid Supplies";
+"KP" = (
+/obj/structure/chair/comfy/black{
 	dir = 1
 	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment1)
+"KQ" = (
+/obj/machinery/cell_charger,
+/obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Ut" = (
+"KT" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/cup/bottle/epinephrine{
 	pixel_x = -8;
@@ -2098,115 +2221,98 @@
 /obj/item/reagent_containers/cup/bottle/formaldehyde,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"UF" = (
-/obj/structure/table/optable,
+"KV" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Lb" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/apartments)
+"Lf" = (
+/obj/machinery/portable_atmospherics/canister/anesthetic_mix,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"UU" = (
-/obj/structure/sink/kitchen/directional/south,
+"Lg" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"Lj" = (
+/obj/effect/spawner/liquids_spawner,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Lq" = (
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Vm" = (
-/obj/machinery/light/cold/directional/north,
-/obj/structure/chair/sofa/corp,
+/area/centcom/biodome/medical)
+"Lv" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Lw" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"Vq" = (
-/obj/structure/closet/secure_closet/medical3{
-	req_access = null
+"Lx" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"Ly" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	dir = 8;
+	name = "Town Hall"
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall/meeting)
+"LI" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"LJ" = (
+/obj/structure/sink/directional/east,
+/obj/machinery/door/window/survival_pod{
+	dir = 1
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment4)
+"LS" = (
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Mb" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/clothing/neck/stethoscope,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"Mg" = (
+/obj/machinery/door/airlock/silver{
+	name = "Morgue"
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Vu" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/machinery/door/window/survival_pod{
-	dir = 4;
-	name = "Receptions Lock"
-	},
-/obj/machinery/light/floor,
-/obj/item/folder,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/townhall)
-"VR" = (
-/obj/machinery/chem_master,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"VW" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment4)
-"VY" = (
-/obj/structure/flora/tree/jungle/small/style_random,
-/turf/open/misc/grass/planet,
-/area/centcom/biodome/interior)
-"VZ" = (
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
-"Wa" = (
-/obj/machinery/smartfridge/chemistry/preloaded,
-/obj/machinery/door/poddoor/shutters/preopen{
-	dir = 4;
-	id = "pharmacy_shutters_biodome";
-	name = "Pharmacy Shutters"
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"Wn" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/plating,
-/area/centcom/biodome/arrivals)
-"WB" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/surgery)
-"WH" = (
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment4)
-"WL" = (
-/obj/structure/table/wood/fancy/black,
-/obj/item/flashlight/lamp{
-	pixel_y = 3
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/bigapartment2)
-"WR" = (
-/obj/structure/sink/directional/east,
-/obj/machinery/door/window/survival_pod,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/apartment2)
-"WV" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 1;
-	height = 13;
-	name = "biodome";
-	shuttle_id = "arrivals_stationary";
-	width = 5
-	},
-/turf/open/floor/plating/snowed/icemoon,
-/area/centcom/biodome/arrivals)
-"Xc" = (
-/obj/structure/chair/comfy/black{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment2)
-"Xd" = (
+"Mk" = (
 /obj/machinery/door/airlock/service{
-	name = "Apartment 3"
+	name = "Apartment 1"
 	},
-/turf/open/floor/iron/dark/textured_edge,
-/area/centcom/biodome/apartments/apartment3)
-"Xm" = (
-/turf/closed/wall,
-/area/centcom/biodome/apartments/apartment2)
-"Xx" = (
+/turf/open/floor/iron/dark/textured_edge{
+	dir = 1
+	},
+/area/centcom/biodome/apartments/apartment1)
+"Ml" = (
+/obj/machinery/door/airlock/bathroom,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Ms" = (
+/obj/structure/railing/corner/end/flip,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"MC" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden{
 	dir = 4
@@ -2227,6 +2333,666 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"MD" = (
+/obj/structure/bodycontainer/morgue{
+	dir = 2
+	},
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"MF" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"MJ" = (
+/obj/structure/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment2)
+"MM" = (
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/medical1{
+	req_access = null
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"MP" = (
+/turf/open/floor/iron/white/smooth_edge{
+	dir = 1
+	},
+/area/centcom/biodome/medical/lobby)
+"MU" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment2)
+"MX" = (
+/obj/structure/filingcabinet/employment,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"Nc" = (
+/obj/machinery/computer/records/medical{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Nd" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_main_shutters";
+	name = "Reception Shutters"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Nl" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/defibrillator/loaded,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"Nu" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Hospital"
+	},
+/turf/open/floor/iron/white/smooth_edge{
+	dir = 1
+	},
+/area/centcom/biodome/medical/lobby)
+"ND" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"NJ" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Interlink Access"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/arrivals)
+"NP" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"Oa" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/machinery/button/door/directional/north{
+	id = "med_reception_emergency_shutters";
+	name = "reception shutters control";
+	pixel_x = -24
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Ob" = (
+/obj/machinery/light/cold/directional/east,
+/obj/structure/table/reinforced/rglass,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"Oz" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/lobby)
+"OE" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 5
+	},
+/obj/item/clothing/head/utility/welding,
+/obj/machinery/light/cold/directional/east,
+/obj/item/clothing/glasses/science,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/chemistry)
+"OM" = (
+/obj/structure/window/reinforced/tinted/spawner/directional/north,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/bigapartment1)
+"ON" = (
+/obj/machinery/light/cold/directional/west,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Pb" = (
+/obj/machinery/door/airlock/silver/glass{
+	name = "Storage"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"Po" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_emergency_shutters";
+	name = "Reception Shutters"
+	},
+/obj/item/folder/white,
+/obj/structure/desk_bell{
+	pixel_y = 11
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Pv" = (
+/obj/machinery/door/airlock/silver{
+	name = "Treatment 2"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"PF" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/window/right/directional/south{
+	name = "First Aid Supplies";
+	dir = 8
+	},
+/obj/item/emergency_bed,
+/obj/item/emergency_bed{
+	pixel_y = 3
+	},
+/obj/item/emergency_bed{
+	pixel_y = 6
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"PK" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/centcom/biodome/arrivals)
+"PP" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"PQ" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"PS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"PW" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/obj/machinery/light/floor,
+/obj/effect/turf_decal/siding/dark/end{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/textured_corner,
+/area/centcom/biodome/townhall/meeting)
+"Qb" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment4)
+"Qn" = (
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Qu" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/reagent_containers/cup/beaker/cryoxadone{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/cup/beaker/cryoxadone{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/storage/pill_bottle/mannitol,
+/obj/item/reagent_containers/dropper{
+	pixel_y = 6
+	},
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"Qx" = (
+/obj/structure/chair/comfy/lime{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"QA" = (
+/obj/machinery/chem_dispenser,
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"QD" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments/apartment3)
+"QR" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Main Receptions";
+	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_main_shutters";
+	name = "Reception Shutters"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Rh" = (
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/item/surgery_tray/full/advanced,
+/obj/item/storage/box/beakers/variety{
+	pixel_y = 10;
+	pixel_x = 10
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = -7;
+	pixel_y = 10
+	},
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"Ri" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/offices)
+"Rq" = (
+/obj/machinery/door/airlock/silver{
+	name = "Coroner's Station"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"RB" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/apartment1)
+"RE" = (
+/obj/structure/closet/secure_closet/freezer/fridge{
+	req_access = null
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko)
+"RG" = (
+/obj/structure/closet/cabinet{
+	name = "Pillow Closet"
+	},
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/obj/item/fancy_pillow,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"RJ" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/item/storage/medkit/regular{
+	pixel_x = 3;
+	pixel_y = 4
+	},
+/obj/item/storage/medkit/regular,
+/obj/item/storage/medkit/regular{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"RL" = (
+/obj/machinery/light/cold/directional/east,
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/apartments)
+"RM" = (
+/obj/structure/closet/secure_closet/chemical{
+	req_access = null
+	},
+/obj/item/storage/bag/chemistry,
+/obj/item/storage/bag/chemistry,
+/obj/item/clothing/glasses/science,
+/obj/item/clothing/glasses/science,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"RT" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/apartments)
+"RV" = (
+/obj/structure/table/wood/fancy/black,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment3)
+"Sd" = (
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/door/window/survival_pod{
+	dir = 4;
+	name = "Receptions Lock"
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"Sh" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Sm" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/surgery)
+"Sn" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/medical/lobby)
+"Sq" = (
+/obj/structure/bed/double,
+/obj/item/bedsheet/black/double,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment1)
+"SD" = (
+/obj/machinery/light/cold/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"SG" = (
+/obj/structure/table/optable,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"SJ" = (
+/obj/structure/chair/sofa/corp/left,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"SU" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Tf" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"To" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/machinery/shower/directional/east,
+/obj/machinery/light/cold/directional/south,
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/apartments/apartment3)
+"Tr" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/arrivals)
+"Ty" = (
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/bigapartment2)
+"TA" = (
+/obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"TC" = (
+/obj/machinery/door/airlock/multi_tile/public/glass{
+	name = "Main Receptions"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"TD" = (
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/offices)
+"TH" = (
+/turf/open/misc/sandy_dirt/planet,
+/area/centcom/biodome/interior)
+"TJ" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/bigapartment2)
+"TK" = (
+/obj/structure/window/reinforced/fulltile/diagonal,
+/turf/open/misc/sandy_dirt/icemoon,
+/area/centcom/biodome/interior)
+"TL" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/medical/chemistry)
+"TP" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"TQ" = (
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/interior)
+"TZ" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"Ud" = (
+/obj/machinery/light/cold/directional/south,
+/obj/machinery/computer/crew{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Uj" = (
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"UD" = (
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"UF" = (
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/apartments)
+"UT" = (
+/obj/machinery/light/cold/directional/east,
+/obj/structure/chair/sofa/corp/corner,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Vq" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Vu" = (
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/door/window/survival_pod{
+	dir = 4;
+	name = "Receptions Lock"
+	},
+/obj/machinery/light/floor,
+/obj/item/folder,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
+"VF" = (
+/turf/closed/wall,
+/area/centcom/biodome/apartments/apartment1)
+"VG" = (
+/obj/machinery/light/cold/directional/west,
+/obj/structure/chair/sofa/corp/right,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"VV" = (
+/obj/structure/window/reinforced/tinted/spawner/directional/south,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment2)
+"VY" = (
+/obj/structure/flora/tree/jungle/small/style_random,
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
+"VZ" = (
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"Wb" = (
+/obj/structure/table/reinforced/rglass,
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/window/reinforced/spawner/directional/west,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"Wh" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment2)
+"Wi" = (
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"Wm" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"Wn" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/turf/open/floor/plating,
+/area/centcom/biodome/arrivals)
+"Wr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/icu)
+"Wv" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 8
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"Ww" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/carpet/green,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
+"WD" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 4;
+	id = "pharmacy_shutters_biodome";
+	name = "Pharmacy Shutters"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/pharmacy)
+"WG" = (
+/obj/structure/table,
+/obj/item/food/stewed_muli{
+	pixel_y = 16
+	},
+/obj/item/food/stewed_muli{
+	pixel_y = 10;
+	pixel_x = -5
+	},
+/obj/item/food/sirisai_wrap{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/food/sirisai_wrap{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/item/food/sirisai_flatbread,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"WH" = (
+/obj/structure/table/wood/fancy/black,
+/turf/open/floor/carpet/black,
+/area/centcom/biodome/apartments/apartment2)
+"WJ" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"WR" = (
+/obj/structure/sink/directional/east,
+/obj/machinery/door/window/survival_pod,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment2)
+"WV" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 1;
+	height = 13;
+	name = "biodome";
+	shuttle_id = "arrivals_stationary";
+	width = 5
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/centcom/biodome/arrivals)
+"Xd" = (
+/obj/machinery/door/airlock/service{
+	name = "Apartment 3"
+	},
+/turf/open/floor/iron/dark/textured_edge,
+/area/centcom/biodome/apartments/apartment3)
+"Xj" = (
+/obj/structure/closet/cabinet,
+/turf/open/floor/carpet/purple,
+/area/centcom/biodome/homes/casa_de_ko/bed3)
+"Xk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/silver{
+	name = "Emergency Medbay"
+	},
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"Xr" = (
+/obj/structure/dresser,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/townhall/meeting)
+"Xu" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"Xy" = (
+/obj/structure/table/reinforced/rglass,
+/obj/machinery/door/window/left/directional/south{
+	name = "First Aid Supplies";
+	dir = 8
+	},
+/obj/item/storage/medkit/advanced{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/advanced{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "Xz" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Receptions"
@@ -2234,14 +3000,13 @@
 /obj/effect/mapping_helpers/airlock/access/all/cent_com,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"XG" = (
-/obj/structure/table/wood/fancy/black,
-/turf/open/floor/carpet/black,
-/area/centcom/biodome/apartments/apartment3)
-"XU" = (
-/obj/item/storage/box/rxglasses,
-/obj/structure/closet/secure_closet/medical1{
-	req_access = null
+"XO" = (
+/obj/machinery/smartfridge/food,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko)
+"XR" = (
+/obj/machinery/door/airlock/silver/glass{
+	name = "Chem Lab"
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
@@ -2250,72 +3015,75 @@
 	dir = 9
 	},
 /obj/machinery/light/cold/directional/south,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/bigapartment1)
-"Yc" = (
+"Yd" = (
+/obj/machinery/medipen_refiller,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"Yg" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/apartments/bigapartment2)
+"Yh" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/apartments/apartment4)
+"Ys" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	dir = 1;
+	id = "med_reception_emergency_shutters";
+	name = "Reception Shutters"
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
+"YA" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/flashlight/lamp/green{
+	pixel_y = 10
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"YJ" = (
 /obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/item/storage/medkit/o2{
+/obj/machinery/door/window/right/directional/south{
+	name = "First Aid Supplies"
+	},
+/obj/item/storage/medkit/fire{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/medkit/o2,
-/obj/item/storage/medkit/o2{
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/fire{
 	pixel_x = -3;
 	pixel_y = -3
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Yd" = (
-/obj/structure/bed/medical/anchored,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/offices)
-"Yg" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/iron/dark/smooth_large,
-/area/centcom/biodome/apartments/apartment1)
-"Yi" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/medkit/coroner{
-	pixel_y = 7
+"YL" = (
+/obj/machinery/griddle,
+/obj/machinery/microwave{
+	pixel_y = 28;
+	layer = 3
 	},
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_y = 4
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Yj" = (
-/obj/machinery/light/cold/directional/west,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/chemistry)
-"Yl" = (
-/obj/machinery/stasis,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"Yu" = (
-/obj/machinery/door/airlock/multi_tile/public/glass{
-	name = "Treatment Centres";
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"YF" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/pharmacy)
-"YI" = (
-/obj/machinery/chem_heater/withbuffer,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/pharmacy)
-"YS" = (
-/obj/machinery/computer/records/medical{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical/lobby)
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_ko/lounge)
+"YT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
 "YX" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/apartment1)
+"YY" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/bed2)
 "Zf" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -2326,49 +3094,31 @@
 /obj/structure/window/reinforced/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/biodome/interior)
-"Zj" = (
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
-"Zo" = (
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/apartments/bigapartment1)
-"Zp" = (
-/obj/machinery/door/airlock/silver{
-	name = "Treatment 1"
+"Zz" = (
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = 28
+	},
+/obj/item/defibrillator/loaded,
+/turf/open/floor/iron/white/smooth_large,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
+"ZA" = (
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/homes/casa_de_ko/bed1)
+"ZG" = (
+/mob/living/simple_animal/bot/medbot/stationary{
+	maints_access_required = null;
+	damagetype_healer = "burn";
+	medkit_type = /obj/item/storage/medkit/burn;
+	name = "\improper Ointment von Honkerton"
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/medical/surgery)
-"Zw" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/stack/ducts/fifty{
-	pixel_y = -4
-	},
-/obj/item/stack/ducts/fifty{
-	pixel_y = -1
-	},
-/obj/item/stack/ducts/fifty{
-	pixel_y = 2
-	},
-/obj/item/stack/ducts/fifty{
-	pixel_y = 5
-	},
-/obj/item/stack/ducts/fifty{
-	pixel_y = 8
-	},
-/obj/item/stack/ducts/fifty{
-	pixel_y = 11
-	},
-/obj/item/plunger,
+/area/centcom/biodome/medical/lobby)
+"ZT" = (
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"ZY" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/light/floor,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden,
-/turf/open/floor/iron/white,
-/area/centcom/biodome/medical)
 
 (1,1,1) = {"
 oo
@@ -23051,7 +23801,7 @@ pq
 gI
 pq
 pq
-pq
+cG
 pq
 pq
 gI
@@ -23308,7 +24058,7 @@ pq
 pq
 pq
 pq
-pq
+cG
 pq
 pq
 pq
@@ -23564,9 +24314,9 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
+zl
+zl
+zl
 pq
 pq
 pq
@@ -23811,20 +24561,20 @@ cG
 gI
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+qw
+qw
+qw
+qw
+Cb
+Cb
+Cb
+Cb
+Br
+Br
+sv
+Br
+Br
 pq
 pq
 pq
@@ -24068,20 +24818,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+yo
+hP
+jl
+qw
+vc
+GM
+EP
+lr
+XO
+MM
+FZ
+lQ
+Br
 pq
 pq
 pq
@@ -24325,20 +25075,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+xw
+yq
+bH
+qw
+ak
+qu
+fi
+fi
+JV
+ou
+ou
+FC
+Br
 pq
 pq
 pq
@@ -24582,20 +25332,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+yr
+KL
+zw
+qw
+YL
+fi
+zJ
+cT
+Br
+Ej
+RE
+ol
+Br
 pq
 pq
 pq
@@ -24839,20 +25589,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+Zz
+bR
+bR
+Xk
+sf
+fi
+zJ
+WG
+Br
+Br
+Br
+Br
+Br
 pq
 pq
 pq
@@ -25096,20 +25846,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+qw
+AJ
+pK
+Rh
+qw
+RG
+Db
+Lv
+Xu
+YY
+AF
+gj
+Av
+YY
 pq
 pq
 pq
@@ -25353,20 +26103,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+LI
+LI
+LI
+LI
+Lv
+Db
+Gb
+Gb
+yA
+il
+il
+wU
+YY
 pq
 pq
 pq
@@ -25610,20 +26360,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+aP
+qt
+ZA
+LI
+oz
+Db
+Lv
+YA
+YY
+jz
+Dk
+re
+YY
 pq
 pq
 pq
@@ -25867,20 +26617,20 @@ cG
 gI
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+Cs
+uO
+ea
+LI
+nO
+AK
+Lv
+Fd
+YY
+wU
+Dk
+wU
+YY
 pq
 pq
 pq
@@ -26124,20 +26874,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+LI
+Ml
+LI
+LI
+Km
+AK
+Lv
+iE
+YY
+jT
+Ww
+Av
+YY
 pq
 pq
 pq
@@ -26381,20 +27131,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+Vq
+Wm
+la
+LI
+eh
+Db
+Lv
+yb
+YY
+YY
+YY
+YY
+YY
 pq
 pq
 pq
@@ -26583,21 +27333,21 @@ TH
 pq
 pq
 pq
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
 pq
 pq
 pq
@@ -26638,20 +27388,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+Ih
+YT
+YT
+yI
+Db
+Db
+TP
+YA
+EF
+Xj
+Hp
+yL
+EF
 pq
 pq
 pq
@@ -26840,21 +27590,21 @@ TH
 pq
 pq
 pq
-ID
-OY
-xr
-xr
-ID
+ce
+Xr
+VZ
+VZ
+ce
 sy
-xr
+VZ
 gs
 Ib
 ja
-rx
-rx
-rx
-rx
-ID
+Al
+Al
+Al
+Al
+ce
 pq
 pq
 pq
@@ -26895,20 +27645,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+Qn
+YT
+uh
+LI
+Lv
+Gb
+Gb
+Gb
+sc
+PS
+PS
+bV
+EF
 pq
 pq
 pq
@@ -27097,21 +27847,21 @@ TH
 pq
 pq
 pq
-ID
+ce
 sy
-xr
-xr
+VZ
+VZ
 sW
-xr
-xr
+VZ
+VZ
 mB
 JS
 IJ
-rx
+Al
 IJ
-rx
+Al
 xa
-ID
+ce
 pq
 pq
 pq
@@ -27152,20 +27902,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+uh
+YT
+nZ
+LI
+Cb
+Cb
+JO
+Cb
+EF
+bV
+Lg
+uC
+EF
 pq
 pq
 pq
@@ -27354,21 +28104,21 @@ pq
 pq
 VY
 pq
-ID
-xr
-xr
+ce
+VZ
+VZ
 Qx
-ID
-xr
+ce
+VZ
 kT
 qb
 mj
 IJ
-rx
+Al
 IJ
-rx
+Al
 IJ
-ID
+ce
 pq
 pq
 pq
@@ -27409,20 +28159,20 @@ cG
 gI
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+uh
+Wm
+mo
+LI
+fo
+zo
+hg
+Lj
+EF
+kG
+Lg
+bV
+EF
 pq
 pq
 pq
@@ -27611,21 +28361,21 @@ pq
 pq
 pq
 pq
-ID
-xr
-xr
+ce
+VZ
+VZ
 Qx
-ID
+ce
 sy
-xr
+VZ
 dy
 mj
 IJ
-rx
+Al
 IJ
-rx
+Al
 IJ
-ID
+ce
 pq
 pq
 wu
@@ -27653,9 +28403,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -27666,20 +28416,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+Sh
+wV
+la
+LI
+WJ
+LS
+zT
+Cd
+EF
+PP
+yg
+yL
+EF
 pq
 pq
 pq
@@ -27868,21 +28618,21 @@ pq
 pq
 pq
 pq
-ID
-xr
-xr
+ce
+VZ
+VZ
 Qx
-ID
-xr
+ce
+VZ
 Ms
 ai
 mj
 IJ
-rx
+Al
 IJ
-rx
+Al
 IJ
-ID
+ce
 pq
 pq
 pq
@@ -27910,9 +28660,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -27923,20 +28673,20 @@ cG
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+LI
+LI
+LI
+LI
+LI
+Cb
+Cb
+Cb
+Cb
+EF
+EF
+EF
+EF
+EF
 pq
 pq
 pq
@@ -28125,21 +28875,21 @@ pq
 pq
 wu
 pq
-ID
+ce
 sy
-xr
+VZ
 Qx
-ID
-xr
-xr
+ce
+VZ
+VZ
 PW
 JS
 IJ
-rx
+Al
 IJ
-rx
+Al
 xa
-ID
+ce
 pq
 pq
 pq
@@ -28167,9 +28917,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 gI
 pq
 pq
@@ -28382,21 +29132,21 @@ pq
 pq
 pq
 pq
-ID
-Rb
-xr
+ce
+UD
+VZ
 Qx
-ID
+ce
 sy
-xr
+VZ
 gs
 xZ
 se
-rx
-rx
-rx
-rx
-ID
+Al
+Al
+Al
+Al
+ce
 pq
 pq
 pq
@@ -28424,9 +29174,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -28639,21 +29389,21 @@ pq
 pq
 pq
 pq
-ID
+ce
 na
 Jb
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-rx
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+ce
+Al
 Ly
-ID
+ce
 pq
 pq
 pq
@@ -28681,9 +29431,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -28896,21 +29646,21 @@ VY
 pq
 pq
 pq
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
 MX
-ig
-iq
-iq
-iq
-ig
+aB
+vQ
+vQ
+vQ
+aB
 dA
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
 pq
 VY
 pq
@@ -28938,9 +29688,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -29153,21 +29903,21 @@ pq
 pq
 pq
 pq
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
 DJ
-ig
-iq
+aB
+vQ
 BY
-iq
-ig
+vQ
+aB
 CB
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -29195,9 +29945,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -29410,21 +30160,21 @@ pq
 pq
 pq
 pq
-No
-jZ
-ig
+tL
+Jd
+aB
 Xz
-ig
-ig
-ig
-ig
-ig
-ig
-ig
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 IR
-ig
-Lb
-No
+aB
+Lx
+tL
 pq
 pq
 pq
@@ -29452,9 +30202,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 gI
 pq
 pq
@@ -29667,21 +30417,21 @@ pq
 pq
 VY
 pq
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
 rK
-ig
-ig
-ig
-ig
-ig
-dO
-No
-ig
-ig
-No
+aB
+aB
+aB
+aB
+aB
+TZ
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -29709,9 +30459,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -29924,21 +30674,21 @@ wu
 pq
 pq
 pq
-No
-ig
-ig
-No
-ig
+tL
+aB
+aB
+tL
+aB
 as
 Tf
-ig
+aB
 Tf
 as
-ig
-No
-ig
-ig
-No
+aB
+tL
+aB
+aB
+tL
 pq
 wu
 pq
@@ -29983,27 +30733,27 @@ pq
 pq
 pq
 pq
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-NN
-OM
-OM
-OM
-OM
-OM
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+TL
+nz
+nz
+nz
+nz
+nz
 pq
 pq
 pq
@@ -30181,10 +30931,10 @@ pq
 pq
 pq
 pq
-No
-jZ
-ig
-No
+tL
+Jd
+aB
+tL
 Xz
 kK
 Vu
@@ -30192,10 +30942,10 @@ Sd
 Vu
 oT
 Xz
-No
-ig
-Lb
-No
+tL
+aB
+Lx
+tL
 pq
 pq
 pq
@@ -30240,27 +30990,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Yj
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-OM
-Yi
-gB
-bf
-OM
+TL
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+oA
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+nz
+ur
+Ff
+JA
+nz
 pq
 pq
 pq
@@ -30438,21 +31188,21 @@ pq
 pq
 pq
 pq
-No
-ig
-ig
-No
-ig
-ig
-ig
-ig
-ig
-ig
-ig
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
+aB
+aB
+aB
+aB
+aB
+aB
+aB
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -30497,27 +31247,27 @@ pq
 VY
 pq
 pq
-NN
-xb
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-kP
-OM
-Ou
-mY
-UF
-OM
+TL
+wS
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+ZT
+nz
+Eb
+cb
+SG
+nz
 pq
 pq
 pq
@@ -30695,21 +31445,21 @@ pq
 pq
 pq
 pq
-No
-ig
-ig
-No
-jZ
-ig
-ig
-ig
-ig
-ig
-Lb
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
+Jd
+aB
+aB
+aB
+aB
+aB
+Lx
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -30754,27 +31504,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-St
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-St
-Pu
-Pu
-OM
-rW
-mY
 TL
-OM
+Ar
+Ar
+Et
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Et
+Ar
+Ar
+nz
+ad
+cb
+KN
+nz
 pq
 pq
 pq
@@ -30952,21 +31702,21 @@ pq
 pq
 pq
 pq
-No
-jZ
-ig
+tL
+Jd
+aB
 Ka
-ig
-ig
-ig
-ig
-ig
-ig
-ig
+aB
+aB
+aB
+aB
+aB
+aB
+aB
 cO
-ig
-Lb
-No
+aB
+Lx
+tL
 pq
 pq
 pq
@@ -31011,27 +31761,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-OM
-iS
-eH
-iS
-OM
+TL
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+nz
+iO
+Rq
+iO
+nz
 pq
 pq
 pq
@@ -31209,21 +31959,21 @@ pq
 pq
 wu
 pq
-No
-ig
-ig
-No
-jZ
-ig
-ig
-ig
-ig
-ig
-Lb
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
+Jd
+aB
+aB
+aB
+aB
+aB
+Lx
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -31268,27 +32018,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-St
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-OM
-cn
-mY
 TL
-OM
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Et
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+nz
+iV
+cb
+KN
+nz
 pq
 pq
 pq
@@ -31466,21 +32216,21 @@ pq
 pq
 pq
 pq
-No
-ig
-ig
-No
-ig
-ig
-ig
-hU
-ig
-ig
-ig
-No
-ig
-ig
-No
+tL
+aB
+aB
+tL
+aB
+aB
+aB
+Uj
+aB
+aB
+aB
+tL
+aB
+aB
+tL
 pq
 pq
 pq
@@ -31525,27 +32275,27 @@ pq
 wu
 pq
 pq
-NN
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-OM
-cn
-mY
 TL
-OM
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+nz
+iV
+cb
+KN
+nz
 pq
 pq
 pq
@@ -31723,21 +32473,21 @@ pq
 pq
 pq
 pq
-No
-No
-No
-No
-No
+tL
+tL
+tL
+tL
+tL
 KF
 zF
-No
+tL
 KF
 dP
-No
-No
-No
-No
-No
+tL
+tL
+tL
+tL
+tL
 pq
 pq
 VY
@@ -31782,27 +32532,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-St
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-St
-Pu
-Pu
-OM
-Sl
-mY
-Bd
-OM
+TL
+Ar
+Ar
+Et
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Et
+Ar
+Ar
+nz
+bm
+cb
+oh
+nz
 pq
 pq
 pq
@@ -31983,15 +32733,15 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
 pq
 pq
 pq
@@ -32039,27 +32789,27 @@ pq
 pq
 pq
 pq
-NN
-xb
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-Pu
-kP
-OM
-cn
-mY
 TL
-OM
+wS
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+Ar
+ZT
+nz
+iV
+cb
+KN
+nz
 pq
 pq
 pq
@@ -32240,15 +32990,15 @@ pq
 pq
 pq
 gI
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
 gI
 pq
 pq
@@ -32296,27 +33046,27 @@ pq
 pq
 pq
 pq
-NN
-Pu
-Pu
-Pu
-Pu
-Tb
-Pu
-Zw
-CK
-ka
-Pu
-Tb
-Pu
-Pu
-Pu
-Pu
-OM
-kc
-mY
 TL
-OM
+Ar
+Ar
+Ar
+Ar
+ci
+Ar
+jr
+OE
+tk
+Ar
+ci
+Ar
+Ar
+Ar
+Ar
+nz
+MD
+cb
+KN
+nz
 pq
 pq
 pq
@@ -32497,15 +33247,15 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
-gi
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
+zl
 pq
 pq
 pq
@@ -32553,27 +33303,27 @@ pq
 pq
 pq
 pq
-YF
-YF
-YF
-YF
-YF
-YF
-ih
-YF
-YF
-OM
-yK
-OM
-CU
-OM
-OM
-OM
-OM
-OM
-zG
-OM
-OM
+ni
+ni
+ni
+ni
+ni
+ni
+lE
+ni
+ni
+nz
+XR
+nz
+PQ
+nz
+nz
+nz
+nz
+nz
+Mg
+nz
+nz
 pq
 pq
 pq
@@ -32810,27 +33560,27 @@ pq
 pq
 pq
 pq
-YF
-Je
-Je
-GP
-Je
-Je
-Je
-dw
-YF
-HJ
-mY
-mY
-mY
-mY
-mY
-mY
-mY
-yT
-mY
-Vq
-OM
+ni
+jY
+jY
+AQ
+jY
+jY
+jY
+HL
+ni
+ku
+cb
+cb
+cb
+cb
+cb
+cb
+cb
+wx
+cb
+nK
+nz
 pq
 pq
 pq
@@ -33067,27 +33817,27 @@ pq
 pq
 pq
 pq
-YF
-YI
-Je
-Cw
-Je
-YI
-Je
-Je
-tc
-mY
-mY
-mY
-mY
-mY
-mY
-mY
-mY
-mY
-nq
-Vq
-OM
+ni
+ot
+jY
+gR
+jY
+ot
+jY
+jY
+sL
+cb
+cb
+cb
+cb
+cb
+cb
+cb
+cb
+cb
+Wi
+nK
+nz
 pq
 pq
 pq
@@ -33324,27 +34074,27 @@ wu
 pq
 pq
 pq
-YF
-pC
-SU
-VR
-pc
-pC
-EJ
-QF
-YF
-pi
-mU
-mY
-bb
-mY
-mY
-Kc
-Kc
-Kc
-Kc
-Kc
-Kc
+ni
+QA
+Cc
+zx
+tj
+QA
+IN
+RM
+ni
+qs
+Yd
+cb
+dJ
+cb
+cb
+ip
+ip
+ip
+ip
+ip
+ip
 pq
 pq
 pq
@@ -33581,27 +34331,27 @@ pq
 pq
 pq
 pq
-YF
-YF
-lK
-Wa
-zJ
-YF
-YF
-YF
-YF
-OM
-ii
-mY
-Ut
-mY
-jJ
-Kc
-FN
-jv
-vc
-QN
-Kc
+ni
+ni
+AT
+WD
+kE
+ni
+ni
+ni
+ni
+nz
+eT
+cb
+KT
+cb
+tf
+ip
+pS
+Ik
+eC
+zA
+ip
 pq
 pq
 pq
@@ -33835,30 +34585,30 @@ pq
 pq
 pq
 pq
-zH
-zH
-zH
-Nr
-Ne
-af
-lR
-lR
-Ao
-IF
-dV
-KJ
-OM
-Vq
-mY
-Xx
-CC
-CC
-iR
-vN
-sx
-sx
-Qd
-Kc
+TQ
+TQ
+TQ
+Sn
+VG
+CM
+HU
+HU
+ON
+Po
+Oa
+Ud
+nz
+nK
+cb
+MC
+ND
+ND
+iB
+Wr
+kN
+kN
+bd
+ip
 pq
 pq
 pq
@@ -34092,30 +34842,30 @@ pq
 pq
 pq
 pq
-zH
-zH
-zH
-Nr
-Oh
-lR
-lR
-lR
-lR
-Qg
-lR
-YS
-OM
-XU
-mY
-ZY
-CC
-dR
-Kc
-Kt
-sx
-NX
-Kx
-Kc
+TQ
+TQ
+TQ
+Sn
+SJ
+HU
+HU
+HU
+HU
+lo
+HU
+Nc
+nz
+rz
+cb
+dw
+ND
+Lf
+ip
+Qu
+kN
+vM
+Nl
+ip
 pq
 pq
 pq
@@ -34349,30 +35099,30 @@ pq
 pq
 pq
 gI
-zH
-zH
-zH
-es
-lR
-lR
-lR
-lR
-lR
-Ix
-lR
-lR
-SF
-mY
-CC
-lu
-CC
-Tp
-Kc
-Kc
-Kc
-Kc
-Kc
-Kc
+TQ
+TQ
+TQ
+Nu
+HU
+HU
+HU
+HU
+HU
+li
+HU
+HU
+th
+cb
+ND
+fY
+ND
+Gy
+ip
+ip
+ip
+ip
+ip
+ip
 pq
 pq
 pq
@@ -34606,30 +35356,30 @@ jD
 jD
 jD
 jD
-zH
-zH
-zH
-QA
-lR
-lR
-qe
-lR
-lR
-GM
-QV
-lR
-mY
-Zj
-CC
-CC
-CC
-dR
-Kc
-Kt
-sx
-NX
-Kx
-Kc
+TQ
+TQ
+TQ
+MP
+HU
+HU
+yt
+HU
+HU
+Ys
+KV
+HU
+cb
+Lq
+ND
+ND
+ND
+Lf
+ip
+Qu
+kN
+vM
+Nl
+ip
 pq
 pq
 pq
@@ -34863,30 +35613,30 @@ jD
 jD
 jD
 jD
-zH
-zH
-zH
-Nr
-lR
-OR
-Se
-lR
-pJ
-aZ
-aZ
-aZ
-rc
-rc
-rc
-rc
-CC
-CC
+TQ
+TQ
+TQ
+Sn
+HU
+rk
+pX
+HU
+sx
+Oz
+Oz
+Oz
+Ri
+Ri
+Ri
+Ri
+ND
+ND
 lF
-vN
-sx
-sx
-RZ
-Kc
+Wr
+kN
+kN
+CH
+ip
 pq
 pq
 pq
@@ -35120,30 +35870,30 @@ jD
 jD
 jD
 jD
-zH
-zH
-zH
-es
-lR
-lR
-Oh
-lR
-lR
-ck
-lo
-lR
-xx
-uh
-uh
-rf
-mY
-mY
-Kc
-Ma
-jv
-vc
-QN
-Kc
+TQ
+TQ
+TQ
+Nu
+HU
+HU
+SJ
+HU
+HU
+QR
+Kl
+HU
+TC
+Co
+Co
+uc
+cb
+cb
+ip
+xr
+Ik
+eC
+zA
+ip
 pq
 pq
 pq
@@ -35377,30 +36127,30 @@ pq
 pq
 pq
 gI
-zH
-zH
-zH
-QA
-lR
-lR
-lR
-lR
-lR
-Pc
-lR
-lR
-uh
-uh
-uh
-uh
-mY
-mY
-Kc
-Kc
-Kc
-Kc
-Kc
-Kc
+TQ
+TQ
+TQ
+MP
+HU
+HU
+HU
+HU
+HU
+Nd
+HU
+HU
+Co
+Co
+Co
+Co
+cb
+cb
+ip
+ip
+ip
+ip
+ip
+ip
 pq
 pq
 pq
@@ -35634,30 +36384,30 @@ pq
 pq
 pq
 pq
-zH
-zH
-zH
-Nr
-qe
-vg
-wr
-lR
-lR
-qv
-lR
-YS
-rc
-Aq
-On
-rc
-mY
-mY
-WB
-Lx
-tr
-BG
-cR
-WB
+TQ
+TQ
+TQ
+Sn
+yt
+je
+ZG
+HU
+HU
+KE
+HU
+Nc
+Ri
+Lw
+TD
+Ri
+cb
+cb
+vA
+HZ
+rl
+wt
+sm
+vA
 pq
 pq
 pq
@@ -35891,30 +36641,30 @@ pq
 pq
 pq
 pq
-zH
-zH
-zH
-Nr
-Az
-Bu
-Ba
-lR
-aO
-wG
-jp
-KJ
-rc
-DY
-uh
-rc
-cv
-mY
-Bb
-tr
-tr
-tr
-Oc
-WB
+TQ
+TQ
+TQ
+Sn
+UT
+Kn
+Wv
+HU
+SU
+Er
+BK
+Ud
+Ri
+TA
+Co
+Ri
+MF
+cb
+yk
+rl
+rl
+rl
+BC
+vA
 pq
 pq
 pq
@@ -36151,27 +36901,27 @@ pq
 pq
 pq
 pq
-rc
-rc
-rc
-rc
-rc
-rc
-rc
-rc
-rc
-rc
-uh
-uh
-rc
-mY
-mY
-WB
-GJ
-tr
-tr
-Hf
-WB
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Co
+Co
+Ri
+cb
+cb
+vA
+GH
+rl
+rl
+AV
+vA
 pq
 pq
 pq
@@ -36408,27 +37158,27 @@ pq
 pq
 pq
 pq
-rc
-ET
-Yd
-MS
-rc
-uh
-uh
-uh
-BI
-uh
-uh
-uh
-rc
-mY
-mY
-WB
-PB
-tr
-tr
-TB
-WB
+Ri
+Mb
+cA
+aE
+Ri
+Co
+Co
+Co
+cJ
+Co
+Co
+Co
+Ri
+cb
+cb
+vA
+kl
+rl
+rl
+gx
+vA
 pq
 pq
 pq
@@ -36665,27 +37415,27 @@ pq
 VY
 pq
 pq
-rc
-UU
-uh
-uh
-eC
-uh
-uh
-uh
-uh
-uh
-uh
-uh
-rc
-mY
-mY
-WB
-PB
-tr
-tr
-TB
-WB
+Ri
+jS
+Co
+Co
+rA
+Co
+Co
+Co
+Co
+Co
+Co
+Co
+Ri
+cb
+cb
+vA
+kl
+rl
+rl
+gx
+vA
 pq
 pq
 pq
@@ -36922,27 +37672,27 @@ pq
 pq
 pq
 pq
-rc
-uh
-uh
-uh
-uh
-uh
-uh
-OM
-OM
-OM
-OM
-OM
-OM
-cv
-mY
-WB
-GJ
-tr
-tr
-Hf
-WB
+Ri
+Co
+Co
+Co
+Co
+Co
+Co
+nz
+nz
+nz
+nz
+nz
+nz
+MF
+cb
+vA
+GH
+rl
+rl
+AV
+vA
 pq
 pq
 pq
@@ -37179,27 +37929,27 @@ pq
 pq
 pq
 pq
-rc
-Rx
-RX
-Rx
-rc
-uh
-ED
-OM
-Ce
-FG
-tQ
-fM
-OM
-mY
-mY
-Bb
-tr
-tr
-tr
-Oc
-WB
+Ri
+iz
+Ob
+iz
+Ri
+Co
+SD
+nz
+jL
+KQ
+uq
+Bq
+nz
+cb
+cb
+yk
+rl
+rl
+rl
+BC
+vA
 pq
 pq
 pq
@@ -37436,27 +38186,27 @@ pq
 pq
 pq
 pq
-rc
-rc
-rc
-rc
-rc
-uh
-uh
-Mp
-mY
-mY
-mY
-mY
-Mp
-mY
-mY
-WB
-Lx
-tr
-BG
-cR
-WB
+Ri
+Ri
+Ri
+Ri
+Ri
+Co
+Co
+Pb
+cb
+cb
+cb
+cb
+Pb
+cb
+cb
+vA
+HZ
+rl
+wt
+sm
+vA
 pq
 pq
 pq
@@ -37693,27 +38443,27 @@ pq
 pq
 pq
 pq
-rc
-cM
-TR
-cM
-rc
-uh
-uh
-OM
-FP
-fo
-mY
-Bv
-OM
-mY
-jJ
-WB
-WB
-WB
-WB
-WB
-WB
+Ri
+aI
+pE
+aI
+Ri
+Co
+Co
+nz
+ht
+zr
+cb
+Wb
+nz
+cb
+tf
+vA
+vA
+vA
+vA
+vA
+vA
 pq
 pq
 pq
@@ -37891,21 +38641,21 @@ pq
 pq
 pq
 pq
-kI
-kI
-kI
-kI
-kI
-kI
-fm
+VF
+VF
+VF
+VF
+VF
+VF
+UF
 Hz
-fm
-Tk
-Tk
-Tk
-Tk
-Tk
-Tk
+UF
+fn
+fn
+fn
+fn
+fn
+fn
 pq
 VY
 pq
@@ -37950,27 +38700,27 @@ pq
 VY
 pq
 pq
-rc
-uh
-uh
-uh
-eC
-uh
-uh
-OM
-NC
-mY
-mY
-Uo
-OM
-mY
-mY
-WB
-Lx
-tr
-tr
-Yl
-WB
+Ri
+Co
+Co
+Co
+rA
+Co
+Co
+nz
+YJ
+cb
+cb
+zH
+nz
+cb
+cb
+vA
+HZ
+rl
+rl
+kq
+vA
 pq
 pq
 pq
@@ -38148,21 +38898,21 @@ pq
 pq
 pq
 pq
-kI
+VF
 JJ
 YX
-Yg
-yq
-kI
-DQ
-DQ
-DQ
-Tk
-Oz
-vm
-Ic
+hx
+vO
+VF
+ig
+ig
+ig
+fn
+CY
+cR
+fM
 To
-Tk
+fn
 pq
 pq
 pq
@@ -38207,27 +38957,27 @@ pq
 pq
 pq
 pq
-rc
-UU
-uh
-uh
-uh
-uh
-uh
-OM
-wL
-mY
-OC
-lS
-OM
-mY
-mY
-Zp
-tr
-tr
-pj
-dM
-WB
+Ri
+jS
+Co
+Co
+Co
+Co
+Co
+nz
+RJ
+cb
+KI
+kc
+nz
+cb
+cb
+hM
+rl
+rl
+wq
+Sm
+vA
 pq
 pq
 pq
@@ -38405,21 +39155,21 @@ pq
 pq
 pq
 pq
-kI
-yG
+VF
+xg
 BQ
-VZ
+RB
+mV
+VF
+ig
+ig
+ig
+fn
 tP
-kI
-DQ
-DQ
-DQ
-Tk
-zA
-kF
+oS
 bz
 ia
-Tk
+fn
 pq
 pq
 pq
@@ -38464,27 +39214,27 @@ pq
 pq
 pq
 pq
-rc
-ET
-Fb
-sk
-rc
-uh
-uh
-OM
-ex
-mY
-mY
-Uo
-OM
-mY
-mY
-WB
-TB
-tr
-tr
-CT
-WB
+Ri
+Mb
+ax
+gr
+Ri
+Co
+Co
+nz
+vk
+cb
+cb
+zH
+nz
+cb
+cb
+vA
+gx
+rl
+rl
+nf
+vA
 pq
 pq
 pq
@@ -38662,21 +39412,21 @@ pq
 pq
 VY
 pq
-kI
-kI
-kI
-VZ
-VZ
+VF
+VF
+VF
+RB
+RB
 Mk
-DQ
-DQ
-DQ
+ig
+ig
+ig
 Xd
-kF
-kF
-Tk
-Tk
-Tk
+oS
+oS
+fn
+fn
+fn
 pq
 VY
 pq
@@ -38721,27 +39471,27 @@ pq
 pq
 pq
 pq
-rc
-rc
-rc
-rc
-rc
-uh
-ED
-OM
-Yc
-Ac
-Ez
-lS
-OM
-mY
-jJ
-WB
-WB
-WB
-WB
-WB
-WB
+Ri
+Ri
+Ri
+Ri
+Ri
+Co
+SD
+nz
+xX
+Xy
+PF
+kc
+nz
+cb
+tf
+vA
+vA
+vA
+vA
+vA
+vA
 pq
 pq
 pq
@@ -38919,21 +39669,21 @@ pq
 pq
 pq
 pq
-Gf
-Gx
-nj
-VZ
-eT
-kI
-DQ
-DQ
-DQ
-Tk
-ru
-kF
-mw
-sV
-uX
+mL
+ED
+Ay
+RB
+mu
+VF
+ig
+ig
+ig
+fn
+bU
+oS
+ug
+sA
+QD
 pq
 pq
 pq
@@ -38978,27 +39728,27 @@ pq
 pq
 pq
 pq
-rc
-Lc
-uh
-Ql
-rc
-uh
-uh
-OM
-OM
-OM
-OM
-OM
-OM
-mY
-mY
-WB
-TB
-tr
-tr
-CT
-WB
+Ri
+hE
+Co
+oc
+Ri
+Co
+Co
+nz
+nz
+nz
+nz
+nz
+nz
+cb
+cb
+vA
+gx
+rl
+rl
+nf
+vA
 pq
 pq
 pq
@@ -39176,21 +39926,21 @@ pq
 wu
 pq
 pq
-Gf
-eO
-MJ
-VZ
-IQ
-kI
-DQ
-DQ
-DQ
-Tk
-iB
-kF
-Hk
-XG
-uX
+mL
+It
+KP
+RB
+rY
+VF
+ig
+ig
+ig
+fn
+DB
+oS
+yH
+RV
+QD
 pq
 pq
 pq
@@ -39235,27 +39985,27 @@ pq
 wu
 pq
 pq
-rc
-Vm
-uh
-uh
-Kw
-uh
-uh
-Yu
-mY
-mY
-mY
-mY
-mY
-mY
-mY
-If
-tr
-tr
-pj
-dM
-WB
+Ri
+cw
+Co
+Co
+aQ
+Co
+Co
+CZ
+cb
+cb
+cb
+cb
+cb
+cb
+cb
+Pv
+rl
+rl
+wq
+Sm
+vA
 pq
 pq
 pq
@@ -39433,21 +40183,21 @@ pq
 pq
 pq
 pq
-Xm
-Xm
-Xm
-Xm
-Xm
-Xm
-sr
-DQ
-Dq
-Tk
-Tk
-Tk
-Tk
-Tk
-Tk
+EO
+EO
+EO
+EO
+EO
+EO
+RT
+ig
+Lb
+fn
+fn
+fn
+fn
+fn
+fn
 pq
 pq
 pq
@@ -39492,27 +40242,27 @@ pq
 pq
 pq
 pq
-rc
-qo
-uh
-Iz
-rc
-uh
-uh
-mY
-mY
-mY
-mY
-nq
-mY
-mY
-mY
-WB
-Lx
-tr
-tr
-fq
-WB
+Ri
+xo
+Co
+cl
+Ri
+Co
+Co
+cb
+cb
+cb
+cb
+Wi
+cb
+cb
+cb
+vA
+HZ
+rl
+rl
+rU
+vA
 pq
 pq
 pq
@@ -39690,21 +40440,21 @@ pq
 pq
 pq
 pq
-eX
-xh
-Xc
-zk
-NS
-Xm
-DQ
-DQ
-DQ
-ce
-KA
-zN
-Jh
-WH
 iF
+WH
+MJ
+mc
+wZ
+EO
+ig
+ig
+ig
+rT
+fD
+Qb
+Jh
+DV
+BD
 pq
 pq
 pq
@@ -39749,27 +40499,27 @@ pq
 pq
 pq
 pq
-rc
-rc
-rc
-rc
-rc
-rc
-rc
-OM
-OM
-OM
-OM
-OM
-OM
-OM
-OM
-WB
-WB
-WB
-WB
-WB
-WB
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+Ri
+nz
+nz
+nz
+nz
+nz
+nz
+nz
+nz
+vA
+vA
+vA
+vA
+vA
+vA
 pq
 pq
 pq
@@ -39947,21 +40697,21 @@ pq
 pq
 pq
 pq
-eX
-HE
-vb
-zk
-xp
-Xm
-DQ
-DQ
-DQ
-ce
-uK
-zN
-iD
-Um
 iF
+zd
+vb
+mc
+xp
+EO
+ig
+ig
+ig
+rT
+kU
+Qb
+pa
+hV
+BD
 pq
 pq
 pq
@@ -39989,9 +40739,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -40204,21 +40954,21 @@ pq
 pq
 pq
 pq
-Xm
-Xm
-Xm
-zk
-zk
+EO
+EO
+EO
+mc
+mc
 AA
-DQ
-DQ
-DQ
+ig
+ig
+ig
 dI
-zN
-zN
-ce
-ce
-ce
+Qb
+Qb
+rT
+rT
+rT
 pq
 pq
 pq
@@ -40246,9 +40996,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -40461,21 +41211,21 @@ pq
 VY
 pq
 pq
-Xm
-Ji
+EO
+Wh
 WR
-zk
-CP
-Xm
-DQ
-DQ
-DQ
-ce
+mc
 MU
-zN
+EO
+ig
+ig
+ig
+rT
+qg
+Qb
 LJ
-qI
-ce
+Yh
+rT
 pq
 pq
 pq
@@ -40503,9 +41253,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 gI
 pq
 pq
@@ -40718,21 +41468,21 @@ pq
 pq
 pq
 pq
-Xm
+EO
 fT
-MR
-qa
+VV
+FN
 nn
-Xm
-DQ
-DQ
-DQ
-ce
+EO
+ig
+ig
+ig
+rT
 fk
-VW
-cm
+FQ
+Ic
 Ky
-ce
+rT
 pq
 wu
 pq
@@ -40760,9 +41510,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -40975,21 +41725,21 @@ pq
 pq
 pq
 pq
-Xm
-Xm
-Xm
-Xm
-Xm
-Xm
-sr
-DQ
-Dq
-ce
-ce
-ce
-ce
-ce
-ce
+EO
+EO
+EO
+EO
+EO
+EO
+RT
+ig
+Lb
+rT
+rT
+rT
+rT
+rT
+rT
 pq
 pq
 pq
@@ -41017,9 +41767,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -41232,21 +41982,21 @@ pq
 pq
 pq
 pq
-Rr
-zd
+kL
+pL
 mH
-tK
-tl
-nb
-DQ
-DQ
-DQ
-FR
-wI
-ms
-xf
-WL
-DM
+nm
+aO
+jy
+ig
+ig
+ig
+TJ
+oI
+GO
+FB
+Dm
+xY
 pq
 pq
 pq
@@ -41274,9 +42024,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 jD
 jD
 jD
@@ -41489,21 +42239,21 @@ pq
 pq
 pq
 pq
-nb
-Ty
-er
-tK
-tK
+jy
+af
+bb
+nm
+nm
 Hb
-DQ
-DQ
-DQ
+ig
+ig
+ig
 nU
-ms
-ms
+GO
+GO
 tT
-ky
-FR
+Ty
+TJ
 pq
 pq
 pq
@@ -41531,9 +42281,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 gI
 pq
 pq
@@ -41746,21 +42496,21 @@ pq
 pq
 wu
 pq
-Rr
-Eo
+kL
+If
 zf
-tK
-TM
-nb
-FU
+nm
+aN
+jy
+iq
 RL
-FU
-FR
-Dw
-ms
-fu
-Bg
-DM
+iq
+TJ
+hO
+GO
+Yg
+Eo
+xY
 pq
 pq
 pq
@@ -41788,9 +42538,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -42003,21 +42753,21 @@ pq
 pq
 pq
 pq
-Rr
-Pe
+kL
+AG
 zf
-tK
-EQ
-nb
-nb
-nb
-FR
-FR
-yw
-ms
-fu
-Hq
-DM
+nm
+oO
+jy
+jy
+jy
+TJ
+TJ
+NP
+GO
+Yg
+BZ
+xY
 pq
 pq
 pq
@@ -42045,9 +42795,9 @@ pq
 pq
 pq
 pq
-gi
-gi
-gi
+zl
+zl
+zl
 pq
 pq
 pq
@@ -42260,21 +43010,21 @@ pq
 pq
 pq
 pq
-Rr
-Eo
+kL
+If
 zf
-tK
-tK
+nm
+nm
 xD
-bi
-nb
-Sh
+Jc
+jy
+Ji
 mA
-ms
-ms
-fu
-Bg
-DM
+GO
+GO
+Yg
+Eo
+xY
 pq
 pq
 pq
@@ -42517,21 +43267,21 @@ TH
 pq
 pq
 pq
-nb
-fp
-er
-tK
-tK
+jy
+ES
+bb
+nm
+nm
 lX
 XV
-nb
+jy
 EB
 pG
-ms
-ms
+GO
+GO
 tT
-Di
-FR
+fp
+TJ
 pq
 VY
 pq
@@ -42774,21 +43524,21 @@ TH
 pq
 VY
 pq
-Rr
-zd
-NQ
-tK
-Bx
-Zo
-Sf
-nb
+kL
+pL
+Sq
+nm
+AX
+OM
+Az
+jy
 HM
-Kl
-QZ
-ms
-gz
-WL
-DM
+qn
+Bx
+GO
+gW
+Dm
+xY
 pq
 pq
 pq
@@ -43031,21 +43781,21 @@ TH
 pq
 pq
 pq
-nb
-nb
-nb
-nb
-nb
-nb
-nb
-nb
-FR
-FR
-FR
-FR
-FR
-FR
-FR
+jy
+jy
+jy
+jy
+jy
+jy
+jy
+jy
+TJ
+TJ
+TJ
+TJ
+TJ
+TJ
+TJ
 pq
 pq
 pq
