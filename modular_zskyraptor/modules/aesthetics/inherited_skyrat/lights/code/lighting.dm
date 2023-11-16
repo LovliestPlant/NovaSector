@@ -29,6 +29,9 @@
 	var/flicker_timer = null
 	var/roundstart_flicker = FALSE
 
+	///Because colored lighting is complicated :(
+	var/mutable_appearance/light_overlay
+
 /obj/machinery/light/floor
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/lights/icons/lighting.dmi'
 	overlay_icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/lights/icons/lighting_overlay.dmi'
@@ -117,6 +120,27 @@
 		if(LIGHT_BROKEN)
 			icon_state = "[base_state]-broken"
 	return return_valu
+
+//completely overriding THIS is ill-advised TOO but here we are
+/obj/machinery/light/update_overlays()
+	. = ..()
+	cut_overlays()
+	//kill normal overlays and then run the normal check
+	if(!on || status != LIGHT_OK)
+		return
+	//make sure our light_overlay appearance is setup
+	if(light_overlay == null)
+		light_overlay = new()
+	//set its icon state and color then add it
+	if(low_power_mode || major_emergency || (local_area?.fire))
+		light_overlay.icon_state = "[base_icon_state]_emergency"
+	if(nightshift_enabled)
+		light_overlay.icon_state = "[base_icon_state]_nightshift"
+	else
+		light_overlay.icon_state = "[base_icon_state]"
+	light_overlay.color = light_color
+	SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
+	add_overlay(light_overlay)
 
 #undef NIGHTSHIFT_LIGHT_MODIFIER
 #undef NIGHTSHIFT_COLOR_MODIFIER
