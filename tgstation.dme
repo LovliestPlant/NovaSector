@@ -7939,5 +7939,8 @@
 #include "modular_zskyraptor\modules\icspawning\code\observer.dm"
 #include "modular_zskyraptor\modules\icspawning\code\spell.dm"
 #include "modular_zskyraptor\modules\icspawning\code\standard.dm"
+#include "modular_zskyraptor\modules\loungemaps\code\lounge_areas.dm"
+#include "modular_zskyraptor\modules\loungemaps\code\lounge_lights.dm"
+#include "modular_zskyraptor\modules\loungemaps\code\lounge_machines.dm"
 #include "modular_zskyraptor\modules\newemotes\newemotes_memes.dm"
 // END_INCLUDE
