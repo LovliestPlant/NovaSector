@@ -132,6 +132,7 @@
 	if(light_overlay == null)
 		light_overlay = new()
 	//set its icon state and color then add it
+	var/area/local_area = get_room_area()
 	if(low_power_mode || major_emergency || (local_area?.fire))
 		light_overlay.icon_state = "[base_icon_state]_emergency"
 	if(nightshift_enabled)
