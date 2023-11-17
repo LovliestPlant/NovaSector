@@ -133,12 +133,12 @@
 		light_overlay = new()
 	//set its icon state and color then add it
 	var/area/local_area = get_room_area()
-	light_overlay.icon_state = "[base_icon_state]"
+	light_overlay.icon_state = "[base_state]"
 	light_overlay.icon = overlay_icon
 	if(low_power_mode || major_emergency || (local_area?.fire))
-		light_overlay.icon_state = "[base_icon_state]_emergency"
+		light_overlay.icon_state = "[base_state]_emergency"
 	if(nightshift_enabled)
-		light_overlay.icon_state = "[base_icon_state]_nightshift"
+		light_overlay.icon_state = "[base_state]_nightshift"
 	light_overlay.color = light_color
 	SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
 	add_overlay(light_overlay)
