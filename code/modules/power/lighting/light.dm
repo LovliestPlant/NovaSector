@@ -169,7 +169,8 @@
 
 /obj/machinery/light/update_overlays()
 	. = ..()
-	if(!on || status != LIGHT_OK)
+	/// NAAKAS-LOUNGE REMOVAL BEGIN: THIS IS UGLY BUT WE'RE TRYING IT
+	/*if(!on || status != LIGHT_OK)
 		return
 
 	. += emissive_appearance(overlay_icon, "[base_state]", src, alpha = src.alpha)
@@ -182,7 +183,8 @@
 	if(nightshift_enabled)
 		. += mutable_appearance(overlay_icon, "[base_state]_nightshift")
 		return
-	. += mutable_appearance(overlay_icon, base_state)
+	. += mutable_appearance(overlay_icon, base_state)*/
+	/// NAAKAS-LOUNGE REMOVAL END
 
 // Area sensitivity is traditionally tied directly to power use, as an optimization
 // But since we want it for fire reacting, we disregard that

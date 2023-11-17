@@ -41,3 +41,36 @@
 		set_light(l_range = base_range, l_power = base_power, l_color = base_color, l_angle = 360, l_dir = dir)
 	else
 		set_light(l_range = 0, l_power = base_power, l_color = base_color, l_angle = 360, l_dir = dir)
+
+/obj/structure/streetlamp/attackby(obj/item/attacking_item, mob/user, params)
+	. = ..()
+	if(attacking_item.tool_behaviour == TOOL_SCREWDRIVER) /// Deconstruct with screwdrivers
+		new /obj/item/stack/sheet/iron/five(drop_location())
+		new /obj/item/stack/sheet/glass(drop_location())
+		qdel(src)
+	if(on == TRUE)
+		on = FALSE
+	else
+		on = TRUE
+	update_icon_state()
+	return
+
+/obj/structure/streetlamp/AltClick(mob/user)
+	. = ..()
+	var/temp_col = input("Enter new color:", "Color", src.base_color) as color|null
+	if(temp_col != null)
+		src.base_color = temp_col
+		update_icon_state()
+	return
+
+/// Crafting recipe for
+/datum/crafting_recipe/streetlamp
+	name = "Street Lamp"
+	result = /obj/structure/streetlamp
+	time = 5 SECONDS
+	reqs = list(
+		/obj/item/stack/sheet/iron = 5,
+		/obj/item/stack/sheet/glass = 1,
+	)
+	category = CAT_STRUCTURE
+	tool_behaviors = list(TOOL_SCREWDRIVER)

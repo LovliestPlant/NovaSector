@@ -42,6 +42,8 @@
 	name = "Biodome Hospital"
 	ambience_index = AMBIENCE_MEDICAL
 	sound_environment = SOUND_AREA_STANDARD_STATION
+	min_ambience_cooldown = 90 SECONDS
+	max_ambience_cooldown = 180 SECONDS
 
 /area/centcom/biodome/medical/lobby
 	icon_state = "biodome_medbay_lobby"
@@ -218,6 +220,8 @@
 	name = "Biodome R&D"
 	ambience_index = AMBIENCE_MEDICAL
 	sound_environment = SOUND_AREA_STANDARD_STATION
+	min_ambience_cooldown = 90 SECONDS
+	max_ambience_cooldown = 180 SECONDS
 
 /area/centcom/biodome/science/genetics
 	icon_state = "biodome_science_genetics"
@@ -263,6 +267,8 @@
 	icon_state = "biohome_naaka"
 	name = "Casa de Ko"
 	ambience_index = AMBIENCE_MEDICAL
+	min_ambience_cooldown = 90 SECONDS
+	max_ambience_cooldown = 180 SECONDS
 
 /area/centcom/biodome/homes/casa_de_ko/bed1
 	icon_state = "biohome_naaka_bed1"

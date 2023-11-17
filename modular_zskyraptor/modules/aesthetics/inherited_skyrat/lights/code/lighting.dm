@@ -126,22 +126,26 @@
 	. = ..()
 	cut_overlays()
 	//kill normal overlays and then run the normal check
-	if(!on || status != LIGHT_OK)
+	if(light_range < 1) /// this is a weird check but it should capture edge-cases
 		return
 	//make sure our light_overlay appearance is setup
 	if(light_overlay == null)
 		light_overlay = new()
 	//set its icon state and color then add it
 	var/area/local_area = get_room_area()
+	light_overlay.icon_state = "[base_icon_state]"
+	light_overlay.icon = overlay_icon
 	if(low_power_mode || major_emergency || (local_area?.fire))
 		light_overlay.icon_state = "[base_icon_state]_emergency"
 	if(nightshift_enabled)
 		light_overlay.icon_state = "[base_icon_state]_nightshift"
-	else
-		light_overlay.icon_state = "[base_icon_state]"
 	light_overlay.color = light_color
 	SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
 	add_overlay(light_overlay)
+
+/obj/machinery/light/update(trigger = TRUE)
+	. = ..()
+	update_overlays()
 
 #undef NIGHTSHIFT_LIGHT_MODIFIER
 #undef NIGHTSHIFT_COLOR_MODIFIER
