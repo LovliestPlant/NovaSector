@@ -8,9 +8,9 @@
 	///Overlay icon file
 	var/overlay_icon = 'modular_zskyraptor/modules/loungemaps/icons/lights.dmi'
 	///Base light stats
-	var/base_range = 7
+	var/base_range = 9
 	var/base_color = "#FFFAF7"
-	var/base_power = 1
+	var/base_power = 1.1
 
 	///Is the light on?
 	var/on = TRUE
