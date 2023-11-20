@@ -389,6 +389,16 @@
 /obj/machinery/door/airlock/multi_tile
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/airlock/icons/airlocks/multi_tile/multi_tile.dmi'
 	overlays_file = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/airlock/icons/airlocks/multi_tile/overlays.dmi'
+	opacity = TRUE
+	glass = FALSE
+
+/obj/machinery/door/airlock/multi_tile/glass
+	glass = TRUE
+	opacity = FALSE
+
+/obj/machinery/door/airlock/multi_tile/public/glass
+	glass = TRUE
+	opacity = FALSE
 
 //ASSEMBLYS
 /obj/structure/door_assembly/door_assembly_public
