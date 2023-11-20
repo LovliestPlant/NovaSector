@@ -31,6 +31,7 @@
 
 	///Because colored lighting is complicated :(
 	var/mutable_appearance/light_overlay
+	var/mutable_appearance/lightmask_overlay
 
 /obj/machinery/light/floor
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/lights/icons/lighting.dmi'
@@ -131,6 +132,8 @@
 	//make sure our light_overlay appearance is setup
 	if(light_overlay == null)
 		light_overlay = new()
+	if(lightmask_overlay == null)
+		lightmask_overlay = new()
 	//set its icon state and color then add it
 	var/area/local_area = get_room_area()
 	light_overlay.icon_state = "[base_state]"
@@ -140,8 +143,12 @@
 	if(nightshift_enabled)
 		light_overlay.icon_state = "[base_state]_nightshift"
 	light_overlay.color = light_color
-	SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
+	lightmask_overlay.icon_state = light_overlay.icon_state
+	lightmask_overlay.color = GLOB.emissive_color
+	//SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
+	SET_PLANE_EXPLICIT(lightmask_overlay, EMISSIVE_PLANE, src) //gloooooooow
 	add_overlay(light_overlay)
+	add_overlay(lightmask_overlay)
 
 /obj/machinery/light/update(trigger = TRUE)
 	. = ..()

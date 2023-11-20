@@ -16,12 +16,14 @@
 	var/on = TRUE
 	///Because colored lighting is complicated :(
 	var/mutable_appearance/light_overlay
+	var/mutable_appearance/lightmask_overlay
 
 /obj/structure/streetlamp/Initialize(mapload)
 	. = ..()
 	update_icon_state()
 
 /obj/structure/streetlamp/update_icon_state()
+	. = ..()
 	cut_overlays()
 	var/state = "off"
 	if(on)
@@ -31,10 +33,16 @@
 	if(on == TRUE)
 		if(light_overlay == null)
 			light_overlay = new()
+		if(lightmask_overlay == null)
+			lightmask_overlay = new()
 		light_overlay.icon_state = "[base_icon_state]_overlay"
 		light_overlay.color = light_color
-		SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
+		lightmask_overlay.icon_state = light_overlay.icon_state
+		lightmask_overlay.color = GLOB.emissive_color
+		//SET_PLANE_EXPLICIT(light_overlay, ABOVE_LIGHTING_PLANE, src) //gloooooooow
+		SET_PLANE_EXPLICIT(lightmask_overlay, EMISSIVE_PLANE, src) //gloooooooow
 		add_overlay(light_overlay)
+		add_overlay(lightmask_overlay)
 
 /obj/structure/streetlamp/proc/update_lighting()
 	if(on == TRUE)
@@ -48,10 +56,11 @@
 		new /obj/item/stack/sheet/iron/five(drop_location())
 		new /obj/item/stack/sheet/glass(drop_location())
 		qdel(src)
-	if(on == TRUE)
-		on = FALSE
-	else
-		on = TRUE
+	return
+
+/obj/structure/streetlamp/interact(mob/user)
+	. = ..()
+	on = !on
 	update_icon_state()
 	return
 
