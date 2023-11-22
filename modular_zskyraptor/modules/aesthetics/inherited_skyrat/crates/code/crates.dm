@@ -28,3 +28,21 @@
 
 /obj/structure/closet/crate/cardboard
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/crates.dmi'
+
+
+
+/obj/structure/closet
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/closet.dmi'
+
+//overrides bluesec
+/obj/structure/closet/secure_closet/security
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/closet.dmi'
+
+/obj/structure/closet/secure_closet/security/sec
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/closet.dmi'
+
+/obj/structure/closet/secure_closet/warden
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/closet.dmi'
+
+/obj/structure/closet/secure_closet/hos
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/crates/icons/closet.dmi'

@@ -7930,6 +7930,7 @@
 #include "modular_zskyraptor\modules\aesthetics\moremospherics\more_colors.dm"
 #include "modular_zskyraptor\modules\aesthetics\moremospherics\pipes.dm"
 #include "modular_zskyraptor\modules\aesthetics\oldnewsurgery\oldnewsurgery.dm"
+#include "modular_zskyraptor\modules\aesthetics\power\code\resprite.dm"
 #include "modular_zskyraptor\modules\aesthetics\shiptest_chemcontainers\shipchems.dm"
 #include "modular_zskyraptor\modules\aesthetics\ui_greenened\hud_greened.dm"
 #include "modular_zskyraptor\modules\aesthetics\ui_greenened\lobby_colors.dm"
