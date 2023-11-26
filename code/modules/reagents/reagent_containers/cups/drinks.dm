@@ -219,7 +219,7 @@
 	isGlass = FALSE
 	// The 2 bottles have separate cap overlay icons because if the bottle falls over while bottle flipping the cap stays fucked on the moved overlay
 	/// NAAKAS-LOUNGE EDIT/REMOVALS: we have our own cap_on setup
-	cap_icon = 'icons/obj/drinks/drink_effects.dmi'
+	//cap_icon = 'icons/obj/drinks/drink_effects.dmi'
 	cap_icon_state = "bottle_cap_small"
 	//var/cap_on = TRUE
 	//var/cap_lost = FALSE
