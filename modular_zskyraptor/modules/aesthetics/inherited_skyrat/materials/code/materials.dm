@@ -96,8 +96,8 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	name = "reinforced uranium glass"
 	desc = "A glass sheet made out of a uranium-silicate alloy and a rod matrix. It looks hopelessly tough and fire-proof!"
 	singular_name = "reinforced uranium glass sheet"
-	icon_state = "sheet-puglass"
-	inhand_icon_state = "sheet-puglass"
+	icon_state = "sheet-prglass"
+	inhand_icon_state = "sheet-prglass"
 	mats_per_unit = list(/datum/material/alloy/uraniumglass=SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.5)
 	armor_type = /datum/armor/sheet_uraniumrglass
 	resistance_flags = ACID_PROOF
@@ -154,3 +154,32 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	value_per_unit = 0.125
 	categories = list(MAT_CATEGORY_RIGID=TRUE, MAT_CATEGORY_BASE_RECIPES=TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
 	composition = list(/datum/material/glass=1, /datum/material/uranium=0.5)
+
+
+
+
+
+
+/datum/design/uraglass_alloy
+	name = "Uranium Glass"
+	id = "uraniumglass"
+	build_type = SMELTER | PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 0.5, /datum/material/glass = SHEET_MATERIAL_AMOUNT)
+	build_path = /obj/item/stack/sheet/uraniumglass
+	category = list(
+		RND_CATEGORY_CONSTRUCTION + RND_SUBCATEGORY_CONSTRUCTION_MATERIALS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+	maxstack = 50
+
+/datum/design/uraniumrglass_alloy
+	name = "Reinforced Uranium Glass"
+	id = "uraniumreinforcedglass"
+	build_type = SMELTER | PROTOLATHE | AWAY_LATHE
+	materials = list(/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 0.5, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.5,  /datum/material/glass = SHEET_MATERIAL_AMOUNT)
+	build_path = /obj/item/stack/sheet/uraniumrglass
+	category = list(
+		RND_CATEGORY_CONSTRUCTION + RND_SUBCATEGORY_CONSTRUCTION_MATERIALS
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+	maxstack = 50
