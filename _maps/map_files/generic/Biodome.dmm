@@ -3,6 +3,12 @@
 /obj/machinery/smartfridge/organ,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"ae" = (
+/obj/machinery/air_sensor/mix_tank{
+	chamber_id = "biodome_mix2"
+	},
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome/engineering/atmos)
 "af" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -24,18 +30,6 @@
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"am" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 6
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"ao" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/fireaxecabinet/directional/east,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "ap" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -81,12 +75,14 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"au" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/violet/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"av" = (
+/obj/machinery/door/airlock/ce/glass{
+	name = "Cinder's Office"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "aw" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder{
@@ -115,14 +111,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"az" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "aB" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
@@ -210,6 +198,10 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"aL" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "aM" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark,
@@ -237,6 +229,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
+"aR" = (
+/obj/machinery/atmospherics/miner/nitrogen,
+/turf/open/floor/engine/n2,
+/area/centcom/biodome/engineering/atmos)
 "aS" = (
 /obj/item/flashlight/lamp{
 	pixel_y = 8;
@@ -245,10 +241,39 @@
 /obj/structure/table/wood/fancy/purple,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
+"aT" = (
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/door/window/survival_pod,
+/obj/machinery/button/door/incinerator_vent_atmos_main{
+	pixel_x = -24;
+	pixel_y = 8;
+	id = "biodome_turbine_release"
+	},
+/obj/machinery/computer/turbine_computer{
+	dir = 4;
+	mapping_id = "biodome_turbine"
+	},
+/obj/machinery/button/ignition/incinerator/atmos{
+	pixel_x = -24;
+	pixel_y = -8;
+	id = "biodome_turbine_igniter"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome)
 "aV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold/r_navy/visible{
+	dir = 8
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"aW" = (
+/turf/open/chasm/jungle,
+/area/centcom/biodome/engineering/atmos)
+"aX" = (
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/engineering)
 "aY" = (
 /obj/structure/railing/corner{
 	dir = 4
@@ -272,14 +297,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
-"bc" = (
-/obj/effect/spawner/liquids_spawner,
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/machinery/shower/directional/south,
-/turf/open/floor/iron/pool,
-/area/centcom/biodome/engineering)
 "bd" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/stasis,
@@ -288,15 +305,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
-"be" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/obj/machinery/computer/monitor{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "bf" = (
 /obj/machinery/door/airlock/service{
 	name = "Chapel"
@@ -305,6 +313,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/birch,
 /area/centcom/biodome/service/theatre)
+"bh" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "bi" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/cmo/glass{
@@ -316,12 +330,23 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"bj" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "bk" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"bl" = (
+/obj/structure/chair/comfy/black,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "bm" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
@@ -355,6 +380,17 @@
 	dir = 4
 	},
 /area/centcom/biodome/interior)
+"bs" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"bu" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
+/obj/machinery/light/floor,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "bv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
@@ -374,6 +410,12 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell2)
+"by" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "bz" = (
 /obj/structure/sink/directional/west,
 /obj/machinery/door/window/survival_pod{
@@ -406,8 +448,15 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "bE" = (
-/turf/open/floor/carpet/orange,
-/area/centcom/biodome/engineering)
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix1 to Mix";
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "bF" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -442,42 +491,17 @@
 	},
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
-"bK" = (
-/obj/machinery/light/floor,
-/turf/open/floor/iron/smooth,
-/area/centcom/biodome/service/botany)
-"bL" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "bN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"bP" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "bR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
-"bS" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "bU" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -491,14 +515,9 @@
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
 "bX" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 5
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"bZ" = (
-/obj/machinery/atmospherics/miner/nitrogen,
-/turf/open/floor/engine/n2,
 /area/centcom/biodome/engineering/atmos)
 "cb" = (
 /turf/open/floor/iron/white,
@@ -513,6 +532,13 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"cd" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "ce" = (
 /turf/closed/wall,
 /area/centcom/biodome/townhall/meeting)
@@ -527,10 +553,6 @@
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"cj" = (
-/obj/machinery/light/warm/directional/west,
-/turf/open/floor/wood/parquet,
-/area/centcom/biodome/service/theatre)
 "cl" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/microwave/engineering/cell_included,
@@ -550,12 +572,14 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "ct" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/obj/machinery/light/directional/west,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 5
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "cw" = (
 /obj/machinery/light/cold/directional/north,
 /obj/structure/chair/sofa/corp,
@@ -570,12 +594,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"cz" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "cA" = (
 /obj/structure/bed/medical/anchored,
 /turf/open/floor/iron/white,
@@ -586,15 +604,42 @@
 	},
 /turf/open/floor/iron/dark/smooth_half,
 /area/centcom/biodome/security)
+"cD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "cG" = (
 /turf/open/floor/iron/dark/pavement{
 	dir = 4
 	},
 /area/centcom/biodome/interior)
+"cI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/suit_storage_unit/atmos,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "cJ" = (
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
+"cK" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"cM" = (
+/obj/machinery/light/warm/directional/north,
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/processor{
+	pixel_y = 8
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "cN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -611,6 +656,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"cP" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "cQ" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -669,12 +720,6 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"cU" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "cX" = (
 /obj/structure/toilet{
 	dir = 4
@@ -713,13 +758,13 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"di" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+"dk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
 	dir = 8
 	},
-/turf/open/floor/engine,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "dl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -736,6 +781,16 @@
 /obj/structure/spirit_board,
 /turf/open/floor/wood/large/birch,
 /area/centcom/biodome/service/theatre)
+"dq" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/door/poddoor/incinerator_atmos_main{
+	id = "biodome_turbine_release"
+	},
+/turf/open/chasm/jungle,
+/area/centcom/biodome/engineering/engine)
 "du" = (
 /obj/structure/sign/painting/large/library{
 	dir = 4
@@ -745,6 +800,13 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"dv" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "dw" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
@@ -784,6 +846,12 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"dz" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "dA" = (
 /obj/structure/filingcabinet/medical,
 /turf/open/floor/iron/dark,
@@ -798,15 +866,10 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
 "dD" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"dE" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
-	dir = 1;
-	chamber_id = "biodome_mix1"
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
+	dir = 8
 	},
-/turf/open/floor/engine/vacuum,
+/turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "dH" = (
 /obj/machinery/airalarm/directional/south,
@@ -865,12 +928,6 @@
 "dS" = (
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell1)
-"dT" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/air_input{
-	chamber_id = "biodome_air"
-	},
-/turf/open/floor/engine/air,
-/area/centcom/biodome/engineering/atmos)
 "dW" = (
 /obj/machinery/airalarm/directional/east,
 /obj/structure/table/reinforced/uraniumrglass,
@@ -907,13 +964,6 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"ee" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "ef" = (
 /obj/machinery/light/warm/directional/west,
 /obj/structure/bed/double{
@@ -933,12 +983,9 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"ei" = (
+"ej" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
 	dir = 5
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
@@ -956,29 +1003,24 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
-"en" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	name = "O2"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "eo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell2)
-"ep" = (
-/obj/machinery/atmospherics/components/binary/temperature_gate{
-	target_temperature = 293.15;
-	on = 1;
-	dir = 4
+"eq" = (
+/obj/item/clothing/glasses/meson/engine{
+	pixel_y = 5
 	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/obj/item/clothing/glasses/meson/engine{
+	pixel_y = 0
+	},
+/obj/item/clothing/glasses/meson/engine{
+	pixel_y = -5
+	},
+/obj/structure/table/reinforced/uraniumrglass,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "es" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 8
@@ -992,25 +1034,18 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/security/cell1)
-"ex" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/computer/atmos_control/nitrous_tank{
+"ew" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/carbon_output{
 	dir = 1;
-	atmos_chambers = list("biodome_n2o" = "Nitrous Oxide Supply")
+	chamber_id = "biodome_co2"
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/co2,
 /area/centcom/biodome/engineering/atmos)
 "ey" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 8
+/obj/machinery/air_sensor/nitrogen_tank{
+	chamber_id = "biodome_n2"
 	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "N2 to Mix"
-	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/n2,
 /area/centcom/biodome/engineering/atmos)
 "ez" = (
 /obj/structure/closet/secure_closet/freezer/meat{
@@ -1032,16 +1067,6 @@
 /obj/item/tank/internals/anesthetic,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
-"eE" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"eG" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "eH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/button/door/directional/east{
@@ -1073,6 +1098,28 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"eI" = (
+/obj/machinery/light/directional/north,
+/obj/structure/closet/secure_closet/engineering_electrical{
+	req_access = null
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
+"eJ" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"eP" = (
+/obj/effect/spawner/liquids_spawner,
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/machinery/shower/directional/south,
+/turf/open/floor/iron/pool,
+/area/centcom/biodome/engineering)
 "eT" = (
 /obj/machinery/light/cold/directional/north,
 /obj/structure/closet/secure_closet/medical3{
@@ -1097,6 +1144,12 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/centcom/biodome/interior)
+"eX" = (
+/obj/structure/closet/secure_closet/freezer/meat{
+	req_access = null
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "eY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -1106,12 +1159,16 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"eZ" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"fa" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/engineering)
 "fc" = (
 /obj/machinery/modular_computer/preset/curator{
 	dir = 8
@@ -1125,13 +1182,6 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/cult,
 /area/centcom/biodome/service/library)
-"fe" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
-	dir = 1;
-	chamber_id = "biodome_mix1"
-	},
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome/engineering/atmos)
 "fg" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/item/kitchen/rollingpin,
@@ -1176,43 +1226,10 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
-"fr" = (
-/obj/machinery/light/directional/south,
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = 9
-	},
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = 6
-	},
-/obj/item/clothing/gloves/color/yellow{
-	pixel_y = 3
-	},
-/obj/item/storage/belt/utility,
-/obj/item/storage/belt/utility{
-	pixel_y = -4;
-	pixel_x = -5
-	},
-/obj/item/storage/belt/utility{
-	pixel_y = -4;
-	pixel_x = 5
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "ft" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"fv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"fw" = (
-/obj/machinery/computer/atmos_alert{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "fz" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Interlink Access"
@@ -1232,6 +1249,18 @@
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
+"fF" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"fH" = (
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/structure/window/reinforced/uranium/fulltile,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "fL" = (
 /obj/structure/bookcase{
 	name = "Forbidden Knowledge"
@@ -1250,11 +1279,11 @@
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/apartment3)
 "fN" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light_switch/directional/west,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "fP" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Lounge"
@@ -1274,13 +1303,6 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment2)
-"fU" = (
-/obj/machinery/light_switch/directional/north,
-/obj/structure/closet/secure_closet/engineering_welding{
-	req_access = null
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "fW" = (
 /obj/structure/destructible/cult/item_dispenser/archives/library,
 /obj/item/book/codex_gigas,
@@ -1313,10 +1335,6 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"gd" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "ge" = (
 /obj/structure/chair/office/tactical{
 	dir = 1
@@ -1326,11 +1344,9 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"gf" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 8
+"gh" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
@@ -1366,15 +1382,18 @@
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
 "gn" = (
-/obj/machinery/light/warm/directional/south,
-/obj/machinery/light/warm/directional/south,
-/turf/open/floor/iron/cafeteria,
-/area/centcom/biodome/service/diner)
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/engineering)
 "go" = (
-/obj/machinery/light/floor,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"gq" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/ordnance_burn_chamber_input{
+	dir = 1;
+	chamber_id = "biodome_turbine_inlet"
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "gr" = (
@@ -1421,12 +1440,6 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"gv" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "gx" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/white,
@@ -1463,11 +1476,6 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"gC" = (
-/obj/machinery/oven/range,
-/obj/structure/fireaxecabinet/directional/north,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "gD" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Lounge";
@@ -1475,6 +1483,14 @@
 	},
 /turf/open/floor/iron/textured_edge,
 /area/centcom/biodome/service/lounge)
+"gF" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "gG" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/siding/dark{
@@ -1482,15 +1498,16 @@
 	},
 /turf/open/floor/carpet/stellar,
 /area/centcom/biodome/service/theatre)
+"gH" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 10
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "gI" = (
 /obj/structure/streetlamp,
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
-"gJ" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/smooth,
-/area/centcom/biodome/service/botany)
 "gK" = (
 /obj/structure/chair/sofa/bench/solo{
 	dir = 1
@@ -1504,15 +1521,21 @@
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
+"gN" = (
+/obj/structure/table/wood/fancy/orange,
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "gP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
 "gQ" = (
-/obj/machinery/airalarm/directional/north,
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/item/kitchen/rollingpin,
-/obj/item/knife/kitchen,
+/obj/machinery/oven/range,
+/obj/structure/fireaxecabinet/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "gR" = (
@@ -1579,12 +1602,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"gT" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2o{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "gU" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/dark,
@@ -1610,18 +1627,13 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"hb" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 8
+"hc" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
-"hd" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/dark/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "hf" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/uranium/fulltile,
@@ -1636,6 +1648,13 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"hh" = (
+/obj/machinery/atmospherics/components/binary/valve/digital{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "hl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1651,6 +1670,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/arrivals)
+"hq" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
+	chamber_id = "biodome_o2"
+	},
+/turf/open/floor/engine/o2,
+/area/centcom/biodome/engineering/atmos)
 "hs" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
@@ -1669,9 +1694,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"hv" = (
-/turf/open/floor/iron/dark/textured,
-/area/centcom/biodome/engineering)
 "hw" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/structure/fans/tiny,
@@ -1682,9 +1704,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
-"hA" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/engine,
+"hz" = (
+/turf/closed/wall/r_wall,
 /area/centcom/biodome/engineering/atmos)
 "hD" = (
 /obj/structure/window/uranium/fulltile,
@@ -1694,21 +1715,21 @@
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"hH" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "hJ" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 8
 	},
 /turf/open/floor/iron/textured_large,
 /area/centcom/biodome/interior)
+"hK" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "O2"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "hL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light_switch/directional/west,
@@ -1754,6 +1775,13 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"hU" = (
+/obj/machinery/light_switch/directional/north,
+/obj/structure/closet/secure_closet/engineering_welding{
+	req_access = null
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "hV" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -1761,11 +1789,18 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/apartment4)
-"hY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
-/obj/machinery/light/floor,
+"hX" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
+"hY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "ia" = (
 /obj/structure/toilet{
 	dir = 8
@@ -1787,17 +1822,6 @@
 	},
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"if" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/carbon_tank{
-	dir = 1;
-	atmos_chambers = list("biodome_co2" = "Carbon Dioxide Supply")
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "ig" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
@@ -1845,11 +1869,6 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
-"ir" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/machinery/light_switch/directional/west,
-/turf/open/floor/carpet/orange,
-/area/centcom/biodome/engineering)
 "is" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1911,13 +1930,20 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"iJ" = (
-/obj/machinery/atmospherics/components/binary/valve/digital,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "iL" = (
 /turf/open/misc/sandy_dirt/icemoon,
 /area/centcom/biodome/exterior)
+"iM" = (
+/obj/machinery/door/airlock/atmos/glass{
+	name = "Atmospherics"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "iO" = (
 /obj/structure/window/reinforced/tinted/fulltile,
 /turf/open/floor/iron/white,
@@ -1927,10 +1953,12 @@
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
 "iQ" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 10
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "iT" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/structure/closet/crate/freezer/surplus_limbs,
@@ -1947,14 +1975,16 @@
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
 "iX" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+/obj/machinery/light/warm/directional/south,
+/turf/open/floor/wood/parquet,
+/area/centcom/biodome/service/theatre)
+"iY" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix to Mix2"
-	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "ja" = (
 /obj/machinery/light/cold/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1969,6 +1999,16 @@
 /obj/machinery/hydroponics/constructable,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"jd" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "CO2";
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "je" = (
 /mob/living/simple_animal/bot/medbot/stationary{
 	maints_access_required = null;
@@ -1978,6 +2018,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"jh" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
+	chamber_id = "biodome_n2"
+	},
+/turf/open/floor/engine/n2,
+/area/centcom/biodome/engineering/atmos)
 "jj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -1993,11 +2039,6 @@
 /obj/machinery/chem_master,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
-"jm" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "jr" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/stack/ducts/fifty{
@@ -2021,6 +2062,13 @@
 /obj/item/plunger,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
+"ju" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "jw" = (
 /obj/machinery/door/airlock/security{
 	name = "Cell 2"
@@ -2062,6 +2110,11 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"jC" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "jD" = (
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
@@ -2074,6 +2127,15 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
+"jH" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "N2"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "jI" = (
 /obj/machinery/light/directional/east,
 /obj/structure/chair/sofa/bench{
@@ -2081,12 +2143,25 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"jJ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/air_input{
+	chamber_id = "biodome_air"
+	},
+/turf/open/floor/engine/air,
+/area/centcom/biodome/engineering/atmos)
 "jL" = (
 /obj/machinery/rnd/production/techfab/department/medical,
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"jM" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "jP" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/wood/large/birch,
@@ -2116,6 +2191,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
+"ka" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 9
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "kc" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/window/reinforced/spawner/directional/north,
@@ -2154,13 +2235,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"ke" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "kh" = (
 /obj/machinery/oven/range,
 /turf/open/floor/iron/white{
@@ -2194,6 +2268,14 @@
 /obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
+"kn" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "ko" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -2201,22 +2283,15 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell2)
 "kp" = (
-/obj/machinery/igniter/incinerator_atmos{
-	id = "biodome_turbine_igniter"
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2{
+	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "kq" = (
 /obj/machinery/stasis,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"ks" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "kt" = (
 /obj/structure/streetlamp,
 /turf/open/floor/iron/textured_large,
@@ -2292,12 +2367,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
-"kJ" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = null
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "kK" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/structure/window/reinforced/uranium/spawner/directional/east,
@@ -2321,6 +2390,13 @@
 "kN" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
+"kQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 10
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "kT" = (
 /obj/structure/railing/corner/end,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2335,6 +2411,11 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
+"kX" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/uranium/fulltile,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "kY" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/bed/double{
@@ -2362,9 +2443,9 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
-"ld" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 5
+"lh" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 9
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -2383,13 +2464,6 @@
 "lj" = (
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"lk" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/obj/machinery/light/floor,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "ln" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2412,12 +2486,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"lp" = (
+"lq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix to Mix1"
+/obj/machinery/atmospherics/components/binary/pump/on{
+	name = "Air"
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -2428,11 +2502,24 @@
 /obj/item/knife/kitchen,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"ls" = (
+/obj/machinery/atmospherics/miner/plasma,
+/turf/open/floor/engine/plasma,
+/area/centcom/biodome/engineering/atmos)
 "lt" = (
 /obj/machinery/vending/imported/mothic,
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
+"lu" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "lv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large/birch,
@@ -2449,6 +2536,7 @@
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/security/cell1)
 "ly" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/visible,
 /turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
@@ -2462,9 +2550,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
 "lB" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 6
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix to Mix2"
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -2492,13 +2582,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
-"lG" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+"lI" = (
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome/engineering/atmos)
 "lL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
@@ -2508,32 +2594,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"lP" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	name = "N2"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "lQ" = (
 /obj/structure/cable,
 /obj/machinery/light_switch/directional/south,
 /obj/machinery/rnd/production/protolathe/department/medical,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko)
-"lR" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "lV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
+"lW" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "lX" = (
 /obj/machinery/door/window/survival_pod{
 	dir = 1
@@ -2549,34 +2625,25 @@
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
+"ma" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "mc" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment2)
-"md" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	dir = 1
-	},
-/turf/open/chasm/jungle,
-/area/centcom/biodome/engineering/atmos)
-"mg" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/machinery/door/poddoor/incinerator_atmos_main{
-	id = "biodome_turbine_release"
-	},
-/turf/open/chasm/jungle,
-/area/centcom/biodome/engineering/engine)
 "mh" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
 "mi" = (
-/obj/machinery/light/warm/directional/east,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
+/obj/machinery/power/turbine/turbine_outlet{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "mj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -2600,10 +2667,6 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
-"mq" = (
-/obj/machinery/light/warm/directional/north,
-/turf/open/floor/wood/parquet,
-/area/centcom/biodome/service/theatre)
 "mr" = (
 /obj/machinery/vending/wardrobe/hydro_wardrobe,
 /turf/open/floor/iron/smooth,
@@ -2627,9 +2690,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"mw" = (
-/obj/machinery/atmospherics/miner/carbon_dioxide,
-/turf/open/floor/engine/co2,
+"my" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
+/turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "mz" = (
 /obj/machinery/chem_dispenser/drinks{
@@ -2667,11 +2733,9 @@
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
 "mE" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 5
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible{
+	dir = 10
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -2719,6 +2783,13 @@
 /obj/structure/window/reinforced/uranium/spawner/directional/south,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/diner)
+"mR" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "mS" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/processor{
@@ -2726,13 +2797,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"mT" = (
-/obj/machinery/atmospherics/components/binary/valve/digital/on{
-	dir = 8
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "mU" = (
 /obj/machinery/door/airlock/multi_tile{
 	dir = 1;
@@ -2763,6 +2827,33 @@
 	dir = 8
 	},
 /area/centcom/biodome/townhall/meeting)
+"nb" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"nc" = (
+/obj/machinery/power/turbine/inlet_compressor{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"nd" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
+"ne" = (
+/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/structure/bed/double,
+/obj/item/bedsheet/orange/double,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/engineering)
 "nf" = (
 /obj/structure/table/optable,
 /turf/open/floor/iron/white,
@@ -2784,14 +2875,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
-"nl" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/obj/machinery/air_sensor/ordnance_burn_chamber{
-	chamber_id = "biodome_turbine_outlet"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome)
 "nm" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
@@ -2800,12 +2883,24 @@
 /obj/item/flashlight/lamp,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment2)
-"nr" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
-	dir = 8
+"np" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/closet/secure_closet/freezer/fridge{
+	req_access = null
 	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
+"nq" = (
+/obj/machinery/light/floor,
+/obj/structure/table/reinforced/uraniumrglass,
+/turf/open/floor/iron/kitchen/diagonal,
+/area/centcom/biodome/service/diner)
+"nr" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/engineering)
 "nu" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
@@ -2813,7 +2908,6 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical)
 "nA" = (
-/obj/machinery/light/floor,
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
@@ -2855,6 +2949,16 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"nN" = (
+/obj/machinery/computer/atmos_control/tarkon/incinerator{
+	dir = 8;
+	atmos_chambers = list("biodome_turbine_inlet" = "Turbine Inlet");
+	name = "Turbine Inlet Control"
+	},
+/obj/structure/window/reinforced/uranium/spawner/directional/north,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "nO" = (
 /obj/structure/table,
 /obj/machinery/light/directional/north,
@@ -2868,20 +2972,8 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"nR" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"nS" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/plasma_tank{
-	atmos_chambers = list("biodome_plasma" = "Plasma Supply")
-	},
+"nP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "nT" = (
@@ -2917,6 +3009,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
+"nY" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/components/binary/temperature_gate{
+	target_temperature = 295;
+	on = 1;
+	dir = 4
+	},
+/obj/machinery/computer/atmos_control/nitrogen_tank{
+	atmos_chambers = list("biodome_n2" = "Nitrogen Supply")
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "nZ" = (
 /obj/structure/chair/pillow_small,
 /obj/item/toy/plush/skyrat/borbplushie{
@@ -2964,25 +3068,9 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
 "od" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
-"oe" = (
-/obj/machinery/door/airlock/ce/glass{
-	name = "Cinder's Office"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
-"of" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "oh" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
@@ -2990,12 +3078,13 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"ok" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+"oi" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "ol" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	req_access = null
@@ -3029,33 +3118,10 @@
 "oo" = (
 /turf/open/misc/asteroid/snow/icemoon/do_not_chasm,
 /area/centcom/biodome/exterior)
-"op" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/components/binary/temperature_gate{
-	target_temperature = 293.15;
-	on = 1;
-	dir = 4
-	},
-/obj/machinery/computer/atmos_control/nitrogen_tank{
-	atmos_chambers = list("biodome_n2" = "Nitrogen Supply")
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"oq" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "or" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell1)
-"os" = (
-/obj/machinery/airalarm/directional/north,
-/obj/structure/closet/radiation,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "ot" = (
 /obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/iron/white,
@@ -3087,10 +3153,11 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "oy" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
+	chamber_id = "biodome_o2"
+	},
+/turf/open/floor/engine/o2,
+/area/centcom/biodome/engineering/atmos)
 "oz" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 8
@@ -3103,34 +3170,59 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
+"oG" = (
+/obj/machinery/light/directional/south,
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/item/clothing/gloves/color/yellow{
+	pixel_y = 9
+	},
+/obj/item/clothing/gloves/color/yellow{
+	pixel_y = 6
+	},
+/obj/item/clothing/gloves/color/yellow{
+	pixel_y = 3
+	},
+/obj/item/storage/belt/utility,
+/obj/item/storage/belt/utility{
+	pixel_y = -4;
+	pixel_x = -5
+	},
+/obj/item/storage/belt/utility{
+	pixel_y = -4;
+	pixel_x = 5
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "oI" = (
 /obj/structure/dresser,
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
 "oL" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2{
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
 	dir = 8
 	},
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "oM" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/green{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"oN" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
-	chamber_id = "biodome_n2"
-	},
-/turf/open/floor/engine/n2,
-/area/centcom/biodome/engineering/atmos)
 "oO" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
+"oP" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "oS" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
@@ -3142,13 +3234,6 @@
 /obj/structure/desk_bell,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"oX" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = null
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "pa" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/black/double,
@@ -3194,13 +3279,6 @@
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
-"ph" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
-	dir = 1;
-	chamber_id = "biodome_co2"
-	},
-/turf/open/floor/engine/co2,
-/area/centcom/biodome/engineering/atmos)
 "pi" = (
 /obj/structure/chair/sofa/bench{
 	dir = 8
@@ -3235,11 +3313,6 @@
 "pq" = (
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
-"ps" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "pt" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
@@ -3247,6 +3320,16 @@
 "pu" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/interior)
+"pv" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "py" = (
 /obj/effect/turf_decal/siding/dark_red/corner,
 /obj/effect/turf_decal/siding/dark_red/corner{
@@ -3284,13 +3367,6 @@
 /obj/effect/spawner/random/armory/rubbershot,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"pI" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "pJ" = (
 /turf/open/floor/iron/textured_edge,
 /area/centcom/biodome/service/lounge)
@@ -3316,6 +3392,11 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"pQ" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "pR" = (
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/biodome/arrivals)
@@ -3388,11 +3469,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"qj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "qk" = (
 /obj/structure/sign/painting/large/library{
 	dir = 1
@@ -3407,9 +3483,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/bigapartment2)
-"qp" = (
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome/engineering/atmos)
 "qs" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/iron/white,
@@ -3436,12 +3509,23 @@
 "qw" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
-"qD" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
+"qz" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 9
 	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"qE" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/mix_tank{
+	dir = 1;
+	atmos_chambers = list("biodome_mix2" = "Mix Chamber")
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "qF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -3467,11 +3551,22 @@
 /obj/structure/table/wood/fancy/green,
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
-"qO" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible{
-	dir = 8
+"qM" = (
+/obj/machinery/door/airlock/bathroom{
+	name = "Restroom"
 	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/engineering)
+"qN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
+"qO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "qT" = (
@@ -3501,14 +3596,6 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"qU" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "qX" = (
 /obj/structure/toilet{
 	dir = 8
@@ -3525,19 +3612,6 @@
 "qZ" = (
 /turf/closed/wall,
 /area/centcom/biodome/service/diner)
-"rb" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"rd" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
-	chamber_id = "biodome_o2"
-	},
-/turf/open/floor/engine/o2,
-/area/centcom/biodome/engineering/atmos)
 "re" = (
 /obj/structure/chair/pillow_small,
 /turf/open/floor/carpet/green,
@@ -3554,6 +3628,11 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"rj" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome)
 "rk" = (
 /obj/item/kirbyplants/organic/plant21,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3564,12 +3643,6 @@
 "rl" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"rm" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "rn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -3642,9 +3715,6 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"rH" = (
-/turf/closed/wall/r_wall,
-/area/centcom/biodome/engineering/engine)
 "rI" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/paper_bin{
@@ -3678,8 +3748,19 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
+"rP" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 9
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "rQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "rS" = (
@@ -3696,11 +3777,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"rV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/chair/comfy/black,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "rW" = (
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/checker,
@@ -3709,6 +3785,14 @@
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
+"sa" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "sc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3727,6 +3811,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"si" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "sj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table/reinforced/uraniumrglass,
@@ -3738,24 +3827,12 @@
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"sn" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "sq" = (
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
 "ss" = (
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/voxbox/atmos)
-"st" = (
-/obj/machinery/air_sensor/oxygen_tank{
-	chamber_id = "biodome_o2"
-	},
-/turf/open/floor/engine/o2,
-/area/centcom/biodome/engineering/atmos)
 "sv" = (
 /obj/structure/fans/tiny,
 /obj/structure/cable,
@@ -3783,6 +3860,12 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/apartment3)
+"sB" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "sC" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/arrivals)
@@ -3790,37 +3873,16 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
-"sE" = (
-/obj/machinery/light/warm/directional/south,
-/obj/structure/chair/comfy/black{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "sF" = (
 /obj/machinery/light/cold/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"sG" = (
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Tank to Mix";
-	dir = 8
+"sI" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
+	dir = 1;
+	chamber_id = "biodome_mix1"
 	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"sH" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"sJ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
 "sL" = (
 /obj/machinery/door/airlock/silver/glass{
@@ -3839,6 +3901,11 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/security/syndicat)
+"sQ" = (
+/obj/machinery/light/warm/directional/south,
+/obj/machinery/light/warm/directional/south,
+/turf/open/floor/iron/cafeteria,
+/area/centcom/biodome/service/diner)
 "sT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -3857,6 +3924,12 @@
 /obj/item/reagent_containers/cup/watering_can,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"tc" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "te" = (
 /obj/structure/table/wood/fancy/black,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -3872,12 +3945,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"ti" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
-	chamber_id = "biodome_o2"
-	},
-/turf/open/floor/engine/o2,
-/area/centcom/biodome/engineering/atmos)
 "tj" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -3922,23 +3989,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/centcom/biodome/security)
-"tm" = (
-/obj/machinery/atmospherics/miner/n2o,
-/turf/open/floor/engine/n2o,
-/area/centcom/biodome/engineering/atmos)
 "to" = (
 /obj/structure/closet/secure_closet/armory_kiboko{
 	req_access = null
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"tp" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "tr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/table/wood,
@@ -3959,41 +4015,16 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"tw" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "tx" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
-"ty" = (
-/obj/machinery/airalarm/directional/east,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/obj/structure/bed/double,
-/obj/item/bedsheet/orange/double,
-/turf/open/floor/carpet/orange,
-/area/centcom/biodome/engineering)
 "tD" = (
-/obj/machinery/air_sensor/mix_tank{
-	chamber_id = "biodome_mix1"
-	},
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome/engineering/atmos)
-"tF" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "tJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -4021,6 +4052,13 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"tS" = (
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Tank to Mix";
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "tT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/black,
@@ -4039,7 +4077,10 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"tZ" = (
+"tX" = (
+/obj/machinery/door/airlock/ce{
+	name = "Cinder's Quarters"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/carpet/orange,
@@ -4050,12 +4091,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"ue" = (
-/obj/machinery/air_sensor/air_tank{
-	chamber_id = "biodome_air"
-	},
-/turf/open/floor/engine/air,
-/area/centcom/biodome/engineering/atmos)
 "ug" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -4099,10 +4134,6 @@
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"um" = (
-/obj/structure/streetlamp,
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/interior)
 "up" = (
 /turf/open/misc/beach/coast{
 	dir = 5
@@ -4127,12 +4158,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"uu" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "uv" = (
 /obj/structure/chair/pew/right{
 	dir = 8
@@ -4179,29 +4204,19 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
-"uB" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "uC" = (
 /obj/structure/chair/pillow_small,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
-"uD" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "uE" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"uF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "uG" = (
 /obj/structure/closet{
 	name = "Evidence Closet"
@@ -4236,13 +4251,10 @@
 /obj/structure/flora/bush/ferny/style_random,
 /turf/open/misc/grass/jungle/planet,
 /area/centcom/biodome/service/lounge)
-"uS" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"uU" = (
+/obj/machinery/light/floor,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "uW" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Security";
@@ -4289,14 +4301,15 @@
 /obj/machinery/oven/range,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"ve" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+"vd" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/closet/secure_closet/freezer/fridge{
-	req_access = null
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
 	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "vf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/smooth_large,
@@ -4314,12 +4327,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"vj" = (
+"vi" = (
 /obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/pink/visible,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "vk" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/table/reinforced/rglass,
@@ -4337,6 +4348,15 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"vl" = (
+/obj/machinery/atmospherics/components/binary/temperature_gate{
+	target_temperature = 295;
+	on = 1;
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "vm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -4363,6 +4383,12 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
+"vt" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "vu" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/checker,
@@ -4375,19 +4401,13 @@
 	dir = 8
 	},
 /area/centcom/biodome/interior)
-"vy" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/machinery/airalarm/directional/west,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/engineering)
 "vA" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/surgery)
+"vD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "vE" = (
 /obj/structure/window/reinforced/tinted/fulltile,
 /turf/open/floor/plating,
@@ -4399,6 +4419,13 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"vH" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "vI" = (
 /obj/machinery/light/floor,
 /obj/machinery/griddle,
@@ -4411,6 +4438,13 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"vK" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "vL" = (
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/iron/checker,
@@ -4421,6 +4455,15 @@
 /obj/item/reagent_containers/blood/o_minus,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
+"vN" = (
+/obj/machinery/computer/atmos_control/tarkon/incinerator{
+	dir = 4;
+	atmos_chambers = list("biodome_turbine_outlet" = "Turbine Outlet");
+	name = "Turbine Outlet Control"
+	},
+/obj/structure/window/reinforced/uranium/spawner/directional/north,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "vO" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -4439,6 +4482,11 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"vS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/engineering)
 "vW" = (
 /obj/structure/easel,
 /obj/item/canvas/twentythree_twentythree,
@@ -4447,6 +4495,14 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"vX" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "vY" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -4461,10 +4517,12 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "wk" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/structure/bookcase/random,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "wm" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -4472,6 +4530,15 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"wo" = (
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Engine"
+	},
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "wp" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/table/wood/fancy/red,
@@ -4493,11 +4560,11 @@
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
 "wv" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/plasma{
-	dir = 8
+/obj/structure/closet/secure_closet/atmospherics{
+	req_access = null
 	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "wx" = (
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/white,
@@ -4572,6 +4639,12 @@
 /obj/item/bedsheet/orange/double,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"wX" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+	chamber_id = "biodome_plasma"
+	},
+/turf/open/floor/engine/plasma,
+/area/centcom/biodome/engineering/atmos)
 "wZ" = (
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/textured,
@@ -4583,11 +4656,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"xe" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
+"xc" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "xf" = (
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/voxbox/atmos/overseer)
@@ -4646,17 +4720,6 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment2)
-"xq" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/mix_tank{
-	dir = 1;
-	atmos_chambers = list("biodome_mix2" = "Mix Chamber")
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "xr" = (
 /obj/machinery/cryo_cell{
 	dir = 8
@@ -4714,6 +4777,13 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"xA" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrous_input{
+	chamber_id = "biodome_n2o";
+	dir = 1
+	},
+/turf/open/floor/engine/n2o,
+/area/centcom/biodome/engineering/atmos)
 "xB" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /obj/machinery/air_sensor/nitrogen_tank{
@@ -4731,33 +4801,12 @@
 "xE" = (
 /turf/open/floor/carpet/stellar,
 /area/centcom/biodome/service/theatre)
-"xI" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/mix_tank{
-	dir = 1;
-	atmos_chambers = list("biodome_mix1" = "Mix Chamber")
+"xL" = (
+/obj/machinery/air_sensor/ordnance_burn_chamber{
+	chamber_id = "biodome_turbine_inlet"
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"xJ" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
-	chamber_id = "biodome_n2"
-	},
-/turf/open/floor/engine/n2,
-/area/centcom/biodome/engineering/atmos)
-"xN" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix1 to Mix";
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "xP" = (
 /obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/all_access,
@@ -4771,12 +4820,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
-"xR" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "xS" = (
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access = null
@@ -4835,18 +4878,15 @@
 /obj/item/bedsheet/purple/double,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
+"yh" = (
+/obj/structure/dresser,
+/turf/open/floor/carpet/orange,
+/area/centcom/biodome/engineering)
 "yi" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
-"yj" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "yk" = (
 /obj/machinery/door/airlock/silver{
 	name = "Primary Surgical Theatre"
@@ -4864,13 +4904,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"yn" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/ordnance_burn_chamber_input{
-	dir = 1;
-	chamber_id = "biodome_turbine_inlet"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "yo" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
@@ -4905,12 +4938,9 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
-"yz" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"yx" = (
+/turf/open/floor/iron/dark/textured,
+/area/centcom/biodome/engineering)
 "yA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4919,6 +4949,20 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
+"yB" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+	chamber_id = "biodome_plasma"
+	},
+/turf/open/floor/engine/plasma,
+/area/centcom/biodome/engineering/atmos)
+"yD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "yF" = (
 /obj/structure/closet/secure_closet/security/sec{
 	req_access = null
@@ -4927,6 +4971,12 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"yG" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "yH" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/carpet/black,
@@ -4982,27 +5032,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/textured_large,
 /area/centcom/biodome/interior)
-"yQ" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 8
-	},
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "yS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"yU" = (
-/obj/structure/window/reinforced/uranium/spawner/directional/north,
-/obj/machinery/hydroponics/constructable,
-/obj/machinery/door/window/survival_pod{
-	dir = 4
-	},
-/obj/machinery/light/directional/north,
+"yT" = (
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "yV" = (
@@ -5010,30 +5047,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
-"yW" = (
-/obj/structure/chair/comfy/black,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
-"yX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
-/obj/structure/bookcase/random,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
-"yY" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Plasma"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "za" = (
 /obj/structure/table/reinforced/titaniumglass,
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/security/syndicat)
+"zc" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "zd" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -5081,15 +5104,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"zn" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "zo" = (
 /obj/machinery/atmospherics/components/binary/pump/on/r_navy/visible{
 	dir = 8
@@ -5101,23 +5115,19 @@
 "zp" = (
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/security/syndicat)
+"zq" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrous_output{
+	chamber_id = "biodome_n2o";
+	dir = 1
+	},
+/turf/open/floor/engine/n2o,
+/area/centcom/biodome/engineering/atmos)
 "zr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"zs" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/suit_storage_unit/atmos,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
-"zv" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "zw" = (
 /obj/machinery/chem_heater/withbuffer,
 /obj/machinery/light_switch/directional/south,
@@ -5129,7 +5139,7 @@
 /area/centcom/biodome/medical/pharmacy)
 "zy" = (
 /obj/machinery/atmospherics/components/binary/temperature_gate{
-	target_temperature = 293.15;
+	target_temperature = 295;
 	on = 1
 	},
 /turf/open/floor/engine{
@@ -5144,6 +5154,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
+"zE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark/textured,
+/area/centcom/biodome/engineering)
 "zF" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	dir = 4;
@@ -5199,14 +5214,16 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"zI" = (
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "zJ" = (
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"zL" = (
+"zK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix to Turbine";
-	dir = 4
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 6
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -5239,21 +5256,23 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/security/cell2)
-"zS" = (
-/obj/machinery/atmospherics/miner/plasma,
-/turf/open/floor/engine/plasma,
-/area/centcom/biodome/engineering/atmos)
 "zT" = (
 /obj/structure/railing/corner/end,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"Aa" = (
+"zZ" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "Ab" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/airalarm/directional/east,
+/obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/carbon_tank{
+	dir = 1;
+	atmos_chambers = list("biodome_co2" = "Carbon Dioxide Supply")
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "Ac" = (
@@ -5273,6 +5292,13 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/centcom/biodome/service/theatre)
+"Ah" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Aj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /turf/open/floor/engine{
@@ -5287,8 +5313,13 @@
 	dir = 6
 	},
 /area/centcom/biodome/interior)
+"Ao" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Ap" = (
 /obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/visible,
 /turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
@@ -5296,10 +5327,6 @@
 "Ar" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"As" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/turf/open/floor/iron/kitchen/diagonal,
-/area/centcom/biodome/service/diner)
 "At" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
@@ -5307,6 +5334,12 @@
 "Av" = (
 /turf/open/water/beach,
 /area/centcom/biodome/interior)
+"Aw" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 10
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Ay" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -5374,12 +5407,11 @@
 /obj/structure/cable,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"AM" = (
-/obj/machinery/air_sensor/plasma_tank{
-	chamber_id = "biodome_plasma"
-	},
-/turf/open/floor/engine/plasma,
-/area/centcom/biodome/engineering/atmos)
+"AL" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/suit_storage_unit/engine,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "AN" = (
 /obj/machinery/light/warm/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -5407,11 +5439,6 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
-"AR" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "AT" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -5446,9 +5473,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
 "AZ" = (
-/obj/structure/window/reinforced/uranium/fulltile,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 6
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "Ba" = (
 /obj/structure/closet/secure_closet/tac{
 	req_access = null
@@ -5494,11 +5523,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Bj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Bl" = (
 /obj/machinery/photocopier,
 /turf/open/floor/wood/tile,
@@ -5508,6 +5532,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"Bn" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 10
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Bq" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light_switch/directional/south,
@@ -5542,14 +5573,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
-"By" = (
-/obj/machinery/door/airlock/ce{
-	name = "Cinder's Quarters"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/carpet/orange,
-/area/centcom/biodome/engineering)
 "BC" = (
 /obj/machinery/light/cold/directional/south,
 /obj/structure/table/optable,
@@ -5562,22 +5585,6 @@
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
 /area/centcom/biodome/apartments/apartment4)
-"BE" = (
-/obj/machinery/door/airlock/atmos/glass{
-	name = "Atmospherics"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"BI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/engineering)
 "BK" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -5613,6 +5620,13 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
+"BP" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "BQ" = (
 /obj/structure/sink/directional/west,
 /obj/machinery/door/window/survival_pod,
@@ -5633,28 +5647,6 @@
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood/parquet,
 /area/centcom/biodome/service/theatre)
-"BV" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"BW" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/item/tank/internals/emergency_oxygen/double{
-	pixel_x = -3;
-	pixel_y = 5
-	},
-/obj/item/tank/internals/emergency_oxygen/double{
-	pixel_y = 2
-	},
-/obj/item/tank/internals/emergency_oxygen/double{
-	pixel_y = 0;
-	pixel_x = 3
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "BX" = (
 /obj/machinery/computer/records/security,
 /obj/machinery/airalarm/directional/north,
@@ -5674,12 +5666,6 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
-"Ca" = (
-/obj/machinery/power/turbine/inlet_compressor{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Cb" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
@@ -5698,26 +5684,22 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"Ce" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
-	dir = 1;
-	chamber_id = "biodome_mix2"
-	},
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome/engineering/atmos)
-"Cf" = (
-/obj/machinery/atmospherics/components/binary/valve/digital{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Ch" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
+"Ck" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/oxygen_tank{
+	atmos_chambers = list("biodome_o2" = "Oxygen Supply")
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Cm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -5726,17 +5708,16 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
-"Cn" = (
-/obj/structure/table/wood/fancy/orange,
-/obj/item/flashlight/lamp{
-	pixel_y = 8;
-	layer = 4
-	},
-/turf/open/floor/iron/dark/textured,
-/area/centcom/biodome/engineering)
 "Co" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
+"Cr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/engineering)
 "Cs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /turf/open/floor/iron/dark/textured_large,
@@ -5745,6 +5726,13 @@
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
+"Cv" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Cx" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/structure/railing{
@@ -5774,10 +5762,6 @@
 /obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"CD" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "CG" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -5821,9 +5805,17 @@
 /obj/machinery/dish_drive/bullet,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"CR" = (
-/turf/closed/wall/r_wall,
-/area/centcom/biodome)
+"CQ" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"CU" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/plasma{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "CY" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -5843,10 +5835,31 @@
 /obj/structure/cable,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"Df" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/uranium/fulltile,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"Dh" = (
+/obj/machinery/atmospherics/components/binary/valve/digital/on{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Dk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
+"Dl" = (
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "O2 to Mix"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Dm" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -5854,6 +5867,18 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
+"Dp" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"Dq" = (
+/obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Ds" = (
 /obj/machinery/griddle,
 /obj/machinery/microwave/engineering/cell_included{
@@ -5874,6 +5899,11 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"Dz" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "DA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -5883,21 +5913,15 @@
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
-"DC" = (
-/turf/closed/wall/r_wall,
-/area/centcom/biodome/engineering/atmos)
-"DD" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "DF" = (
 /obj/machinery/iv_drip,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"DG" = (
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "DI" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet/stellar,
@@ -5914,31 +5938,8 @@
 "DL" = (
 /turf/closed/wall,
 /area/centcom/biodome/service/theatre)
-"DM" = (
-/obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"DN" = (
-/obj/machinery/light/directional/south,
-/obj/machinery/suit_storage_unit/engine,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
-"DO" = (
-/obj/machinery/atmospherics/miner/oxygen,
-/turf/open/floor/engine/o2,
-/area/centcom/biodome/engineering/atmos)
 "DR" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
-	chamber_id = "biodome_plasma"
-	},
-/turf/open/floor/engine/plasma,
-/area/centcom/biodome/engineering/atmos)
-"DS" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
-	dir = 1
-	},
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "DU" = (
@@ -5971,6 +5972,18 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
+"Ee" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Eg" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/carbon_input{
+	dir = 1;
+	chamber_id = "biodome_co2"
+	},
+/turf/open/floor/engine/co2,
+/area/centcom/biodome/engineering/atmos)
 "Eh" = (
 /turf/open/misc/beach/coast,
 /area/centcom/biodome/interior)
@@ -5984,6 +5997,12 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/wood/large/birch,
 /area/centcom/biodome/service/theatre)
+"En" = (
+/obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Eo" = (
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/iron/dark/textured,
@@ -6027,6 +6046,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
+"Ey" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Ez" = (
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
 /obj/machinery/hydroponics/constructable,
@@ -6043,10 +6066,6 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/bigapartment2)
-"EC" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/smooth,
-/area/centcom/biodome/service/botany)
 "ED" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -6061,12 +6080,25 @@
 "EF" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
+"EG" = (
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "EH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"EK" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "EL" = (
 /obj/effect/spawner/random/armory/bulletproof_armor{
 	pixel_x = 8;
@@ -6089,11 +6121,9 @@
 	},
 /area/centcom/biodome/voxbox/atmos)
 "EN" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/structure/streetlamp,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "EO" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment2)
@@ -6103,8 +6133,7 @@
 	name = "Hakit's Meth Lab"
 	})
 "EQ" = (
-/obj/machinery/light/directional/north,
-/obj/structure/closet/secure_closet/engineering_electrical{
+/obj/structure/closet/secure_closet/engineering_personal{
 	req_access = null
 	},
 /turf/open/floor/iron/dark,
@@ -6120,26 +6149,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
-"EV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold/r_navy/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "EZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"Fa" = (
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix to Tank";
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Fb" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/dark{
@@ -6147,21 +6162,29 @@
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
 "Fc" = (
-/obj/machinery/computer/atmos_control/tarkon/incinerator{
-	dir = 8;
-	atmos_chambers = list("biodome_turbine_inlet" = "Turbine Inlet");
-	name = "Turbine Inlet Control"
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
 	},
-/obj/structure/window/reinforced/uranium/spawner/directional/north,
-/obj/structure/cable,
+/obj/machinery/computer/atmos_control/plasma_tank{
+	atmos_chambers = list("biodome_plasma" = "Plasma Supply")
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "Fd" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"Fe" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Ff" = (
 /obj/machinery/light_switch/directional/west,
 /obj/machinery/light/cold/directional/west,
@@ -6181,13 +6204,6 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
-"Fm" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrous_input{
-	chamber_id = "biodome_n2o";
-	dir = 1
-	},
-/turf/open/floor/engine/n2o,
-/area/centcom/biodome/engineering/atmos)
 "Fn" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -6205,12 +6221,6 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
-"Fq" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 9
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Fu" = (
 /obj/machinery/chem_master,
 /turf/open/floor/iron/white{
@@ -6219,6 +6229,12 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"Fv" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Fx" = (
 /obj/structure/chair/sofa/bench{
 	dir = 4
@@ -6230,13 +6246,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"Fz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "FA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/kitchen/diagonal,
@@ -6302,21 +6311,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
-"FT" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+"FW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"FV" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
-	dir = 1;
-	chamber_id = "biodome_mix2"
-	},
-/turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
 "FY" = (
 /obj/machinery/light_switch/directional/east,
@@ -6342,11 +6342,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"Gd" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+"Ge" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 6
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "Gh" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -6379,11 +6380,6 @@
 /obj/effect/spawner/armory_spawn/shotguns,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"Gv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "Gw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /turf/open/floor/iron/dark/textured_large,
@@ -6395,25 +6391,6 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Gz" = (
-/obj/machinery/airalarm/directional/west,
-/obj/machinery/door/window/survival_pod,
-/obj/machinery/button/door/incinerator_vent_atmos_main{
-	pixel_x = -24;
-	pixel_y = 8;
-	id = "biodome_turbine_release"
-	},
-/obj/machinery/computer/turbine_computer{
-	dir = 4;
-	mapping_id = "biodome_turbine"
-	},
-/obj/machinery/button/ignition/incinerator/atmos{
-	pixel_x = -24;
-	pixel_y = -8;
-	id = "biodome_turbine_igniter"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome)
 "GA" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/green/double,
@@ -6434,11 +6411,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"GE" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "GH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
@@ -6480,6 +6452,22 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/wood/large/birch,
 /area/centcom/biodome/service/theatre)
+"GW" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"GX" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "N2O";
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Hb" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment Grand 1"
@@ -6491,11 +6479,11 @@
 "Hf" = (
 /turf/closed/wall,
 /area/centcom/biodome/service/botany)
-"Hj" = (
-/obj/machinery/air_sensor/carbon_tank{
-	chamber_id = "biodome_co2"
+"Hh" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 8
 	},
-/turf/open/floor/engine/co2,
+/turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "Hk" = (
 /obj/structure/rack/gunrack,
@@ -6516,14 +6504,6 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
-"Hr" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/machinery/griddle,
-/obj/machinery/microwave/engineering/cell_included{
-	pixel_y = 24
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "Hs" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/kitchen/diagonal,
@@ -6579,27 +6559,27 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"HC" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "HE" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"HH" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
+"HF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/monitored/air_output{
+	chamber_id = "biodome_air"
 	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Mix2 to Mix";
-	dir = 1
-	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/air,
 /area/centcom/biodome/engineering/atmos)
+"HH" = (
+/obj/structure/window/reinforced/uranium/spawner/directional/north,
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/door/window/survival_pod{
+	dir = 4
+	},
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "HL" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/white,
@@ -6613,6 +6593,15 @@
 /obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
+"HP" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix to Mix1"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "HS" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -6632,12 +6621,6 @@
 "HU" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"HV" = (
-/obj/machinery/door/window/survival_pod{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "HW" = (
 /obj/machinery/computer/crew,
 /obj/machinery/light/directional/north,
@@ -6710,6 +6693,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell1)
+"In" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Ip" = (
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
@@ -6726,16 +6713,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
-"Iv" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/oxygen_tank{
-	atmos_chambers = list("biodome_o2" = "Oxygen Supply")
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Iz" = (
 /obj/machinery/vending/hydronutrients,
 /obj/machinery/light/directional/north,
@@ -6746,14 +6723,6 @@
 /obj/structure/railing/corner/end/flip,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
-"IC" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Engineering-Atmos Foyer"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "ID" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/iron/smooth,
@@ -6769,48 +6738,41 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/arrivals)
+"II" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/pink/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "IJ" = (
 /obj/structure/chair/comfy/lime{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"IL" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"IK" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/machinery/light/red/directional/north,
+/turf/open/floor/circuit/red,
+/area/centcom/biodome/security/syndicat)
 "IN" = (
 /obj/machinery/chem_mass_spec,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
+"IO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "IR" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Receptions"
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"IT" = (
-/obj/structure/table/reinforced/uraniumrglass,
-/obj/item/pipe_dispenser{
-	pixel_y = 8
-	},
-/obj/item/pipe_dispenser{
-	pixel_y = 4
-	},
-/obj/item/pipe_dispenser{
-	pixel_y = 0
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
-"IX" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	dir = 1
-	},
-/turf/open/chasm/jungle,
-/area/centcom/biodome/engineering/engine)
+"IU" = (
+/turf/closed/wall/r_wall,
+/area/centcom/biodome/engineering)
 "IZ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/effect/spawner/random/armory/riot_helmet{
@@ -6824,9 +6786,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"Ja" = (
-/turf/closed/wall/r_wall,
-/area/centcom/biodome/engineering)
 "Jb" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	dir = 4;
@@ -6878,8 +6837,17 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"Jn" = (
+"Jr" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/o2{
+	dir = 8
+	},
 /turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Js" = (
+/obj/machinery/air_sensor/plasma_tank{
+	chamber_id = "biodome_plasma"
+	},
+/turf/open/floor/engine/plasma,
 /area/centcom/biodome/engineering/atmos)
 "Jt" = (
 /obj/machinery/light/directional/west,
@@ -6898,15 +6866,6 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"Jv" = (
-/obj/machinery/door/window/survival_pod,
-/obj/structure/cable,
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/machinery/light/floor,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Jy" = (
 /obj/machinery/chem_mass_spec,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -6947,6 +6906,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"JE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/engineering)
 "JF" = (
 /obj/machinery/light/directional/east,
 /obj/structure/closet/secure_closet/freezer/kitchen{
@@ -6966,12 +6930,12 @@
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment1)
 "JM" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
 	dir = 10
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "JO" = (
 /obj/machinery/door/airlock/bathroom,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6989,6 +6953,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"JR" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "JS" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
@@ -7019,17 +6989,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Kb" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"Kc" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "Kd" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -7039,31 +6998,11 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"Ke" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Kf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
-"Kj" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/computer/atmos_control/air_tank{
-	atmos_chambers = list("biodome_air" = "Mixed Air Supply")
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"Kk" = (
-/obj/structure/table/wood/fancy/orange,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "Kl" = (
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/white,
@@ -7129,12 +7068,17 @@
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
 "KD" = (
-/obj/structure/cable,
-/obj/machinery/power/turbine/core_rotor{
-	mapping_id = "biodome_turbine";
-	dir = 8
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/item/pipe_dispenser{
+	pixel_y = 8
 	},
-/turf/open/floor/engine,
+/obj/item/pipe_dispenser{
+	pixel_y = 4
+	},
+/obj/item/pipe_dispenser{
+	pixel_y = 0
+	},
+/turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "KE" = (
 /obj/structure/table/reinforced/rglass,
@@ -7159,6 +7103,15 @@
 	dir = 4
 	},
 /area/centcom/biodome/townhall)
+"KH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/machinery/computer/monitor{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "KI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7174,22 +7127,18 @@
 /obj/machinery/holopad/secure,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
+"KM" = (
+/obj/machinery/door/window/survival_pod,
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "KN" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"KO" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "N2O";
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "KP" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
@@ -7263,6 +7212,9 @@
 /obj/structure/window/reinforced/uranium/spawner/directional/west,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"KX" = (
+/turf/open/floor/engine/air,
+/area/centcom/biodome/engineering/atmos)
 "KY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7272,6 +7224,10 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
+"Lc" = (
+/obj/machinery/atmospherics/miner/n2o,
+/turf/open/floor/engine/n2o,
+/area/centcom/biodome/engineering/atmos)
 "Le" = (
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
 /obj/structure/window/reinforced/uranium/spawner/directional/south,
@@ -7307,19 +7263,6 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
-"Ll" = (
-/obj/machinery/door/window/survival_pod,
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"Ln" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/carbon_output{
-	dir = 1;
-	chamber_id = "biodome_co2"
-	},
-/turf/open/floor/engine/co2,
-/area/centcom/biodome/engineering/atmos)
 "Lp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -7372,10 +7315,9 @@
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
 "LA" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 9
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "LD" = (
@@ -7390,13 +7332,6 @@
 	},
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"LG" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/engineering)
 "LI" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
@@ -7426,6 +7361,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/closed/wall,
 /area/centcom/biodome/service/bar)
+"LQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/chair/comfy/black,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
+"LR" = (
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "LS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7443,15 +7389,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"LY" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Engineering"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
+"LX" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "LZ" = (
 /obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/iron/white{
@@ -7481,12 +7423,20 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
-"Mf" = (
-/obj/structure/table/wood/fancy/orange,
-/obj/item/flashlight/lamp{
-	pixel_y = 8;
-	layer = 4
+"Md" = (
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Air to Mix"
 	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Me" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/fireaxecabinet/directional/east,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Mf" = (
+/obj/machinery/light/warm/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "Mg" = (
@@ -7501,6 +7451,9 @@
 /obj/item/stack/sheet/iron/fifty,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"Mj" = (
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "Mk" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment 1"
@@ -7515,6 +7468,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"Mm" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/air_tank{
+	atmos_chambers = list("biodome_air" = "Mixed Air Supply")
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Mq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/smooth,
@@ -7548,6 +7511,13 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
+"Mw" = (
+/obj/machinery/airalarm/directional/north,
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/item/kitchen/rollingpin,
+/obj/item/knife/kitchen,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "MC" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden{
@@ -7580,14 +7550,6 @@
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"MG" = (
-/obj/structure/sink/directional/south,
-/obj/structure/mirror/directional/north,
-/obj/machinery/light_switch/directional/north{
-	pixel_x = 10
-	},
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/engineering)
 "MH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
 	dir = 1;
@@ -7618,6 +7580,12 @@
 	dir = 1
 	},
 /area/centcom/biodome/medical/lobby)
+"MR" = (
+/obj/machinery/air_sensor/air_tank{
+	chamber_id = "biodome_air"
+	},
+/turf/open/floor/engine/air,
+/area/centcom/biodome/engineering/atmos)
 "MU" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -7625,15 +7593,19 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment2)
-"MV" = (
-/obj/machinery/light/floor,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "MX" = (
 /obj/structure/filingcabinet/employment,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"MZ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Nc" = (
 /obj/machinery/computer/records/medical{
 	dir = 1
@@ -7665,11 +7637,9 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "No" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos{
-	dir = 4
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/machinery/light/warm/directional/east,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "Nu" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Hospital"
@@ -7700,6 +7670,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/security/syndicat)
+"Ny" = (
+/obj/machinery/airalarm/directional/north,
+/obj/structure/closet/radiation,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
+"Nz" = (
+/obj/machinery/computer/atmos_alert{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "NA" = (
 /obj/machinery/door/window/left/directional/south{
 	name = "First Aid Supplies";
@@ -7738,12 +7719,13 @@
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/arrivals)
 "NK" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 8
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/directional/north,
+/obj/machinery/light_switch/directional/north{
+	pixel_x = 10
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/engineering)
 "NO" = (
 /obj/machinery/computer/atmos_control/nitrogen_tank{
 	dir = 8;
@@ -7770,6 +7752,22 @@
 	},
 /turf/open/floor/engine/n2,
 /area/centcom/biodome/voxbox/atmos)
+"NV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
+"NW" = (
+/obj/machinery/light/warm/directional/south,
+/obj/structure/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
+"NX" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Oa" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -7786,12 +7784,6 @@
 /obj/structure/table/reinforced/rglass,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"Od" = (
-/obj/structure/closet/secure_closet/freezer/meat{
-	req_access = null
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "Og" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	req_access = null
@@ -7810,6 +7802,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
+"Ok" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 5
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Op" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
 	dir = 4
@@ -7827,24 +7825,16 @@
 /obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"Or" = (
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
-"Os" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Ot" = (
 /obj/structure/table/wood,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
 "Ou" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
-	dir = 8
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
+	dir = 1;
+	chamber_id = "biodome_mix2"
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
 "Ov" = (
 /obj/structure/chair/office/light{
@@ -7857,18 +7847,6 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"Ox" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"Oy" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrous_output{
-	chamber_id = "biodome_n2o";
-	dir = 1
-	},
-/turf/open/floor/engine/n2o,
-/area/centcom/biodome/engineering/atmos)
 "Oz" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/lobby)
@@ -7887,18 +7865,6 @@
 /obj/item/clothing/glasses/science,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"OG" = (
-/obj/machinery/air_sensor/nitrogen_tank{
-	chamber_id = "biodome_n2"
-	},
-/turf/open/floor/engine/n2,
-/area/centcom/biodome/engineering/atmos)
-"OI" = (
-/obj/machinery/air_sensor/nitrous_tank{
-	chamber_id = "biodome_n2o"
-	},
-/turf/open/floor/engine/n2o,
-/area/centcom/biodome/engineering/atmos)
 "OM" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -7910,6 +7876,12 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"OQ" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
+	chamber_id = "biodome_n2"
+	},
+/turf/open/floor/engine/n2,
+/area/centcom/biodome/engineering/atmos)
 "OS" = (
 /turf/open/misc/beach/coast{
 	dir = 10
@@ -7931,6 +7903,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"Pc" = (
+/obj/machinery/air_sensor/mix_tank{
+	chamber_id = "biodome_mix1"
+	},
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome/engineering/atmos)
 "Pd" = (
 /obj/machinery/atmospherics/components/binary/volume_pump/on{
 	dir = 1
@@ -7942,16 +7920,24 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
+"Pe" = (
+/obj/structure/cable,
+/obj/machinery/power/turbine/core_rotor{
+	mapping_id = "biodome_turbine";
+	dir = 8
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Pg" = (
 /obj/machinery/computer/libraryconsole,
 /obj/structure/table/wood,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"Pn" = (
+"Pj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark/textured,
-/area/centcom/biodome/engineering)
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Po" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -7965,6 +7951,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"Pr" = (
+/obj/machinery/air_sensor/carbon_tank{
+	chamber_id = "biodome_co2"
+	},
+/turf/open/floor/engine/co2,
+/area/centcom/biodome/engineering/atmos)
 "Pu" = (
 /turf/open/misc/beach/coast/corner{
 	dir = 4
@@ -7976,14 +7968,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"Pw" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Px" = (
 /obj/structure/chair/comfy/brown{
 	dir = 4
@@ -7999,16 +7983,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
-"PA" = (
-/obj/machinery/light/directional/east,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"PD" = (
-/obj/machinery/air_sensor/ordnance_burn_chamber{
-	chamber_id = "biodome_turbine_inlet"
+"Pz" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/visible{
+	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "PF" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/window/right/directional/south{
@@ -8035,6 +8015,10 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"PH" = (
+/obj/machinery/light/warm/directional/north,
+/turf/open/floor/wood/parquet,
+/area/centcom/biodome/service/theatre)
 "PJ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -8075,11 +8059,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
-"PT" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
+"PU" = (
+/obj/machinery/light/warm/directional/west,
+/turf/open/floor/wood/parquet,
+/area/centcom/biodome/service/theatre)
+"PV" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/chasm/jungle,
 /area/centcom/biodome/engineering/engine)
 "PW" = (
 /obj/structure/railing{
@@ -8116,18 +8105,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"PY" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
-"PZ" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Qa" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Receptions"
@@ -8143,6 +8120,18 @@
 /obj/machinery/rnd/production/techfab/department/security,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"Qe" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Qf" = (
+/obj/machinery/air_sensor/nitrous_tank{
+	chamber_id = "biodome_n2o"
+	},
+/turf/open/floor/engine/n2o,
+/area/centcom/biodome/engineering/atmos)
 "Qg" = (
 /obj/machinery/skill_station,
 /obj/machinery/light_switch/directional/north,
@@ -8154,14 +8143,24 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"Qk" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
+"Qj" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Plasma"
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"Qm" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
+"Ql" = (
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Engineering"
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "Qn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -8257,13 +8256,6 @@
 /obj/machinery/light/cold/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
-"QB" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "QD" = (
 /obj/structure/window/reinforced/fulltile,
 /turf/open/floor/plating,
@@ -8272,6 +8264,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"QG" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/violet/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "QI" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/box/deputy{
@@ -8292,12 +8290,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"QK" = (
-/obj/machinery/power/turbine/turbine_outlet{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "QL" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/structure/table/wood,
@@ -8310,6 +8302,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
+"QM" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
+	dir = 1;
+	chamber_id = "biodome_mix2"
+	},
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome/engineering/atmos)
 "QN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8360,19 +8359,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"QX" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"QY" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Rb" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/machinery/processor{
@@ -8385,16 +8371,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"Rc" = (
-/obj/machinery/air_sensor/mix_tank{
-	chamber_id = "biodome_mix2"
-	},
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome/engineering/atmos)
-"Rf" = (
-/obj/effect/spawner/liquids_spawner,
-/turf/open/floor/iron/pool,
-/area/centcom/biodome/engineering)
 "Rh" = (
 /turf/open/misc/beach/coast{
 	dir = 9
@@ -8446,6 +8422,14 @@
 "RB" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
+"RC" = (
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Engineering-Atmos Foyer"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "RD" = (
 /obj/machinery/door/airlock/service/glass{
 	name = "Bar Lounge"
@@ -8487,10 +8471,6 @@
 /obj/item/fancy_pillow,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
-"RI" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "RJ" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -8541,21 +8521,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"RO" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
-	dir = 9
+"RQ" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix2 to Mix";
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"RQ" = (
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Engine"
-	},
-/obj/structure/fans/tiny,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "RR" = (
 /obj/structure/closet/cabinet,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -8571,19 +8546,14 @@
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/apartment3)
-"RY" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 6
-	},
+"RW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "Sb" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
-	dir = 8
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/obj/machinery/atmospherics/miner/carbon_dioxide,
+/turf/open/floor/engine/co2,
+/area/centcom/biodome/engineering/atmos)
 "Sc" = (
 /turf/open/misc/beach/coast/corner,
 /area/centcom/biodome/interior)
@@ -8643,6 +8613,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
+"Ss" = (
+/obj/machinery/light/floor,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Sv" = (
 /obj/structure/fans/tiny,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8673,8 +8650,16 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"Sy" = (
-/turf/open/chasm/jungle,
+"Sz" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/light/directional/south,
+/obj/machinery/computer/atmos_control/nitrous_tank{
+	dir = 1;
+	atmos_chambers = list("biodome_n2o" = "Nitrous Oxide Supply")
+	},
+/turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "SA" = (
 /obj/structure/chair/pew{
@@ -8683,15 +8668,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large/birch,
 /area/centcom/biodome/service/theatre)
-"SC" = (
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "O2 to Mix"
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "SD" = (
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
@@ -8700,15 +8676,14 @@
 /obj/structure/table/optable,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"SI" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
+"SH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 1
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	name = "Air"
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/fireaxecabinet/directional/north,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "SJ" = (
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/iron/white,
@@ -8743,6 +8718,13 @@
 	},
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
+"SP" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/mix_input{
+	dir = 1;
+	chamber_id = "biodome_mix1"
+	},
+/turf/open/floor/engine/vacuum,
+/area/centcom/biodome/engineering/atmos)
 "SS" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/rag{
@@ -8763,9 +8745,12 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "SX" = (
-/obj/machinery/light/warm/directional/south,
-/turf/open/floor/wood/parquet,
-/area/centcom/biodome/service/theatre)
+/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "SY" = (
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool{
@@ -8810,6 +8795,21 @@
 	},
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/security/cell2)
+"Tj" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "N2 to Mix"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Tl" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Tm" = (
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
@@ -8830,16 +8830,36 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"Tt" = (
+/obj/structure/closet/secure_closet/freezer/meat{
+	req_access = null
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/kitchen/diagonal,
+/area/centcom/biodome/service/diner)
 "Tv" = (
 /obj/structure/flora/biolumi/mine/weaklight,
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"Tw" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
+/obj/machinery/light/floor,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Ty" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
+"Tz" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
+/obj/machinery/air_sensor/ordnance_burn_chamber{
+	chamber_id = "biodome_turbine_outlet"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome)
 "TA" = (
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/white,
@@ -8872,11 +8892,6 @@
 "TH" = (
 /turf/open/misc/sandy_dirt/planet,
 /area/centcom/biodome/interior)
-"TI" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "TJ" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/bigapartment2)
@@ -8887,12 +8902,6 @@
 "TL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/chemistry)
-"TN" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
-	chamber_id = "biodome_plasma"
-	},
-/turf/open/floor/engine/plasma,
-/area/centcom/biodome/engineering/atmos)
 "TP" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -8918,15 +8927,14 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "TW" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
-	dir = 8
+/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
+	dir = 5
 	},
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "CO2";
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+/area/centcom/biodome/engineering/engine)
 "TX" = (
 /obj/machinery/door/airlock/wood{
 	name = "Library"
@@ -8950,12 +8958,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
-"Uc" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Ud" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/computer/crew{
@@ -8963,6 +8965,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"Ue" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
+	dir = 1
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Ug" = (
 /obj/structure/table/wood,
 /obj/item/storage/bag/tray,
@@ -8974,16 +8982,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Un" = (
-/obj/structure/dresser,
-/turf/open/floor/carpet/orange,
-/area/centcom/biodome/engineering)
-"Uq" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 8
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
+"Ul" = (
+/turf/closed/wall/r_wall,
+/area/centcom/biodome/engineering/engine)
 "Us" = (
 /turf/open/misc/beach/coast{
 	dir = 1
@@ -9005,6 +9006,23 @@
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
+"Ux" = (
+/obj/machinery/igniter/incinerator_atmos{
+	id = "biodome_turbine_igniter"
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"UA" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 8
+	},
+/obj/machinery/computer/atmos_control/mix_tank{
+	dir = 1;
+	atmos_chambers = list("biodome_mix1" = "Mix Chamber")
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "UD" = (
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -9042,13 +9060,6 @@
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"UV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 10
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "UY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/structure/chair/comfy/lime{
@@ -9063,21 +9074,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/parquet,
 /area/centcom/biodome/service/theatre)
-"Va" = (
-/obj/machinery/computer/atmos_control/tarkon/incinerator{
-	dir = 4;
-	atmos_chambers = list("biodome_turbine_outlet" = "Turbine Outlet");
-	name = "Turbine Outlet Control"
-	},
-/obj/structure/window/reinforced/uranium/spawner/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"Vc" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/freezer{
-	dir = 1
-	},
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Vd" = (
 /turf/open/misc/beach/coast{
 	dir = 4
@@ -9087,12 +9083,23 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
+"Vf" = (
+/obj/machinery/atmospherics/miner/oxygen,
+/turf/open/floor/engine/o2,
+/area/centcom/biodome/engineering/atmos)
 "Vg" = (
 /obj/structure/chair/sofa/bench{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"Vj" = (
+/obj/machinery/light/directional/north,
+/obj/structure/closet/secure_closet/atmospherics{
+	req_access = null
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
 "Vk" = (
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 1
@@ -9107,6 +9114,9 @@
 /obj/structure/closet/cabinet,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"Vr" = (
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Vs" = (
 /obj/machinery/door/airlock/wood{
 	name = "Rec Centre"
@@ -9125,7 +9135,26 @@
 /obj/item/folder,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
-"Vz" = (
+"Vv" = (
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix to Tank";
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
+"Vx" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
+"VA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_access = null
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering/engine)
+"VC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = null
@@ -9159,24 +9188,16 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
-"VM" = (
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "VO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
 "VR" = (
-/turf/open/floor/engine/air,
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible,
+/turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"VU" = (
-/obj/structure/lattice/catwalk,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
-/turf/open/floor/engine/vacuum,
-/area/centcom/biodome)
 "VV" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -9199,6 +9220,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"VX" = (
+/obj/structure/table/reinforced/uraniumrglass,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "VY" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/misc/grass/planet,
@@ -9206,19 +9232,6 @@
 "VZ" = (
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
-"Wa" = (
-/obj/item/clothing/glasses/meson/engine{
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/meson/engine{
-	pixel_y = 0
-	},
-/obj/item/clothing/glasses/meson/engine{
-	pixel_y = -5
-	},
-/obj/structure/table/reinforced/uraniumrglass,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "Wb" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/window/reinforced/spawner/directional/north,
@@ -9241,18 +9254,21 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"Wc" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "Wd" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"We" = (
+/obj/machinery/door/window/survival_pod,
+/obj/structure/cable,
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Wf" = (
 /obj/structure/chair/comfy/black,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9289,6 +9305,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
+"Ws" = (
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Wv" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -9301,19 +9323,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
-"WA" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
-"WB" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/fireaxecabinet/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "WC" = (
 /obj/structure/closet/secure_closet/medical1{
 	req_access = null
@@ -9413,17 +9422,13 @@
 /obj/structure/mirror/directional/west,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/apartment2)
-"WT" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 10
+"WU" = (
+/obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
+	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"WU" = (
-/obj/machinery/light/warm/directional/west,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "WV" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -9438,6 +9443,14 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/biodome/arrivals)
+"Xc" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/griddle,
+/obj/machinery/microwave/engineering/cell_included{
+	pixel_y = 24
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "Xd" = (
 /obj/machinery/door/airlock/service{
 	name = "Apartment 3"
@@ -9446,11 +9459,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
-"Xf" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Xg" = (
 /obj/structure/chair/pew/right{
 	dir = 8
@@ -9477,23 +9485,24 @@
 	},
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
+"Xp" = (
+/obj/structure/table/wood/fancy/orange,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "Xr" = (
 /obj/structure/dresser,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
-"Xs" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "Xu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"Xv" = (
+/obj/machinery/atmospherics/components/binary/valve/digital,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "Xy" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/window/left/directional/south{
@@ -9555,22 +9564,31 @@
 /obj/machinery/computer/libraryconsole/bookmanagement,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
+"XJ" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "XL" = (
-/obj/machinery/light/warm/directional/north,
 /obj/structure/table/reinforced/uraniumrglass,
-/obj/machinery/processor{
-	pixel_y = 8
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_y = 2
+	},
+/obj/item/tank/internals/emergency_oxygen/double{
+	pixel_y = 0;
+	pixel_x = 3
 	},
 /turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
+/area/centcom/biodome/engineering/engine)
 "XM" = (
-/obj/machinery/door/airlock/bathroom{
-	name = "Restroom"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/engineering)
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "XO" = (
 /obj/machinery/smartfridge/food,
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -9599,12 +9617,6 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/bigapartment1)
-"XY" = (
-/obj/structure/closet/secure_closet/atmospherics{
-	req_access = null
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
 "XZ" = (
 /obj/item/flashlight/lamp{
 	pixel_y = 8;
@@ -9623,10 +9635,19 @@
 	dir = 1
 	},
 /area/centcom/biodome/service/botany)
+"Yc" = (
+/obj/machinery/air_sensor/oxygen_tank{
+	chamber_id = "biodome_o2"
+	},
+/turf/open/floor/engine/o2,
+/area/centcom/biodome/engineering/atmos)
 "Yd" = (
 /obj/machinery/medipen_refiller,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"Ye" = (
+/turf/closed/wall/r_wall,
+/area/centcom/biodome)
 "Yf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall/r_wall,
@@ -9654,6 +9675,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"Yk" = (
+/obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/n2o{
+	dir = 4
+	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "Yn" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -9661,13 +9688,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
-"Yr" = (
-/obj/machinery/light/directional/north,
-/obj/structure/closet/secure_closet/atmospherics{
-	req_access = null
+"Yo" = (
+/obj/structure/table/wood/fancy/orange,
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
 	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering/engine)
+/turf/open/floor/iron/dark/textured,
+/area/centcom/biodome/engineering)
 "Ys" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 1;
@@ -9707,6 +9735,11 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"YC" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/engine)
 "YF" = (
 /obj/machinery/door/airlock/security{
 	name = "Cell 1"
@@ -9767,10 +9800,8 @@
 	dir = 1
 	},
 /area/centcom/biodome/interior)
-"YN" = (
-/obj/machinery/atmospherics/components/binary/pump/off{
-	name = "Air to Mix"
-	},
+"YO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "YQ" = (
@@ -9791,10 +9822,6 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
-"YV" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "YX" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -9814,13 +9841,13 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"Zb" = (
-/obj/structure/closet/secure_closet/freezer/meat{
-	req_access = null
+"Za" = (
+/obj/structure/lattice/catwalk,
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 1
 	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron/kitchen/diagonal,
-/area/centcom/biodome/service/diner)
+/turf/open/chasm/jungle,
+/area/centcom/biodome/engineering/atmos)
 "Zc" = (
 /obj/machinery/anesthetic_machine,
 /obj/item/tank/internals/anesthetic,
@@ -9892,7 +9919,7 @@
 /area/centcom/biodome/townhall/meeting)
 "Zw" = (
 /obj/machinery/atmospherics/components/binary/temperature_gate{
-	target_temperature = 293.15;
+	target_temperature = 295;
 	dir = 1;
 	on = 1
 	},
@@ -9928,10 +9955,6 @@
 /obj/structure/chair/sofa/bench/solo,
 /turf/open/floor/iron/textured_large,
 /area/centcom/biodome/interior)
-"ZF" = (
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
 "ZG" = (
 /mob/living/simple_animal/bot/medbot/stationary{
 	maints_access_required = null;
@@ -9942,12 +9965,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
-"ZM" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/siphon/monitored/air_output{
-	chamber_id = "biodome_air"
-	},
-/turf/open/floor/engine/air,
-/area/centcom/biodome/engineering/atmos)
 "ZN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9956,12 +9973,13 @@
 	},
 /area/centcom/biodome/interior)
 "ZP" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
-	dir = 1
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/binary/pump/off{
+	name = "Mix to Turbine";
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
+/area/centcom/biodome/engineering/atmos)
 "ZS" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/tile,
@@ -9970,25 +9988,9 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"ZU" = (
-/obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/engine)
-"ZV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/visible,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "ZW" = (
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
-"ZZ" = (
-/obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/light/red/directional/north,
-/turf/open/floor/circuit/red,
-/area/centcom/biodome/security/syndicat)
 
 (1,1,1) = {"
 oo
@@ -28562,7 +28564,7 @@ TH
 VY
 pq
 zp
-ZZ
+IK
 xt
 za
 zp
@@ -29590,7 +29592,7 @@ Hv
 pq
 pq
 zp
-ZZ
+IK
 rx
 za
 zp
@@ -36860,7 +36862,7 @@ Hf
 tv
 Tm
 Tm
-bK
+uU
 Tm
 Tm
 Tm
@@ -37371,13 +37373,13 @@ pq
 ZN
 VY
 Hf
-yU
+HH
 ym
 kA
 kA
 kA
 kA
-EC
+yT
 Hf
 UO
 UO
@@ -38919,7 +38921,7 @@ Ii
 Ze
 Tm
 ID
-gJ
+VX
 Hf
 DL
 DL
@@ -39180,7 +39182,7 @@ SW
 Hf
 Jg
 Jg
-cj
+PU
 Jg
 Jg
 DL
@@ -39430,16 +39432,16 @@ Hf
 mr
 Tm
 lN
-bK
+uU
 Nn
 gi
 wy
 Hf
-mq
+PH
 Jg
 Jg
 Jg
-SX
+iX
 DL
 pq
 pq
@@ -39947,7 +39949,7 @@ qv
 sq
 Uu
 sq
-Zb
+Tt
 qZ
 Jg
 Jg
@@ -40202,7 +40204,7 @@ XT
 sq
 dl
 sq
-As
+nA
 sq
 mD
 qZ
@@ -40716,15 +40718,15 @@ Ct
 sq
 Ht
 sq
-nA
+nq
 sq
 xS
 qZ
-mq
+PH
 Jg
 UZ
 Jg
-SX
+iX
 DL
 pq
 pq
@@ -41746,7 +41748,7 @@ hl
 Ip
 Ip
 Ip
-gn
+sQ
 qZ
 NE
 wM
@@ -43570,18 +43572,18 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-TI
-TI
-TI
-DC
-DC
-DC
-DC
-DC
-DC
+hz
+hz
+hz
+LX
+LX
+LX
+hz
+hz
+hz
+hz
+hz
+hz
 pq
 pq
 pq
@@ -43827,18 +43829,18 @@ pq
 pq
 pq
 pq
-DC
-RY
-nr
-Vc
-gd
-ld
-Jn
-RY
-Ke
-md
-Sy
-DC
+hz
+Ge
+Pz
+Ue
+DR
+Ok
+zI
+Ge
+vt
+Za
+aW
+hz
 pq
 pq
 pq
@@ -44081,21 +44083,21 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-DC
-op
-sn
-Vc
-gd
-fv
-ld
-mT
-DC
-DC
-DC
-DC
+hz
+hz
+hz
+hz
+nY
+qO
+Ue
+DR
+YO
+Ok
+Dh
+hz
+hz
+hz
+hz
 pq
 pq
 pq
@@ -44338,21 +44340,21 @@ pq
 pq
 pq
 pq
-DC
-bZ
-xJ
-Ke
-oL
-Uc
-Jn
-am
-pI
-ep
-HH
-HC
-Ce
-Rc
-DC
+hz
+aR
+OQ
+vt
+dD
+EG
+zI
+AZ
+my
+vl
+RQ
+kX
+Ou
+ae
+hz
 pq
 pq
 pq
@@ -44595,21 +44597,21 @@ pq
 pq
 pq
 pq
-DC
-OG
-oN
-eZ
-lP
-sJ
-mE
-DS
-pI
-qO
-iX
-TI
-FV
-qp
-DC
+hz
+ey
+jh
+oP
+jH
+FW
+ct
+Qe
+my
+Cv
+lB
+LX
+QM
+lI
+hz
 pq
 pq
 pq
@@ -44852,21 +44854,21 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-DC
-Iv
-UV
-ey
-hY
-NK
-aV
-xq
-DC
-DC
-DC
-DC
+hz
+hz
+hz
+hz
+Ck
+kQ
+Tj
+Tw
+BP
+nP
+qE
+hz
+hz
+hz
+hz
 pq
 pq
 pq
@@ -45109,21 +45111,21 @@ pq
 pq
 pq
 pq
-DC
-DO
-ti
-Ke
-rm
-CD
-xR
-DS
-sH
-DD
-xN
-TI
-fe
-tD
-DC
+hz
+Vf
+hq
+vt
+Jr
+Ao
+yG
+Qe
+WU
+cK
+bE
+LX
+sI
+Pc
+hz
 pq
 pq
 pq
@@ -45366,21 +45368,21 @@ pq
 pq
 pq
 pq
-DC
-st
-rd
-Wc
-en
-EV
-DM
-oq
+hz
+Yc
+oy
+VR
+hK
+aV
+En
+LR
 uY
-WT
-lp
-TI
-dE
-qp
-DC
+JM
+HP
+LX
+SP
+lI
+hz
 pq
 pq
 pq
@@ -45623,21 +45625,21 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-DC
-Kj
-ke
-SC
-Qm
+hz
+hz
+hz
+hz
+Mm
+mE
+Dl
+Ey
 uY
-aV
-xI
-DC
-DC
-DC
-DC
+nP
+UA
+hz
+hz
+hz
+hz
 pq
 pq
 pq
@@ -45880,21 +45882,21 @@ gI
 pq
 pq
 pq
-DC
-VR
-dT
-PZ
-BV
-Bj
-Fq
-DS
-sH
-qj
-TW
-hd
-Ln
-Hj
-DC
+hz
+KX
+jJ
+ma
+jM
+si
+lh
+Qe
+WU
+bX
+jd
+cP
+ew
+Pr
+hz
 pq
 pq
 pq
@@ -46137,21 +46139,21 @@ pq
 pq
 pq
 pq
-DC
-ue
-ZM
-Os
-SI
-lR
-Qk
-yj
-RO
-aV
-IL
-VM
-ph
-mw
-DC
+hz
+MR
+HF
+by
+lq
+cD
+NX
+Ah
+ka
+nP
+kp
+fH
+Eg
+Sb
+hz
 pq
 pq
 pq
@@ -46394,21 +46396,21 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-DC
-nS
-ks
-YN
-hY
-hA
-aV
-if
-DC
-DC
-DC
-DC
+hz
+hz
+hz
+hz
+Fc
+iQ
+Md
+Tw
+uF
+nP
+Ab
+hz
+hz
+hz
+hz
 pq
 pq
 pq
@@ -46651,21 +46653,21 @@ pq
 pq
 pq
 pq
-DC
-zS
-TN
-Ke
-wv
-lB
-FT
-ZV
-Ou
-qj
-KO
-au
-Oy
-OI
-DC
+hz
+ls
+wX
+vt
+CU
+zK
+lu
+RW
+bh
+bX
+GX
+QG
+zq
+Qf
+hz
 pq
 pq
 pq
@@ -46908,21 +46910,21 @@ pq
 pq
 pq
 pq
-DC
-AM
-DR
-vj
-yY
-xe
-Fa
-yz
-sG
-aV
-gT
-Ke
-Fm
-tm
-DC
+hz
+Js
+yB
+II
+Qj
+Ee
+Vv
+Hh
+tS
+nP
+Yk
+vt
+xA
+Lc
+hz
 pq
 pq
 pq
@@ -47165,21 +47167,21 @@ pq
 pq
 pq
 pq
-DC
-DC
-DC
-DC
-uS
-zL
-Uq
-Jn
-Uq
-aV
-ex
-Ja
-Ja
-Ja
-Ja
+hz
+hz
+hz
+hz
+oi
+ZP
+sB
+zI
+sB
+nP
+Sz
+IU
+IU
+IU
+IU
 pq
 pq
 pq
@@ -47425,18 +47427,18 @@ pq
 pq
 pq
 pq
-DC
-PY
-hH
-Ox
-gv
-ao
-Ab
-uB
-Ja
-yX
-Kk
-of
+hz
+Aw
+vd
+jC
+JR
+Me
+Ws
+qz
+IU
+wk
+Xp
+aL
 pq
 pq
 pq
@@ -47679,21 +47681,21 @@ pq
 pq
 pq
 pq
-um
+EN
 nu
 nu
-rH
-AZ
-BE
-AZ
-Ja
-Ja
-Ja
-Ja
-Ja
-rV
-Mf
-of
+Ul
+vi
+iM
+vi
+IU
+IU
+IU
+IU
+IU
+LQ
+gN
+aL
 pq
 pq
 pq
@@ -47939,18 +47941,18 @@ pq
 nu
 nu
 nu
-rH
-XY
-uD
-WA
-oe
-Gv
-fN
-WU
-Or
-Kc
-Or
-Ja
+Ul
+wv
+vX
+NV
+av
+IO
+nd
+Mf
+Mj
+qN
+Mj
+IU
 pq
 pq
 pq
@@ -48196,18 +48198,18 @@ pq
 nu
 nu
 nu
-rH
-Yr
-uD
-be
-Ja
-gC
-Gv
-Od
-Or
-Gv
-qD
-Ja
+Ul
+Vj
+vX
+KH
+IU
+gQ
+IO
+eX
+Mj
+IO
+zc
+IU
 pq
 pq
 pq
@@ -48453,18 +48455,18 @@ jD
 nu
 nu
 nu
-rH
-fU
-uD
-fw
-Ja
-XL
-Gv
-ve
-AR
-AR
-sE
-Ja
+Ul
+hU
+vX
+Nz
+IU
+cM
+IO
+np
+tD
+tD
+NW
+IU
 pq
 pq
 pq
@@ -48710,18 +48712,18 @@ kG
 LS
 LS
 LS
-IC
-WA
-uD
-fr
-Ja
-gQ
-Gv
-Od
-Or
-yW
-Mf
-of
+RC
+NV
+vX
+oG
+IU
+Mw
+IO
+eX
+Mj
+bl
+gN
+aL
 pq
 pq
 pq
@@ -48967,18 +48969,18 @@ jD
 nu
 nu
 nu
-rH
-os
-tw
-BW
-Ja
-Hr
-Gv
-Or
-mi
-yW
-Kk
-of
+Ul
+Ny
+dk
+XL
+IU
+Xc
+IO
+Mj
+No
+bl
+Xp
+aL
 pq
 pq
 pq
@@ -49224,18 +49226,18 @@ pq
 nu
 nu
 nu
-rH
-EQ
-tw
-Wa
-Ja
-Ja
-By
-Ja
-Ja
-Ja
-Ja
-Ja
+Ul
+eI
+dk
+eq
+IU
+IU
+tX
+IU
+IU
+IU
+IU
+IU
 pq
 pq
 pq
@@ -49481,18 +49483,18 @@ pq
 nu
 nu
 nu
-rH
-Vz
-tw
-IT
-Ja
-ir
-tZ
-hv
-Ja
-MG
-vy
-Ja
+Ul
+VC
+dk
+KD
+IU
+nr
+vS
+yx
+IU
+NK
+fa
+IU
 pq
 pq
 pq
@@ -49735,21 +49737,21 @@ pq
 pq
 pq
 pq
-um
+EN
 nu
 nu
-rH
-kJ
-tw
-DN
-Ja
-bE
-tZ
-Pn
-XM
-LG
-BI
-Ja
+Ul
+EQ
+dk
+AL
+IU
+gn
+vS
+zE
+qM
+Cr
+JE
+IU
 pq
 pq
 pq
@@ -49995,18 +49997,18 @@ pq
 pq
 pq
 pq
-rH
-oX
-tw
-zs
-Ja
-Un
-ty
-Cn
-Ja
-bc
-Rf
-Ja
+Ul
+VA
+dk
+cI
+IU
+yh
+ne
+Yo
+IU
+eP
+aX
+IU
 pq
 pq
 pq
@@ -50249,21 +50251,21 @@ pq
 pq
 pq
 pq
-rH
-rH
-rH
-rH
-iQ
-LY
-Gd
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
+Ul
+Ul
+Ul
+Ul
+CQ
+Ql
+YC
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
 pq
 pq
 pq
@@ -50506,21 +50508,21 @@ pq
 pq
 pq
 pq
-rH
-Kb
-QX
-QX
-QX
-QB
-GE
-tp
-uu
-uu
-az
-ct
-uu
-od
-rH
+Ul
+EK
+SX
+SX
+SX
+mR
+go
+dv
+fN
+fN
+yD
+ju
+fN
+Fe
+Ul
 pq
 pq
 pq
@@ -50763,21 +50765,21 @@ pq
 pq
 pq
 pq
-rH
-yQ
-nR
-nR
-nR
-bP
-eG
-QY
-Fz
-bL
-gf
-bL
-bL
-bS
-rH
+Ul
+oL
+fF
+fF
+fF
+dz
+vD
+Fv
+rQ
+Vx
+kn
+Vx
+Vx
+pv
+Ul
 pq
 pq
 pq
@@ -51020,21 +51022,21 @@ pq
 pq
 pq
 pq
-rH
-ZP
-ei
-Aa
-Aa
-LA
-eG
-go
-Xf
-bL
-mg
-nl
-di
-ZU
-rH
+Ul
+hX
+TW
+Vr
+Vr
+eJ
+vD
+Ss
+Pj
+Vx
+dq
+Tz
+gF
+vK
+Ul
 pq
 pq
 pq
@@ -51277,21 +51279,21 @@ pq
 pq
 pq
 pq
-rH
-tF
-No
-cz
-Aa
-bP
-eG
-bL
-Xf
-rH
-CR
-VU
-qU
-eG
-rH
+Ul
+cd
+XJ
+tc
+Vr
+dz
+vD
+Vx
+Pj
+Ul
+Ye
+rj
+rP
+vD
+Ul
 pq
 pq
 pq
@@ -51534,21 +51536,21 @@ gI
 pq
 pq
 pq
-rH
-Pw
-RI
-Aa
-Aa
-bP
-eG
-ps
-Xf
-Va
-Gz
-QK
-rH
-eG
-rH
+Ul
+sa
+In
+Vr
+Vr
+dz
+vD
+Df
+Pj
+vN
+aT
+mi
+Ul
+vD
+Ul
 pq
 pq
 pq
@@ -51791,21 +51793,21 @@ pq
 pq
 pq
 pq
-rH
-yQ
-lG
-Xs
-MV
-rb
-Xf
-RQ
-Xf
-HV
-Jv
-KD
-rH
-oy
-rH
+Ul
+oL
+Dp
+hc
+Dq
+vH
+Pj
+wo
+Pj
+gh
+We
+Pe
+Ul
+pQ
+Ul
 pq
 pq
 pq
@@ -52048,21 +52050,21 @@ pq
 pq
 pq
 pq
-rH
-WB
-rQ
-dD
-bX
-bP
-eG
-bL
-ee
-Fc
-Ll
-Ca
-rH
-PT
-rH
+Ul
+SH
+bs
+zZ
+ej
+dz
+vD
+Vx
+iY
+nN
+KM
+nc
+Ul
+nb
+Ul
 pq
 pq
 pq
@@ -52305,21 +52307,21 @@ pq
 pq
 pq
 pq
-rH
-tF
-No
-cz
-hb
-bP
-eG
-bL
-ZF
-rH
-rH
-kp
-bL
-Aa
-rH
+Ul
+cd
+XJ
+tc
+lW
+dz
+vD
+Vx
+DG
+Ul
+Ul
+Ux
+Vx
+Vr
+Ul
 pq
 pq
 pq
@@ -52562,21 +52564,21 @@ pq
 pq
 pq
 pq
-rH
-Cf
-zn
-dD
-cU
-JM
-jm
-lk
-EN
-eE
-yn
-PD
-ps
-Aa
-rH
+Ul
+hh
+MZ
+zZ
+LA
+Bn
+Dz
+bu
+xc
+Tl
+gq
+xL
+Df
+Vr
+Ul
 pq
 pq
 pq
@@ -52819,21 +52821,21 @@ pq
 pq
 pq
 pq
-rH
-Sb
-zv
-iJ
-YV
-YV
-wk
-ok
-IX
-ps
-bL
-bL
-bL
-Aa
-rH
+Ul
+bj
+gH
+Xv
+od
+od
+hY
+GW
+PV
+Df
+Vx
+Vx
+Vx
+Vr
+Ul
 pq
 pq
 pq
@@ -53076,21 +53078,21 @@ pq
 pq
 pq
 pq
-rH
-eG
-eG
-eG
-eG
-eG
-eG
-bL
-bL
-bL
-Aa
-PA
-Aa
-Aa
-rH
+Ul
+vD
+vD
+vD
+vD
+vD
+vD
+Vx
+Vx
+Vx
+Vr
+XM
+Vr
+Vr
+Ul
 pq
 pq
 pq
@@ -53333,21 +53335,21 @@ pq
 pq
 pq
 pq
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
-rH
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
+Ul
 pq
 pq
 pq
