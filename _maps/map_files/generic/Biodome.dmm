@@ -1291,6 +1291,7 @@
 /obj/structure/closet/secure_closet/engineering_electrical{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "eJ" = (
@@ -2048,6 +2049,7 @@
 /obj/structure/closet/secure_closet/atmospherics{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "hV" = (
@@ -3475,7 +3477,7 @@
 "nN" = (
 /obj/machinery/computer/atmos_control/tarkon/incinerator{
 	dir = 8;
-	atmos_chambers = list("biodome_turbine_inlet" = "Turbine  Inlet");
+	atmos_chambers = list("biodome_turbine_inlet" = "Turbine    Inlet");
 	name = "Turbine Inlet Control"
 	},
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
@@ -3540,7 +3542,7 @@
 	dir = 4
 	},
 /obj/machinery/computer/atmos_control/nitrogen_tank{
-	atmos_chambers = list("biodome_n2" = "Nitrogen  Supply")
+	atmos_chambers = list("biodome_n2" = "Nitrogen    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -4153,7 +4155,7 @@
 	},
 /obj/machinery/computer/atmos_control/mix_tank{
 	dir = 1;
-	atmos_chambers = list("biodome_mix2" = "Mix  Chamber")
+	atmos_chambers = list("biodome_mix2" = "Mix    Chamber")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -5281,7 +5283,7 @@
 "vN" = (
 /obj/machinery/computer/atmos_control/tarkon/incinerator{
 	dir = 4;
-	atmos_chambers = list("biodome_turbine_outlet" = "Turbine  Outlet");
+	atmos_chambers = list("biodome_turbine_outlet" = "Turbine    Outlet");
 	name = "Turbine Outlet Control"
 	},
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
@@ -6240,7 +6242,7 @@
 	},
 /obj/machinery/computer/atmos_control/carbon_tank{
 	dir = 1;
-	atmos_chambers = list("biodome_co2" = "Carbon  Dioxide  Supply")
+	atmos_chambers = list("biodome_co2" = "Carbon    Dioxide    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -6728,7 +6730,7 @@
 	dir = 8
 	},
 /obj/machinery/computer/atmos_control/oxygen_tank{
-	atmos_chambers = list("biodome_o2" = "Oxygen  Supply")
+	atmos_chambers = list("biodome_o2" = "Oxygen    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -7270,6 +7272,7 @@
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "ES" = (
@@ -7311,7 +7314,7 @@
 	dir = 8
 	},
 /obj/machinery/computer/atmos_control/plasma_tank{
-	atmos_chambers = list("biodome_plasma" = "Plasma  Supply")
+	atmos_chambers = list("biodome_plasma" = "Plasma    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -7631,6 +7634,12 @@
 "GH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
+/obj/item/storage/backpack/duffelbag/deforest_medkit/stocked{
+	pixel_y = 12
+	},
+/obj/item/storage/backpack/duffelbag/deforest_medkit/stocked{
+	pixel_y = 3
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "GJ" = (
@@ -8158,6 +8167,16 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"Jx" = (
+/obj/item/storage/backpack/duffelbag/deforest_surgical/stocked{
+	pixel_y = 16
+	},
+/obj/item/storage/backpack/duffelbag/deforest_surgical/stocked{
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced/rglass,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "Jy" = (
 /obj/machinery/chem_mass_spec,
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -8701,6 +8720,23 @@
 	pixel_y = 13;
 	pixel_x = 5
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants{
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine{
+	pixel_y = -2;
+	pixel_x = 1
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine{
+	pixel_y = 2;
+	pixel_x = 1
+	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "LI" = (
@@ -8859,7 +8895,7 @@
 	dir = 8
 	},
 /obj/machinery/computer/atmos_control/air_tank{
-	atmos_chambers = list("biodome_air" = "Mixed  Air  Supply")
+	atmos_chambers = list("biodome_air" = "Mixed    Air    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -8938,6 +8974,26 @@
 /area/centcom/biodome/medical)
 "MF" = (
 /obj/machinery/light/cold/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
+"MG" = (
+/obj/item/reagent_containers/hypospray/medipen/deforest/occuisate,
+/obj/item/reagent_containers/hypospray/medipen/deforest/occuisate,
+/obj/item/reagent_containers/hypospray/medipen/deforest/occuisate,
+/obj/item/reagent_containers/hypospray/medipen/deforest/occuisate,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants,
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine,
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine,
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine,
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine,
+/obj/structure/closet/crate/medical,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "MH" = (
@@ -9087,6 +9143,7 @@
 /obj/structure/closet/secure_closet/engineering_welding{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "Nz" = (
@@ -9152,7 +9209,7 @@
 "NO" = (
 /obj/machinery/computer/atmos_control/nitrogen_tank{
 	dir = 8;
-	atmos_chambers = list("biodome_voxbox_n2" = "Vox                Nitrogen                Supply")
+	atmos_chambers = list("biodome_voxbox_n2" = "Vox                                Nitrogen                                Supply")
 	},
 /turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
@@ -9427,6 +9484,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"Pp" = (
+/obj/structure/shipping_container/deforest,
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
 "Pr" = (
 /obj/machinery/air_sensor/carbon_tank{
 	chamber_id = "biodome_co2"
@@ -9722,11 +9783,18 @@
 	pixel_x = 6;
 	pixel_y = 10
 	},
-/obj/item/storage/pill_bottle/mannitol,
 /obj/item/reagent_containers/dropper{
 	pixel_y = 6
 	},
 /obj/machinery/light_switch/directional/north,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants,
+/obj/item/reagent_containers/hypospray/medipen/deforest/coagulants{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/calopine{
+	pixel_y = -2
+	},
+/obj/item/storage/pill_bottle/mannitol,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
 "Qv" = (
@@ -10232,7 +10300,7 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/computer/atmos_control/nitrous_tank{
 	dir = 1;
-	atmos_chambers = list("biodome_n2o" = "Nitrous  Oxide  Supply")
+	atmos_chambers = list("biodome_n2o" = "Nitrous    Oxide    Supply")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -10649,7 +10717,7 @@
 	},
 /obj/machinery/computer/atmos_control/mix_tank{
 	dir = 1;
-	atmos_chambers = list("biodome_mix1" = "Mix  Chamber")
+	atmos_chambers = list("biodome_mix1" = "Mix    Chamber")
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -10747,6 +10815,7 @@
 /obj/structure/closet/secure_closet/atmospherics{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "Vk" = (
@@ -10823,6 +10892,7 @@
 /obj/structure/closet/secure_closet/engineering_personal{
 	req_access = null
 	},
+/obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering/engine)
 "VD" = (
@@ -42225,9 +42295,9 @@ HL
 ni
 ku
 LF
+Jx
 cb
-cb
-cb
+MG
 cb
 cb
 cb
@@ -42469,7 +42539,7 @@ pq
 pq
 pq
 pq
-pq
+Pp
 pq
 ni
 ot
