@@ -73,7 +73,9 @@
 	///The minimum value for the light's power in low power mode
 	var/bulb_low_power_pow_min = 0.5
 	///The Light range to use when working in fire alarm status
-	var/fire_brightness = 4
+	var/fire_brightness = 9
+	///The Light power to use when working in fire alarm status
+	var/fire_power = 0.5
 	///The Light colour to use when working in fire alarm status
 	var/fire_colour = COLOR_FIRE_LIGHT_RED
 
@@ -225,6 +227,7 @@
 		var/area/local_area = get_room_area()
 		if (local_area?.fire)
 			color_set = fire_colour
+			power_set = fire_power
 			brightness_set = fire_brightness
 		else if (nightshift_enabled)
 			brightness_set = nightshift_brightness
@@ -331,10 +334,10 @@
 			. += "The [fitting] has been smashed."
 	if(cell || has_mock_cell)
 		. += "Its backup power charge meter reads [has_mock_cell ? 100 : round((cell.charge / cell.maxcharge) * 100, 0.1)]%."
-	//SKYRAT EDIT ADDITION
+	//NOVA EDIT ADDITION
 	if(constant_flickering)
 		. += span_danger("The lighting ballast appears to be damaged, this could be fixed with a multitool.")
-	//SKYRAT EDIT END
+	//NOVA EDIT END
 
 
 
@@ -460,10 +463,10 @@
 // true if area has power and lightswitch is on
 /obj/machinery/light/proc/has_power()
 	var/area/local_area = get_room_area()
-	//SKYRAT EDIT ADDITION BEGIN
+	//NOVA EDIT ADDITION BEGIN
 	if(isnull(local_area))
 		return FALSE
-	//SKYRAT EDIT END
+	//NOVA EDIT END
 	return local_area.lightswitch && local_area.power_light
 
 // returns whether this light has emergency power
@@ -726,7 +729,7 @@
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
 	nightshift_brightness = 3
-	fire_brightness = 2
+	fire_brightness = 4.5
 
 /obj/machinery/light/floor/get_light_offset()
 	return list(0, 0)
