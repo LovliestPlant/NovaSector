@@ -543,21 +543,22 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					balloon_alert(user, "target is blocked!")
 					return
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
-				//if(do_after(user, disposal_build_speed, target = attack_target)) /// NAAKAS-LOUNGE REMOVAL
-				var/obj/structure/disposalconstruct/new_disposals_segment = new (attack_target, queued_pipe_type, queued_pipe_dir, queued_pipe_flipped)
+				if(TRUE) /// NAAKAS-LOUNGE EDIT: trying to get these instant
+				//if(do_after(user, disposal_build_speed, target = attack_target))
+					var/obj/structure/disposalconstruct/new_disposals_segment = new (attack_target, queued_pipe_type, queued_pipe_dir, queued_pipe_flipped)
 
-				if(!new_disposals_segment.can_place())
-					balloon_alert(user, "not enough room!")
-					qdel(new_disposals_segment)
+					if(!new_disposals_segment.can_place())
+						balloon_alert(user, "not enough room!")
+						qdel(new_disposals_segment)
+						return
+
+					playsound(get_turf(src), RPD_USE_SOUND, 50, TRUE)
+
+					new_disposals_segment.add_fingerprint(usr)
+					new_disposals_segment.update_appearance()
+					if(mode & WRENCH_MODE)
+						new_disposals_segment.wrench_act(user, src)
 					return
-
-				playsound(get_turf(src), RPD_USE_SOUND, 50, TRUE)
-
-				new_disposals_segment.add_fingerprint(usr)
-				new_disposals_segment.update_appearance()
-				if(mode & WRENCH_MODE)
-					new_disposals_segment.wrench_act(user, src)
-				return /// NAAKAS-LOUNGE EDIT END
 
 			if(TRANSIT_CATEGORY) //Making transit tubes
 				if(!can_make_pipe)
@@ -573,26 +574,27 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 					return
 
 				playsound(get_turf(src), 'sound/machines/click.ogg', 50, TRUE)
-				//if(do_after(user, transit_build_speed, target = attack_target)) NAAKAS-LOUNGE EDIT BEGIN
-				playsound(get_turf(src), RPD_USE_SOUND, 50, TRUE)
-				if(queued_pipe_type == /obj/structure/c_transit_tube_pod)
-					var/obj/structure/c_transit_tube_pod/pod = new /obj/structure/c_transit_tube_pod(attack_target)
-					pod.add_fingerprint(usr)
-					if(mode & WRENCH_MODE)
-						pod.wrench_act(user, src)
+				if(TRUE)
+				//if(do_after(user, transit_build_speed, target = attack_target))
+					playsound(get_turf(src), RPD_USE_SOUND, 50, TRUE)
+					if(queued_pipe_type == /obj/structure/c_transit_tube_pod)
+						var/obj/structure/c_transit_tube_pod/pod = new /obj/structure/c_transit_tube_pod(attack_target)
+						pod.add_fingerprint(usr)
+						if(mode & WRENCH_MODE)
+							pod.wrench_act(user, src)
 
-				else
-					var/obj/structure/c_transit_tube/tube = new queued_pipe_type(attack_target)
-					tube.setDir(queued_pipe_dir)
+					else
+						var/obj/structure/c_transit_tube/tube = new queued_pipe_type(attack_target)
+						tube.setDir(queued_pipe_dir)
 
-					if(queued_pipe_flipped)
-						tube.setDir(turn(queued_pipe_dir, 45 + ROTATION_FLIP))
-						tube.AfterRotation(user, ROTATION_FLIP)
+						if(queued_pipe_flipped)
+							tube.setDir(turn(queued_pipe_dir, 45 + ROTATION_FLIP))
+							tube.AfterRotation(user, ROTATION_FLIP)
 
-					tube.add_fingerprint(usr)
-					if(mode & WRENCH_MODE)
-						tube.wrench_act(user, src)
-				//return /// NAAKAS-LOUNGE EDIT END
+						tube.add_fingerprint(usr)
+						if(mode & WRENCH_MODE)
+							tube.wrench_act(user, src)
+					return
 			else
 				return ..()
 
@@ -610,19 +612,18 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 
 	var/can_make_pipe = check_can_make_pipe(atom_to_target)
 	var/list/pipe_layer_numbers = get_active_pipe_layers()
-	var/continued_build = FALSE
+	//var/continued_build = FALSE
 	for(var/pipe_layer_num in 1 to length(pipe_layer_numbers))
 		var/layer_to_build = pipe_layer_numbers[pipe_layer_num]
-		if(layer_to_build != pipe_layer_numbers[1])
-			continued_build = TRUE
+		/*if(layer_to_build != pipe_layer_numbers[1])
+			continued_build = TRUE*/
 		if(!layer_to_build)
 			return FALSE
 		if(!can_make_pipe)
 			return FALSE
 		playsound(get_turf(src), 'sound/machines/click.ogg', 50, vary = TRUE)
-		//if(!continued_build && !do_after(user, atmos_build_speed, target = atom_to_target)) /// NAAKAS-LOUNGE REMOVAL
-		if(!continued_build) /// NAAKAS-LOUNGE REPLACEMENT
-			return FALSE
+		/*if(!continued_build && !do_after(user, atmos_build_speed, target = atom_to_target))
+			return FALSE*/  /// NAAKAS-LOUNGE REMOVAL: continued_build is effectively always true, removing the do_after makes this always return false
 		if(!recipe.all_layers && (layer_to_build == 1 || layer_to_build == 5))
 			balloon_alert(user, "can't build on layer [layer_to_build]!")
 			if(multi_layer)
