@@ -589,9 +589,9 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 						tube.setDir(turn(queued_pipe_dir, 45 + ROTATION_FLIP))
 						tube.AfterRotation(user, ROTATION_FLIP)
 
-				tube.add_fingerprint(usr)
-				if(mode & WRENCH_MODE)
-					tube.wrench_act(user, src)
+					tube.add_fingerprint(usr)
+					if(mode & WRENCH_MODE)
+						tube.wrench_act(user, src)
 				//return /// NAAKAS-LOUNGE EDIT END
 			else
 				return ..()

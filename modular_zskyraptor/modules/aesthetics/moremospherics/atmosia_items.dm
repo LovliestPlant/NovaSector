@@ -224,7 +224,7 @@
 
 /obj/item/repainting_kit/Initialize(mapload)
 	. = ..()
-	current_color = color_matrix_identity()
+	current_color = COLOR_MATRIX_IDENTITY
 
 /obj/item/repainting_kit/examine(mob/user)
 	. = ..()
@@ -232,6 +232,8 @@
 	. += span_notice("<b>Right-click</b> any item to apply a COLOR MATRIX to it.")
 
 /obj/item/repainting_kit/pre_attack(atom/attacked_atom, mob/living/user, params)
+	repainting_item = null //force it to null if needed
+	regreyscale_item = null
 	var/rval = ..()
 	if(!istype(attacked_atom, /obj/item/))
 		return ..()
@@ -297,7 +299,7 @@
 	. = ..()
 	repainting_item = null
 	QDEL_NULL(proxy_view)
-	current_color = color_matrix_identity()
+	current_color = COLOR_MATRIX_IDENTITY
 
 /obj/item/repainting_kit/ui_status(mob/user)
 	if(repainting_item)
@@ -374,6 +376,7 @@
 
 /obj/item/repainting_kit/proc/check_menu(obj/item/goodie, mob/user)
 	if(user.incapacitated() || !user.is_holding(src) || !goodie)
+		repainting_item = null
 		return FALSE
 	return TRUE
 
