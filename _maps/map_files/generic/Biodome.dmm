@@ -158,7 +158,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
 "aC" = (
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
 "aD" = (
@@ -2018,7 +2018,7 @@
 "gM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
 "gN" = (
@@ -2667,7 +2667,7 @@
 /area/centcom/biodome/cargo)
 "jf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
@@ -3455,7 +3455,7 @@
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/science)
 "lK" = (
-/obj/machinery/light/built/directional/east,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "lL" = (
@@ -5374,7 +5374,7 @@
 /obj/machinery/coffeemaker{
 	pixel_y = 9
 	},
-/obj/machinery/light/built/directional/north,
+/obj/machinery/light/directional/north,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "sW" = (
@@ -5603,7 +5603,7 @@
 "tU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "tV" = (
@@ -5704,7 +5704,7 @@
 /area/centcom/biodome/security)
 "ul" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/built/directional/west,
+/obj/machinery/light/cold/directional/west,
 /obj/structure/table/reinforced/rglass,
 /obj/item/knife/kitchen{
 	pixel_x = 8;
@@ -6478,6 +6478,10 @@
 /obj/structure/grille,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
+"xd" = (
+/obj/machinery/light/directional/north,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_ko/medbay)
 "xf" = (
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/voxbox/atmos/overseer)
@@ -6601,7 +6605,7 @@
 /area/centcom/biodome/security/cell1)
 "xy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/built/directional/north,
+/obj/machinery/light/directional/north,
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
@@ -7599,7 +7603,7 @@
 /area/centcom/biodome/service/library)
 "Bd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
@@ -8005,7 +8009,7 @@
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
 "CD" = (
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /obj/structure/closet/cabinet,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
@@ -8578,7 +8582,7 @@
 /area/centcom/biodome/engineering/engine)
 "ER" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
@@ -13112,7 +13116,7 @@
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
 "VQ" = (
-/obj/machinery/light/built/directional/south,
+/obj/machinery/light/cold/directional/south,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "VR" = (
@@ -13924,7 +13928,7 @@
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
 "YN" = (
-/obj/machinery/light/built/directional/north,
+/obj/machinery/light/directional/north,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
 "YO" = (
@@ -37424,7 +37428,7 @@ cG
 gI
 pq
 Hv
-qw
+xd
 Zz
 bR
 bR
