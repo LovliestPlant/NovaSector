@@ -8,6 +8,8 @@
 	ambience_index = AMBIENCE_GENERIC
 	sound_environment = SOUND_AREA_STANDARD_STATION
 	has_gravity = STANDARD_GRAVITY
+	static_lighting = FALSE
+	lightswitch = 0
 
 /area/centcom/biodome/interior
 	icon_state = "biodome_interior"
@@ -153,30 +155,30 @@
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/centcom/biodome/service/botany
-	icon_state = "biodome_botany"
+	icon_state = "biodome_service_botany"
 	name = "Biodome Botany"
 
 /area/centcom/biodome/service/diner
-	icon_state = "biodome_diner"
+	icon_state = "biodome_service_diner"
 	name = "Biodome Diner"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/centcom/biodome/service/bar
-	icon_state = "biodome_bar"
+	icon_state = "biodome_service_bar"
 	name = "Biodome Bar"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/centcom/biodome/service/lounge
-	icon_state = "biodome_lounge"
+	icon_state = "biodome_service_lounge"
 	name = "Biodome Lounge"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/centcom/biodome/service/theatre
-	icon_state = "biodome_theatre"
+	icon_state = "biodome_service_theatre"
 	name = "Biodome Theatre"
 
 /area/centcom/biodome/service/library
-	icon_state = "biodome_library"
+	icon_state = "biodome_service_library"
 	name = "Biodome Library"
 	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
@@ -291,3 +293,34 @@
 	icon_state = "biohome_naaka_lounge"
 	name = "Casa de Ko: Lounge"
 	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
+
+/// NIKSHTA KO-KORNA & OTTO RENGO'S HOME
+/area/centcom/biodome/homes/casa_de_korna
+	icon_state = "biohome_nikshta"
+	name = "Casa de Korna"
+	ambience_index = AMBIENCE_MEDICAL
+	min_ambience_cooldown = 90 SECONDS
+	max_ambience_cooldown = 180 SECONDS
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_korna/bed1
+	icon_state = "biohome_nikshta_bed1"
+	name = "Casa de Korna: Master Bedroom"
+
+/area/centcom/biodome/homes/casa_de_korna/bed2
+	icon_state = "biohome_nikshta_bed1"
+	name = "Casa de Korna: Secondary Bedroom"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_korna/lounge
+	icon_state = "biohome_nikshta"
+	name = "Casa de Korna: Lounge"
+
+/area/centcom/biodome/homes/casa_de_korna/bar
+	icon_state = "biohome_nikshta_bar"
+	name = "Casa de Korna: Kitchen"
+
+/area/centcom/biodome/homes/casa_de_korna/bath
+	icon_state = "biohome_nikshta_bath"
+	name = "Casa de Ko: Bath"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
