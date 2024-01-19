@@ -41,6 +41,15 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"aj" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "ak" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/kitchen,
@@ -154,11 +163,21 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
+"aA" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/structure/sink/kitchen/directional/east{
+	pixel_y = 3
+	},
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "aB" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
 "aC" = (
 /obj/machinery/light/cold/directional/south,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
 "aD" = (
@@ -220,6 +239,15 @@
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
+"aH" = (
+/obj/structure/bed/double{
+	dir = 8
+	},
+/obj/item/bedsheet/purple/double,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "aI" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -234,10 +262,12 @@
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
 "aK" = (
-/obj/structure/chair/comfy/teal{
-	dir = 8
+/obj/structure/closet/secure_closet/bar/lavaland_bartender_clothes{
+	req_access = list(bar);
+	name = "Guest closet"
 	},
-/turf/open/floor/iron/white{
+/obj/machinery/light/cold/directional/west,
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -408,15 +438,16 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "bi" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/cmo/glass{
-	name = "Hakit's House"
+/obj/machinery/door/airlock/highsecurity{
+	name = "Bedroom"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "bj" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
@@ -505,6 +536,14 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security/cell2)
+"bx" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "by" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/uranium/fulltile,
@@ -557,28 +596,9 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "bF" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/obj/structure/table/reinforced/rglass,
-/obj/item/tank/internals/nitrogen/belt/full{
-	pixel_y = 3;
-	pixel_x = -5
-	},
-/obj/item/tank/internals/nitrogen/belt/full{
-	pixel_y = 3
-	},
-/obj/item/tank/internals/nitrogen/belt/full{
-	pixel_y = 3;
-	pixel_x = 5
-	},
-/obj/item/clothing/mask/breath/vox{
-	pixel_x = -7
-	},
-/obj/item/clothing/mask/breath/vox{
-	pixel_x = 7
-	},
-/turf/open/floor/iron/white{
+/obj/machinery/light/cold/directional/east,
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -597,6 +617,13 @@
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
+"bJ" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/curtain/bounty,
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "bL" = (
 /obj/item/flashlight/lamp{
 	pixel_y = 8;
@@ -620,6 +647,16 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"bO" = (
+/obj/machinery/computer/operating{
+	dir = 1
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "bQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -797,6 +834,16 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"cE" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fans/tiny,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "cG" = (
 /turf/open/floor/iron/dark/pavement{
 	dir = 4
@@ -993,6 +1040,13 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"di" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/chair/wood/wings{
+	dir = 8
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "dk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
@@ -1178,6 +1232,15 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
+"dM" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/fans/tiny,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "dN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/herringbone,
@@ -1297,6 +1360,12 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"em" = (
+/obj/structure/streetlamp{
+	base_color = "#FFFFFF"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "eo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1401,32 +1470,25 @@
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
 "eH" = (
-/obj/structure/table/reinforced/rglass,
-/obj/machinery/button/door/directional/east{
-	id = "hakit_chemistry_shutters";
-	name = "Shutters Control"
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "haki_lab_biodome";
+	name = "Lab Shutters"
 	},
 /obj/machinery/reagentgrinder{
+	pixel_x = -5;
+	pixel_y = 16
+	},
+/obj/item/reagent_containers/cup/bottle/formaldehyde{
 	pixel_y = 12;
-	pixel_x = -1
+	pixel_x = 9
 	},
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = -9;
-	pixel_y = 2
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/reagent_containers/cup/bottle/multiver{
+	pixel_x = 8;
+	pixel_y = 0
 	},
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = 9;
-	pixel_y = 2
-	},
-/obj/item/stack/sheet/mineral/plasma{
-	pixel_x = -2;
-	pixel_y = -3;
-	amount = 25
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/iron/white{
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -1474,6 +1536,12 @@
 /obj/machinery/shower/directional/south,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/engineering)
+"eQ" = (
+/obj/machinery/autolathe,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "eS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light_switch/directional/south,
@@ -1493,20 +1561,18 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "eV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/turf/open/floor/iron/white/textured{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
+"eW" = (
+/turf/closed/wall/mineral/plastitanium,
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"eW" = (
-/obj/structure/streetlamp{
-	base_color = "#BFEAFF"
-	},
-/turf/open/floor/iron/white/textured_large,
-/area/centcom/biodome/interior)
 "eX" = (
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access = null
@@ -1514,13 +1580,9 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "eY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/turf/open/floor/iron/white{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "fa" = (
 /obj/structure/toilet{
@@ -1573,6 +1635,20 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"fe" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/microwave/engineering/cell_included{
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/light/cold/directional/west,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "fg" = (
 /obj/structure/table/reinforced/uraniumrglass,
 /obj/item/kitchen/rollingpin,
@@ -1596,6 +1672,13 @@
 "fj" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/plate/large,
+/obj/item/food/salad/hawaiian_fried_rice,
+/obj/item/food/salad/hawaiian_fried_rice{
+	pixel_y = 3
+	},
+/obj/item/food/salad/hawaiian_fried_rice{
+	pixel_y = 6
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "fk" = (
@@ -1622,10 +1705,15 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment2)
+"fr" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "fs" = (
-/obj/structure/window/reinforced/unanchored{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/airalarm/directional/south,
@@ -1639,6 +1727,15 @@
 /obj/machinery/vending/wardrobe/cargo_wardrobe/ghost_cafe,
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
+"fv" = (
+/obj/machinery/shower/directional/south,
+/obj/structure/drain,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "fx" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe/ghost_cafe,
 /obj/machinery/light/small/directional/south,
@@ -1671,6 +1768,22 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
+"fE" = (
+/obj/structure/closet/secure_closet/atmospherics{
+	req_access = list(atmospherics);
+	name = "Vox Internals"
+	},
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/holosign_creator/atmos,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "fF" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 8
@@ -1706,6 +1819,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
+"fO" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/sink/directional/west,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "fP" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Lounge"
@@ -1746,17 +1867,16 @@
 /turf/open/floor/cult,
 /area/centcom/biodome/service/library)
 "fX" = (
+/obj/machinery/door/airlock/bathroom{
+	name = "Restroom"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/obj/machinery/door/window/survival_pod{
-	dir = 1
-	},
-/obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "fY" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2,
@@ -1776,9 +1896,13 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
 "gb" = (
-/obj/structure/window/reinforced/shuttle,
-/obj/structure/curtain/bounty,
-/turf/open/floor/plating,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/sink/directional/south{
+	pixel_y = -11
+	},
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
@@ -1923,12 +2047,10 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "gy" = (
-/obj/machinery/door/airlock/cmo/glass{
-	name = "Hakit's Lab"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/turf/open/floor/iron/white{
+/obj/structure/extinguisher_cabinet/directional/west,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -1945,14 +2067,9 @@
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
 "gA" = (
-/obj/machinery/stasis{
-	dir = 4
-	},
-/turf/open/floor/iron/white{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "gB" = (
 /obj/machinery/computer/pandemic,
@@ -1962,6 +2079,17 @@
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/science/genetics)
+"gC" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "gD" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "The Lounge";
@@ -2000,6 +2128,16 @@
 /obj/structure/streetlamp,
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"gJ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "gK" = (
 /obj/structure/chair/sofa/bench/solo{
 	dir = 1
@@ -2150,6 +2288,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/centcom/biodome/science/genetics)
+"hb" = (
+/obj/effect/spawner/random/engineering/material_rare,
+/obj/machinery/holopad/secure,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "hc" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -2296,6 +2442,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
+"hN" = (
+/obj/structure/cable,
+/obj/structure/bed/dogbed,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "hO" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/airalarm/directional/north,
@@ -2410,7 +2564,9 @@
 "if" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/door/airlock/mining/glass,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Family Bedroom"
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "ig" = (
@@ -2597,6 +2753,7 @@
 /area/centcom/biodome/engineering/atmos)
 "iR" = (
 /obj/structure/toilet,
+/obj/machinery/light/cold/directional/east,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "iT" = (
@@ -2643,6 +2800,16 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
+"jb" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fans/tiny,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "jc" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/iron/smooth,
@@ -2885,6 +3052,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"jR" = (
+/obj/structure/sink/directional/north,
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "jS" = (
 /obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/iron/white,
@@ -2926,10 +3102,11 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "kb" = (
-/obj/item/kirbyplants/organic/plant22{
-	pixel_y = 8
+/obj/item/kirbyplants/organic/applebush{
+	dir = 8;
+	pixel_y = 12
 	},
-/obj/structure/table/wood/fancy/blue,
+/obj/structure/table/wood/fancy/royalblue,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "kc" = (
@@ -2975,8 +3152,12 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "kh" = (
-/obj/machinery/oven/range,
-/turf/open/floor/iron/white{
+/obj/machinery/door/airlock/public{
+	name = "Kitchen"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -2985,11 +3166,11 @@
 "ki" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/turf/open/floor/carpet/blue{
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "kj" = (
 /obj/structure/table/optable,
@@ -3078,20 +3259,75 @@
 /obj/machinery/vending/access/command,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"kw" = (
+/obj/structure/window/fulltile,
+/obj/structure/curtain/bounty,
+/turf/open/floor/plating,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "kx" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/perfume/cologne{
+	icon_state = "perfume_cap";
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/perfume/jasmine{
+	icon_state = "perfume_cap";
+	pixel_x = 4;
+	pixel_y = 5
+	},
+/obj/item/perfume/rose{
+	icon_state = "perfume_cap";
+	pixel_x = -2;
+	pixel_y = 5
+	},
+/obj/item/perfume/mint{
+	icon_state = "perfume_cap";
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/structure/mirror/directional/north{
+	dir = 2
+	},
+/obj/item/hairbrush/comb{
+	pixel_x = -9;
+	pixel_y = 15
+	},
+/obj/item/perfume/vanilla{
+	icon_state = "perfume_cap";
+	pixel_x = -10;
+	pixel_y = -4
+	},
+/obj/item/perfume/amber{
+	icon_state = "perfume_cap";
+	pixel_x = -3;
+	pixel_y = -4
+	},
+/obj/item/fur_dyer{
+	pixel_x = 10;
+	pixel_y = 7
+	},
+/obj/item/hhmirror{
+	pixel_x = 12;
+	pixel_y = -2
+	},
+/obj/structure/table/wood/fancy/royalblue,
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
+"ky" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/wood/parquet,
+/area/centcom/biodome/service/theatre)
+"kz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/obj/structure/chair/comfy/teal,
-/turf/open/floor/iron/white{
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
-"ky" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/wood/parquet,
-/area/centcom/biodome/service/theatre)
 "kA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/smooth,
@@ -3242,18 +3478,9 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "kY" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/structure/bed/double{
-	dir = 1
-	},
-/obj/item/bedsheet/blue/double{
-	dir = 1
-	},
-/obj/machinery/airalarm/directional/west,
-/obj/effect/mapping_helpers/airalarm/all_access,
-/turf/open/floor/carpet/blue{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
+/obj/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/curtain/bounty,
+/turf/open/floor/plating,
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
@@ -3284,6 +3511,15 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"ld" = (
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_y = 2
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "lf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/white,
@@ -3344,6 +3580,18 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"lp" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "haki_lab_biodome";
+	name = "Lab Shutters"
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "lq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
@@ -3559,6 +3807,7 @@
 "ml" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/closet/cabinet,
+/obj/item/storage/backpack/duffelbag/med,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "mm" = (
@@ -3586,6 +3835,14 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
+"mq" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "mr" = (
 /obj/machinery/vending/wardrobe/hydro_wardrobe,
 /turf/open/floor/iron/smooth,
@@ -3630,6 +3887,10 @@
 	},
 /obj/item/food/moonfish_demiglace{
 	pixel_y = 11
+	},
+/obj/item/storage/fancy/pickles_jar{
+	pixel_x = 16;
+	pixel_y = -13
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
@@ -3702,6 +3963,13 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
+"mI" = (
+/obj/machinery/mecha_part_fabricator,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "mJ" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
@@ -3922,6 +4190,14 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
+"nt" = (
+/obj/machinery/chem_master,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "nu" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
@@ -3955,6 +4231,15 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"nD" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "nE" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/stack/sheet/mineral/gold{
@@ -4334,6 +4619,15 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"oQ" = (
+/obj/structure/railing/wooden_fencing{
+	name = "Crib Wall";
+	icon_state = "fence_3";
+	dir = 8;
+	pixel_y = 2
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "oR" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -4395,22 +4689,10 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
 "pf" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/obj/structure/table/wood/fancy/blue,
-/obj/item/flashlight/lamp{
-	pixel_y = 8;
-	layer = 4
-	},
-/obj/machinery/button/door/directional/west{
-	name = "door lock";
-	id = "biodome_hakitbedroom"
-	},
-/turf/open/floor/carpet/blue{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/obj/machinery/deepfryer,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "pg" = (
 /obj/effect/turf_decal/siding/dark{
@@ -4442,9 +4724,11 @@
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
 "pm" = (
-/obj/machinery/door/airlock/mining/glass,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Main Room"
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
 "pn" = (
@@ -4469,6 +4753,17 @@
 "pq" = (
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"pr" = (
+/obj/machinery/airalarm/directional/north,
+/obj/structure/cable,
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "pt" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
@@ -4492,6 +4787,14 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"px" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "py" = (
 /obj/effect/turf_decal/siding/dark_red/corner,
 /obj/effect/turf_decal/siding/dark_red/corner{
@@ -4505,10 +4808,10 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
 "pC" = (
-/obj/machinery/airalarm/directional/south,
-/obj/structure/table/reinforced/rglass,
-/obj/effect/mapping_helpers/airalarm/all_access,
-/turf/open/floor/iron/white{
+/obj/structure/chair/comfy/teal{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -4547,6 +4850,7 @@
 	},
 /obj/machinery/iv_drip,
 /obj/machinery/airalarm/directional/east,
+/obj/item/reagent_containers/blood/o_minus,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "pL" = (
@@ -4616,6 +4920,21 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"pY" = (
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1;
+	widenet = 1
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "pZ" = (
 /turf/open/floor/iron/textured_large,
 /area/centcom/biodome/interior)
@@ -4638,6 +4957,14 @@
 	},
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
+"qe" = (
+/obj/machinery/airalarm/directional/north,
+/obj/structure/cable,
+/obj/machinery/light/directional/north,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "qf" = (
 /obj/machinery/button/door/directional/west{
 	pixel_y = 8;
@@ -4711,10 +5038,17 @@
 /area/centcom/biodome/science/genetics)
 "qq" = (
 /obj/structure/chair/sofa/right{
-	dir = 8
+	dir = 8;
+	color = "#454545"
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
+"qr" = (
+/obj/structure/cable,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "qs" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/iron/white,
@@ -4770,9 +5104,7 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "qF" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/turf/open/floor/iron/white{
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -4828,27 +5160,10 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
 "qT" = (
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "hakit_chemistry_shutters";
-	name = "Pharmacy Shutters";
-	dir = 8
-	},
-/obj/structure/table/reinforced/rglass,
-/obj/structure/window/reinforced/spawner/directional/north,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/item/surgery_tray/full/advanced,
-/obj/item/reagent_containers/cup/bottle/formaldehyde{
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/cup/bottle/epinephrine{
-	pixel_x = -8;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/cup/bottle/multiver{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/turf/open/floor/iron/white{
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -5041,6 +5356,12 @@
 	},
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/science/robotics)
+"rG" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "rH" = (
 /obj/structure/window/reinforced/plasma/spawner/directional/south,
 /turf/open/floor/iron,
@@ -5082,6 +5403,12 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment1)
+"rO" = (
+/obj/structure/chair/wood/wings{
+	dir = 1
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "rP" = (
 /obj/structure/window/reinforced/uranium/fulltile,
 /obj/structure/grille,
@@ -5299,9 +5626,9 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
 "sG" = (
-/obj/structure/window/reinforced/unanchored{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "sH" = (
@@ -5343,12 +5670,27 @@
 /obj/structure/window/reinforced/tinted/fulltile,
 /turf/open/floor/plating,
 /area/centcom/biodome/security)
+"sN" = (
+/obj/structure/chair/comfy/teal{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "sO" = (
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 6
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/security/syndicat)
+"sP" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "sQ" = (
 /obj/machinery/light/warm/directional/south,
 /obj/machinery/light/warm/directional/south,
@@ -5392,6 +5734,17 @@
 /obj/item/reagent_containers/cup/watering_can,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"tb" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "tc" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -5560,12 +5913,34 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
+"tF" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
+"tI" = (
+/obj/machinery/light/directional/north,
+/obj/structure/dresser,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "tJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
+"tK" = (
+/obj/machinery/holopad/secure,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "tL" = (
 /turf/closed/wall,
 /area/centcom/biodome/townhall)
@@ -5733,6 +6108,7 @@
 /area/centcom/biodome/interior)
 "uq" = (
 /obj/machinery/suit_storage_unit/medical,
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "ur" = (
@@ -5872,6 +6248,14 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"uP" = (
+/obj/machinery/chem_heater/debug,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "uQ" = (
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
 /obj/structure/window/reinforced/uranium/spawner/directional/south,
@@ -5902,14 +6286,13 @@
 /turf/open/floor/iron/dark/smooth_half,
 /area/centcom/biodome/security)
 "uX" = (
-/obj/machinery/computer/operating{
-	dir = 8
+/obj/structure/closet/secure_closet/freezer/meat/all_access{
+	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/white{
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/obj/item/food/meat/slab/monkey,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -5984,6 +6367,15 @@
 /obj/structure/window/reinforced/uranium/fulltile,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
+"vj" = (
+/obj/machinery/airalarm/directional/north,
+/obj/structure/cable,
+/obj/machinery/light/directional/north,
+/obj/machinery/oven/range,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "vk" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/table/reinforced/rglass,
@@ -6023,6 +6415,44 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"vo" = (
+/obj/machinery/chem_dispenser/fullupgrade,
+/obj/machinery/button/door/directional/north{
+	id = "haki_lab_biodome";
+	name = "lab shutters control";
+	pixel_x = 24
+	},
+/obj/machinery/light/cold/directional/east,
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
+"vp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/mirror/directional/north,
+/obj/item/hairbrush{
+	pixel_x = 10;
+	pixel_y = 14
+	},
+/obj/item/lipstick/quantum{
+	pixel_x = -11;
+	pixel_y = 9
+	},
+/obj/item/dyespray{
+	pixel_x = -10;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/cup/rag{
+	dir = 4;
+	pixel_x = 10;
+	pixel_y = 8
+	},
+/obj/structure/table/wood/fancy/royalblue,
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "vq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -6088,12 +6518,40 @@
 	dir = 8
 	},
 /area/centcom/biodome/interior)
+"vw" = (
+/obj/structure/cable,
+/obj/machinery/microwave/engineering/cell_included{
+	pixel_y = 24
+	},
+/obj/structure/table,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
+"vx" = (
+/obj/structure/streetlamp{
+	base_color = "#FFEABF"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/interior)
 "vy" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"vz" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/structure/closet/cabinet{
+	name = "Pillow Closet"
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "vA" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/surgery)
@@ -6116,6 +6574,16 @@
 /obj/structure/window/reinforced/tinted/fulltile,
 /turf/open/floor/plating,
 /area/centcom/biodome/security)
+"vF" = (
+/obj/machinery/airalarm/directional/east,
+/obj/structure/toilet{
+	pixel_y = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "vG" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/washing_machine,
@@ -6130,24 +6598,19 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "vI" = (
-/obj/machinery/light/floor,
-/obj/machinery/griddle,
-/obj/machinery/microwave/engineering/cell_included{
-	pixel_y = 24
-	},
-/turf/open/floor/iron/white{
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
 "vJ" = (
-/obj/structure/window/reinforced/unanchored{
-	dir = 4
-	},
 /obj/machinery/door/window{
 	req_access = list()
 	},
+/obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "vK" = (
@@ -6270,7 +6733,7 @@
 	dir = 2
 	},
 /obj/structure/fans/tiny,
-/obj/structure/window/reinforced/unanchored,
+/obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "wj" = (
@@ -6345,7 +6808,9 @@
 /area/centcom/biodome/engineering/engine)
 "wx" = (
 /obj/machinery/light_switch/directional/west,
-/turf/open/floor/iron/white,
+/obj/machinery/shower/directional/east,
+/obj/structure/drain,
+/turf/open/floor/iron/white/textured,
 /area/centcom/biodome/medical)
 "wy" = (
 /obj/machinery/reagentgrinder{
@@ -6383,6 +6848,15 @@
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"wD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "wE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6394,6 +6868,17 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"wJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/machinery/light/cold/directional/west,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "wL" = (
 /obj/machinery/mecha_part_fabricator{
 	dir = 1
@@ -6425,6 +6910,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/table/reinforced/rglass,
 /obj/structure/sink/directional/east,
+/obj/item/food/canned/desert_snails,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "wS" = (
@@ -6611,7 +7097,7 @@
 "xy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/directional/north,
-/obj/structure/bookcase/random/nonfiction,
+/obj/structure/bookcase/random,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "xz" = (
@@ -6646,6 +7132,16 @@
 "xE" = (
 /turf/open/floor/carpet/stellar,
 /area/centcom/biodome/service/theatre)
+"xF" = (
+/obj/structure/table/wood,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "xI" = (
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
@@ -6705,6 +7201,16 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"xW" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/machinery/light/floor,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "xX" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -6761,11 +7267,19 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
+"ye" = (
+/obj/machinery/rnd/production/protolathe/department/science,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "yf" = (
-/obj/structure/table/wood/fancy/red,
 /obj/item/flashlight/lamp/green{
+	icon_state = "lampgreen-on";
 	pixel_y = 13
 	},
+/obj/structure/table/wood/fancy/royalblue,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
 "yg" = (
@@ -6804,6 +7318,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"yn" = (
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "yo" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
@@ -6822,10 +7341,8 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "yr" = (
-/obj/structure/closet/secure_closet/medical2{
-	req_access = null
-	},
 /obj/machinery/anesthetic_machine,
+/obj/item/tank/internals/anesthetic,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "yt" = (
@@ -6882,6 +7399,7 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "yE" = (
+/obj/structure/closet/crate/bin,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
@@ -6940,20 +7458,20 @@
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
 "yN" = (
-/obj/machinery/light_switch/directional/south,
-/obj/structure/table/reinforced/rglass,
-/obj/item/knife/kitchen,
-/obj/item/kitchen/rollingpin,
-/turf/open/floor/iron/white{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/obj/machinery/airalarm/directional/south,
+/obj/machinery/chem_heater/withbuffer,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "yO" = (
 /obj/machinery/griddle,
 /obj/machinery/microwave/engineering/cell_included{
 	pixel_y = 24
+	},
+/obj/item/food/pizza/flatbread/italic{
+	pixel_x = 4;
+	pixel_y = 10
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
@@ -6962,6 +7480,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/textured_large,
 /area/centcom/biodome/interior)
+"yQ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "yR" = (
 /obj/structure/window/reinforced/plasma/spawner/directional/south,
 /obj/structure/table/reinforced/plasmarglass,
@@ -6990,6 +7517,7 @@
 	req_access = list();
 	dir = 4
 	},
+/obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "yX" = (
@@ -7056,13 +7584,12 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "zh" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/machinery/light/floor,
-/turf/open/floor/iron/white{
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "zi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7171,6 +7698,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
+"zD" = (
+/obj/machinery/light/cold/directional/west,
+/obj/machinery/light_switch/directional/south,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "zE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7253,23 +7789,20 @@
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "zM" = (
-/obj/structure/table/optable,
-/obj/machinery/airalarm/directional/east,
-/obj/machinery/light/directional/east,
-/obj/effect/mapping_helpers/airalarm/all_access,
-/turf/open/floor/iron/white{
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
 "zN" = (
-/obj/machinery/shower/directional/west,
-/obj/structure/railing{
-	dir = 1
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/window/reinforced/tinted/spawner/directional/east,
+/obj/item/soap/omega{
+	pixel_y = 4
 	},
-/obj/effect/spawner/liquids_spawner,
-/turf/open/floor/iron/pool{
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -7407,6 +7940,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
 "At" = (
@@ -7546,6 +8080,7 @@
 /area/centcom/biodome/security)
 "AQ" = (
 /obj/machinery/light/cold/directional/west,
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
 "AR" = (
@@ -7734,6 +8269,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
+"By" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/east,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Bz" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/vault{
@@ -7775,12 +8319,13 @@
 /turf/open/floor/plating,
 /area/centcom/biodome/apartments/apartment4)
 "BE" = (
-/obj/structure/bed/double/pod{
+/obj/structure/bed/double{
+	name = "The Couple's Bed";
 	dir = 4
 	},
 /obj/item/bedsheet/black/double{
 	dir = 4;
-	color = "#0000ff"
+	color = "#0066ff"
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
@@ -7806,6 +8351,12 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"BL" = (
+/obj/machinery/chem_dispenser,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "BM" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -8070,6 +8621,14 @@
 /obj/machinery/dish_drive/bullet,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"CO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "CQ" = (
 /obj/structure/window/reinforced/uranium/fulltile,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8096,6 +8655,16 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"CV" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "CW" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/storage/pill_bottle/mutadone{
@@ -8216,6 +8785,18 @@
 	},
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/science/robotics)
+"Do" = (
+/obj/machinery/airalarm/directional/south,
+/obj/structure/cable,
+/obj/machinery/light/directional/south,
+/obj/structure/bed/double{
+	dir = 8
+	},
+/obj/item/bedsheet/black/double,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Dp" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos{
 	dir = 4
@@ -8278,6 +8859,12 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
+"DC" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "DE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light_switch/directional/north,
@@ -8322,6 +8909,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/grass,
 /area/centcom/biodome/science/genetics)
+"DP" = (
+/obj/structure/cable,
+/obj/machinery/light/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/machinery/chem_master,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "DR" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/engine,
@@ -8369,6 +8968,17 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
+"Ed" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Ee" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
@@ -8416,6 +9026,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
 "Er" = (
@@ -8574,7 +9185,10 @@
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment2)
 "EP" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/machinery/washing_machine,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
@@ -8681,9 +9295,11 @@
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
 "Fj" = (
-/obj/machinery/door/airlock/bathroom,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/bathroom{
+	name = "Family Bathroom"
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "Fn" = (
@@ -8775,9 +9391,31 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"Ft" = (
+/obj/structure/chair/sofa/left{
+	dir = 4;
+	color = "#454545"
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/lounge)
 "Fu" = (
-/obj/machinery/chem_master,
-/turf/open/floor/iron/white{
+/obj/structure/closet/secure_closet/medical3{
+	req_access = list(surgery);
+	name = "Haki's Doctor Closet"
+	},
+/obj/item/storage/hypospraykit/cmo,
+/obj/item/healthanalyzer/advanced,
+/obj/item/reagent_containers/spray/bluespace{
+	list_reagents = list(/datum/reagent/space_cleaner = 300)
+	},
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/tactical,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/regular,
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -8921,6 +9559,25 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
+"FT" = (
+/obj/item/surgery_tray/full/advanced{
+	layer = 2.8;
+	is_portable = 0
+	},
+/obj/machinery/anesthetic_machine{
+	pixel_x = -8
+	},
+/obj/machinery/iv_drip{
+	pixel_x = 8
+	},
+/obj/item/tank/internals/anesthetic,
+/obj/item/reagent_containers/blood/o_minus,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "FV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -8954,6 +9611,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"Ga" = (
+/obj/structure/chair/comfy/teal{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "Gb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8979,6 +9647,16 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/centcom/biodome/arrivals)
+"Gi" = (
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "Gk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9028,6 +9706,13 @@
 /obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
+"Gv" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/curtain/bounty,
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "Gw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /turf/open/floor/iron/dark/textured_large,
@@ -9187,6 +9872,12 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
+"Hd" = (
+/obj/machinery/griddle,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Hf" = (
 /turf/closed/wall,
 /area/centcom/biodome/service/botany)
@@ -9274,10 +9965,16 @@
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
 "Hy" = (
-/obj/item/kirbyplants/organic/applebush{
-	pixel_y = 8
+/obj/structure/railing/wooden_fencing{
+	name = "Crib Wall";
+	icon_state = "fence_3";
+	layer = 4.1
 	},
-/obj/structure/table/wood/fancy/blue,
+/obj/item/kirbyplants/organic/plant22{
+	dir = 8;
+	pixel_y = 15
+	},
+/obj/structure/table/wood/fancy/royalblue,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "Hz" = (
@@ -9399,20 +10096,9 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/science/genetics)
 "HS" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/structure/toilet{
-	dir = 8
-	},
-/obj/machinery/airalarm/directional/east,
-/obj/effect/mapping_helpers/airalarm/all_access,
-/turf/open/floor/iron/white/small{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "HU" = (
 /turf/open/floor/iron/white,
@@ -9673,6 +10359,10 @@
 	},
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/science/robotics)
+"Jf" = (
+/obj/structure/extinguisher_cabinet/directional/east,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/chemistry)
 "Jg" = (
 /turf/open/floor/wood/parquet,
 /area/centcom/biodome/service/theatre)
@@ -9774,11 +10464,12 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "Jy" = (
-/obj/machinery/chem_mass_spec,
-/obj/structure/window/reinforced/spawner/directional/west,
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/iron/white{
+/obj/machinery/door/airlock/medical{
+	name = "THE LAB"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -9871,9 +10562,11 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "JO" = (
-/obj/machinery/door/airlock/bathroom,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/bathroom{
+	name = "Restroom"
+	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
 "JP" = (
@@ -9940,6 +10633,18 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"Kb" = (
+/obj/structure/table,
+/obj/structure/closet/mini_fridge{
+	name = "mini-fridge";
+	pixel_x = 6;
+	pixel_y = 13;
+	layer = 3.5
+	},
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Kc" = (
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
@@ -10014,6 +10719,23 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
+"Ks" = (
+/obj/structure/rack/wooden{
+	name = "Towel Shelf";
+	dir = 4
+	},
+/obj/item/towel,
+/obj/item/towel{
+	dir = 1
+	},
+/obj/item/towel{
+	dir = 1
+	},
+/obj/item/towel{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_korna/bath)
 "Kt" = (
 /obj/machinery/door/airlock/multi_tile{
 	name = "Security Access Hall"
@@ -10059,6 +10781,12 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/science)
+"KB" = (
+/obj/structure/streetlamp{
+	base_color = "#BFBFFF"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/interior)
 "KC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -10165,6 +10893,24 @@
 	},
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
+"KS" = (
+/obj/structure/closet/secure_closet/bar/lavaland_bartender_clothes{
+	req_access = list(bar);
+	name = "Strkka's Closet"
+	},
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/clothing/suit/brownbattlecoat,
+/obj/item/storage/belt/bowie_sheath{
+	icon_state = "bowiesheathe-knife"
+	},
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "KT" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/cup/bottle/epinephrine{
@@ -10200,6 +10946,23 @@
 /obj/item/reagent_containers/cup/bottle/formaldehyde,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"KU" = (
+/obj/structure/table/reinforced/rglass,
+/obj/item/plate/large,
+/obj/item/food/honey_roll{
+	pixel_y = 8
+	},
+/obj/item/food/honey_roll{
+	pixel_y = 4;
+	pixel_x = 8
+	},
+/obj/item/food/honey_roll{
+	pixel_y = 4;
+	pixel_x = -8
+	},
+/obj/item/food/honey_roll,
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bar)
 "KV" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/white,
@@ -10227,6 +10990,14 @@
 /obj/machinery/atmospherics/miner/n2o,
 /turf/open/floor/engine/n2o,
 /area/centcom/biodome/engineering/atmos)
+"Ld" = (
+/obj/structure/fireplace,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Le" = (
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
 /obj/structure/window/reinforced/uranium/spawner/directional/south,
@@ -10489,6 +11260,14 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
+"LV" = (
+/obj/machinery/light/directional/west,
+/obj/machinery/shower,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/iron/checker,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "LW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood/large,
@@ -10505,8 +11284,9 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
 "LZ" = (
-/obj/machinery/chem_heater/withbuffer,
-/turf/open/floor/iron/white{
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -10585,9 +11365,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
 "Ml" = (
-/obj/machinery/door/airlock/bathroom,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/airlock/bathroom{
+	name = "Restroom"
+	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
 "Mm" = (
@@ -10628,17 +11410,11 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
 "Mt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
-/obj/machinery/door/airlock/cmo{
-	name = "Hakit's Quarters";
-	id_tag = "biodome_hakitbedroom"
-	},
-/turf/open/floor/iron/white{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "Mv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/r_navy/visible{
@@ -10855,6 +11631,14 @@
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
+"Nm" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Nn" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/smooth,
@@ -10863,6 +11647,14 @@
 /obj/machinery/light/warm/directional/east,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
+"Nq" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Nr" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/stack/sheet/mineral/titanium/fifty{
@@ -10965,6 +11757,18 @@
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
+"NG" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/light/cold/directional/east,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "NH" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/iron/dark/smooth_large,
@@ -11043,10 +11847,18 @@
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "NS" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/highsecurity{
+	name = "Haki & Strkka's Lab"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/turf/open/floor/iron/white/textured_large,
-/area/centcom/biodome/interior)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "NT" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
 	dir = 1;
@@ -11070,6 +11882,15 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"NY" = (
+/obj/machinery/griddle,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "Oa" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -11106,6 +11927,13 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
+"Of" = (
+/obj/structure/chair/sofa/middle{
+	dir = 1;
+	color = "#454545"
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/lounge)
 "Og" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	req_access = null
@@ -11192,11 +12020,12 @@
 /turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
 "Ov" = (
-/obj/structure/chair/office/light{
-	dir = 4
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "haki_lab_biodome";
+	name = "Lab Shutters"
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
-/turf/open/floor/iron/white{
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -11206,6 +12035,21 @@
 /obj/structure/closet/secure_closet/cytology,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/science/genetics)
+"Ox" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/towel{
+	pixel_x = 6
+	},
+/obj/item/towel{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "Oy" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer,
 /turf/open/floor/engine,
@@ -11218,6 +12062,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
+"OD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "OE" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/storage/toolbox/mechanical{
@@ -11244,6 +12094,13 @@
 "OH" = (
 /turf/open/floor/iron/recharge_floor,
 /area/centcom/biodome/science/robotics)
+"OJ" = (
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "OK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11290,6 +12147,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"OZ" = (
+/obj/structure/streetlamp{
+	base_color = "#BFEAFF"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "Pb" = (
 /obj/machinery/door/airlock/silver/glass{
 	name = "Storage"
@@ -11333,14 +12196,23 @@
 /obj/structure/table/wood,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"Ph" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Pj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
 "Pk" = (
-/obj/structure/chair/sofa/left{
-	dir = 8
+/obj/structure/chair/sofa/corner{
+	dir = 8;
+	color = "#454545"
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
@@ -11369,8 +12241,8 @@
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
 "Pq" = (
-/obj/structure/table/wood/fancy/red,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
+/obj/structure/table/wood/fancy/royalblue,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
 "Pr" = (
@@ -11427,7 +12299,9 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "PC" = (
-/obj/machinery/door/airlock/mining/glass,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Main Room"
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
 "PF" = (
@@ -11446,15 +12320,10 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "PG" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron/white/small{
-	initial_gas_mix = "n2=104;TEMP=293.15"
-	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/obj/structure/table/wood,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
 	})
 "PH" = (
 /obj/machinery/light/warm/directional/north,
@@ -11597,6 +12466,13 @@
 "Qb" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
+"Qc" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Qd" = (
 /obj/machinery/rnd/production/techfab/department/security,
 /turf/open/floor/iron/dark/smooth_large,
@@ -11670,11 +12546,8 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
 "Qr" = (
-/obj/machinery/chem_dispenser{
-	layer = 2.7
-	},
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron/white{
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -11901,6 +12774,12 @@
 /obj/structure/closet/secure_closet/miner,
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
+"QY" = (
+/obj/structure/musician/piano{
+	name = "Otto's Piano"
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "QZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11940,6 +12819,12 @@
 "Re" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/homes/casa_de_korna/bath)
+"Rf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical)
 "Rg" = (
 /obj/machinery/vending/wardrobe/science_wardrobe/ghost_cafe,
 /turf/open/floor/iron,
@@ -12166,6 +13051,15 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"RS" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "RT" = (
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/dark,
@@ -12178,6 +13072,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"RX" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "RY" = (
 /obj/structure/table/reinforced/plasmarglass,
 /turf/open/floor/iron/dark,
@@ -12200,6 +13103,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"Se" = (
+/obj/structure/chair/wood,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Sf" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 8
@@ -12247,6 +13158,26 @@
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/centcom/biodome/medical/lobby)
+"Sp" = (
+/obj/item/clothing/glasses/hud/health/prescription{
+	pixel_x = 16;
+	pixel_y = 12
+	},
+/obj/item/storage/medkit/regular{
+	pixel_x = -4;
+	pixel_y = -3
+	},
+/obj/item/storage/medkit/regular{
+	pixel_x = -4;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/cup/rag{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/structure/table/wood/fancy/royalblue,
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/bed1)
 "Sq" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/black/double,
@@ -12357,15 +13288,9 @@
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
 "SL" = (
-/obj/machinery/smartfridge/chemistry/preloaded,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "hakit_chemistry_shutters";
-	name = "Pharmacy Shutters";
-	dir = 8
-	},
-/obj/structure/window/reinforced/spawner/directional/south,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/iron/white{
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/turf/open/floor/iron/white/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
@@ -12393,6 +13318,11 @@
 	},
 /turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
+"SQ" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "SS" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/rag{
@@ -12431,6 +13361,19 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"Tc" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "Td" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -12495,12 +13438,19 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
 "Tq" = (
-/obj/structure/bed/double/pod{
+/obj/structure/bed/double{
+	name = "Ta'llana's Crib";
 	dir = 4
 	},
+/obj/structure/railing/wooden_fencing{
+	name = "Crib Wall";
+	icon_state = "fence_3";
+	layer = 4.1
+	},
 /obj/item/bedsheet/black/double{
+	name = "Ta'llana's Cribsheets";
 	dir = 4;
-	color = "#800000"
+	color = "#ab1010"
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
@@ -12550,6 +13500,7 @@
 /area/centcom/biodome/service/diner)
 "Tu" = (
 /obj/structure/rack/wooden{
+	name = "Shoe Shelf";
 	dir = 4
 	},
 /turf/open/floor/bamboo,
@@ -12607,6 +13558,7 @@
 "TF" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/item/food/cake/carrot,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "TG" = (
@@ -12626,6 +13578,14 @@
 "TL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/chemistry)
+"TM" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "TO" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -12783,6 +13743,13 @@
 "Ul" = (
 /turf/closed/wall/r_wall,
 /area/centcom/biodome/engineering/engine)
+"Un" = (
+/obj/structure/chair/sofa/corner{
+	dir = 1;
+	color = "#454545"
+	},
+/turf/open/floor/bamboo,
+/area/centcom/biodome/homes/casa_de_korna/lounge)
 "Ur" = (
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
@@ -12874,6 +13841,12 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"UL" = (
+/obj/structure/chair/comfy,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "UN" = (
 /obj/structure/sink/directional/east,
 /obj/structure/mirror/directional/west,
@@ -12924,6 +13897,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/parquet,
 /area/centcom/biodome/service/theatre)
+"Vb" = (
+/obj/structure/chair/comfy/teal{
+	dir = 8
+	},
+/obj/machinery/light/cold/directional/east,
+/obj/machinery/light_switch/directional/east,
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "Vd" = (
 /turf/open/misc/beach/coast{
 	dir = 4
@@ -12945,6 +13930,15 @@
 /area/centcom/biodome/arrivals)
 "Vh" = (
 /obj/structure/table/reinforced/rglass,
+/obj/item/food/pizza/flatbread/italic,
+/obj/item/food/pizza/flatbread/italic{
+	pixel_x = 2;
+	pixel_y = 5
+	},
+/obj/item/food/pizza/flatbread/italic{
+	pixel_x = 4;
+	pixel_y = 10
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bar)
 "Vj" = (
@@ -13127,6 +14121,27 @@
 /area/centcom/biodome/interior)
 "VQ" = (
 /obj/machinery/light/cold/directional/south,
+/obj/item/clothing/glasses/regular{
+	pixel_x = -15;
+	pixel_y = 5
+	},
+/obj/item/clothing/glasses/regular{
+	pixel_x = -15;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/cup/rag{
+	pixel_x = -13;
+	pixel_y = -6
+	},
+/obj/item/clothing/neck/stethoscope{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/obj/structure/table/wood/fancy/royalblue,
+/obj/item/storage/backpack/duffelbag/deforest_medkit/stocked{
+	pixel_y = -3;
+	pixel_x = 3
+	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "VR" = (
@@ -13135,6 +14150,22 @@
 /obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"VS" = (
+/obj/structure/bed/double{
+	dir = 4
+	},
+/obj/item/bedsheet/cosmos/double{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
+	})
 "VV" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -13254,6 +14285,16 @@
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna)
+"Wq" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/light/cold/directional/west,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/iron/white/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
+/area/centcom/biodome/voxbox{
+	name = "Hakit's Meth Lab"
+	})
 "Wr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -13282,16 +14323,22 @@
 	},
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
-"WC" = (
-/obj/structure/closet/secure_closet/medical1{
-	req_access = null
+"WA" = (
+/obj/structure/chair/office/tactical{
+	dir = 4
 	},
-/turf/open/floor/iron/white{
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"WC" = (
+/obj/machinery/shower/directional/east,
+/obj/structure/drain,
+/turf/open/floor/iron/white/textured,
+/area/centcom/biodome/medical)
 "WD" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -13593,6 +14640,15 @@
 /obj/structure/railing,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/security/cell1)
+"XF" = (
+/obj/structure/chair/comfy{
+	dir = 8;
+	pixel_x = 4
+	},
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "XG" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/glass/bottle/holywater{
@@ -13834,6 +14890,13 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"Yv" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/west,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_ko{
+	name = "Casa de Formes"
+	})
 "Yw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -13939,6 +15002,7 @@
 /area/centcom/biodome/cargo)
 "YN" = (
 /obj/machinery/light/directional/north,
+/obj/structure/closet/crate/bin,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
 "YO" = (
@@ -13977,15 +15041,19 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
 "YZ" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
+/obj/structure/closet/secure_closet/bar/lavaland_bartender_clothes{
+	req_access = list(bar);
+	name = "Haki's Closet"
 	},
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/iron/white/textured{
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/clothing/suit/mothcoat/winter,
+/turf/open/floor/iron/dark/small{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
-/area/centcom/biodome/voxbox{
-	name = "Hakit's Meth Lab"
+/area/centcom/biodome/voxbox/apartment1{
+	name = "Haki's Home"
 	})
 "Za" = (
 /obj/structure/lattice/catwalk,
@@ -14120,8 +15188,12 @@
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "ZA" = (
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/small{
+	initial_gas_mix = "n2=104;TEMP=293.15"
+	},
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
@@ -28708,9 +29780,9 @@ Hq
 Hq
 Ca
 mJ
-Ek
-tO
-tO
+kx
+rO
+oQ
 tO
 yE
 mJ
@@ -28965,11 +30037,11 @@ mx
 Vh
 NR
 mJ
-Ek
+vp
+rO
 tO
 tO
-tO
-tO
+Sp
 mJ
 pq
 pq
@@ -29731,7 +30803,7 @@ Hv
 xN
 ZD
 fj
-fj
+KU
 NB
 NB
 ZV
@@ -29997,7 +31069,7 @@ mJ
 kO
 tO
 tO
-tO
+QY
 Dj
 pq
 pq
@@ -30254,7 +31326,7 @@ if
 OK
 Bp
 Bp
-Bp
+di
 Dj
 Hv
 pq
@@ -31015,8 +32087,8 @@ pq
 pq
 SO
 YN
-YK
-YK
+Ft
+Un
 YK
 YK
 YK
@@ -31273,7 +32345,7 @@ pq
 SO
 yf
 pn
-pn
+Of
 YK
 YK
 YK
@@ -31530,7 +32602,7 @@ pq
 SO
 Pq
 pn
-pn
+Of
 YK
 YK
 YK
@@ -31787,7 +32859,7 @@ pq
 SO
 yf
 pn
-pn
+Of
 GK
 GK
 GK
@@ -33072,7 +34144,7 @@ Tv
 Re
 iR
 MN
-MN
+Ks
 zL
 Re
 pq
@@ -34130,9 +35202,9 @@ jD
 jD
 jD
 jD
-jD
-jD
-jD
+sr
+sr
+sr
 jD
 jD
 jD
@@ -34387,9 +35459,9 @@ kG
 kG
 kG
 kG
-kG
-kG
-kG
+Bv
+Bv
+Bv
 kG
 kG
 kG
@@ -34644,9 +35716,9 @@ jD
 jD
 jD
 jD
-jD
-jD
-jD
+sr
+Bv
+sr
 jD
 jD
 jD
@@ -34901,9 +35973,9 @@ pq
 gI
 pq
 pq
-pq
-pq
-pq
+cG
+yL
+cG
 pq
 pq
 gI
@@ -35158,9 +36230,9 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
+cG
+yL
+cG
 pq
 pq
 pq
@@ -35415,9 +36487,9 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
+cG
+yL
+cG
 pq
 Hv
 pq
@@ -35672,9 +36744,9 @@ pq
 pq
 Hv
 pq
-pq
-pq
-pq
+cG
+yL
+cG
 pq
 pq
 pq
@@ -35925,14 +36997,14 @@ Hv
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
 wu
+pq
+pq
+OZ
+nu
+LS
+nu
+em
 pq
 Hv
 pq
@@ -36182,14 +37254,14 @@ pq
 pq
 pq
 pq
-wu
 pq
 pq
 pq
-pq
-pq
-pq
-pq
+nu
+nu
+LS
+nu
+nu
 pq
 pq
 pq
@@ -36438,19 +37510,19 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+eY
+eY
+kw
+eY
+eY
+eY
+jb
+eY
+eY
+kw
+kw
+eY
+eY
 VY
 pq
 pq
@@ -36695,19 +37767,19 @@ pq
 pq
 pq
 pq
-pq
-pq
-Tv
-pq
-pq
-VY
-pq
-pq
-Tv
-pq
-pq
-pq
-pq
+eY
+eQ
+gA
+DP
+eY
+pr
+eV
+eY
+qe
+gA
+UL
+PG
+eY
 pq
 wu
 pq
@@ -36952,19 +38024,19 @@ VY
 pq
 pq
 VY
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+kw
+ye
+hb
+Nm
+cE
+eV
+fr
+eY
+Nq
+OD
+mq
+XF
+kw
 pq
 pq
 pq
@@ -37209,19 +38281,19 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-VY
-pq
-pq
-pq
-pq
-wu
-pq
+kw
+mI
+gA
+yN
+eY
+qr
+eV
+cE
+Nm
+tb
+gA
+gA
+kw
 pq
 pq
 Hv
@@ -37466,19 +38538,19 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
-wu
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+eY
+CV
+gA
+BL
+eY
+SQ
+eV
+eY
+Ld
+Ed
+Mt
+DC
+eY
 Hv
 pq
 pq
@@ -37723,19 +38795,19 @@ pq
 wu
 pq
 pq
-pq
-pq
-pq
-pq
-Hv
-pq
-pq
-pq
-pq
-pq
-Tv
-pq
-pq
+eY
+eY
+eY
+eY
+eY
+yQ
+aj
+eY
+eY
+eY
+dM
+eY
+eY
 pq
 pq
 pq
@@ -37980,19 +39052,19 @@ pq
 pq
 pq
 pq
-pq
-Hv
-pq
-pq
-pq
-pq
-pq
-VY
-pq
-pq
-Hv
-Hv
-pq
+eY
+tI
+vz
+RS
+cE
+By
+eV
+cE
+Nm
+Yv
+Mt
+DC
+eY
 pq
 pq
 pq
@@ -38237,19 +39309,19 @@ pq
 pq
 pq
 Tv
-pq
-pq
-pq
-Hv
-pq
-pq
-pq
-pq
-pq
-Hv
-pq
-pq
-pq
+kw
+gA
+gA
+hN
+eY
+eY
+jb
+eY
+Nq
+Se
+xF
+Ph
+kw
 pq
 pq
 pq
@@ -38494,19 +39566,19 @@ pq
 pq
 VY
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-Hv
-pq
-pq
-pq
-pq
-pq
-pq
+kw
+gA
+rG
+Qc
+eY
+LV
+nD
+eY
+vw
+yn
+tK
+yn
+kw
 VY
 Hv
 pq
@@ -38751,19 +39823,19 @@ Hv
 pq
 pq
 pq
-pq
-pq
-VY
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+kw
+aH
+ld
+Do
+eY
+vF
+fO
+eY
+vj
+Hd
+Kb
+pf
+eY
 pq
 pq
 pq
@@ -39008,19 +40080,19 @@ pq
 pq
 pq
 pq
-pq
-pq
-pq
-pq
-Hv
-pq
-pq
-pq
-pq
-wu
-pq
-pq
-VY
+eY
+kw
+kw
+eY
+eY
+eY
+eY
+eY
+eY
+kw
+kw
+eY
+eY
 pq
 pq
 pq
@@ -44128,7 +45200,7 @@ TL
 Ar
 Ar
 Ar
-Ar
+Jf
 ci
 ac
 jr
@@ -44136,7 +45208,7 @@ OE
 tk
 Ar
 Ar
-Ar
+Jf
 Ar
 ac
 ci
@@ -44653,8 +45725,8 @@ Jx
 dr
 MG
 uM
-cb
-Jw
+WC
+aA
 wx
 uM
 xK
@@ -46448,7 +47520,7 @@ KV
 td
 cb
 Lq
-ND
+sP
 ND
 MK
 Lf
@@ -48249,7 +49321,7 @@ fy
 kV
 Co
 Ri
-uM
+Rf
 vy
 vA
 Qt
@@ -50515,7 +51587,7 @@ pq
 pq
 pq
 pq
-pq
+wt
 TU
 YL
 Lj
@@ -50764,18 +51836,18 @@ sA
 QD
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-wu
-pq
-Hv
-gI
-CL
-wt
+sr
+sr
+jD
+jD
+jD
+jD
+jD
+jD
+jD
+jD
+sr
+sr
 wt
 wt
 wt
@@ -51021,18 +52093,18 @@ RV
 QD
 pq
 pq
-pq
-pq
-wu
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+sr
+HS
+HS
+Gv
+Gv
+HS
+HS
+eW
+eW
+eW
+eW
+sr
 pq
 gI
 pq
@@ -51278,18 +52350,18 @@ fn
 fn
 pq
 Hv
-pq
-pq
+jD
+HS
+zh
+VS
+zh
+zD
+HS
 EP
-EP
-EP
-EP
-EP
-EP
-EP
-pq
-pq
-VY
+Wq
+Tc
+eW
+jD
 pq
 pq
 pq
@@ -51535,18 +52607,18 @@ DV
 BD
 pq
 pq
-pq
-pq
-gb
-kY
-pf
-eV
+jD
+HS
+Ga
+ki
+ki
+ki
 fX
-PG
-EP
-pq
-pq
-pq
+SL
+wD
+CO
+eW
+jD
 pq
 pq
 Hv
@@ -51792,18 +52864,18 @@ hV
 BD
 pq
 pq
-VY
-pq
-gb
+jD
+Gv
+zh
 ki
-ki
+OJ
 YZ
 HS
 zN
-EP
-pq
-pq
-pq
+kz
+jR
+eW
+jD
 Hv
 pq
 pq
@@ -52049,18 +53121,18 @@ rT
 rT
 pq
 pq
-Hv
-pq
-EP
-Mt
-EP
-EP
-EP
-EP
-EP
-pq
-VY
-pq
+jD
+HS
+Vb
+ki
+gJ
+KS
+HS
+fv
+gC
+Ox
+eW
+jD
 pq
 pq
 wu
@@ -52306,18 +53378,18 @@ Yh
 rT
 pq
 pq
-pq
-Tv
-EP
-qF
-kx
-pC
-EP
-TQ
+jD
+HS
+HS
+bi
+HS
+HS
+HS
 eW
-pq
-pq
-pq
+eW
+eW
+eW
+KB
 pq
 gI
 pq
@@ -52563,15 +53635,15 @@ Ky
 rT
 pq
 wu
-pq
-pq
-EP
-zh
+jD
+eW
+sN
+vI
 qF
 aK
-ZA
-TQ
-TQ
+fE
+RX
+kY
 jD
 jD
 jD
@@ -52820,18 +53892,18 @@ rT
 rT
 pq
 pq
-pq
-VY
-EP
-WC
-qF
-qF
-bi
+jD
+bJ
+xW
+vI
+vI
+vI
+vI
+vI
 NS
-NS
-YS
-YS
-YS
+PN
+PN
+PN
 YS
 YS
 YS
@@ -53077,15 +54149,15 @@ Dm
 xY
 pq
 Hv
-pq
-pq
-EP
+jD
+eW
+pC
 vI
 qF
 bF
 ZA
-TQ
-TQ
+TM
+kY
 jD
 jD
 jD
@@ -53334,18 +54406,18 @@ Ty
 TJ
 pq
 pq
-pq
-pq
-EP
-kh
-qF
-yN
-EP
-TQ
+jD
 eW
-pq
-pq
-pq
+eW
+kh
+eW
+eW
+eW
+eW
+eW
+eW
+eW
+vx
 pq
 gI
 pq
@@ -53591,18 +54663,18 @@ wO
 xY
 pq
 pq
-VY
-pq
-EP
+jD
+eW
+fe
 SL
 gy
 qT
 Jy
-EP
-EP
-pq
-wu
-pq
+Gi
+wJ
+bO
+eW
+jD
 pq
 Tv
 pq
@@ -53848,18 +54920,18 @@ BZ
 xY
 pq
 pq
-pq
-pq
+jD
+bJ
 gb
-gA
-qF
-eY
+zM
+bx
+LZ
 Ov
 Fu
-EP
-pq
-pq
-pq
+tF
+pY
+eW
+jD
 pq
 pq
 pq
@@ -54105,18 +55177,18 @@ Eo
 xY
 pq
 VY
-Hv
-pq
-gb
+jD
+eW
+NY
 zM
 uX
 LZ
 eH
 Qr
-EP
-pq
-pq
-pq
+WA
+FT
+eW
+jD
 pq
 pq
 pq
@@ -54362,18 +55434,18 @@ fp
 TJ
 pq
 pq
-pq
-pq
-EP
-EP
-EP
-EP
-EP
-EP
-EP
-pq
-pq
-pq
+jD
+eW
+px
+zM
+zM
+NG
+lp
+nt
+vo
+uP
+eW
+jD
 pq
 pq
 pq
@@ -54619,18 +55691,18 @@ Dm
 xY
 pq
 pq
-pq
-wu
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+sr
+eW
+eW
+bJ
+bJ
+eW
+eW
+eW
+eW
+eW
+eW
+sr
 pq
 pq
 pq
@@ -54876,18 +55948,18 @@ TJ
 TJ
 pq
 pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
-pq
+sr
+sr
+jD
+jD
+jD
+jD
+jD
+jD
+jD
+jD
+sr
+sr
 pq
 pq
 pq

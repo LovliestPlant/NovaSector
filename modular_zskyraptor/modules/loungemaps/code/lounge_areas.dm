@@ -5,6 +5,8 @@
 	icon = 'modular_zskyraptor/modules/loungemaps/icons/areas.dmi'
 	icon_state = "biodome"
 	name = "Talon IV-a Biodome"
+	static_lighting = TRUE
+	requires_power = FALSE
 	ambience_index = AMBIENCE_GENERIC
 	sound_environment = SOUND_AREA_STANDARD_STATION
 	has_gravity = STANDARD_GRAVITY
