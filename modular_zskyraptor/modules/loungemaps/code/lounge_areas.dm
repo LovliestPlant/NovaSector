@@ -322,5 +322,57 @@
 
 /area/centcom/biodome/homes/casa_de_korna/bath
 	icon_state = "biohome_nikshta_bath"
-	name = "Casa de Ko: Bath"
+	name = "Casa de Korna: Bath"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/// STRIGI & ALARA FORMES' HOME
+/area/centcom/biodome/homes/casa_de_formes
+	icon_state = "biohome_strigi"
+	name = "Casa de Formes"
+	ambience_index = AMBIENCE_MEDICAL
+	min_ambience_cooldown = 90 SECONDS
+	max_ambience_cooldown = 180 SECONDS
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_formes/bed1
+	icon_state = "biohome_strigi_bed1"
+	name = "Casa de Formes: Bedroom"
+
+/area/centcom/biodome/homes/casa_de_formes/lounge
+	icon_state = "biohome_strigi_lounge"
+	name = "Casa de Formes: Lounge"
+
+/area/centcom/biodome/homes/casa_de_formes/bar
+	icon_state = "biohome_strigi_bar"
+	name = "Casa de Formes: Bar"
+
+/area/centcom/biodome/homes/casa_de_formes/toolcloset
+	icon_state = "biohome_strigi"
+	name = "Casa de Formes: Tool Closet"
+
+/// Mystral Garner & FELLA's home
+/area/centcom/biodome/homes/casa_de_garner
+	icon_state = "biohome_mystral"
+	name = "Casa de Garner"
+	ambience_index = AMBIENCE_DANGER
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_garner/bed1
+	icon_state = "biohome_mystral_bed1"
+	name = "Casa de Garner: Master Bedroom"
+
+/area/centcom/biodome/homes/casa_de_garner/bed2
+	icon_state = "biohome_mystral_bed2"
+	name = "Casa de Garner: Kids' Bedroom"
+
+/area/centcom/biodome/homes/casa_de_garner/bed3
+	icon_state = "biohome_mystral_bed3"
+	name = "Casa de Garner: Guest Bedroom"
+
+/area/centcom/biodome/homes/casa_de_garner/bath
+	icon_state = "biohome_mystral_bath"
+	name = "Casa de Garner: Bathroom"
+
+/area/centcom/biodome/homes/casa_de_garner/bar
+	icon_state = "biohome_mystral_bar"
+	name = "Casa de Garner: Bar"
