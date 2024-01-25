@@ -5538,6 +5538,9 @@
 /area/centcom/biodome/service/library)
 "ql" = (
 /obj/machinery/teleport/station,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "qm" = (
@@ -8653,10 +8656,6 @@
 /obj/structure/closet/radiation,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"Ax" = (
-/obj/machinery/vending/wardrobe/medi_wardrobe/ghost_cafe,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/medical/offices)
 "Ay" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -9504,6 +9503,7 @@
 "Di" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light/directional/south,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "Dj" = (
@@ -15343,6 +15343,13 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/security/syndicat)
+"Vl" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured,
+/area/centcom/biodome/science)
 "Vn" = (
 /obj/machinery/door/airlock/mining{
 	name = "Bitrunning Den"
@@ -16208,6 +16215,9 @@
 	pixel_x = -1;
 	pixel_y = 2
 	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "XT" = (
@@ -16827,6 +16837,9 @@
 /area/centcom/biodome/security)
 "ZZ" = (
 /obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/science)
 
@@ -42708,7 +42721,7 @@ lJ
 tB
 op
 eS
-tg
+Vl
 bc
 lJ
 pq
@@ -47699,13 +47712,13 @@ oo
 oo
 oo
 oo
-qe
-oo
-oo
-oo
-oo
-oo
 Xw
+oo
+oo
+oo
+oo
+oo
+qe
 oo
 oo
 oo
@@ -50870,7 +50883,7 @@ pq
 pq
 Ri
 Ri
-Ax
+Ri
 Ri
 Ri
 Ri
@@ -51297,13 +51310,13 @@ oo
 oo
 oo
 oo
-qe
-oo
-oo
-oo
-oo
-oo
 Xw
+oo
+oo
+oo
+oo
+oo
+qe
 oo
 oo
 oo
