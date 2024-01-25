@@ -1,11 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/obj/structure/window/reinforced/shuttle,
-/obj/structure/curtain/cloth{
-	color = "#800000"
-	},
-/turf/open/floor/plating,
-/area/centcom/biodome/homes/casa_de_korna/lounge)
 "ac" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -399,6 +392,19 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
+"bc" = (
+/obj/structure/closet/secure_closet/medical3{
+	req_access = null
+	},
+/obj/item/storage/medkit/regular,
+/obj/item/storage/medkit/brute,
+/obj/item/storage/medkit/fire,
+/obj/item/storage/medkit/o2,
+/obj/item/storage/medkit/toxin,
+/obj/item/storage/medkit/advanced,
+/obj/item/storage/medkit/tactical,
+/turf/open/floor/iron/dark/textured,
+/area/centcom/biodome/science)
 "bd" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/stasis,
@@ -857,7 +863,9 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "cu" = (
-/obj/machinery/teleport/station,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "cv" = (
@@ -1060,7 +1068,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/curtain/cloth/fancy/mechanical{
-	id = "Master Bedroom A"
+	id = "MysFella Master Bedroom A"
 	},
 /turf/open/misc/grass/planet{
 	has_gravity = 1
@@ -2564,12 +2572,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
-"ha" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/science)
 "hb" = (
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/toolcloset)
@@ -3102,7 +3104,7 @@
 /area/centcom/biodome/homes/casa_de_korna/bath)
 "iS" = (
 /obj/machinery/button/door/directional/west{
-	id = "MysFella Master Bedroom A";
+	id = "MysFella Guest Bedroom";
 	name = "Door Lock";
 	normaldoorcontrol = 1;
 	specialfunctions = 4
@@ -3270,7 +3272,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/curtain/cloth/fancy/mechanical{
-	id = "Child Bedroom A"
+	id = "MysFella Bedroom B"
 	},
 /turf/open/misc/grass/planet{
 	has_gravity = 1
@@ -4126,7 +4128,7 @@
 /area/centcom/biodome/apartments/apartment3)
 "lM" = (
 /obj/machinery/button/curtain{
-	id = "HotelRoom3Curtains";
+	id = "MysFella Bedroom B";
 	pixel_y = 23
 	},
 /obj/structure/table/wood/fancy,
@@ -4482,10 +4484,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"mT" = (
-/obj/machinery/suit_storage_unit/standard_unit,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/science)
 "mU" = (
 /obj/machinery/door/airlock/multi_tile{
 	dir = 1;
@@ -5401,11 +5399,6 @@
 	},
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/apartments/bigapartment1)
-"pM" = (
-/obj/machinery/telecomms/message_server/preset,
-/obj/machinery/light/directional/east,
-/turf/open/floor/circuit/green/telecomms,
-/area/centcom/biodome/science)
 "pO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -5534,10 +5527,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"qj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark/textured,
-/area/centcom/biodome/science)
 "qk" = (
 /obj/structure/sign/painting/large/library{
 	dir = 1
@@ -5548,9 +5537,8 @@
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
 "ql" = (
-/obj/structure/window/reinforced/plasma/fulltile,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
-/turf/open/floor/plating,
+/obj/machinery/teleport/station,
+/turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "qm" = (
 /obj/machinery/ore_silo/colony_lathe,
@@ -5768,17 +5756,8 @@
 /turf/open/floor/iron,
 /area/centcom/biodome/arrivals/pad1)
 "ri" = (
-/obj/structure/closet/secure_closet/medical3{
-	req_access = null
-	},
-/obj/item/storage/medkit/regular,
-/obj/item/storage/medkit/brute,
-/obj/item/storage/medkit/fire,
-/obj/item/storage/medkit/o2,
-/obj/item/storage/medkit/toxin,
-/obj/item/storage/medkit/advanced,
-/obj/item/storage/medkit/tactical,
-/turf/open/floor/iron/dark/textured,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
+/turf/open/floor/circuit/green/telecomms,
 /area/centcom/biodome/science)
 "rj" = (
 /obj/structure/lattice/catwalk,
@@ -6340,11 +6319,8 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "tg" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8;
-	widenet = 1
-	},
-/turf/open/floor/circuit/green/telecomms,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/science)
 "th" = (
 /obj/machinery/door/airlock/multi_tile{
@@ -6493,7 +6469,8 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/homes/casa_de_garner/bath)
 "tB" = (
-/turf/open/floor/circuit/green/telecomms,
+/obj/effect/turf_decal/bot_white/left,
+/turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/science)
 "tC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7479,7 +7456,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/curtain/cloth/fancy/mechanical{
-	id = "Guest Bedroom A"
+	id = "MysFella Bedroom C"
 	},
 /turf/open/misc/grass/planet{
 	has_gravity = 1
@@ -8536,9 +8513,12 @@
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
 "zX" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
-/turf/open/floor/circuit/green/telecomms,
-/area/centcom/biodome/science)
+/obj/structure/window/reinforced/shuttle,
+/obj/structure/curtain/cloth{
+	color = "#800000"
+	},
+/turf/open/floor/plating,
+/area/centcom/biodome/homes/casa_de_korna/lounge)
 "zZ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible,
 /turf/open/floor/engine,
@@ -8710,8 +8690,8 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "AC" = (
-/obj/effect/turf_decal/bot_white/left,
-/turf/open/floor/iron/dark/textured,
+/obj/machinery/telecomms/hub/preset,
+/turf/open/floor/circuit/green/telecomms,
 /area/centcom/biodome/science)
 "AD" = (
 /obj/structure/chair/office/light{
@@ -9236,19 +9216,6 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
-"Ci" = (
-/obj/machinery/button/curtain{
-	id = "HotelRoom3Curtains";
-	pixel_y = 23
-	},
-/obj/structure/cable,
-/obj/machinery/light/directional/north,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/parquet{
-	planetary_atmos = 1
-	},
-/area/centcom/biodome/homes/casa_de_garner)
 "Cj" = (
 /obj/structure/flora/bush/lavendergrass/style_random,
 /obj/structure/flora/bush/leafy,
@@ -9535,8 +9502,9 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "Di" = (
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron/dark/textured,
+/obj/machinery/recharge_station,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "Dj" = (
 /obj/structure/window/reinforced/shuttle,
@@ -10042,7 +10010,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/curtain/cloth/fancy/mechanical{
-	id = "Living Room"
+	id = "MysFella Greatroom"
 	},
 /turf/open/misc/grass/planet{
 	has_gravity = 1
@@ -10624,6 +10592,15 @@
 /obj/machinery/light/cold/directional/south,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"Gz" = (
+/obj/machinery/button/curtain{
+	id = "MysFella Greatroom";
+	pixel_y = -23
+	},
+/turf/open/floor/wood/parquet{
+	planetary_atmos = 1
+	},
+/area/centcom/biodome/homes/casa_de_garner)
 "GA" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/green/double,
@@ -10657,14 +10634,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/biodome/science/genetics)
-"GG" = (
-/obj/machinery/door/airlock/rd/glass{
-	name = "Gateway"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/science)
 "GH" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
@@ -10983,6 +10952,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/science/genetics)
+"HJ" = (
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/science)
 "HK" = (
 /obj/structure/railing{
 	dir = 4;
@@ -13641,6 +13614,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/purple,
 /area/centcom/biodome/homes/casa_de_ko/bed3)
+"PT" = (
+/obj/machinery/door/airlock/rd/glass{
+	name = "Gateway"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/science)
 "PU" = (
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/wood/parquet,
@@ -14460,6 +14441,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"Sk" = (
+/obj/structure/window/reinforced/plasma/fulltile,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
+/turf/open/floor/plating,
+/area/centcom/biodome/science)
 "Sl" = (
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
@@ -15366,9 +15352,14 @@
 /turf/open/floor/iron/textured,
 /area/centcom/biodome/cargo)
 "Vo" = (
-/obj/machinery/recharge_station,
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/dark,
+/obj/machinery/door/airlock/rd/glass{
+	name = "TComms"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fans/tiny,
+/turf/open/floor/iron/dark/side{
+	dir = 8
+	},
 /area/centcom/biodome/science)
 "Vp" = (
 /obj/machinery/airalarm/directional/north,
@@ -15498,6 +15489,20 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
+"VJ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8;
+	widenet = 1
+	},
+/turf/open/floor/circuit/green/telecomms,
+/area/centcom/biodome/science)
+"VK" = (
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 8;
+	name = "server vent"
+	},
+/turf/open/floor/circuit/green/telecomms,
+/area/centcom/biodome/science)
 "VL" = (
 /turf/open/floor/wood/large{
 	planetary_atmos = 1
@@ -15919,6 +15924,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment3)
+"Xe" = (
+/turf/open/floor/circuit/green/telecomms,
+/area/centcom/biodome/science)
 "Xf" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
@@ -15996,7 +16004,7 @@
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/curtain/cloth/fancy/mechanical{
-	id = "Living Room"
+	id = "MysFella Greatroom"
 	},
 /turf/open/misc/grass/planet{
 	has_gravity = 1
@@ -16343,10 +16351,8 @@
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "Yq" = (
-/obj/machinery/atmospherics/components/unary/passive_vent{
-	dir = 8;
-	name = "server vent"
-	},
+/obj/machinery/telecomms/message_server/preset,
+/obj/machinery/light/directional/east,
 /turf/open/floor/circuit/green/telecomms,
 /area/centcom/biodome/science)
 "Yr" = (
@@ -16677,7 +16683,7 @@
 /area/centcom/biodome/arrivals/pad1)
 "Zv" = (
 /obj/machinery/button/curtain{
-	id = "HotelRoom3Curtains";
+	id = "MysFella Bedroom C";
 	pixel_y = 23
 	},
 /turf/open/floor/wood/large{
@@ -16780,10 +16786,6 @@
 	dir = 4
 	},
 /area/centcom/biodome/interior)
-"ZO" = (
-/obj/machinery/telecomms/hub/preset,
-/turf/open/floor/circuit/green/telecomms,
-/area/centcom/biodome/science)
 "ZP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/binary/pump/off{
@@ -16824,14 +16826,8 @@
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
 "ZZ" = (
-/obj/machinery/door/airlock/rd/glass{
-	name = "TComms"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/fans/tiny,
-/turf/open/floor/iron/dark/side{
-	dir = 8
-	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/science)
 
 (1,1,1) = {"
@@ -32878,7 +32874,7 @@ pq
 pq
 pq
 pq
-aa
+zX
 dT
 Nf
 Nf
@@ -33135,7 +33131,7 @@ pq
 pq
 wu
 pq
-aa
+zX
 dT
 YK
 YK
@@ -33392,7 +33388,7 @@ pq
 pq
 pq
 pq
-aa
+zX
 dT
 YK
 YK
@@ -33423,7 +33419,7 @@ NZ
 NZ
 NZ
 NZ
-Ci
+yC
 sz
 rV
 YU
@@ -34715,7 +34711,7 @@ OY
 LT
 OY
 iD
-sz
+Gz
 Yl
 pq
 pq
@@ -42197,8 +42193,8 @@ Kc
 lJ
 eS
 yX
-AC
-Di
+tB
+ZZ
 lR
 lJ
 pq
@@ -42455,7 +42451,7 @@ lJ
 op
 Wu
 op
-qj
+tg
 jU
 lJ
 pq
@@ -42709,11 +42705,11 @@ DY
 yd
 Zl
 lJ
-AC
+tB
 op
 eS
-qj
-ri
+tg
+bc
 lJ
 pq
 pq
@@ -42969,7 +42965,7 @@ lJ
 lJ
 lJ
 lJ
-GG
+PT
 lJ
 lJ
 pq
@@ -43224,10 +43220,10 @@ yd
 bt
 lJ
 qQ
-cu
+ql
 zk
 nh
-mT
+HJ
 lJ
 pq
 pq
@@ -43484,7 +43480,7 @@ nh
 nh
 nh
 nh
-Vo
+Di
 lJ
 pq
 pq
@@ -43738,10 +43734,10 @@ yd
 Kc
 lJ
 MQ
-ha
+cu
 XS
 jv
-mT
+HJ
 lJ
 pq
 pq
@@ -43996,8 +43992,8 @@ Kc
 lJ
 kR
 Cp
-ql
-ZZ
+Sk
+Vo
 kR
 lJ
 pq
@@ -44251,11 +44247,11 @@ xj
 yd
 rp
 lJ
-tB
+Xe
 wY
-zX
+ri
 wY
-tB
+Xe
 lJ
 pq
 pq
@@ -44508,11 +44504,11 @@ Yp
 yd
 uS
 lJ
-tB
-tg
-Yq
-tg
-tB
+Xe
+VJ
+VK
+VJ
+Xe
 lJ
 pq
 pq
@@ -44767,8 +44763,8 @@ Kc
 lJ
 Kz
 oX
-ZO
-pM
+AC
+Yq
 Xa
 lJ
 pq
