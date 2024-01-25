@@ -43,9 +43,6 @@
 #define TRAIT_ASH_ASPECT "ash_aspect"
 #define TRAIT_SPARKLE_ASPECT "sparkle_aspect"
 
-/// Allows the user to instantly reload.
-#define TRAIT_INSTANT_RELOAD "instant_reload"
-
 // Trait sources
 #define TRAIT_GHOSTROLE "ghostrole" // NOVA EDIT ADDITION -- Ghost Cafe Traits
 
@@ -118,6 +115,9 @@
 // Defines for some extra inherent traits
 #define TRAIT_REVIVES_BY_HEALING "trait_revives_by_healing"
 #define TRAIT_ROBOTIC_DNA_ORGANS "trait_robotic_dna_organs"
+
+/// Trait that changes the ending effects of twitch leaving your system
+#define TRAIT_TWITCH_ADAPTED "twitch_adapted"
 
 //Defines for model features, set in the model_features list of a robot model datum. Are they a dogborg? Is the model small? etc.
 /// Cyborgs with unique sprites for when they get totally broken down.
