@@ -350,7 +350,7 @@
 	icon_state = "biohome_strigi"
 	name = "Casa de Formes: Tool Closet"
 
-/// Mystral Garner & FELLA's home
+/// MYSTRAL GARNER & FELLA'S HOME
 /area/centcom/biodome/homes/casa_de_garner
 	icon_state = "biohome_mystral"
 	name = "Casa de Garner"
@@ -360,19 +360,158 @@
 /area/centcom/biodome/homes/casa_de_garner/bed1
 	icon_state = "biohome_mystral_bed1"
 	name = "Casa de Garner: Master Bedroom"
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
 
 /area/centcom/biodome/homes/casa_de_garner/bed2
 	icon_state = "biohome_mystral_bed2"
 	name = "Casa de Garner: Kids' Bedroom"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/centcom/biodome/homes/casa_de_garner/bed3
 	icon_state = "biohome_mystral_bed3"
 	name = "Casa de Garner: Guest Bedroom"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/centcom/biodome/homes/casa_de_garner/bath
 	icon_state = "biohome_mystral_bath"
 	name = "Casa de Garner: Bathroom"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/centcom/biodome/homes/casa_de_garner/bar
 	icon_state = "biohome_mystral_bar"
 	name = "Casa de Garner: Bar"
+
+/// LIORA'S HOME
+/area/centcom/biodome/homes/casa_de_liora
+	icon_state = "biohome_liora"
+	name = "Casa de Liora"
+	ambience_index = AMBIENCE_HOLY
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_liora/lounge
+	icon_state = "biohome_liora_lounge"
+	name = "Casa de Liora: Lounge"
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_liora/bedroom
+	icon_state = "biohome_liora_bed1"
+	name = "Casa de Liora: Bedroom"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/centcom/biodome/homes/casa_de_liora/office
+	icon_state = "biohome_liora_office"
+	name = "Casa de Liora: Office"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/centcom/biodome/homes/casa_de_liora/bath
+	icon_state = "biohome_liora_bath"
+	name = "Casa de Liora: Bath"
+
+/// TCHIKO & RHYZAL'S HOME
+/area/centcom/biodome/homes/casa_de_tchiko
+	icon_state = "biohome_tchiko"
+	name = "Casa de Tchiko"
+	ambience_index = AMBIENCE_DANGER
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_tchiko/lounge
+	icon_state = "biohome_tchiko_lounge"
+	name = "Casa de Tchiko: Lounge"
+
+/area/centcom/biodome/homes/casa_de_tchiko/office
+	icon_state = "biohome_tchiko_office"
+	name = "Casa de Tchiko: office"
+
+/area/centcom/biodome/homes/casa_de_tchiko/bar
+	icon_state = "biohome_tchiko_bar"
+	name = "Casa de Tchiko: Bar"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_tchiko/bath
+	icon_state = "biohome_tchiko_bath"
+	name = "Casa de Tchiko: Bath"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_tchiko/bed1
+	icon_state = "biohome_tchiko_bed1"
+	name = "Casa de Tchiko: Master Bedroom"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/centcom/biodome/homes/casa_de_tchiko/bed2
+	icon_state = "biohome_tchiko_bed2"
+	name = "Casa de Tchiko: Kids' Bedroom"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/// PIPSQUEAK'S CRITTER DEN
+/area/centcom/biodome/homes/critterden
+	icon_state = "biohome_critter"
+	name = "Pipsqueak's Den"
+	ambience_index = AMBIENCE_MAINT
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/centcom/biodome/homes/cinder
+	icon_state = "biohome_critter"
+	name = "Cinder's Abode"
+	ambience_index = AMBIENCE_MINING
+	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
+
+/// NUVI DIM'S HOME
+/area/centcom/biodome/homes/nuviship
+	icon_state = "biohome_nuvi"
+	name = "Nuvi's Ship"
+	ambience_index = AMBIENCE_ENGI
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/nuviship/lounge
+	icon_state = "biohome_nuvi_lounge"
+	name = "Nuvi's Ship: Lounge"
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/centcom/biodome/homes/nuviship/cargo
+	icon_state = "biohome_nuvi_cargo"
+	name = "Nuvi's Ship: Cargo"
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/centcom/biodome/homes/nuviship/lab
+	icon_state = "biohome_nuvi_lab"
+	name = "Nuvi's Ship: Lab"
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/centcom/biodome/homes/nuviship/bath
+	icon_state = "biohome_nuvi_bath"
+	name = "Nuvi's Ship: Bath"
+
+/area/centcom/biodome/homes/nuviship/bed1
+	icon_state = "biohome_nuvi_bed1"
+	name = "Nuvi's Ship: Bedroom"
+
+/area/centcom/biodome/homes/nuviship/misc
+	icon_state = "biohome_nuvi_misc"
+	name = "Nuvi's Ship: Misc. Areas"
+
+/// SELDERIS WROTH'S HOME
+/area/centcom/biodome/homes/casa_de_seld
+	icon_state = "biohome_seld"
+	name = "Casa de Selderis"
+	ambience_index = AMBIENCE_VIROLOGY
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/centcom/biodome/homes/casa_de_seld/bath
+	icon_state = "biohome_seld_bath"
+	name = "Casa de Selderis: Bath"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_seld/bar
+	icon_state = "biohome_seld_bar"
+	name = "Casa de Selderis: Bar"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_seld/bed
+	icon_state = "biohome_seld_bed1"
+	name = "Casa de Selderis: Bedroom"
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_seld/lounge
+	icon_state = "biohome_seld_lounge"
+	name = "Casa de Selderis: Lounge"
+	sound_environment = SOUND_AREA_WOODFLOOR
