@@ -139,14 +139,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos)
-"ajV" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/critterden)
-"akR" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/carpet/neon/simple/purple,
-/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "alo" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -229,6 +221,11 @@
 /obj/item/healthanalyzer/advanced,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"aoG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/casa_de_liora/bath)
 "aoX" = (
 /obj/machinery/griddle,
 /turf/open/floor/iron/kitchen/diagonal,
@@ -355,9 +352,6 @@
 "azc" = (
 /turf/closed/wall,
 /area/centcom/biodome/service/diner)
-"aAk" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship/lab)
 "aAQ" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/checker,
@@ -843,10 +837,6 @@
 	planetary_atmos = 1
 	},
 /area/centcom/biodome/homes/casa_de_garner)
-"bcB" = (
-/obj/machinery/smartfridge/food,
-/turf/open/floor/iron/kitchen,
-/area/centcom/biodome/homes/casa_de_seld/bar)
 "bdC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
@@ -877,9 +867,6 @@
 /obj/machinery/vending/wardrobe/medi_wardrobe/ghost_cafe,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
-"bft" = (
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "bfu" = (
 /turf/open/floor/stone,
 /area/centcom/biodome/interior)
@@ -1184,9 +1171,6 @@
 /obj/machinery/recharger,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_garner)
-"bri" = (
-/turf/closed/wall/r_wall,
-/area/centcom/biodome/homes/cinder)
 "brk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1229,9 +1213,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/grass,
 /area/centcom/biodome/science/genetics)
-"buz" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/casa_de_seld)
 "buS" = (
 /obj/structure/table,
 /obj/machinery/light/directional/north,
@@ -1254,7 +1235,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_tchiko)
+/area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "bvP" = (
 /obj/structure/sink/directional/south,
 /turf/open/floor/iron/kitchen,
@@ -1389,6 +1370,9 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
+"bEn" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/critterden)
 "bEN" = (
 /obj/machinery/vending/clothing,
 /turf/open/floor/iron/dark,
@@ -1398,7 +1382,10 @@
 /obj/item/tank/internals/anesthetic,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"bGO" = (
+"bGF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "bHi" = (
@@ -1477,9 +1464,6 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"bJv" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/casa_de_seld/lounge)
 "bKb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1519,9 +1503,6 @@
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
 "bMK" = (
-/obj/structure/window/reinforced/plasma/unanchored{
-	dir = 4
-	},
 /obj/structure/closet/crate/necropolis/bubblegum/crusher{
 	dir = 1;
 	icon_state = "necro_bubblegumopen"
@@ -1539,6 +1520,7 @@
 /obj/item/fancy_pillow{
 	icon_state = "pillow_teal_round"
 	},
+/obj/structure/window/reinforced/uranium/spawner/directional/east,
 /turf/open/floor/iron/terracotta/herringbone,
 /area/centcom/biodome/homes/cinder)
 "bMV" = (
@@ -1726,9 +1708,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"bVU" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/casa_de_liora/office)
 "bXm" = (
 /obj/machinery/computer/atmos_alert,
 /turf/open/floor/iron/dark/small,
@@ -2281,6 +2260,9 @@
 	},
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/science/robotics)
+"cJB" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/centcom/biodome/homes/nuviship/cargo)
 "cJL" = (
 /obj/structure/window/fulltile,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -2645,9 +2627,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_seld/lounge)
-"cZD" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/casa_de_seld/bath)
 "daj" = (
 /obj/structure/window/reinforced/uranium/fulltile,
 /obj/structure/grille,
@@ -3103,11 +3082,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_seld/lounge)
-"dBS" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/kitchen,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
 "dCX" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/surgery)
@@ -3175,6 +3149,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"dHf" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "dHO" = (
 /obj/structure/cable,
 /turf/open/floor/wood/parquet{
@@ -3267,9 +3246,6 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
-"dKQ" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/casa_de_liora)
 "dLN" = (
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
@@ -3327,7 +3303,7 @@
 "dRk" = (
 /obj/structure/window/reinforced/plasma/plastitanium,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship/bed1)
+/area/centcom/biodome/homes/nuviship/lab)
 "dRW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/white,
@@ -3528,6 +3504,9 @@
 "eem" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/interior)
+"eeK" = (
+/turf/closed/wall/mineral/stone,
+/area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "eeR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
@@ -3710,6 +3689,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
+"ezn" = (
+/turf/closed/wall/mineral/stone,
+/area/centcom/biodome/homes/casa_de_tchiko)
 "ezv" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment1)
@@ -3729,9 +3711,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"eFZ" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "eGu" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/food/meat/slab/monkey,
@@ -3896,9 +3875,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/pavement,
 /area/centcom/biodome/interior)
-"eSB" = (
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/nuviship/lounge)
 "eSK" = (
 /obj/structure/window/reinforced/uranium/fulltile,
 /obj/structure/grille,
@@ -3920,6 +3896,11 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"eWh" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "eWj" = (
 /obj/structure/window/fulltile,
 /obj/machinery/light/floor,
@@ -3927,11 +3908,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/centcom/biodome/arrivals/pad1)
-"eWu" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "eWP" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/charging{
@@ -3972,11 +3948,6 @@
 /area/centcom/biodome/voxbox/apartment1{
 	name = "Haki's Home"
 	})
-"eXM" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/mineral/plastitanium/red,
-/area/centcom/biodome/homes/nuviship/lounge)
 "eXQ" = (
 /obj/machinery/conveyor{
 	id = "QMLoad"
@@ -4094,6 +4065,9 @@
 /obj/machinery/vending/wardrobe/viro_wardrobe/ghost_cafe,
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
+"fcL" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_liora/bath)
 "fcU" = (
 /obj/structure/flora/bush/flowers_br,
 /turf/open/misc/grass/planet,
@@ -4151,9 +4125,6 @@
 /obj/structure/drain,
 /turf/open/floor/iron/white/herringbone,
 /area/centcom/biodome/homes/nuviship/bath)
-"fhy" = (
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_seld/lounge)
 "fhD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -4256,9 +4227,9 @@
 /obj/structure/closet/radiation,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
-"fni" = (
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/critterden)
+"fne" = (
+/turf/open/floor/wood,
+/area/centcom/biodome/homes/casa_de_liora)
 "fnJ" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -4280,9 +4251,6 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/cinder)
-"foz" = (
-/turf/open/floor/iron/dark/small,
-/area/centcom/biodome/homes/nuviship/lounge)
 "foO" = (
 /obj/machinery/door/airlock/wood{
 	name = "Library"
@@ -4295,7 +4263,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/mineral/plastitanium/red,
-/area/centcom/biodome/homes/nuviship/cargo)
+/area/centcom/biodome/homes/nuviship/lounge)
 "fpb" = (
 /obj/machinery/light/warm/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -4898,10 +4866,6 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"gbw" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship/lab)
 "gbM" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/box/deputy{
@@ -5116,11 +5080,6 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
-"gqC" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/nuviship/lounge)
 "grI" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -5364,10 +5323,18 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"gDw" = (
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "gDL" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
+"gDO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark/small,
+/area/centcom/biodome/homes/nuviship/cargo)
 "gDR" = (
 /obj/machinery/self_actualization_device,
 /turf/open/floor/iron/white,
@@ -5380,9 +5347,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
-"gDX" = (
-/turf/open/floor/mineral/plastitanium/red,
-/area/centcom/biodome/homes/nuviship/bed1)
 "gDY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plastic,
@@ -5831,9 +5795,6 @@
 	},
 /turf/open/floor/engine/plasma,
 /area/centcom/biodome/engineering/atmos)
-"hex" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship/misc)
 "hfK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6061,11 +6022,6 @@
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"hoo" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/dark/small,
-/area/centcom/biodome/homes/nuviship/cargo)
 "hor" = (
 /obj/structure/cable,
 /turf/open/floor/carpet/purple{
@@ -6284,9 +6240,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/homes/nuviship/bed1)
-"hCT" = (
-/turf/closed/wall/mineral/stone,
-/area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "hDD" = (
 /obj/structure/streetlamp{
 	base_color = "#BFBFFF"
@@ -6517,6 +6470,9 @@
 "hPC" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
+"hQE" = (
+/turf/open/floor/iron/white/small,
+/area/centcom/biodome/homes/nuviship/lounge)
 "hQV" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe/ghost_cafe,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -6539,8 +6495,8 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "hSF" = (
-/turf/closed/wall/mineral/stone,
-/area/centcom/biodome/homes/casa_de_tchiko)
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_seld/bath)
 "hUg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/kitchen,
@@ -6845,6 +6801,11 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/homes/casa_de_ko)
+"ikG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/neon/simple/purple,
+/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "ikK" = (
 /obj/machinery/chem_heater/withbuffer,
 /obj/machinery/light_switch/directional/south,
@@ -6905,6 +6866,9 @@
 	planetary_atmos = 1
 	},
 /area/centcom/biodome/homes/casa_de_garner/bed1)
+"ioh" = (
+/turf/closed/wall/mineral/stone,
+/area/centcom/biodome/homes/casa_de_tchiko/bed1)
 "ion" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/white,
@@ -6935,6 +6899,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/office)
+"ipo" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_seld/bed)
 "ipy" = (
 /turf/open/floor/iron/textured_edge{
 	dir = 1
@@ -7054,6 +7021,11 @@
 /obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
 	dir = 8
 	},
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering)
+"ixt" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/uranium/fulltile,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
 "ixV" = (
@@ -7623,9 +7595,6 @@
 	},
 /turf/open/floor/iron/dark/textured_corner,
 /area/centcom/biodome/townhall/meeting)
-"jiw" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship)
 "jiy" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/effect/turf_decal/stripes/line{
@@ -7689,6 +7658,12 @@
 	},
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
+"jlv" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_tchiko)
 "jme" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8228,9 +8203,6 @@
 /obj/machinery/chem_master,
 /turf/open/floor/carpet/neon/simple/purple,
 /area/centcom/biodome/homes/casa_de_liora/office)
-"jPs" = (
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship/misc)
 "jPP" = (
 /obj/structure/window/reinforced/plasma/fulltile,
 /turf/open/floor/iron/white,
@@ -8405,7 +8377,7 @@
 /area/centcom/biodome/homes/critterden)
 "kbz" = (
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/critterden)
+/area/centcom/biodome/homes/nuviship/lounge)
 "kbR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8522,6 +8494,13 @@
 "khE" = (
 /turf/closed/wall,
 /area/centcom/biodome/cargo)
+"kib" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering/atmos)
 "kim" = (
 /obj/structure/chair/sofa/corp/left,
 /turf/open/floor/iron/white,
@@ -8679,6 +8658,9 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
+"ktd" = (
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "ktB" = (
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_seld/bar)
@@ -8766,6 +8748,9 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"kyp" = (
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship/misc)
 "kyY" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron/white,
@@ -8840,6 +8825,9 @@
 	dir = 1
 	},
 /area/centcom/biodome/interior)
+"kER" = (
+/turf/closed/wall/r_wall,
+/area/centcom/biodome/homes/cinder)
 "kFS" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/checker,
@@ -8951,6 +8939,9 @@
 	planetary_atmos = 1
 	},
 /area/centcom/biodome/homes/casa_de_garner)
+"kKG" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_seld/bar)
 "kKU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -9030,12 +9021,6 @@
 /obj/machinery/light/cold/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
-"kNu" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_tchiko)
 "kNS" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
@@ -9165,6 +9150,11 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
+"kTt" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/mineral/plastitanium/red,
+/area/centcom/biodome/homes/nuviship/cargo)
 "kTY" = (
 /turf/closed/wall,
 /area/centcom/biodome/arrivals/pad2)
@@ -9215,6 +9205,10 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"kWg" = (
+/obj/machinery/smartfridge/food,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "kWj" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "biodome_sec_shutter";
@@ -9321,9 +9315,6 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
-"lcT" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship/bed1)
 "ldn" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood/tile,
@@ -9390,6 +9381,11 @@
 	dir = 4
 	},
 /turf/open/floor/iron/dark/small,
+/area/centcom/biodome/homes/nuviship/cargo)
+"lgW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/nuviship/cargo)
 "lho" = (
 /obj/machinery/griddle,
@@ -9505,6 +9501,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
+"lnV" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_liora/office)
 "los" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Office"
@@ -9621,6 +9620,10 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark/small,
 /area/centcom/biodome/homes/nuviship/lounge)
+"lxn" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship/cargo)
 "lxL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9638,6 +9641,9 @@
 	},
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_liora)
+"lyL" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship/misc)
 "lyU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -9987,6 +9993,10 @@
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating,
 /area/centcom/biodome/apartments/apartment2)
+"lVT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_tchiko)
 "lWg" = (
 /obj/structure/railing{
 	pixel_y = -6
@@ -10008,16 +10018,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/small,
 /area/centcom/biodome/homes/nuviship/bed1)
-"lWA" = (
-/obj/structure/window/reinforced/shuttle{
-	dir = 4
-	},
-/obj/structure/curtain/cloth{
-	color = "#6927c5";
-	dir = 4
-	},
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/office)
 "lWI" = (
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/cinder)
@@ -10705,7 +10705,7 @@
 	color = "#6927c5"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora)
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "mMp" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /obj/structure/flora/tree/jungle/small/style_random,
@@ -10740,9 +10740,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/obj/structure/window/reinforced/plasma/unanchored{
-	dir = 1
-	},
 /obj/structure/rack/wooden{
 	dir = 4
 	},
@@ -10752,6 +10749,7 @@
 	icon_state = "crusher-glaive";
 	name = "Ztskha-Tsthsss-Ziztsa"
 	},
+/obj/structure/window/reinforced/uranium/spawner/directional/north,
 /turf/open/floor/iron/terracotta/herringbone,
 /area/centcom/biodome/homes/cinder)
 "mQm" = (
@@ -10840,16 +10838,6 @@
 /obj/structure/chair/comfy/black,
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/bigapartment2)
-"mVL" = (
-/obj/structure/window/reinforced/shuttle{
-	dir = 4
-	},
-/obj/structure/curtain/cloth{
-	color = "#6927c5";
-	dir = 4
-	},
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/bath)
 "mWk" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/clothing/suit/armor/vest/alt/sec/redsec{
@@ -10889,9 +10877,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"mZh" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/casa_de_seld/bar)
 "mZF" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -10931,6 +10916,9 @@
 	},
 /turf/open/floor/grass/fairy,
 /area/centcom/biodome/medical/lobby)
+"ncg" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_seld/bed)
 "ncw" = (
 /obj/machinery/door/window/survival_pod,
 /turf/open/floor/iron/white/small,
@@ -10942,6 +10930,10 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
+"ncX" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship/bed1)
 "ndh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -11514,6 +11506,9 @@
 /obj/structure/dresser,
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/bed1)
+"nIp" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "nIF" = (
 /obj/structure/chair/sofa/middle/brown{
 	dir = 4
@@ -11590,11 +11585,6 @@
 /obj/structure/cable,
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/casa_de_tchiko/bath)
-"nMf" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_seld/bed)
 "nMg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
 	dir = 8
@@ -12188,7 +12178,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
+/area/centcom/biodome/homes/casa_de_liora)
 "oyc" = (
 /obj/structure/closet{
 	name = "Evidence Closet"
@@ -12317,12 +12307,6 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_tchiko/bar)
-"oDJ" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "oDL" = (
 /obj/machinery/atmospherics/components/tank/air,
 /turf/open/floor/engine,
@@ -12572,6 +12556,10 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"oPQ" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship)
 "oQg" = (
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured,
@@ -12589,11 +12577,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
 /area/centcom/biodome/arrivals/pad2)
-"oSt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood,
-/area/centcom/biodome/homes/casa_de_liora)
 "oSx" = (
 /obj/machinery/dna_scannernew,
 /obj/machinery/light/directional/north,
@@ -12644,9 +12627,6 @@
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/chapel,
 /area/centcom/biodome/homes/cinder)
-"oVA" = (
-/turf/closed/wall/mineral/stone,
-/area/centcom/biodome/homes/casa_de_tchiko/bath)
 "oVC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/visible,
 /turf/open/floor/engine{
@@ -12828,11 +12808,6 @@
 /obj/structure/curtain,
 /turf/open/floor/plating,
 /area/centcom/biodome/medical/icu)
-"pfm" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/mineral/plastitanium/red,
-/area/centcom/biodome/homes/nuviship/bed1)
 "pfw" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/light_switch/directional/north,
@@ -12872,10 +12847,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko)
-"plo" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship)
 "pls" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -12889,9 +12860,11 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"pmO" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/casa_de_liora/bath)
+"pms" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "png" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/supply{
@@ -12936,6 +12909,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"ppm" = (
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/critterden)
 "ppC" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment2)
@@ -13307,11 +13283,6 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
-"pHx" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/uranium/fulltile,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering)
 "pHz" = (
 /obj/machinery/airalarm/directional/north,
 /obj/structure/cable,
@@ -13339,16 +13310,6 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/offices)
-"pIF" = (
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/office)
-"pJc" = (
-/obj/structure/window/reinforced/shuttle,
-/obj/structure/curtain/cloth{
-	color = "#6927c5"
-	},
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
 "pJt" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -13405,6 +13366,11 @@
 /obj/structure/window/reinforced/plasma/spawner/directional,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/biodome/homes/nuviship/bed1)
+"pMT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_seld/bed)
 "pMY" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -13433,11 +13399,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko)
-"pPZ" = (
-/obj/structure/window/reinforced/uranium/fulltile,
-/obj/structure/grille,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering)
 "pQr" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/machinery/airalarm/directional/north,
@@ -14112,13 +14073,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/lounge)
-"qut" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/engine,
-/area/centcom/biodome/engineering/atmos)
 "qvs" = (
 /obj/machinery/computer/records/security,
 /obj/machinery/airalarm/directional/north,
@@ -14160,6 +14114,9 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"qwZ" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship/lounge)
 "qyn" = (
 /obj/structure/sign/painting/library{
 	pixel_x = -32
@@ -14192,10 +14149,6 @@
 	},
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_tchiko/bar)
-"qyv" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship/lounge)
 "qzm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
@@ -14356,10 +14309,6 @@
 /obj/structure/bed/pillow_large,
 /turf/open/floor/carpet/black,
 /area/centcom/biodome/homes/casa_de_liora/lounge)
-"qIt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_tchiko)
 "qIE" = (
 /obj/machinery/holopad/secure,
 /turf/open/floor/iron/checker,
@@ -14502,10 +14451,6 @@
 	},
 /turf/open/misc/beach/coast/corner,
 /area/centcom/biodome/interior)
-"qTe" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/nuviship/cargo)
 "qUe" = (
 /turf/closed/wall/mineral/stone,
 /area/centcom/biodome/homes/casa_de_tchiko/bar)
@@ -14695,6 +14640,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/bar)
+"reH" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_seld/lounge)
 "reJ" = (
 /obj/structure/closet/secure_closet/freezer/meat{
 	req_access = null
@@ -15068,6 +15016,19 @@
 /obj/structure/bookcase/random/adult,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"rvT" = (
+/obj/structure/window/reinforced/shuttle{
+	dir = 4
+	},
+/obj/structure/curtain/cloth{
+	color = "#6927c5";
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/bath)
+"rwZ" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship/bed1)
 "rxl" = (
 /obj/structure/sign/painting/large/library{
 	dir = 4
@@ -15137,6 +15098,9 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/engine)
+"rAf" = (
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/office)
 "rAq" = (
 /obj/structure/dresser,
 /obj/machinery/button/door/directional/south{
@@ -15313,9 +15277,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/surgery)
-"rKA" = (
-/turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_seld/bed)
 "rLp" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood/parquet{
@@ -15500,6 +15461,9 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
+"rUM" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/critterden)
 "rVm" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/white,
@@ -15549,7 +15513,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/casa_de_tchiko/lounge)
+/area/centcom/biodome/homes/casa_de_tchiko)
 "rXA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/r_bldorng/visible{
 	dir = 1
@@ -16071,6 +16035,9 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/carpet/orange,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
+"svU" = (
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "swN" = (
 /obj/structure/rack/wooden,
 /obj/item/knife/butcher,
@@ -16156,6 +16123,9 @@
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
+"sBI" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/centcom/biodome/homes/nuviship/bed1)
 "sCo" = (
 /obj/structure/window/reinforced/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
@@ -16164,6 +16134,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"sCE" = (
+/obj/machinery/oven/range,
+/turf/open/floor/iron/kitchen,
+/area/centcom/biodome/homes/casa_de_liora/lounge)
 "sCF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/cold/directional/south,
@@ -16288,9 +16262,6 @@
 	},
 /turf/open/floor/circuit/red,
 /area/centcom/biodome/science/robotics)
-"sGB" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship/lounge)
 "sGI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -16391,9 +16362,6 @@
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
-"sMJ" = (
-/turf/open/floor/carpet/neon/simple/purple,
-/area/centcom/biodome/homes/casa_de_liora/office)
 "sNz" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
 	dir = 6
@@ -16772,9 +16740,6 @@
 /obj/structure/chair/wood/wings,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
-"tkf" = (
-/turf/open/floor/iron/kitchen,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
 "tkG" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -17066,9 +17031,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/arrivals)
-"tFl" = (
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/homes/nuviship/lounge)
 "tFx" = (
 /obj/structure/chair/pew/left{
 	dir = 8
@@ -17125,6 +17087,9 @@
 /obj/machinery/light/floor,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
+"tIq" = (
+/turf/open/floor/iron/dark/small,
+/area/centcom/biodome/homes/nuviship/lounge)
 "tIy" = (
 /obj/structure/chair/sofa/right{
 	color = "#6927c5";
@@ -17137,16 +17102,15 @@
 /turf/open/floor/iron/kitchen/small,
 /area/centcom/biodome/homes/casa_de_tchiko/bath)
 "tKy" = (
-/obj/machinery/button{
-	dir = 4;
-	pixel_x = 24;
-	id = "biodome_cinder_toasty"
-	},
 /obj/structure/bed/double{
 	dir = 8
 	},
 /obj/item/bedsheet/black/double{
 	dir = 8
+	},
+/obj/machinery/button/ignition{
+	pixel_x = 22;
+	id = "biodome_cinder_toasty"
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/cinder)
@@ -17172,6 +17136,9 @@
 /obj/structure/curtain,
 /turf/open/floor/plating,
 /area/centcom/biodome/medical/surgery)
+"tOe" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship/lab)
 "tOp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -17187,6 +17154,9 @@
 	},
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/homes/critterden)
+"tPs" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "tQu" = (
 /obj/structure/chair/sofa/middle{
 	dir = 1;
@@ -17290,6 +17260,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/white/herringbone,
 /area/centcom/biodome/homes/nuviship/bath)
+"tVN" = (
+/obj/structure/window/reinforced/uranium/fulltile,
+/obj/structure/grille,
+/turf/open/floor/engine,
+/area/centcom/biodome/engineering)
 "tWo" = (
 /obj/machinery/reagentgrinder{
 	pixel_y = 12;
@@ -17356,6 +17331,18 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"tZB" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
+	dir = 10
+	},
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "tZF" = (
 /obj/machinery/processor{
 	pixel_y = 6
@@ -17456,6 +17443,13 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/homes/nuviship/cargo)
+"ugq" = (
+/obj/structure/window/reinforced/shuttle,
+/obj/structure/curtain/cloth{
+	color = "#6927c5"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora)
 "ugO" = (
 /obj/machinery/light/warm/directional/west,
 /obj/structure/bed/double{
@@ -17555,18 +17549,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/service/bar)
-"ujq" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
-	dir = 10
-	},
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "ujI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17929,6 +17911,9 @@
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"uDE" = (
+/turf/open/floor/carpet/neon/simple/purple,
+/area/centcom/biodome/homes/casa_de_liora/office)
 "uDP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -18302,16 +18287,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
-"vaL" = (
-/obj/structure/window/reinforced/shuttle{
-	dir = 4
-	},
-/obj/structure/curtain/cloth{
-	color = "#6927c5";
-	dir = 4
-	},
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "vaU" = (
 /obj/machinery/stasis{
 	dir = 4
@@ -18423,6 +18398,16 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/wood,
 /area/centcom/biodome/security)
+"vhJ" = (
+/obj/structure/window/reinforced/shuttle{
+	dir = 4
+	},
+/obj/structure/curtain/cloth{
+	color = "#6927c5";
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/bedroom)
 "vio" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -18820,9 +18805,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/service/library)
-"vFj" = (
-/turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/casa_de_seld/bed)
 "vFq" = (
 /obj/machinery/vending/wardrobe/science_wardrobe/ghost_cafe,
 /turf/open/floor/iron,
@@ -19144,10 +19126,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large/birch,
 /area/centcom/biodome/service/theatre)
-"vXU" = (
-/obj/machinery/oven/range,
-/turf/open/floor/iron/kitchen,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
 "vYk" = (
 /obj/structure/table/wood/fancy/royalblue,
 /obj/item/flashlight/lamp{
@@ -19256,11 +19234,6 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
-"wbj" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/homes/nuviship/cargo)
 "wbJ" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Interlink Access"
@@ -19291,6 +19264,10 @@
 /obj/structure/closet/l3closet,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/science/genetics)
+"wdH" = (
+/obj/structure/window/reinforced/plasma/plastitanium,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship/lounge)
 "wfg" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
 	dir = 8
@@ -19302,7 +19279,8 @@
 /area/centcom/biodome/science/robotics)
 "wgg" = (
 /obj/machinery/igniter{
-	id = "biodome_cinder_toasty"
+	id = "biodome_cinder_toasty";
+	id_tag = "biodome_cinder_toasty"
 	},
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 1;
@@ -19389,9 +19367,6 @@
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
-"wkL" = (
-/turf/open/floor/wood,
-/area/centcom/biodome/homes/casa_de_liora)
 "wmd" = (
 /obj/machinery/light/cold/directional/east,
 /obj/machinery/light_switch/directional/east{
@@ -19402,9 +19377,12 @@
 /obj/machinery/vending/dorms,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/apartments)
+"wnq" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship/bath)
 "wnx" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
+/area/centcom/biodome/homes/casa_de_liora)
 "wox" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -19861,7 +19839,7 @@
 "wOO" = (
 /obj/machinery/smartfridge/food,
 /turf/open/floor/iron/kitchen,
-/area/centcom/biodome/homes/casa_de_liora/lounge)
+/area/centcom/biodome/homes/casa_de_seld/bar)
 "wPb" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/surgery_tray/full,
@@ -19948,9 +19926,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"wTd" = (
-/turf/open/floor/mineral/plastitanium/red,
-/area/centcom/biodome/homes/nuviship/cargo)
 "wTy" = (
 /turf/open/floor/iron/dark/small,
 /area/centcom/biodome/interior)
@@ -20038,6 +20013,11 @@
 /obj/machinery/vending/security,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"xbd" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/nuviship/lounge)
 "xbg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -20122,11 +20102,6 @@
 "xeX" = (
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment4)
-"xfu" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/small,
-/area/centcom/biodome/homes/casa_de_liora/bath)
 "xgs" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
@@ -20153,6 +20128,9 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"xhC" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_seld)
 "xhX" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -20166,6 +20144,11 @@
 /obj/machinery/stasis,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science/robotics)
+"xiG" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/mineral/plastitanium/red,
+/area/centcom/biodome/homes/nuviship/bed1)
 "xiS" = (
 /obj/structure/chair{
 	dir = 8
@@ -20679,6 +20662,9 @@
 /obj/machinery/atmospherics/pipe/bridge_pipe/r_chartreuse/visible,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"xLw" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/centcom/biodome/homes/nuviship)
 "xMM" = (
 /obj/structure/table/greyscale{
 	color = "#bb8e53";
@@ -20724,6 +20710,16 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall)
+"xOZ" = (
+/obj/structure/window/reinforced/shuttle{
+	dir = 4
+	},
+/obj/structure/curtain/cloth{
+	color = "#6927c5";
+	dir = 4
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/homes/casa_de_liora/office)
 "xPv" = (
 /obj/structure/streetlamp{
 	base_color = "#AAFF00"
@@ -20759,7 +20755,7 @@
 /area/centcom/biodome/interior)
 "xPC" = (
 /turf/closed/wall/mineral/stone,
-/area/centcom/biodome/homes/casa_de_tchiko/bed1)
+/area/centcom/biodome/homes/casa_de_tchiko/bath)
 "xPY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/textured_large,
@@ -21033,6 +21029,9 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"ycp" = (
+/turf/closed/wall/mineral/wood,
+/area/centcom/biodome/homes/casa_de_seld/lounge)
 "ycO" = (
 /turf/open/floor/carpet/green,
 /area/centcom/biodome/homes/casa_de_ko/bed2)
@@ -21151,9 +21150,6 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/casa_de_ko/bed1)
-"ykY" = (
-/turf/closed/wall/mineral/plastitanium,
-/area/centcom/biodome/homes/nuviship/bath)
 "ykZ" = (
 /obj/structure/chair/sofa/bench/solo,
 /turf/open/floor/iron/textured_large,
@@ -37458,22 +37454,22 @@ kWf
 wgt
 dye
 wgt
-wnx
-wnx
+nIp
+nIp
 hsW
-wnx
-wnx
-wnx
+nIp
+nIp
+nIp
 hsW
 hsW
-wnx
-wnx
-pmO
-pmO
-mVL
-mVL
-pmO
-pmO
+nIp
+nIp
+fcL
+fcL
+rvT
+rvT
+fcL
+fcL
 iUz
 iUz
 iUz
@@ -37715,22 +37711,22 @@ wKc
 tjT
 hBZ
 eNt
-wnx
+nIp
 cgN
 puB
 nAJ
-wnx
+nIp
 uNm
-wOO
+kWg
 hlf
 wyh
 ddC
-pmO
+fcL
 hnt
 trf
 rqp
 ieK
-pmO
+fcL
 iUz
 iUz
 iUz
@@ -37976,18 +37972,18 @@ drp
 gZu
 bHM
 nVr
-wnx
-vXU
+nIp
+sCE
 jDS
-tkf
+gDw
 lJX
 luJ
-pmO
+fcL
 ckt
 jWH
 fHz
 jam
-pmO
+fcL
 iUz
 iUz
 iUz
@@ -38224,27 +38220,27 @@ iUz
 iUz
 drt
 iUz
-bVU
-bVU
-bVU
-bVU
-bVU
-bVU
+lnV
+lnV
+lnV
+lnV
+lnV
+lnV
 gZu
 rGc
 kDi
-wnx
+nIp
 bvP
 yit
 gvq
-dBS
-owl
+eWh
+dHf
 vbR
-xfu
+aoG
 gZl
 qog
 xwX
-pmO
+fcL
 iUz
 iUz
 iUz
@@ -38481,27 +38477,27 @@ iUz
 iUz
 iUz
 iUz
-bVU
+lnV
 jPd
 cNl
 uhz
 tfC
-bVU
+lnV
 yeR
 rGc
 qnH
-wnx
+nIp
 sGM
 cKc
 rFX
 skN
 jkP
-dKQ
-dKQ
-dKQ
-dKQ
-dKQ
-dKQ
+wnx
+wnx
+wnx
+wnx
+wnx
+wnx
 iUz
 iUz
 iUz
@@ -38738,12 +38734,12 @@ iUz
 iUz
 ecm
 iUz
-lWA
+xOZ
 uaT
 oFu
-pIF
-sMJ
-bVU
+rAf
+uDE
+lnV
 xjI
 rGc
 gZu
@@ -38752,13 +38748,13 @@ whi
 whi
 whi
 luJ
-owl
-dKQ
+dHf
+wnx
 aUC
 aeb
 hWO
 lye
-dKQ
+wnx
 iUz
 iUz
 iUz
@@ -38995,7 +38991,7 @@ iUz
 iUz
 iUz
 iUz
-lWA
+xOZ
 lKT
 wEA
 cav
@@ -39005,17 +39001,17 @@ rGc
 rGc
 rGc
 jOD
-owl
-owl
-owl
-owl
-owl
+dHf
+dHf
+dHf
+dHf
+dHf
 oyF
-oSt
+owl
 mEl
 jJr
 alv
-dKQ
+wnx
 iUz
 iUz
 iUz
@@ -39252,12 +39248,12 @@ iUz
 iUz
 drt
 iUz
-bVU
+lnV
 qcR
 rIy
 sjE
 iZy
-bVU
+lnV
 gZu
 rGc
 gZu
@@ -39267,12 +39263,12 @@ luJ
 fKD
 sQO
 vbv
-dKQ
-oSt
+wnx
+owl
 vBN
-wkL
+fne
 buW
-dKQ
+wnx
 iUz
 iUz
 iUz
@@ -39509,27 +39505,27 @@ iUz
 iUz
 iUz
 iUz
-eFZ
-eFZ
-eFZ
-eFZ
-eFZ
-eFZ
+tPs
+tPs
+tPs
+tPs
+tPs
+tPs
 jBg
 ujI
 duF
 duF
 jvR
 xUT
+nIp
+nIp
+nIp
 wnx
-wnx
-wnx
-dKQ
 hBs
-dKQ
-mMl
-mMl
-dKQ
+wnx
+ugq
+ugq
+wnx
 iUz
 iUz
 iUz
@@ -39766,19 +39762,19 @@ iUz
 ecm
 iUz
 iUz
-eFZ
+tPs
 vYk
 xZW
 mam
 cua
-eFZ
+tPs
 duF
 ujI
 eIM
 jqU
 tIy
 duF
-wnx
+nIp
 fcU
 wgt
 wgt
@@ -40023,11 +40019,11 @@ jst
 iUz
 iUz
 drt
-vaL
+vhJ
 qRs
 nYI
-eWu
-akR
+pms
+ikG
 yhj
 ujI
 ujI
@@ -40035,7 +40031,7 @@ jGR
 qMJ
 qMJ
 duF
-pJc
+mMl
 drt
 eZE
 wgt
@@ -40280,19 +40276,19 @@ iUz
 iUz
 iUz
 iUz
-vaL
+vhJ
 qRs
-bft
+ktd
 hXH
 qRs
-eFZ
+tPs
 duF
 duF
 rpw
 qIo
 uIP
 duF
-pJc
+mMl
 fcU
 iUz
 llh
@@ -40537,19 +40533,19 @@ iUz
 iUz
 ecm
 iUz
-eFZ
+tPs
 vzZ
 pBO
 eRi
 ulN
-eFZ
+tPs
 qlh
 pCG
 duF
 duF
 duF
 fuc
-wnx
+nIp
 jst
 iUz
 llh
@@ -40794,19 +40790,19 @@ iUz
 iUz
 iUz
 iUz
-eFZ
-eFZ
-eFZ
-eFZ
-eFZ
-eFZ
-wnx
-wnx
-pJc
-pJc
-pJc
-wnx
-wnx
+tPs
+tPs
+tPs
+tPs
+tPs
+tPs
+nIp
+nIp
+mMl
+mMl
+mMl
+nIp
+nIp
 fcU
 iUz
 llh
@@ -56072,15 +56068,15 @@ iUz
 hlp
 wgt
 wgt
-hSF
-hSF
-hSF
+ezn
+ezn
+ezn
 aDR
 wFk
-hSF
-hSF
-hSF
-hSF
+ezn
+ezn
+ezn
+ezn
 iUz
 iUz
 iUz
@@ -56337,7 +56333,7 @@ xeF
 pPE
 pPE
 pPE
-hSF
+ezn
 iUz
 fFP
 iUz
@@ -56594,7 +56590,7 @@ evh
 evh
 evh
 jlq
-hSF
+ezn
 iUz
 iUz
 iUz
@@ -56834,11 +56830,11 @@ jst
 iUz
 ecm
 iUz
-oVA
-oVA
-oVA
-oVA
-oVA
+xPC
+xPC
+xPC
+xPC
+xPC
 hMA
 hMA
 hMA
@@ -56851,7 +56847,7 @@ evh
 evh
 uFO
 evh
-hSF
+ezn
 iUz
 rUh
 iUz
@@ -57091,11 +57087,11 @@ iUz
 iUz
 iUz
 jst
-oVA
+xPC
 aHh
 gvf
 hIs
-oVA
+xPC
 sQJ
 nvq
 hUF
@@ -57108,7 +57104,7 @@ afs
 afs
 afs
 afs
-hSF
+ezn
 iUz
 iUz
 iUz
@@ -57336,7 +57332,7 @@ qvw
 dPj
 qeA
 fUk
-qut
+kib
 uDd
 hra
 kNS
@@ -57348,11 +57344,11 @@ tef
 tef
 die
 iUz
-oVA
+xPC
 ngM
 nLJ
 wkd
-oVA
+xPC
 lIX
 wKR
 wKR
@@ -57362,12 +57358,12 @@ bge
 ier
 ier
 qzL
-hCT
-hCT
-hCT
-hCT
-hCT
-hCT
+eeK
+eeK
+eeK
+eeK
+eeK
+eeK
 iUz
 jst
 iUz
@@ -57604,12 +57600,12 @@ fLd
 xRP
 jst
 iUz
-oVA
-oVA
-oVA
+xPC
+xPC
+xPC
 mdM
-oVA
-oVA
+xPC
+xPC
 hMA
 hMA
 dVl
@@ -57619,12 +57615,12 @@ pkY
 ier
 ier
 ntp
-hCT
+eeK
 lkK
-bGO
-bGO
+svU
+svU
 pVx
-hCT
+eeK
 iUz
 iUz
 iUz
@@ -57861,11 +57857,11 @@ fLd
 iUz
 njN
 iUz
-oVA
+xPC
 lEG
 csG
 inK
-oVA
+xPC
 vNE
 frT
 mjO
@@ -57879,7 +57875,7 @@ drb
 iKK
 pGP
 viG
-oDJ
+bvL
 lRp
 brk
 iUz
@@ -58118,7 +58114,7 @@ fLd
 iUz
 xRP
 iUz
-oVA
+xPC
 eYA
 tKd
 qsB
@@ -58133,10 +58129,10 @@ pkY
 ier
 ier
 ier
-hCT
-bGO
+eeK
+svU
 qYq
-bGO
+svU
 opS
 brk
 iUz
@@ -58375,11 +58371,11 @@ fLd
 iUz
 iUz
 jst
-oVA
+xPC
 rkY
 nTJ
 nwl
-oVA
+xPC
 vgE
 xUR
 jpT
@@ -58390,10 +58386,10 @@ cuA
 ier
 qGB
 klL
-hCT
+eeK
 aLQ
 ckD
-rXp
+bGF
 cwZ
 brk
 iUz
@@ -58625,18 +58621,18 @@ aax
 rGv
 niT
 umM
-bri
-bri
-bri
-bri
+kER
+kER
+kER
+kER
 iUz
 rUh
 iUz
-xPC
-xPC
-xPC
-xPC
-xPC
+ioh
+ioh
+ioh
+ioh
+ioh
 ryS
 xUR
 jpT
@@ -58644,15 +58640,15 @@ rSX
 ioS
 nwq
 rgs
-bvL
+jlv
 qGB
 nBR
-hCT
-bGO
+eeK
+svU
 tnY
-bGO
+svU
 oVa
-hCT
+eeK
 iUz
 iUz
 iUz
@@ -58882,34 +58878,34 @@ mhs
 dmF
 cWW
 oFW
-bri
+kER
 idg
 xol
 nWU
 wgt
 iUz
 xRP
-xPC
+ioh
 bMV
 cYY
 onL
-xPC
+ioh
 gZn
 xhX
 dxq
 dxq
 dxq
 nwq
-qIt
-kNu
+lVT
+rXp
 lZP
 gmK
-hCT
+eeK
 cTC
 pFo
-bGO
+svU
 jKO
-hCT
+eeK
 iUz
 iUz
 fFP
@@ -59135,18 +59131,18 @@ oFc
 vkx
 gxq
 vkx
-bri
-bri
-bri
-bri
-bri
+kER
+kER
+kER
+kER
+kER
 fDz
 eoE
 nWU
 wgt
 iUz
 iUz
-xPC
+ioh
 nRF
 oOB
 oOB
@@ -59157,16 +59153,16 @@ jpT
 jpT
 pwn
 nwq
-hSF
-hSF
-hSF
-hSF
-hCT
-hCT
-hCT
-hCT
-hCT
-hCT
+ezn
+ezn
+ezn
+ezn
+eeK
+eeK
+eeK
+eeK
+eeK
+eeK
 rUh
 iUz
 iUz
@@ -59403,11 +59399,11 @@ rPw
 wgt
 jst
 jst
-xPC
-xPC
-xPC
-xPC
-xPC
+ioh
+ioh
+ioh
+ioh
+ioh
 nwq
 nwq
 nwq
@@ -59649,14 +59645,14 @@ oFc
 fEU
 iAF
 xxS
-bri
+kER
 mpo
 tLQ
 lWI
 lWI
 wxj
 xQu
-bri
+kER
 wgt
 jst
 jst
@@ -59906,14 +59902,14 @@ oFc
 xVp
 iAF
 rxV
-bri
+kER
 oVu
 wxj
 abA
 foh
 cEt
 oOD
-bri
+kER
 wgt
 iUz
 iUz
@@ -60163,7 +60159,7 @@ ddW
 lxL
 iAF
 rme
-bri
+kER
 lCo
 wxj
 qrA
@@ -60420,7 +60416,7 @@ oFc
 vYU
 baS
 biC
-bri
+kER
 qsH
 wxj
 bai
@@ -60677,14 +60673,14 @@ oFc
 eZL
 baS
 pZV
-bri
-bri
+kER
+kER
 lqE
-bri
-bri
-bri
-bri
-bri
+kER
+kER
+kER
+kER
+kER
 iUz
 iUz
 iUz
@@ -60934,14 +60930,14 @@ oFc
 vca
 baS
 jET
-bri
+kER
 xxf
 ahX
 mGx
 eQB
 oht
 cvV
-bri
+kER
 iUz
 xRP
 iUz
@@ -61158,18 +61154,18 @@ iUz
 iUz
 wgt
 wTy
-sGB
-qyv
-qyv
-qyv
-qyv
-qyv
-sGB
+qwZ
+wdH
+wdH
+wdH
+wdH
+wdH
+qwZ
 eem
 wgt
 mnk
-qTe
-qTe
+lxn
+lxn
 mnk
 mnk
 mnk
@@ -61198,7 +61194,7 @@ wxj
 mFO
 ihV
 dqR
-bri
+kER
 iUz
 iUz
 iUz
@@ -61413,17 +61409,17 @@ iUz
 iUz
 iUz
 wgt
-ykY
-ykY
-ykY
+wnq
+wnq
+wnq
 wsd
-eSB
-eSB
-eSB
+kbz
+kbz
+kbz
 iGN
-hex
-hex
-hex
+lyL
+lyL
+lyL
 mnk
 ugi
 wjk
@@ -61446,7 +61442,7 @@ iUz
 iUz
 oFc
 api
-ujq
+tZB
 kEg
 leP
 wgg
@@ -61455,7 +61451,7 @@ tKy
 qkE
 dWp
 cFX
-bri
+kER
 iUz
 fFP
 iUz
@@ -61672,15 +61668,15 @@ yfl
 yfl
 wSE
 fgX
-ykY
+wnq
 lTn
 rbr
 lcn
-eSB
+kbz
 awf
-hex
+lyL
 cAr
-hex
+lyL
 eKH
 jow
 bKP
@@ -61923,21 +61919,21 @@ iUz
 iUz
 wgt
 wgt
-lcT
-dRk
-dRk
-lcT
-ykY
+rwZ
+ncX
+ncX
+rwZ
+wnq
 gXf
-ykY
+wnq
 tzO
 aGq
 yjY
-eSB
+kbz
 awf
-hex
+lyL
 lTB
-hex
+lyL
 sFi
 mnk
 mnk
@@ -62178,24 +62174,24 @@ iUz
 iUz
 iUz
 wgt
-lcT
-dRk
-lcT
+rwZ
+ncX
+rwZ
 uIv
 uIv
-lcT
+rwZ
 klU
 nri
-ykY
+wnq
 iGW
 war
 qiF
 pYb
 sRT
 bLs
-jPs
-hex
-hoo
+kyp
+lyL
+gDO
 xvh
 fww
 aKc
@@ -62230,14 +62226,14 @@ oFc
 iUz
 njN
 iUz
-ajV
-ajV
+bEn
+bEn
 rgL
 rgL
 rgL
 rgL
-ajV
-ajV
+bEn
+bEn
 iUz
 ecm
 iUz
@@ -62434,26 +62430,26 @@ iUz
 jst
 iUz
 wgt
-lcT
-lcT
+rwZ
+rwZ
 hrV
 iVM
-gDX
+sBI
 hpr
 kML
 ioN
 nZM
-ykY
+wnq
 sXs
 kSV
 kZA
-foz
+tIq
 fOl
-hex
+lyL
 jZh
-hex
-foZ
-wTd
+lyL
+kTt
+cJB
 jtA
 aKc
 aKc
@@ -62487,14 +62483,14 @@ oFc
 iUz
 iUz
 vKL
-ajV
+bEn
 gJO
 bkR
 bkR
 bkR
 bkR
 gNQ
-ajV
+bEn
 iUz
 iUz
 iUz
@@ -62691,31 +62687,31 @@ iUz
 iUz
 jst
 eem
-dRk
+ncX
 vOF
 pMt
 wZc
-gDX
+sBI
 oot
 lAZ
 hBa
 lca
-ykY
+wnq
 hZM
 uCh
 iiB
-tFl
+hQE
 nxp
-hex
-hex
-hex
+lyL
+lyL
+lyL
 hZU
 bkT
 yie
 pWO
 llx
 aKc
-qTe
+lxn
 eem
 iUz
 iUz
@@ -62733,7 +62729,7 @@ vUj
 vGU
 idB
 bTw
-pPZ
+tVN
 fqH
 bYB
 bYB
@@ -62744,7 +62740,7 @@ oFc
 wgt
 iUz
 lZT
-ajV
+bEn
 jaY
 tvf
 jci
@@ -62948,31 +62944,31 @@ iUz
 iUz
 jst
 eem
-dRk
+ncX
 bHi
 mmT
 iFq
 vJb
 cXi
-lcT
-ykY
+rwZ
+wnq
 tVy
-ykY
+wnq
 xAm
 hno
-eXM
+foZ
 jet
 jet
 cyX
 aUB
 wLk
-wbj
+lgW
 xtU
 saB
 aKc
 gNv
 aKc
-qTe
+lxn
 eem
 iUz
 ikN
@@ -62990,7 +62986,7 @@ vGU
 vGU
 idB
 bTw
-pHx
+ixt
 fqH
 iZE
 fkS
@@ -63205,12 +63201,12 @@ iUz
 ecm
 iUz
 eem
-dRk
+ncX
 bXm
-gDX
-gDX
-gDX
-pfm
+sBI
+sBI
+sBI
+xiG
 lWp
 jet
 mei
@@ -63218,18 +63214,18 @@ jet
 iiB
 iiB
 lrf
-aAk
+tOe
 grZ
 msh
-aAk
-aAk
-wbj
+tOe
+tOe
+lgW
 muX
 mqQ
 pWO
 llx
 aKc
-qTe
+lxn
 eem
 iUz
 iUz
@@ -63258,12 +63254,12 @@ oFc
 iUz
 iUz
 aIf
-ajV
+bEn
 loK
 tvf
 wkc
 bjX
-kbz
+rUM
 tvf
 hMf
 iUz
@@ -63462,25 +63458,25 @@ jst
 iUz
 iUz
 wgt
-lcT
-lcT
+rwZ
+rwZ
 aso
 hCy
 cLW
 tYF
-hex
-hex
+lyL
+lyL
 aMj
-hex
-foz
+lyL
+tIq
 jXD
-eXM
-gbw
+foZ
+dRk
 kFY
 typ
 uGL
 hAO
-foZ
+kTt
 tHd
 dzg
 uXu
@@ -63515,13 +63511,13 @@ oFc
 iUz
 wgt
 kis
-ajV
+bEn
 ecZ
 vmJ
-kbz
-kbz
-kbz
-kbz
+rUM
+rUM
+rUM
+rUM
 cpQ
 iUz
 iUz
@@ -63720,24 +63716,24 @@ iUz
 iUz
 iUz
 wgt
-lcT
-dRk
-lcT
+rwZ
+ncX
+rwZ
 ipU
 fad
 irR
 fQR
 sPf
-hex
-hex
+lyL
+lyL
 lvI
 jet
-gbw
+dRk
 efX
 rrb
 vPZ
-gbw
-hoo
+dRk
+gDO
 lfJ
 jGU
 aKc
@@ -63761,7 +63757,7 @@ vUj
 ixi
 wfg
 bTw
-pPZ
+tVN
 hpz
 bYB
 bYB
@@ -63779,7 +63775,7 @@ oPr
 oPr
 eQH
 ssj
-ajV
+bEn
 iUz
 ecm
 njN
@@ -63979,21 +63975,21 @@ iUz
 iUz
 wgt
 wgt
-lcT
-dRk
-dRk
-hex
+rwZ
+ncX
+ncX
+lyL
 jHG
 rig
 sjK
-hex
+lyL
 svC
-gqC
-gbw
+xbd
+dRk
 fRb
 saU
 uLe
-aAk
+tOe
 sFi
 mnk
 mnk
@@ -64030,13 +64026,13 @@ iUz
 iUz
 wgt
 kaW
-fni
-fni
+ppm
+ppm
 qHp
 xor
-fni
+ppm
 kMb
-ajV
+bEn
 iUz
 iUz
 iUz
@@ -64239,18 +64235,18 @@ iUz
 wgt
 eem
 eem
-hex
+lyL
 oDL
 grI
 lDd
-hex
-plo
+lyL
+oPQ
 vka
-aAk
-aAk
+tOe
+tOe
 aMZ
 bSD
-aAk
+tOe
 eKH
 mCY
 kvJ
@@ -64293,7 +64289,7 @@ qMe
 fvg
 vUE
 gmi
-ajV
+bEn
 iUz
 iUz
 iUz
@@ -64496,18 +64492,18 @@ iUz
 iUz
 iUz
 wgt
-hex
-hex
-hex
-hex
-hex
+lyL
+lyL
+lyL
+lyL
+lyL
 tCO
 tnm
 pJt
-aAk
-gbw
-aAk
-aAk
+tOe
+dRk
+tOe
+tOe
 mnk
 ipX
 nEu
@@ -64532,9 +64528,9 @@ bTw
 bTw
 bTw
 bTw
-pPZ
-pPZ
-pPZ
+tVN
+tVN
+tVN
 vGU
 jrG
 vGU
@@ -64543,14 +64539,14 @@ oFc
 iUz
 fFP
 iUz
-ajV
-ajV
-ajV
+bEn
+bEn
+bEn
 hGS
 tOK
-ajV
-ajV
-ajV
+bEn
+bEn
+bEn
 iUz
 iUz
 iUz
@@ -64757,17 +64753,17 @@ wgt
 eem
 eem
 wgt
-jiw
-plo
+xLw
+oPQ
 vka
-jiw
-jiw
+xLw
+xLw
 wgt
 eem
 wgt
 mnk
-qTe
-qTe
+lxn
+lxn
 mnk
 mnk
 mnk
@@ -67035,20 +67031,20 @@ jst
 iUz
 iUz
 iUz
-bJv
-bJv
+ycp
+ycp
 paQ
 paQ
-bJv
-buz
-buz
-buz
-buz
-cZD
-cZD
-cZD
-cZD
-cZD
+ycp
+xhC
+xhC
+xhC
+xhC
+hSF
+hSF
+hSF
+hSF
+hSF
 iUz
 iUz
 jst
@@ -67292,20 +67288,20 @@ iUz
 iUz
 rUh
 jst
-bJv
+ycp
 nYZ
 nIF
 nIF
 aIK
-buz
+xhC
 jCX
 lfl
 axC
-cZD
+hSF
 bnv
 aWz
 dhB
-cZD
+hSF
 ecm
 iUz
 iUz
@@ -67549,12 +67545,12 @@ iUz
 jst
 iUz
 iUz
-bJv
+ycp
 rsh
 vqn
 vqn
 lUx
-buz
+xhC
 lGu
 fRj
 nNk
@@ -67562,7 +67558,7 @@ nid
 cAe
 wHH
 amp
-cZD
+hSF
 iUz
 iUz
 iUz
@@ -67802,24 +67798,24 @@ jst
 iUz
 iUz
 ecm
-vFj
-vFj
-vFj
-vFj
-vFj
+ipo
+ipo
+ipo
+ipo
+ipo
 cjA
 vqn
 vqn
 uoY
-buz
+xhC
 rqc
 oyL
 vIG
-cZD
+hSF
 nYY
 ppZ
 evs
-cZD
+hSF
 iUz
 jst
 stj
@@ -68059,25 +68055,25 @@ jst
 iUz
 iUz
 iUz
-vFj
+ipo
 pdE
 dJI
 dwF
-vFj
+ipo
 sgG
-fhy
-fhy
+reH
+reH
 vvU
-buz
-buz
+xhC
+xhC
 xTC
-buz
-cZD
-cZD
+xhC
+hSF
+hSF
 hEc
-cZD
-cZD
-bJv
+hSF
+hSF
+ycp
 bfu
 bfu
 jst
@@ -68317,24 +68313,24 @@ iUz
 njN
 iUz
 dSC
-rKA
-rKA
+ncg
+ncg
 cla
-vFj
+ipo
 lHw
 cBI
 cBI
 nBy
 pdd
-fhy
+reH
 rTs
-fhy
+reH
 nfN
-fhy
+reH
 rTs
 iLX
 cZy
-bJv
+ycp
 bfu
 bfu
 cbh
@@ -68574,9 +68570,9 @@ rUh
 iUz
 jst
 dSC
-rKA
-rKA
-nMf
+ncg
+ncg
+pMT
 uME
 rTs
 pbX
@@ -68831,24 +68827,24 @@ iUz
 iUz
 iUz
 dSC
-rKA
-rKA
+ncg
+ncg
 kdU
-vFj
+ipo
 qnm
 cBI
 cBI
 cBI
-fhy
-fhy
+reH
+reH
 lHw
 byg
 oay
-fhy
+reH
 rTs
-fhy
+reH
 luM
-bJv
+ycp
 bfu
 bfu
 cbh
@@ -69087,25 +69083,25 @@ iUz
 iUz
 ecm
 iUz
-vFj
+ipo
 uOL
 uOL
 dSe
-vFj
+ipo
 wkf
-fhy
-fhy
-fhy
-fhy
-fhy
+reH
+reH
+reH
+reH
+reH
 lHw
-mZh
-mZh
-mZh
+kKG
+kKG
+kKG
 rcC
-mZh
-mZh
-bJv
+kKG
+kKG
+ycp
 bfu
 bfu
 iUz
@@ -69344,24 +69340,24 @@ iUz
 iUz
 iUz
 iUz
-vFj
-vFj
-vFj
-vFj
-vFj
+ipo
+ipo
+ipo
+ipo
+ipo
 qnm
-fhy
+reH
 cFT
 cFT
 cFT
-fhy
+reH
 lHw
-mZh
+kKG
 hKK
 nHr
 tow
 vLC
-mZh
+kKG
 iUz
 iUz
 stj
@@ -69605,7 +69601,7 @@ iUz
 iUz
 iUz
 iUz
-bJv
+ycp
 qnm
 ddn
 iUS
@@ -69862,7 +69858,7 @@ jst
 iUz
 jst
 iUz
-bJv
+ycp
 qnm
 ddn
 iUS
@@ -70119,7 +70115,7 @@ iUz
 rUh
 iUz
 iUz
-bJv
+ycp
 byg
 oay
 vyx
@@ -70127,12 +70123,12 @@ vyx
 vyx
 dAs
 hXg
-mZh
-bcB
+kKG
+wOO
 iaZ
 hlq
 sgT
-mZh
+kKG
 iUz
 iUz
 iUz
@@ -70376,20 +70372,20 @@ iUz
 iUz
 jst
 iUz
-bJv
-bJv
-bJv
+ycp
+ycp
+ycp
 vZX
 vZX
 vZX
-bJv
-bJv
-mZh
-mZh
-mZh
-mZh
-mZh
-mZh
+ycp
+ycp
+kKG
+kKG
+kKG
+kKG
+kKG
+kKG
 iUz
 iUz
 iUz
