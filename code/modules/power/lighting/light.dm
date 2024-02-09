@@ -170,7 +170,7 @@
 
 /obj/machinery/light/update_overlays()
 	. = ..()
-	/// NAAKAS-LOUNGE REMOVAL BEGIN: THIS IS UGLY BUT WE'RE TRYING IT
+	/// NAAKAS-LOUNGE REMOVAL BEGIN
 	/*if(!on || status != LIGHT_OK)
 		return
 
@@ -229,31 +229,15 @@
 			power_set = fire_power
 			brightness_set = fire_brightness
 		else if (nightshift_enabled)
-			brightness_set -= brightness_set * 0.66 // NOVA EDIT CHANGE - ORIGINAL: brightness_set = nightshift_brightness
-			power_set -= power_set * 0.66 // NOVA EDIT CHANGE - ORIGINAL: power_set = nightshift_light_power
+			brightness_set = nightshift_brightness
+			power_set = nightshift_light_power
 			if(!color)
 				color_set = nightshift_light_color
-				// NOVA EDIT ADDITION START - Dynamic nightshift color
-				if(!color_set)
-					// Adjust light values to be warmer. I doubt caching would speed this up by any worthwhile amount, as it's all very fast number and string operations.
-					// Convert to numbers for easier manipulation.
-					var/list/color_parts = rgb2num(bulb_colour)
-					var/red = color_parts[1]
-					var/green = color_parts[2]
-					var/blue = color_parts[3]
-
-					red += round(red * 0.66)
-					green -= round(green * 0.66 * 0.3)
-					red = clamp(red, 0, 255) // clamp to be safe, or you can end up with an invalid hex value
-					green = clamp(green, 0, 255)
-					blue = clamp(blue, 0, 255)
-					color_set = rgb(red, green, blue) // Splice the numbers together and turn them back to hex.
-				// NOVA EDIT ADDITION END
 		else if (major_emergency)
 			color_set = bulb_low_power_colour
 			brightness_set = brightness * bulb_major_emergency_brightness_mul
 		var/matching = light && brightness_set == light.light_range && power_set == light.light_power && color_set == light.light_color
-		if(!matching && (maploaded)) // NOVA EDIT CHANGE - ORIGINAL: if(!matching)
+		if(!matching)
 			switchcount++
 			if( prob( min(60, (switchcount**2)*0.01) ) )
 				if(trigger)
@@ -349,10 +333,6 @@
 			. += "The [fitting] has been smashed."
 	if(cell || has_mock_cell)
 		. += "Its backup power charge meter reads [has_mock_cell ? 100 : round((cell.charge / cell.maxcharge) * 100, 0.1)]%."
-	//NOVA EDIT ADDITION
-	if(constant_flickering)
-		. += span_danger("The lighting ballast appears to be damaged, this could be fixed with a multitool.")
-	//NOVA EDIT END
 
 
 
@@ -471,17 +451,13 @@
 // returns if the light has power /but/ is manually turned off
 // if a light is turned off, it won't activate emergency power
 /obj/machinery/light/proc/turned_off()
-	var/area/local_area = get_room_area(src)
+	var/area/local_area = get_room_area()
 	return !local_area.lightswitch && local_area.power_light || flickering
 
 // returns whether this light has power
 // true if area has power and lightswitch is on
 /obj/machinery/light/proc/has_power()
 	var/area/local_area = get_room_area()
-	//NOVA EDIT ADDITION BEGIN
-	if(isnull(local_area))
-		return FALSE
-	//NOVA EDIT END
 	return local_area.lightswitch && local_area.power_light
 
 // returns whether this light has emergency power
