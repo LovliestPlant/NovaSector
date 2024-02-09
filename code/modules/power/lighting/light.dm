@@ -229,8 +229,8 @@
 			power_set = fire_power
 			brightness_set = fire_brightness
 		else if (nightshift_enabled)
-			brightness_set -= brightness_set * NIGHTSHIFT_LIGHT_MODIFIER // NOVA EDIT CHANGE - ORIGINAL: brightness_set = nightshift_brightness
-			power_set -= power_set * NIGHTSHIFT_LIGHT_MODIFIER // NOVA EDIT CHANGE - ORIGINAL: power_set = nightshift_light_power
+			brightness_set -= brightness_set * 0.66 // NOVA EDIT CHANGE - ORIGINAL: brightness_set = nightshift_brightness
+			power_set -= power_set * 0.66 // NOVA EDIT CHANGE - ORIGINAL: power_set = nightshift_light_power
 			if(!color)
 				color_set = nightshift_light_color
 				// NOVA EDIT ADDITION START - Dynamic nightshift color
@@ -242,8 +242,8 @@
 					var/green = color_parts[2]
 					var/blue = color_parts[3]
 
-					red += round(red * NIGHTSHIFT_COLOR_MODIFIER)
-					green -= round(green * NIGHTSHIFT_COLOR_MODIFIER * 0.3)
+					red += round(red * 0.66)
+					green -= round(green * 0.66 * 0.3)
 					red = clamp(red, 0, 255) // clamp to be safe, or you can end up with an invalid hex value
 					green = clamp(green, 0, 255)
 					blue = clamp(blue, 0, 255)
@@ -253,7 +253,7 @@
 			color_set = bulb_low_power_colour
 			brightness_set = brightness * bulb_major_emergency_brightness_mul
 		var/matching = light && brightness_set == light.light_range && power_set == light.light_power && color_set == light.light_color
-		if(!matching && (maploaded || instant)) // NOVA EDIT CHANGE - ORIGINAL: if(!matching)
+		if(!matching && (maploaded)) // NOVA EDIT CHANGE - ORIGINAL: if(!matching)
 			switchcount++
 			if( prob( min(60, (switchcount**2)*0.01) ) )
 				if(trigger)
