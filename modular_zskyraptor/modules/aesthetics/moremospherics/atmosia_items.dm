@@ -17,15 +17,19 @@
 	. = ..()
 	if(air_contents != null)
 		if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.1)
-			. += "[gauge_overlay]_10"
+			. += mutable_appearance(icon, "[gauge_overlay]_10")
 		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.3)
-			. += "[gauge_overlay]_30"
+			. += mutable_appearance(icon, "[gauge_overlay]_30")
 		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.5)
-			. += "[gauge_overlay]_50"
+			. += mutable_appearance(icon, "[gauge_overlay]_50")
 		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.7)
-			. += "[gauge_overlay]_70"
+			. += mutable_appearance(icon, "[gauge_overlay]_70")
 		else
-			. += "[gauge_overlay]_90"
+			. += mutable_appearance(icon, "[gauge_overlay]_90")
+
+/obj/item/tank/internals/get_status_tab_item(mob/living/source, list/items)
+	. = ..()
+	update_overlays()
 
 /obj/item/tank/internals/emergency_oxygen
 	worn_icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_suit.dmi'

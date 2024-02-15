@@ -3411,7 +3411,6 @@
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
 	},
-/obj/item/storage/hypospraykit/cmo,
 /obj/item/storage/belt/medical/paramedic,
 /obj/item/storage/pouch/medical/firstaid,
 /obj/item/storage/pouch/medical/firstaid,
@@ -4211,7 +4210,6 @@
 	req_access = null;
 	name = "Haki's Doctor Closet"
 	},
-/obj/item/storage/hypospraykit/cmo,
 /obj/item/healthanalyzer/advanced,
 /obj/item/reagent_containers/spray/bluespace{
 	list_reagents = list(/datum/reagent/space_cleaner = 300)
@@ -4223,6 +4221,7 @@
 /obj/item/storage/medkit/fire,
 /obj/item/storage/medkit/brute,
 /obj/item/storage/medkit/regular,
+/obj/item/storage/hypospraykit/cmo/combat/naaka/haki,
 /turf/open/floor/engine{
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
@@ -4880,6 +4879,10 @@
 /obj/item/stack/medical/bone_gel{
 	pixel_x = 12;
 	pixel_y = -4
+	},
+/obj/item/storage/hypospraykit/cmo/combat{
+	pixel_y = 12;
+	pixel_x = 4
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
@@ -18342,7 +18345,6 @@
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
 	},
-/obj/item/storage/hypospraykit/cmo,
 /obj/item/storage/belt/medical/paramedic,
 /obj/item/storage/pouch/medical/firstaid,
 /obj/item/storage/pouch/medical/firstaid,
@@ -20290,6 +20292,7 @@
 /obj/item/storage/medkit/toxin,
 /obj/item/storage/medkit/advanced,
 /obj/item/storage/medkit/tactical,
+/obj/item/storage/hypospraykit/cmo/combat/naaka,
 /turf/open/floor/iron/white/smooth_large,
 /area/centcom/biodome/homes/casa_de_ko/medbay)
 "xgH" = (
