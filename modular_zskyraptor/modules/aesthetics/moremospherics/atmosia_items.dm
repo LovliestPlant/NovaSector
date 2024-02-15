@@ -15,21 +15,22 @@
 
 /obj/item/tank/internals/update_overlays()
 	. = ..()
-	if(air_contents != null)
-		if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.1)
+	var/datum/gas_mixture/air = return_air()
+	if(air != null)
+		if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.1)
 			. += mutable_appearance(icon, "[gauge_overlay]_10")
-		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.3)
+		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.3)
 			. += mutable_appearance(icon, "[gauge_overlay]_30")
-		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.5)
+		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.5)
 			. += mutable_appearance(icon, "[gauge_overlay]_50")
-		else if(air_contents.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.7)
+		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.7)
 			. += mutable_appearance(icon, "[gauge_overlay]_70")
 		else
 			. += mutable_appearance(icon, "[gauge_overlay]_90")
 
 /obj/item/tank/internals/get_status_tab_item(mob/living/source, list/items)
 	. = ..()
-	update_overlays()
+	update_appearance()
 
 /obj/item/tank/internals/emergency_oxygen
 	worn_icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_suit.dmi'
