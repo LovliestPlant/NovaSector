@@ -7,6 +7,7 @@
 	inhand_icon_state = "medkit"
 	lefthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_l.dmi'
 	righthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_r.dmi'
+	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
 	throw_speed = 3
 	throw_range = 7
@@ -140,6 +141,7 @@
 	icon_state = "cmo-mini"
 	current_case = "cmo"
 	is_xl = TRUE
+	w_class = WEIGHT_CLASS_NORMAL
 
 /obj/item/storage/hypospraykit/cmo/Initialize(mapload)
 	. = ..()

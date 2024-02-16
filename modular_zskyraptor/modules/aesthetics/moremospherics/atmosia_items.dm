@@ -14,19 +14,33 @@
 	var/gauge_overlay = "fullsize"
 
 /obj/item/tank/internals/update_overlays()
-	. = ..()
+	var/list/overlays = ..()
 	var/datum/gas_mixture/air = return_air()
+	var/mutable_appearance/gaugestate = mutable_appearance(icon, "[gauge_overlay]_10")
 	if(air != null)
+		//to_chat(world, span_notice("Airtank updating with overlays, pressure is [air.return_pressure()] out of [AIRTANK_MAX_SAFE_PRESSURE]"))
 		if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.1)
-			. += mutable_appearance(icon, "[gauge_overlay]_10")
+			gaugestate.icon_state = "[gauge_overlay]_10"
 		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.3)
-			. += mutable_appearance(icon, "[gauge_overlay]_30")
+			gaugestate.icon_state = "[gauge_overlay]_30"
 		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.5)
-			. += mutable_appearance(icon, "[gauge_overlay]_50")
+			gaugestate.icon_state = "[gauge_overlay]_50"
 		else if(air.return_pressure() <= AIRTANK_MAX_SAFE_PRESSURE * 0.7)
-			. += mutable_appearance(icon, "[gauge_overlay]_70")
+			gaugestate.icon_state = "[gauge_overlay]_70"
 		else
-			. += mutable_appearance(icon, "[gauge_overlay]_90")
+			gaugestate.icon_state = "[gauge_overlay]_90"
+		//to_chat(world, span_notice("Gauge state is [gaugestate.icon_state]"))
+	overlays += gaugestate
+	. = overlays
+	/*if(gaugestate in overlays)
+		to_chat(world, span_nicegreen("It's in the fucking list"))
+		if(gaugestate in .)
+			to_chat(world, span_boldnicegreen("Double-checked and confirmed it's IN THE FUCKING LIST"))
+		else
+			to_chat(world, span_bolddanger("IT'S BEING HAUNTED THOUGH, NOT IN THE ACTUAL LIST"))
+	else
+		to_chat(world, span_danger("It's not in the overlays list despite being explicitly added to it"))*/
+	return overlays
 
 /obj/item/tank/internals/get_status_tab_item(mob/living/source, list/items)
 	. = ..()
@@ -115,6 +129,43 @@
 	worn_icon = 'icons/mob/clothing/back.dmi'
 	lefthand_file = 'icons/mob/inhands/equipment/tanks_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tanks_righthand.dmi'
+
+// nova bespoke tanks
+/obj/item/tank/internals/nitrogen
+	icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items.dmi'
+	worn_icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_suit.dmi'
+	lefthand_file = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_lh.dmi'
+	righthand_file = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_rh.dmi'
+	gauge_overlay = "fullsize"
+	icon_state = "nitrogen_big"
+	inhand_icon_state = "nitrogen_big"
+	worn_icon_state = "nitrogen_big"
+	distribute_pressure = TANK_DEFAULT_RELEASE_PRESSURE * (10.0/16.0) //nitro lungs don't need as much
+
+/obj/item/tank/internals/nitrogen/belt
+	icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items.dmi'
+	worn_icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_suit.dmi'
+	lefthand_file = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_lh.dmi'
+	righthand_file = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_rh.dmi'
+	gauge_overlay = "engi"
+	icon_state = "nitrogen_extended"
+	inhand_icon_state = "nitrogen_extended"
+	worn_icon_state = "nitrogen_extended"
+	volume = 6 //nudging to be in line with standard-size internals tanks, but buffing the included air to max pressure
+
+/obj/item/tank/internals/nitrogen/belt/full/populate_gas()
+	air_contents.assert_gas(/datum/gas/nitrogen)
+	air_contents.gases[/datum/gas/nitrogen][MOLES] = AIRTANK_MAX_SAFE_PRESSURE*volume/(R_IDEAL_GAS_EQUATION*T20C)
+
+/obj/item/tank/internals/nitrogen/belt/emergency
+	gauge_overlay = "emergency"
+	icon_state = "nitrogen"
+	inhand_icon_state = "nitrogen"
+	worn_icon_state = "nitrogen"
+
+/obj/item/tank/internals/nitrogen/belt/emergency/populate_gas()
+	air_contents.assert_gas(/datum/gas/nitrogen)
+	air_contents.gases[/datum/gas/nitrogen][MOLES] = AIRTANK_MAX_SAFE_PRESSURE*volume/(R_IDEAL_GAS_EQUATION*T20C)
 
 
 
