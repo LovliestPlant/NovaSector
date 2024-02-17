@@ -57,6 +57,8 @@
 /obj/item/tank/internals/emergency_oxygen/double
 	worn_icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/atmosia_items_suit.dmi'
 	gauge_overlay = "double"
+	worn_icon_state = "emergency_double"
+	inhand_icon_state = "emergency_tst_tank"
 
 /obj/item/tank/internals/generic/greyscale
 	name = "generic gas tank"
@@ -67,6 +69,10 @@
 	greyscale_config_worn = /datum/greyscale_config/handheld_atmos_tank/worn
 	greyscale_config_inhand_left = /datum/greyscale_config/handheld_atmos_tank/worn/held_l
 	greyscale_config_inhand_right = /datum/greyscale_config/handheld_atmos_tank/worn/held_r
+
+	icon_state = "generic"
+	worn_icon_state = "generic"
+	inhand_icon_state = "generic"
 
 /obj/item/tank/internals/generic/greyscale/populate_gas()
 	return
@@ -81,6 +87,10 @@
 	greyscale_config_inhand_left = /datum/greyscale_config/handheld_atmos_tank/worn/held_l
 	greyscale_config_inhand_right = /datum/greyscale_config/handheld_atmos_tank/worn/held_r
 
+	icon_state = "plasma"
+	worn_icon_state = "plasma"
+	inhand_icon_state = "plasma"
+
 /obj/item/tank/internals/plasma/greyscale/populate_gas()
 	return
 
@@ -93,6 +103,10 @@
 	greyscale_config_worn = /datum/greyscale_config/handheld_atmos_tank/worn
 	greyscale_config_inhand_left = /datum/greyscale_config/handheld_atmos_tank/worn/held_l
 	greyscale_config_inhand_right = /datum/greyscale_config/handheld_atmos_tank/worn/held_r
+
+	icon_state = "emergency"
+	worn_icon_state = "emergency"
+	inhand_icon_state = "emergency"
 
 /obj/item/tank/internals/emergency_oxygen/greyscale/populate_gas()
 	return
@@ -107,6 +121,10 @@
 	greyscale_config_inhand_left = /datum/greyscale_config/handheld_atmos_tank/worn/held_l
 	greyscale_config_inhand_right = /datum/greyscale_config/handheld_atmos_tank/worn/held_r
 
+	icon_state = "emergency_engi"
+	worn_icon_state = "emergency_engi"
+	inhand_icon_state = "emergency_engi"
+
 /obj/item/tank/internals/emergency_oxygen/engi/greyscale/populate_gas()
 	return
 
@@ -119,6 +137,10 @@
 	greyscale_config_worn = /datum/greyscale_config/handheld_atmos_tank/worn
 	greyscale_config_inhand_left = /datum/greyscale_config/handheld_atmos_tank/worn/held_l
 	greyscale_config_inhand_right = /datum/greyscale_config/handheld_atmos_tank/worn/held_r
+
+	icon_state = "emergency_double"
+	worn_icon_state = "emergency_double"
+	inhand_icon_state = "emergency_double"
 
 /obj/item/tank/internals/emergency_oxygen/double/greyscale/populate_gas()
 	return

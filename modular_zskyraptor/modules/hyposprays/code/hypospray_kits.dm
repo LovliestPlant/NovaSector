@@ -44,10 +44,15 @@
 
 
 /obj/item/storage/hypospraykit/Destroy()
+	if(!QDELING(loc))
+		return
 	for(var/obj/item in contents)
-		if(QDELING(loc))
-			if(item.resistance_flags & INDESTRUCTIBLE) // Because we're not supposed to delete stuff that are indestructible, but I'm too lazy to do something more complex upstream now. Later, maybe.
-				item.forceMove(get_turf(src))
+		if(item.resistance_flags & INDESTRUCTIBLE)
+			//item.forceMove(get_turf(src))
+			atom_storage.remove_single(null, item, get_turf(src), true)
+	if(attached_hypo)
+		if(attached_hypo.resistance_flags & INDESTRUCTIBLE)
+			atom_storage.remove_single(null, attached_hypo, get_turf(src), true)
 	. = ..()
 
 
@@ -250,7 +255,7 @@
 	name = "box of hypospray kits"
 
 /obj/item/storage/box/hypospray/PopulateContents()
-	var/list/case_designs = list("firstaid-mini", "brute-mini", "burn-mini", "toxin-mini", "oxy-mini", "advanced-mini", "buffs-mini")
+	var/list/case_designs = list("firstaid", "brute", "burn", "toxin", "oxy", "advanced", "buffs")
 	for(var/label in case_designs)
 		var/obj/item/storage/hypospraykit/newkit = new /obj/item/storage/hypospraykit(src)
 		newkit.current_case = label
