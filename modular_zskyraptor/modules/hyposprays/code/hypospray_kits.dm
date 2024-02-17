@@ -49,10 +49,10 @@
 	for(var/obj/item in contents)
 		if(item.resistance_flags & INDESTRUCTIBLE)
 			//item.forceMove(get_turf(src))
-			atom_storage.remove_single(null, item, get_turf(src), true)
+			atom_storage.remove_single(null, item, get_turf(src), TRUE)
 	if(attached_hypo)
 		if(attached_hypo.resistance_flags & INDESTRUCTIBLE)
-			atom_storage.remove_single(null, attached_hypo, get_turf(src), true)
+			atom_storage.remove_single(null, attached_hypo, get_turf(src), TRUE)
 	. = ..()
 
 
