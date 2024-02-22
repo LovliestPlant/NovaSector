@@ -2886,6 +2886,8 @@
 	pixel_y = 3
 	},
 /obj/structure/table/reinforced/rglass,
+/obj/item/knife,
+/obj/item/kitchen/rollingpin,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
 "dqR" = (
@@ -5261,6 +5263,10 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"gyV" = (
+/obj/machinery/biogenerator/medstation/directional/south,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "gzD" = (
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/wood/parquet,
@@ -7382,6 +7388,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
+"iPF" = (
+/obj/machinery/biogenerator/organic_printer,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "iPR" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/machinery/iv_drip,
@@ -12417,6 +12427,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
+"oCY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/biogenerator/foodricator,
+/turf/open/floor/iron/smooth,
+/area/centcom/biodome/service/botany)
 "oDl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/griddle{
@@ -17533,6 +17548,8 @@
 /obj/item/seeds/tower/steel,
 /obj/item/seeds/poppy/lily/trumpet,
 /obj/item/seeds/eggplant/eggy,
+/obj/item/seeds/korta_nut/sweet,
+/obj/item/seeds/wheat/meat,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "uaT" = (
@@ -49514,8 +49531,8 @@ gAI
 rlf
 wUj
 cdr
-fXP
-mCg
+oCY
+iPF
 mCg
 mCg
 mCg
@@ -50032,7 +50049,7 @@ xrw
 oHS
 mCg
 hGX
-mCg
+gyV
 rlf
 adJ
 adJ
