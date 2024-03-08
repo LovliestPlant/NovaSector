@@ -20,6 +20,7 @@
 	name = "hypospray mk.II"
 	icon_state = "hypo2"
 	icon = 'modular_zskyraptor/modules/hyposprays/icons/hyposprays.dmi'
+	greyscale_config = /datum/greyscale_config/hypospray_mkii
 	desc = "A new development from DeForest Medical, this hypospray takes 50-unit vials as the drug supply for easy swapping."
 	w_class = WEIGHT_CLASS_TINY
 	var/list/allowed_containers = list(/obj/item/reagent_containers/cup/vial/small)
@@ -50,6 +51,7 @@
 	name = "hypospray mk.II deluxe"
 	allowed_containers = list(/obj/item/reagent_containers/cup/vial/small, /obj/item/reagent_containers/cup/vial/large)
 	icon_state = "cmo2"
+	greyscale_config = /datum/greyscale_config/hypospray_mkii/deluxe
 	desc = "The deluxe hypospray, able to take both 100u and 50u vials. It also acts faster and can deliver more reagents per spray."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	small_only = FALSE
@@ -63,6 +65,8 @@
 	name = "combat-grade hypospray mk.II"
 	icon_state = "combat2"
 	desc = "A variant of the deluxe hypospray, able to take both 100u and 50u vials, acting significantly faster & piercing armor."
+	// Made non-indestructible since this is typically an admin spawn.  still robust though!
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	inject_wait = COMBAT_WAIT_INJECT
 	spray_wait = COMBAT_WAIT_SPRAY
 	spray_self = COMBAT_SELF_INJECT
@@ -94,18 +98,18 @@
 		vial_spritetype += "[vial.type_suffix]"
 	else
 		vial_spritetype += "-s"
-	var/mutable_appearance/chem_loaded = mutable_appearance(icon, vial_spritetype)
+	var/mutable_appearance/chem_loaded = mutable_appearance(initial(icon), vial_spritetype)
 	chem_loaded.color = vial.chem_color
 	. += chem_loaded
-	var/mutable_appearance/vial_overlay = mutable_appearance(icon, vial.icon_state)
-	. += vial_overlay
-
-/obj/item/hypospray/mkii/update_icon_state()
-	. = ..()
-	//var/icon_suffix = "-s"
-	//if(!small_only && vial)
-		//icon_suffix = vial.type_suffix //Sets the suffix used to the correspoding vial.
-	//icon_state = "[initial(icon_state)][vial ? "[icon_suffix]" : ""]"
+	if(vial.greyscale_colors != null)
+		var/mutable_appearance/vial_overlay = mutable_appearance(initial(icon), "[vial.icon_state]-body")
+		vial_overlay.color = vial.greyscale_colors
+		. += vial_overlay
+		var/mutable_appearance/vial_overlay_glass = mutable_appearance(initial(icon), "[vial.icon_state]-glass")
+		. += vial_overlay_glass
+	else
+		var/mutable_appearance/vial_overlay = mutable_appearance(initial(icon), vial.icon_state)
+		. += vial_overlay
 
 /obj/item/hypospray/mkii/examine(mob/user)
 	. = ..()
@@ -113,6 +117,31 @@
 		. += "[vial] has [vial.reagents.total_volume]u remaining."
 	else
 		. += "It has no vial loaded in."
+	. += span_notice("Ctrl-Shift-Click to change up the colors or reset them.")
+
+/obj/item/hypospray/mkii/CtrlShiftClick(mob/user, obj/item/I)
+	var/choice = tgui_input_list(user, "GAGSify the hypo or reset to default?", "Fashion", list("GAGS", "Nope"))
+	if(choice == "GAGS")
+		icon_state = "hypo2_normal"
+		choice = tgui_input_list(user, "Pick a hypo body plating style.", "Fashion", list("Standard", "Deluxe", "Tacticool"))
+		if(choice == "Deluxe")
+			icon_state = "hypo2_cmo"
+		if(choice == "Tacticool")
+			icon_state = "hypo2_tactical"
+		//choices go here
+		var/atom/fake_atom = src
+		var/list/allowed_configs = list()
+		var/config = initial(fake_atom.greyscale_config)
+		allowed_configs += "[config]"
+		if(greyscale_colors == null)
+			greyscale_colors = "#FF0000#0000FF"
+
+		var/datum/greyscale_modify_menu/menu = new(src, usr, allowed_configs)
+		menu.ui_interact(usr)
+	else
+		icon_state = initial(icon_state)
+		icon = initial(icon)
+		greyscale_colors = null
 
 /obj/item/hypospray/mkii/proc/unload_hypo(obj/item/hypo, mob/user)
 	if((istype(hypo, /obj/item/reagent_containers/cup/vial)))
@@ -292,3 +321,12 @@
 #undef COMBAT_WAIT_INJECT
 #undef COMBAT_SELF_SPRAY
 #undef COMBAT_SELF_INJECT
+
+/datum/greyscale_config/hypospray_mkii
+	name = "Hypospray Mk. II"
+	icon_file = 'modular_zskyraptor/modules/hyposprays/icons/hyposprays.dmi'
+	json_config = 'modular_zskyraptor/modules/hyposprays/greyscale/hypospray.json'
+
+/datum/greyscale_config/hypospray_mkii/deluxe
+	name = "Deluxe Hypospray Mk. II"
+	json_config = 'modular_zskyraptor/modules/hyposprays/greyscale/hypospray_deluxe.json'

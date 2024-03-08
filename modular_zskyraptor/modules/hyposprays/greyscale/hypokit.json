@@ -1,0 +1,41 @@
+{
+	"standard-gags-mini": [
+		{
+			"type": "icon_state",
+			"icon_state": "standard-box",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "standard-face",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		}
+	],
+	"deluxe-gags-normal-mini": [
+		{
+			"type": "icon_state",
+			"icon_state": "deluxe-box-normal",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "deluxe-face",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		}
+	],
+	"deluxe-gags-tactical-mini": [
+		{
+			"type": "icon_state",
+			"icon_state": "deluxe-box-tactical",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "deluxe-face",
+			"blend_mode": "overlay",
+			"color_ids": [ 1 ]
+		}
+	]
+}

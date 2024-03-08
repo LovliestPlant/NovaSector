@@ -1,12 +1,14 @@
 /obj/item/storage/hypospraykit
 	name = "hypospray kit"
-	desc = "A hypospray kit with foam insets for hypovials & a mounting point on the bottom."
+	desc = "A hypospray kit with foam insets for hypovials and a mounting point on the bottom."
 	icon = 'modular_zskyraptor/modules/hyposprays/icons/hypokits.dmi'
 	icon_state = "firstaid-mini"
 	worn_icon_state = "healthanalyzer" // Get a better sprite later
 	inhand_icon_state = "medkit"
+	greyscale_config = /datum/greyscale_config/hypokit
 	lefthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_l.dmi'
 	righthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_r.dmi'
+	// Small hypokits can be pocketed, but don't have much storage.
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
 	throw_speed = 3
@@ -17,7 +19,7 @@
 	var/static/list/case_designs_xl
 	var/is_xl = FALSE
 
-	var/obj/effect/abstract/hypoholder
+	/// Tracks if a hypospray is attached to the case or not.
 	var/obj/item/hypospray/mkii/attached_hypo
 
 //Code to give hypospray kits selectable paterns.
@@ -25,13 +27,12 @@
 	. = ..()
 	. += span_notice("Ctrl-Shift-Click to reskin this")
 	if(attached_hypo)
-		. += span_notice("[attached_hypo] is mounted on the bottom.  Right-click to take it off.")
+		. += span_notice("[attached_hypo] is mounted on the bottom. Right-click to take it off.")
 	else
 		. += span_notice("Right-click with a hypospray to mount it.")
 
 /obj/item/storage/hypospraykit/Initialize(mapload)
 	. = ..()
-	hypoholder = new()
 	if(!length(case_designs))
 		populate_case_designs()
 	atom_storage.max_slots = 7
@@ -44,16 +45,26 @@
 
 
 /obj/item/storage/hypospraykit/Destroy()
-	if(!QDELING(loc))
-		return
+	// a large block to stop the CI Gods smiting us & taking extra steps to try and force the CMO hypo to drop smartly
+	var/atom/drop_loc = drop_location(src)
+	if(QDELETED(drop_loc))
+		drop_loc = get_turf(src)
+	if(QDELETED(drop_loc))
+		QDEL_NULL(attached_hypo)
+		return ..()
+	// so long as it found a place to drop, run through and try to drop any indestructible items we contain
 	for(var/obj/item in contents)
 		if(item.resistance_flags & INDESTRUCTIBLE)
-			//item.forceMove(get_turf(src))
-			atom_storage.remove_single(null, item, get_turf(src), TRUE)
+			atom_storage.remove_single(null, item, drop_loc, TRUE)
+	// this also includes attached hypos - if indestructible, shunt it out, otherwise qdel it, and in all cases make sure we drop the ref & unregister the signal
 	if(attached_hypo)
 		if(attached_hypo.resistance_flags & INDESTRUCTIBLE)
-			atom_storage.remove_single(null, attached_hypo, get_turf(src), TRUE)
-	. = ..()
+			attached_hypo.forceMove(drop_loc)
+		else
+			QDEL_NULL(attached_hypo)
+		attached_hypo = null
+		UnregisterSignal(attached_hypo, COMSIG_QDELETING)
+	return ..()
 
 
 /obj/item/storage/hypospraykit/proc/populate_case_designs()
@@ -64,42 +75,65 @@
 		"toxin" = image(icon = src.icon, icon_state = "toxin-mini"),
 		"oxy" = image(icon = src.icon, icon_state = "oxy-mini"),
 		"advanced" = image(icon = src.icon, icon_state = "advanced-mini"),
-		"buffs" = image(icon = src.icon, icon_state = "buffs-mini"))
+		"buffs" = image(icon = src.icon, icon_state = "buffs-mini"),
+		"standard-gags" = image(icon = src.icon, icon_state = "standard-gags"))
 	case_designs_xl = list(
 		"cmo" = image(icon = src.icon, icon_state = "cmo-mini"),
+		"emt" = image(icon = src.icon, icon_state = "emt-mini"),
 		"tactical" = image(icon = src.icon, icon_state = "tactical-mini"),
 		"naakako" = image(icon = src.icon, icon_state = "naakako-mini"),
 		"haki" = image(icon = src.icon, icon_state = "haki-mini"),
-		"emt" = image(icon = src.icon, icon_state = "emt-mini"))
+		"deluxe-gags-normal" = image(icon = src.icon, icon_state = "deluxe-gags-normal"),
+		"deluxe-gags-tactical" = image(icon = src.icon, icon_state = "deluxe-gags-tactical"))
 
 /obj/item/storage/hypospraykit/update_overlays()
 	. = ..()
 	if(attached_hypo)
-		var/mutable_appearance/hypo_overlay = mutable_appearance(icon, attached_hypo.icon_state)
-		. += hypo_overlay
+		if(attached_hypo.greyscale_colors != null) //it's one of the GAGS variants
+			var/mutable_appearance/hypo_overlay = mutable_appearance(initial(icon), attached_hypo.icon_state)
+			. += hypo_overlay
+			var/list/split_colors = splittext(attached_hypo.greyscale_colors, "#")
+			var/mutable_appearance/hypo_overlay_acc1 = mutable_appearance(initial(icon), "hypo2_accent1")
+			hypo_overlay_acc1.color = "#[split_colors[2]]"
+			. += hypo_overlay_acc1
+			var/mutable_appearance/hypo_overlay_acc2 = mutable_appearance(initial(icon), "hypo2_accent2")
+			hypo_overlay_acc2.color = "#[split_colors[3]]"
+			. += hypo_overlay_acc2
+		else
+			var/mutable_appearance/hypo_overlay = mutable_appearance(initial(icon), attached_hypo.icon_state)
+			. += hypo_overlay
 
 /obj/item/storage/hypospraykit/attackby_secondary(obj/item/weapon, mob/user, params)
 	if(istype(weapon, /obj/item/hypospray/mkii))
 		if(attached_hypo != null)
 			balloon_alert(user, "Mount point full!  Remove [attached_hypo] first!")
 		else
-			if(user.transferItemToLoc(weapon, hypoholder))
-				attached_hypo = weapon
-				balloon_alert(user, "Attached [attached_hypo].")
-				update_appearance()
-				return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+			weapon.moveToNullspace()
+			attached_hypo = weapon
+			RegisterSignal(weapon, COMSIG_QDELETING, PROC_REF(on_attached_hypo_qdel))
+			balloon_alert(user, "Attached [attached_hypo].")
+			update_appearance()
+			// This stops atom_storage from hogging your right-click and opening the inventory.
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
 /obj/item/storage/hypospraykit/attack_hand_secondary(mob/user, list/modifiers)
 	if(attached_hypo != null)
 		if(user.put_in_hands(attached_hypo))
 			balloon_alert(user, "Removed [attached_hypo].")
+			UnregisterSignal(attached_hypo, COMSIG_QDELETING)
 			attached_hypo = null
 			update_appearance()
+			// Ditto here.
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 		else
 			balloon_alert(user, "Couldn't pull the hypo!")
 	return ..()
+
+/obj/item/storage/hypospraykit/proc/on_attached_hypo_qdel()
+	if(attached_hypo)
+		attached_hypo = null
+		update_appearance()
 
 /obj/item/storage/hypospraykit/update_icon_state()
 	. = ..()
@@ -116,6 +150,19 @@
 		return FALSE
 	current_case = choice
 	update_icon()
+	if(findtext(current_case, "gags"))
+		var/atom/fake_atom = src
+		var/list/allowed_configs = list()
+		var/config = initial(fake_atom.greyscale_config)
+		allowed_configs += "[config]"
+		if(greyscale_colors == null)
+			greyscale_colors = "#00FF00"
+
+		var/datum/greyscale_modify_menu/menu = new(src, usr, allowed_configs)
+		menu.ui_interact(usr)
+	else //restore normal icon
+		icon = initial(icon)
+		greyscale_colors = null
 
 /obj/item/storage/hypospraykit/proc/check_menu(mob/user)
 	if(!istype(user))
@@ -138,8 +185,7 @@
 /obj/item/storage/hypospraykit/empty
 	empty = TRUE
 
-
-/// CMO hypokit
+/// Deluxe hypokit: more storage, but you can't pocket it.
 /obj/item/storage/hypospraykit/cmo
 	name = "deluxe hypospray kit"
 	desc = "An extended hypospray kit with foam insets for hypovials & a mounting point on the bottom."
@@ -159,8 +205,11 @@
 
 /obj/item/storage/hypospraykit/cmo/empty
 	desc = "An extended hypospray kit with foam insets for hypovials & a mounting point on the bottom."
+	icon_state = "emt-mini"
+	current_case = "emt"
 	empty = TRUE
 
+/// Preloaded version: this is what goes in the locker.
 /obj/item/storage/hypospraykit/cmo/preloaded
 	name = "CMO's deluxe hypospray kit"
 	desc = "The CMO's precious extended hypospray kit, preloaded with a deluxe hypospray & a handful of vials.  Retains the usual insets and mounting point of smaller hypokits."
@@ -174,14 +223,12 @@
 	new /obj/item/reagent_containers/cup/vial/large/salglu(src)
 	new /obj/item/reagent_containers/cup/vial/large/synthflesh(src)
 
-
-
 /// Combat hypokit
 /obj/item/storage/hypospraykit/cmo/combat
 	name = "combat hypospray kit"
 	desc = "A larger tactical hypospray kit containing a combat-focused deluxe hypospray and vials."
-	icon_state = "emt-mini"
-	current_case = "emt"
+	icon_state = "tactical-mini"
+	current_case = "tactical"
 
 /obj/item/storage/hypospraykit/cmo/combat/PopulateContents()
 	if(empty)
@@ -194,8 +241,6 @@
 	new /obj/item/reagent_containers/cup/vial/large/advcrit(src)
 	new /obj/item/reagent_containers/cup/vial/large/advomni(src)
 	new /obj/item/reagent_containers/cup/vial/large/numbing(src)
-
-
 
 /// Bespoke subtypes for Naaka's Lounge - the Biodome, specifically
 /obj/item/storage/hypospraykit/cmo/combat/naaka
@@ -234,9 +279,7 @@
 	new /obj/item/reagent_containers/cup/vial/large/advomni(src)
 	new /obj/item/reagent_containers/cup/vial/large/meth(src)
 
-
-
-/// Boxes of empty hypovials
+/// Boxes of empty hypovials, coming in every style.
 /obj/item/storage/box/vials
 	name = "box of hypovials"
 
@@ -244,6 +287,7 @@
 	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/small/style))
 		new vialpath(src)
 
+// Ditto, just large vials.
 /obj/item/storage/box/vials/deluxe
 	name = "box of deluxe hypovials"
 
@@ -251,6 +295,7 @@
 	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/large/style))
 		new vialpath(src)
 
+// A box of small hypospray kits, pre-skinned to each variant to remind people what styles are available.
 /obj/item/storage/box/hypospray
 	name = "box of hypospray kits"
 
@@ -260,3 +305,8 @@
 		var/obj/item/storage/hypospraykit/newkit = new /obj/item/storage/hypospraykit(src)
 		newkit.current_case = label
 		newkit.update_icon_state()
+
+/datum/greyscale_config/hypokit
+	name = "Hypospray Kit"
+	icon_file = 'modular_zskyraptor/modules/hyposprays/icons/hypokits.dmi'
+	json_config = 'modular_zskyraptor/modules/hyposprays/greyscale/hypokit.json'
