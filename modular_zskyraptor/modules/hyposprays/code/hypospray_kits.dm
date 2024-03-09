@@ -76,15 +76,15 @@
 		"oxy" = image(icon = src.icon, icon_state = "oxy-mini"),
 		"advanced" = image(icon = src.icon, icon_state = "advanced-mini"),
 		"buffs" = image(icon = src.icon, icon_state = "buffs-mini"),
-		"standard-gags" = image(icon = src.icon, icon_state = "standard-gags"))
+		"standard-gags" = image(icon = src.icon, icon_state = "standard-gags-mini"))
 	case_designs_xl = list(
 		"cmo" = image(icon = src.icon, icon_state = "cmo-mini"),
 		"emt" = image(icon = src.icon, icon_state = "emt-mini"),
 		"tactical" = image(icon = src.icon, icon_state = "tactical-mini"),
 		"naakako" = image(icon = src.icon, icon_state = "naakako-mini"),
 		"haki" = image(icon = src.icon, icon_state = "haki-mini"),
-		"deluxe-gags-normal" = image(icon = src.icon, icon_state = "deluxe-gags-normal"),
-		"deluxe-gags-tactical" = image(icon = src.icon, icon_state = "deluxe-gags-tactical"))
+		"deluxe-gags-normal" = image(icon = src.icon, icon_state = "deluxe-gags-normal-mini"),
+		"deluxe-gags-tactical" = image(icon = src.icon, icon_state = "deluxe-gags-tactical-mini"))
 
 /obj/item/storage/hypospraykit/update_overlays()
 	. = ..()
