@@ -36,3 +36,6 @@
 
 /obj/machinery/atmospherics/pipe/smart/manifold4w
 	icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/pipes/manifold.dmi'
+
+/obj/effect/overlay/cap_visual
+	icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/pipes/pipes_bitmask.dmi'
