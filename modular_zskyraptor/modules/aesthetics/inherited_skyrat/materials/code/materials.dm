@@ -163,7 +163,7 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 /datum/design/uraglass_alloy
 	name = "Uranium Glass"
 	id = "uraniumglass"
-	build_type = SMELTER | PROTOLATHE | AWAY_LATHE
+	build_type = SMELTER | PROTOLATHE | AWAY_LATHE | COLONY_FABRICATOR
 	materials = list(/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 0.5, /datum/material/glass = SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/sheet/uraniumglass
 	category = list(
@@ -175,7 +175,7 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 /datum/design/uraniumrglass_alloy
 	name = "Reinforced Uranium Glass"
 	id = "uraniumreinforcedglass"
-	build_type = SMELTER | PROTOLATHE | AWAY_LATHE
+	build_type = SMELTER | PROTOLATHE | AWAY_LATHE | COLONY_FABRICATOR
 	materials = list(/datum/material/uranium = SHEET_MATERIAL_AMOUNT * 0.5, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.5,  /datum/material/glass = SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/sheet/uraniumrglass
 	category = list(
@@ -183,3 +183,10 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
 	maxstack = 50
+
+/datum/techweb_node/base/New()
+	design_ids += list(
+		"uraniumglass",
+		"uraniumreinforcedglass",
+	)
+	return ..()

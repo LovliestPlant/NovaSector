@@ -218,10 +218,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/reagent_containers/blood/o_minus,
-/obj/item/reagent_containers/blood/o_minus,
 /obj/item/healthanalyzer/advanced,
 /obj/item/healthanalyzer/advanced,
+/obj/item/reagent_containers/blood/o_minus,
+/obj/item/reagent_containers/blood/o_minus,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "aoG" = (
@@ -3183,6 +3183,10 @@
 /obj/structure/closet/secure_closet/personal/cabinet{
 	dir = 8;
 	req_access = list("all_personal_lockers")
+	},
+/obj/item/storage/hypospraykit/cmo/combat{
+	current_case = "emt";
+	icon_state = "emt-mini"
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_seld/bed)
@@ -8546,6 +8550,22 @@
 /obj/machinery/vending/wardrobe/cent_wardrobe,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/townhall/meeting)
+"keP" = (
+/obj/structure/table/reinforced/plasmarglass,
+/obj/item/stack/sheet/iron/fifty{
+	pixel_y = 4;
+	pixel_x = -7
+	},
+/obj/item/stack/sheet/iron/fifty{
+	pixel_y = 4;
+	pixel_x = 7
+	},
+/obj/item/stack/sheet/iron/fifty{
+	pixel_y = 10
+	},
+/obj/item/storage/bag/sheetsnatcher,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/science/robotics)
 "keQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -45199,7 +45219,7 @@ pls
 wgb
 eMv
 oGq
-eMv
+keP
 hnT
 fSu
 oGq
@@ -46227,7 +46247,7 @@ hOm
 dks
 kBA
 oGq
-eMv
+keP
 ybO
 fSu
 oGq
