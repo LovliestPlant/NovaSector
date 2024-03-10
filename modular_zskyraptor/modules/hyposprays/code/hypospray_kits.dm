@@ -27,9 +27,9 @@
 	. = ..()
 	. += span_notice("Ctrl-Shift-Click to reskin this")
 	if(attached_hypo)
-		. += span_notice("[attached_hypo] is mounted on the bottom. Right-click to take it off.")
+		. += span_notice("[attached_hypo] is mounted on the bottom. Alt-Right-Click to take it off.")
 	else
-		. += span_notice("Right-click with a hypospray to mount it.")
+		. += span_notice("Right-Click with a hypospray to mount it.")
 
 /obj/item/storage/hypospraykit/Initialize(mapload)
 	. = ..()
@@ -117,7 +117,7 @@
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
-/obj/item/storage/hypospraykit/attack_hand_secondary(mob/user, list/modifiers)
+/obj/item/storage/hypospraykit/alt_click_secondary(mob/user)
 	if(attached_hypo != null)
 		if(user.put_in_hands(attached_hypo))
 			balloon_alert(user, "Removed [attached_hypo].")
@@ -125,7 +125,7 @@
 			attached_hypo = null
 			update_appearance()
 			// Ditto here.
-			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+			return ..()
 		else
 			balloon_alert(user, "Couldn't pull the hypo!")
 	return ..()
