@@ -76,15 +76,15 @@
 		"oxy" = image(icon = src.icon, icon_state = "oxy-mini"),
 		"advanced" = image(icon = src.icon, icon_state = "advanced-mini"),
 		"buffs" = image(icon = src.icon, icon_state = "buffs-mini"),
-		"standard-gags" = image(icon = src.icon, icon_state = "standard-gags-mini"))
+		"custom" = image(icon = src.icon, icon_state = "standard-gags-mini"))
 	case_designs_xl = list(
 		"cmo" = image(icon = src.icon, icon_state = "cmo-mini"),
 		"emt" = image(icon = src.icon, icon_state = "emt-mini"),
 		"tactical" = image(icon = src.icon, icon_state = "tactical-mini"),
 		"naakako" = image(icon = src.icon, icon_state = "naakako-mini"),
 		"haki" = image(icon = src.icon, icon_state = "haki-mini"),
-		"deluxe-gags-normal" = image(icon = src.icon, icon_state = "deluxe-gags-normal-mini"),
-		"deluxe-gags-tactical" = image(icon = src.icon, icon_state = "deluxe-gags-tactical-mini"))
+		"deluxe-custom" = image(icon = src.icon, icon_state = "deluxe-gags-normal-mini"),
+		"tactical-custom" = image(icon = src.icon, icon_state = "deluxe-gags-tactical-mini"))
 
 /obj/item/storage/hypospraykit/update_overlays()
 	. = ..()
@@ -150,13 +150,13 @@
 		return FALSE
 	current_case = choice
 	update_icon()
-	if(findtext(current_case, "gags"))
+	if(findtext(current_case, "custom"))
 		var/atom/fake_atom = src
 		var/list/allowed_configs = list()
 		var/config = initial(fake_atom.greyscale_config)
 		allowed_configs += "[config]"
 		if(greyscale_colors == null)
-			greyscale_colors = "#00FF00"
+			greyscale_colors = "#00AAFF"
 
 		var/datum/greyscale_modify_menu/menu = new(src, usr, allowed_configs)
 		menu.ui_interact(usr)
@@ -196,12 +196,12 @@
 
 /obj/item/storage/hypospraykit/cmo/Initialize(mapload)
 	. = ..()
-	atom_storage.max_slots = 14
+	atom_storage.max_slots = 21
 
 /obj/item/storage/hypospraykit/cmo/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/hypospray/mkii/cmo(src)
+	new /obj/item/hypospray/mkii/deluxe/cmo(src)
 
 /obj/item/storage/hypospraykit/cmo/empty
 	desc = "An extended hypospray kit with foam insets for hypovials & a mounting point on the bottom."
@@ -217,7 +217,7 @@
 /obj/item/storage/hypospraykit/cmo/preloaded/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/hypospray/mkii/cmo(src)
+	new /obj/item/hypospray/mkii/deluxe/cmo(src)
 	new /obj/item/reagent_containers/cup/vial/large/deluxe(src)
 	new /obj/item/reagent_containers/cup/vial/large/multiver(src)
 	new /obj/item/reagent_containers/cup/vial/large/salglu(src)
@@ -233,7 +233,7 @@
 /obj/item/storage/hypospraykit/cmo/combat/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/hypospray/mkii/cmo/combat(src)
+	new /obj/item/hypospray/mkii/deluxe/cmo/combat(src)
 	new /obj/item/reagent_containers/cup/vial/large/advbrute(src)
 	new /obj/item/reagent_containers/cup/vial/large/advburn(src)
 	new /obj/item/reagent_containers/cup/vial/large/advtox(src)
@@ -252,7 +252,7 @@
 /obj/item/storage/hypospraykit/cmo/combat/naaka/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/hypospray/mkii/cmo/combat/naaka(src)
+	new /obj/item/hypospray/mkii/deluxe/cmo/combat/naaka(src)
 	new /obj/item/reagent_containers/cup/vial/large/advbrute(src)
 	new /obj/item/reagent_containers/cup/vial/large/advburn(src)
 	new /obj/item/reagent_containers/cup/vial/large/advtox(src)
@@ -270,7 +270,7 @@
 /obj/item/storage/hypospraykit/cmo/combat/naaka/haki/PopulateContents()
 	if(empty)
 		return
-	new /obj/item/hypospray/mkii/cmo/combat/naaka/haki(src)
+	new /obj/item/hypospray/mkii/deluxe/cmo/combat/naaka/haki(src)
 	new /obj/item/reagent_containers/cup/vial/large/advbrute(src)
 	new /obj/item/reagent_containers/cup/vial/large/advburn(src)
 	new /obj/item/reagent_containers/cup/vial/large/advtox(src)

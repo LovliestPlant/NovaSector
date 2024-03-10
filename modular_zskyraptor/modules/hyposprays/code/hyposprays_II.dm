@@ -46,25 +46,52 @@
 	var/quickload = TRUE
 	/// Does it penetrate clothing?
 	var/penetrates = null
+	/// Used for GAGS-ified hypos.
+	var/gags_bodystate = "hypo2_normal"
 
-/obj/item/hypospray/mkii/cmo
+/obj/item/hypospray/mkii/deluxe
 	name = "hypospray mk.II deluxe"
 	allowed_containers = list(/obj/item/reagent_containers/cup/vial/small, /obj/item/reagent_containers/cup/vial/large)
-	icon_state = "cmo2"
-	greyscale_config = /datum/greyscale_config/hypospray_mkii/deluxe
-	desc = "The deluxe hypospray, able to take both 100u and 50u vials. It also acts faster and can deliver more reagents per spray."
-	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	icon_state = "bighypo2"
+	gags_bodystate = "hypo2_deluxe"
+	desc = "The deluxe DeForest Mk. II hypospray, able to take both 100u and 50u vials."
 	small_only = FALSE
+
+// Deluxe hypo upgrade Kit
+/obj/item/device/custom_kit/deluxe_hypo2
+	name = "DeForest Mk. II Hypospray Deluxe Bodykit"
+	desc = "Upgrades the DeForest Mk. II Hypospray to support larger vials."
+	// don't tinker with a loaded (medi)gun. fool
+	from_obj = /obj/item/hypospray/mkii
+	to_obj = /obj/item/hypospray/mkii/deluxe
+
+/obj/item/device/custom_kit/deluxe_hypo2/pre_convert_check(obj/target_obj, mob/user)
+	var/obj/item/hypospray/mkii/our_hypo = target_obj
+	if(our_hypo.type in subtypesof(/obj/item/hypospray/mkii/))
+		balloon_alert(user, "only works on basic mk. ii hypos!")
+		return FALSE
+	if(our_hypo.vial != null)
+		balloon_alert(user, "unload the vial first!")
+		return FALSE
+	return TRUE
+
+/obj/item/hypospray/mkii/deluxe/cmo
+	name = "CMO's deluxe hypospray mk.II"
+	icon_state = "cmo2"
+	gags_bodystate = "hypo2_cmo"
+	desc = "The CMO's prized deluxe hypospray, able to take both 100u and 50u vials, acting faster and able to deliver more reagents per spray."
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	inject_wait = DELUXE_WAIT_INJECT
 	spray_wait = DELUXE_WAIT_SPRAY
 	spray_self = DELUXE_SELF_SPRAY
 	inject_self = DELUXE_SELF_INJECT
 	penetrates = INJECT_CHECK_PENETRATE_THICK
 
-/obj/item/hypospray/mkii/cmo/combat
+/obj/item/hypospray/mkii/deluxe/cmo/combat
 	name = "combat-grade hypospray mk.II"
 	icon_state = "combat2"
-	desc = "A variant of the deluxe hypospray, able to take both 100u and 50u vials, acting significantly faster & piercing armor."
+	gags_bodystate = "hypo2_tactical"
+	desc = "A variant of the deluxe hypospray, able to take both 100u and 50u vials, with overcharged applicators and an armor-piercing tip."
 	// Made non-indestructible since this is typically an admin spawn.  still robust though!
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	inject_wait = COMBAT_WAIT_INJECT
@@ -73,12 +100,12 @@
 	inject_self = COMBAT_SELF_SPRAY
 	penetrates = INJECT_CHECK_PENETRATE_THICK
 
-/obj/item/hypospray/mkii/cmo/combat/naaka
+/obj/item/hypospray/mkii/deluxe/cmo/combat/naaka
 	name = "customized ko-series hypospray mk.II"
 	icon_state = "ko2"
 	desc = "Naaka's personal variant of the deluxe hypospray, able to take both 100u and 50u vials, acting significantly faster & piercing armor."
 
-/obj/item/hypospray/mkii/cmo/combat/naaka/haki
+/obj/item/hypospray/mkii/deluxe/cmo/combat/naaka/haki
 	name = "customized ko-series hypospray mk.II"
 	icon_state = "haki2"
 	desc = "Hakitchaya's personal variant of the deluxe hypospray, able to take both 100u and 50u vials, acting significantly faster & piercing armor."
@@ -122,19 +149,14 @@
 /obj/item/hypospray/mkii/CtrlShiftClick(mob/user, obj/item/I)
 	var/choice = tgui_input_list(user, "GAGSify the hypo or reset to default?", "Fashion", list("GAGS", "Nope"))
 	if(choice == "GAGS")
-		icon_state = "hypo2_normal"
-		choice = tgui_input_list(user, "Pick a hypo body plating style.", "Fashion", list("Standard", "Deluxe", "Tacticool"))
-		if(choice == "Deluxe")
-			icon_state = "hypo2_cmo"
-		if(choice == "Tacticool")
-			icon_state = "hypo2_tactical"
+		icon_state = gags_bodystate
 		//choices go here
 		var/atom/fake_atom = src
 		var/list/allowed_configs = list()
 		var/config = initial(fake_atom.greyscale_config)
 		allowed_configs += "[config]"
 		if(greyscale_colors == null)
-			greyscale_colors = "#FF0000#0000FF"
+			greyscale_colors = "#00AAFF#FFAA00"
 
 		var/datum/greyscale_modify_menu/menu = new(src, usr, allowed_configs)
 		menu.ui_interact(usr)
