@@ -348,7 +348,3 @@
 	name = "Hypospray Mk. II"
 	icon_file = 'modular_zskyraptor/modules/hyposprays/icons/hyposprays.dmi'
 	json_config = 'modular_zskyraptor/modules/hyposprays/greyscale/hypospray.json'
-
-/datum/greyscale_config/hypospray_mkii/deluxe
-	name = "Deluxe Hypospray Mk. II"
-	json_config = 'modular_zskyraptor/modules/hyposprays/greyscale/hypospray_deluxe.json'

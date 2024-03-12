@@ -70,7 +70,7 @@
 	obj_flags = CAN_BE_HIT
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
-	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE
+	canSmoothWith = SMOOTH_GROUP_AIRLOCK + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS
 	glass_amount = 2
 
 /obj/structure/window/uranium/fulltile/unanchored
@@ -93,7 +93,7 @@
 	obj_flags = CAN_BE_HIT
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
-	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE
+	canSmoothWith = SMOOTH_GROUP_AIRLOCK + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS
 	glass_amount = 2
 
 /obj/structure/window/reinforced/uranium/fulltile/unanchored
