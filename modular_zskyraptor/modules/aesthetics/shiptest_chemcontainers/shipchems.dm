@@ -113,9 +113,9 @@
 	desc = "A large beaker. Can hold up to 120 units."
 
 /obj/item/reagent_containers/cup/beaker/plastic
-	fill_icon_thresholds = list(1, 40, 60, 80, 100)
-	fill_icon_state = "beakerlarge"
-	cap_icon_state = "beakerlarge_cap"
+	fill_icon_thresholds = list(1, 25, 50, 75, 100)
+	fill_icon_state = "beakerxlarge"
+	cap_icon_state = "beakerwhite_cap"
 
 	volume = 180 //skyraptor buff
 	desc = "An extra-large beaker. Can hold up to 180 units."
@@ -159,9 +159,8 @@
 /// test tubes need some bespoke work to add caps and get them in-line with our current style, this is a TODO
 /obj/item/reagent_containers/cup/tube
 	fill_icon = 'icons/obj/medical/reagent_fillings.dmi'
-	cap_on = FALSE
-	can_have_cap = FALSE
-	cap_icon_state = null
+	icon = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/shipchems.dmi'
+	cap_icon_state = "test_tube_cap"
 
 
 
