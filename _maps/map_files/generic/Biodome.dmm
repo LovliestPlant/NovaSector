@@ -2230,7 +2230,7 @@
 "cEt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/reagentgrinder/constructed{
+/obj/machinery/reagentgrinder{
 	dir = 8
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -16336,7 +16336,7 @@
 /area/centcom/biodome/security)
 "sux" = (
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/reagentgrinder/constructed,
+/obj/machinery/reagentgrinder,
 /obj/structure/sign/poster/contraband/jumbo_bar/directional/north,
 /obj/machinery/light/directional/east,
 /turf/open/floor/plastic,
