@@ -515,7 +515,7 @@
 	return TRUE
 
 /// NAAKAS-LOUNGE REMOVAL: ditto
-/*/obj/item/reagent_containers/cup/bottle/syrup_bottle/AltClick(mob/user)
+/*/obj/item/reagent_containers/cup/bottle/syrup_bottle/click_alt(mob/user)
 	cap_on = !cap_on
 	if(!cap_on)
 		icon_state = "syrup_open"
@@ -524,7 +524,7 @@
 		icon_state = "syrup"
 		balloon_alert(user, "put pump cap on")
 	update_icon_state()
-	return ..()*/
+	return CLICK_ACTION_SUCCESS*/
 
 /obj/item/reagent_containers/cup/bottle/syrup_bottle/proc/rename(mob/user, obj/item/writing_instrument)
 	if(!user.can_write(writing_instrument))
