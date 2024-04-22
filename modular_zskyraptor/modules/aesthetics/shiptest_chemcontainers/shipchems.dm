@@ -182,7 +182,7 @@
 						"Violet" = "spraybluespace_violet",
 						"Aqua" = "spraybluespace_aqua")
 
-/obj/item/reagent_containers/spray/bluespace/AltClick(mob/user)
+/obj/item/reagent_containers/spray/bluespace/click_alt(mob/user)
 	reskin_obj(user)
 
 /obj/item/reagent_containers/spray/bluespace/reskin_obj(mob/M)

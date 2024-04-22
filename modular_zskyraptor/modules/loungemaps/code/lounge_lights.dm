@@ -64,7 +64,7 @@
 	update_icon_state()
 	return
 
-/obj/structure/streetlamp/AltClick(mob/user)
+/obj/structure/streetlamp/click_alt(mob/user)
 	. = ..()
 	var/temp_col = input("Enter new color:", "Color", src.base_color) as color|null
 	if(temp_col != null)
