@@ -49,6 +49,7 @@ GLOBAL_LIST_INIT(uglass_recipes, list ( \
 	merge_type = /obj/item/stack/sheet/uraniumglass
 	grind_results = list(/datum/reagent/silicon = 20, /datum/reagent/uranium = 10)
 	material_flags = NONE
+	matter_amount = 15
 	tableVariant = /obj/structure/table/glass/uraniumglass
 
 /obj/item/stack/sheet/uraniumglass/fifty
@@ -104,8 +105,8 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	material_flags = NONE
 	merge_type = /obj/item/stack/sheet/uraniumrglass
 	grind_results = list(/datum/reagent/silicon = 20, /datum/reagent/uranium = 10, /datum/reagent/iron = 10)
-	point_value = 23
-	matter_amount = 8
+	//point_value = 23
+	matter_amount = 20
 	tableVariant = /obj/structure/table/reinforced/uraniumrglass
 
 /datum/armor/sheet_uraniumrglass
