@@ -7965,6 +7965,15 @@
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/kitchen,
 /area/centcom/biodome/homes/casa_de_ko/lounge)
+"jsY" = (
+/obj/structure/plaque/static_plaque{
+	desc = "Here lies a monument to the Broken Weaver, damned by her allies to never know her true form.\nA note at the bottom reads 'Forgive me, my friend, for I have failed you.  May you one day find wholeness.'";
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "grave_lead";
+	name = "honorary grave"
+	},
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
 "jtb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1;
@@ -10408,6 +10417,15 @@
 /obj/machinery/atmospherics/pipe/bridge_pipe/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/bridge_pipe/r_navy/hidden/layer4,
 /turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
+"mgx" = (
+/obj/structure/plaque/static_plaque{
+	desc = "Here lies a monument to the Flaming Fist, shattered by grief, the meddling of a once-dear friend's fall from grace, and her sister-in-time's failure.\nA note at the bottom reads 'Forgive me, my sister, for I have failed you.  May you one day find peace among the stars again.'";
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "grave_lead";
+	name = "honorary grave"
+	},
+/turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
 "mhs" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
@@ -16670,6 +16688,15 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"sKJ" = (
+/obj/structure/plaque/static_plaque{
+	desc = "Here lies a monument to Heise's Shaman, lost before her time and dragged back in tatters before her final rest..\nA note at the bottom reads 'Forgive me, dear love, for I have failed you.  May you one day return to Lady Seluna's embrace.'";
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "grave_lead";
+	name = "honorary grave"
+	},
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
 "sKR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -21112,6 +21139,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/bamboo,
 /area/centcom/biodome/homes/casa_de_korna/bed1)
+"xOc" = (
+/obj/structure/plaque/static_plaque{
+	desc = "Here lies a monument to the Golden Dragon, chained by her dearest friend and dragged to oblivion itself in the ultimate betrayal.\nA note at the bottom reads 'Forgive me, my friends, for I have failed you all.  May you one day restore knowledge to the land.'";
+	icon = 'icons/obj/storage/crates.dmi';
+	icon_state = "grave_lead";
+	name = "honorary grave"
+	},
+/turf/open/misc/grass/planet,
+/area/centcom/biodome/interior)
 "xOX" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -42983,8 +43019,8 @@ iUz
 iUz
 iUz
 iUz
+jsY
 jst
-iUz
 jst
 iUz
 iUz
@@ -43241,7 +43277,7 @@ iUz
 jst
 iUz
 iUz
-jst
+mgx
 iUz
 iUz
 iUz
@@ -43498,7 +43534,7 @@ iUz
 iUz
 iUz
 iUz
-iUz
+sKJ
 iUz
 iUz
 ecm
@@ -43753,9 +43789,9 @@ iUz
 iUz
 iUz
 iUz
-iUz
 rUh
-iUz
+xOc
+jst
 iUz
 iUz
 iUz
