@@ -515,3 +515,20 @@
 	icon_state = "biohome_seld_lounge"
 	name = "Casa de Selderis: Lounge"
 	sound_environment = SOUND_AREA_WOODFLOOR
+
+/// PEPPER SILVER'S HOME
+/area/centcom/biodome/homes/casa_de_silver
+	icon_state = "biohome_pepper"
+	name = "Casa de Silver: Front Room"
+	ambience_index = AMBIENCE_MEDICAL
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/casa_de_silver/bedroom
+	icon_state = "biohome_pepper_bedroom"
+	name = "Casa de Silver: Bedroom"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/casa_de_silver/bathroom
+	icon_state = "biohome_pepper_bathroom"
+	name = "Casa de Silver: Bathroom"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
