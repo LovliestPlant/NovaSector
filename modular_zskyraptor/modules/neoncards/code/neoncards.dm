@@ -46,6 +46,7 @@
 	greyscale_config = /datum/greyscale_config/game_chip
 	greyscale_colors = "#FFFFFF"
 	flags_1 = IS_PLAYER_COLORABLE_1
+	w_class = WEIGHT_CLASS_TINY
 	var/stacked_chips = list()
 
 /obj/item/toy/game_chip/attackby(obj/item/item, mob/living/user, params)
@@ -76,7 +77,7 @@
 	var/mutable_appearance/chip_visual = mutable_appearance(chip.icon, chip.icon_state)
 	chip_visual.pixel_x = 0
 	chip_visual.pixel_y = 2 * contents.len
-	chip_visual.layer = layer + (contents.len * 0.01)
+	chip_visual.layer = layer + (contents.len * 0.01) + 0.01
 	add_overlay(chip_visual)
 	update_appearance()
 
@@ -122,6 +123,7 @@
 	for(var/i in 0 to CHIP_MAX_STACK-1)
 		var/obj/item/toy/game_chip/chip = new /obj/item/toy/game_chip(src)
 		name = chip.name
+		chip.greyscale_colors = greyscale_colors
 		contents += chip
 		update_chip_overlays(chip)
 

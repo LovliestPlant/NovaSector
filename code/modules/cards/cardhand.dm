@@ -49,7 +49,7 @@
 
 	var/list/handradial = list()
 	for(var/obj/item/toy/singlecard/card in fetch_card_atoms())
-		handradial[card] = image(icon = src.icon, icon_state = card.icon_state)
+		handradial[card] = image(icon = card.icon, icon_state = card.icon_state) // NAAKAS-LOUNGE EDIT: THIS WAS SUCH A SIMPLE FIX, TEEGEE!  WHY?
 
 	var/obj/item/toy/singlecard/choice = show_radial_menu(usr, src, handradial, custom_check = CALLBACK(src, PROC_REF(check_menu), user), radius = 36, require_near = TRUE)
 	if(!choice)
