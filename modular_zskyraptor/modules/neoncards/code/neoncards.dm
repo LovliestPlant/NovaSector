@@ -48,8 +48,10 @@
 	flags_1 = IS_PLAYER_COLORABLE_1
 	w_class = WEIGHT_CLASS_TINY
 	var/stacked_chips = list()
+	var/chiptype = "game chip"
 
 /obj/item/toy/game_chip/attackby(obj/item/item, mob/living/user, params)
+	update_appearance()
 	if(istype(item, /obj/item/toy/game_chip))
 		var/obj/item/toy/game_chip/chip = item
 		if((contents.len >= CHIP_MAX_STACK) || ((chip.contents.len + contents.len) > CHIP_MAX_STACK))
@@ -77,11 +79,12 @@
 	var/mutable_appearance/chip_visual = mutable_appearance(chip.icon, chip.icon_state)
 	chip_visual.pixel_x = 0
 	chip_visual.pixel_y = 2 * contents.len
-	chip_visual.layer = layer + (contents.len * 0.01) + 0.01
+	chip_visual.layer = layer + (contents.len * 0.01)
 	add_overlay(chip_visual)
 	update_appearance()
 
 /obj/item/toy/game_chip/attack(mob/target, mob/living/user, params, stacked = TRUE)
+	update_appearance()
 	if(user.combat_mode || !contents.len || !stacked)
 		return ..()
 	var/obj/item/item = contents[contents.len]
@@ -100,7 +103,6 @@
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
-
 /obj/item/toy/game_chip/update_icon(updates = ALL)
 	if(!(updates & UPDATE_OVERLAYS))
 		return ..()
@@ -112,18 +114,26 @@
 		overlays -= overlays[overlays.len]
 	. |= UPDATE_OVERLAYS
 
+/obj/item/toy/game_chip/update_appearance()
+	. = ..()
+	if(contents.len >= 1)
+		name = "stack of [contents.len + 1] [chiptype]s"
+	else
+		name = initial(chiptype)
+
 
 
 /obj/item/toy/game_chip/stack
-	name = "stack of chips"
+	name = "stack of 15 game chips"
 
 /obj/item/toy/game_chip/stack/Initialize(mapload)
 	. = ..()
+	update_appearance()
 
-	for(var/i in 0 to CHIP_MAX_STACK-1)
+	for(var/i in 0 to CHIP_MAX_STACK-2)
 		var/obj/item/toy/game_chip/chip = new /obj/item/toy/game_chip(src)
 		name = chip.name
-		chip.greyscale_colors = greyscale_colors
+		chip.set_greyscale(colors = src.greyscale_colors)
 		contents += chip
 		update_chip_overlays(chip)
 
