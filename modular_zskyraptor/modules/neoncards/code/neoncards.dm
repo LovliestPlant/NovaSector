@@ -121,6 +121,15 @@
 	else
 		name = initial(chiptype)
 
+/obj/item/toy/game_chip/set_greyscale(list/colors, new_config, new_worn_config, new_inhand_left, new_inhand_right)
+	. = ..()
+	if(contents.len <= 0)
+		return ..()
+	for(var/obj/item/toy/game_chip/chip in contents)
+		if(chip)
+			if(chip.icon_state == src.icon_state)
+				chip.set_greyscale(colors = src.greyscale_colors)
+
 
 
 /obj/item/toy/game_chip/stack
