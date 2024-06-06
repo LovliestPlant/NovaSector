@@ -14,6 +14,10 @@
 		if(parent_deck.bigsprites == TRUE)
 			AddElement(/datum/element/item_scaling, 0.66, 1)
 
+/obj/item/toy/cards/cardhand/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/item_scaling, 0.66, 1)
+
 // GAGS LAYOUT: Backs & Joker Suit, Clubs, Spades, Hearts, Diamonds
 /obj/item/toy/cards/deck/neon
 	name = "neon deck of cards"
