@@ -205,6 +205,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/chapel,
 /turf/open/floor/wood/birch,
 /area/centcom/biodome/service/theatre)
 "amT" = (
@@ -873,6 +874,10 @@
 /obj/machinery/door/airlock/external/glass,
 /turf/open/floor/iron,
 /area/centcom/biodome/arrivals/pad1)
+"bbk" = (
+/obj/effect/landmark/navigate_destination/med,
+/turf/open/floor/iron/white,
+/area/centcom/biodome/medical/lobby)
 "bbn" = (
 /obj/machinery/conveyor/inverted{
 	dir = 5;
@@ -982,7 +987,6 @@
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
 "bgO" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
 /obj/item/reagent_containers/condiment/olive_oil,
 /obj/item/reagent_containers/condiment/olive_oil,
 /obj/item/reagent_containers/condiment/soysauce,
@@ -997,6 +1001,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/sign/poster/official/bless_this_spess/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/item/reagent_containers/cup/soup_pot,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/reagent_containers/cup/bowl,
+/obj/item/plate/small,
+/obj/item/plate/small,
+/obj/item/plate/small,
 /turf/open/floor/iron/diagonal,
 /area/centcom/biodome/homes/casa_de_silver)
 "bhu" = (
@@ -1183,7 +1195,6 @@
 /obj/machinery/microwave/frontier_printed{
 	pixel_y = 30
 	},
-/obj/machinery/light/directional/north,
 /turf/open/floor/iron/diagonal,
 /area/centcom/biodome/homes/casa_de_silver)
 "bmq" = (
@@ -1359,6 +1370,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/hydro,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -2039,6 +2051,7 @@
 /obj/item/cultivator,
 /obj/item/reagent_containers/cup/bottle/nutrient/ez,
 /obj/item/reagent_containers/cup/bottle/nutrient/ez,
+/obj/item/storage/bag/plants/primitive,
 /turf/open/misc/sandy_dirt,
 /area/centcom/biodome/interior)
 "cla" = (
@@ -2631,6 +2644,7 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/south,
+/obj/effect/landmark/navigate_destination/disposals,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
 "cUz" = (
@@ -2906,17 +2920,21 @@
 	name = "Scrubbers to Waste"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination/engineering,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "deF" = (
-/obj/structure/closet/secure_closet/freezer,
-/obj/item/food/liver_pate,
-/obj/item/food/brain_pate,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
 /obj/item/storage/fancy/egg_box,
-/obj/item/food/meat/slab/synthmeat,
-/obj/item/food/meat/slab/synthmeat,
-/obj/item/food/meat/slab/synthmeat,
-/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/brain_pate,
+/obj/item/food/brain_pate,
+/obj/item/food/liver_pate,
+/obj/item/food/liver_pate,
+/obj/structure/closet/crate/freezer/food,
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/diagonal,
 /area/centcom/biodome/homes/casa_de_silver)
 "deP" = (
@@ -3155,6 +3173,14 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
+"duj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Pipsqueak's Den"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "dum" = (
 /obj/structure/fireplace,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3418,12 +3444,12 @@
 /obj/structure/sign/directions/supply{
 	pixel_y = 7;
 	pixel_x = -13;
-	dir = 1
+	dir = 8
 	},
 /obj/structure/sign/directions/vault{
 	pixel_y = 1;
 	pixel_x = -13;
-	dir = 9
+	dir = 8
 	},
 /obj/structure/sign/directions/arrival{
 	pixel_y = 7;
@@ -4118,8 +4144,8 @@
 /turf/open/floor/carpet/neon/simple/purple,
 /area/centcom/biodome/homes/casa_de_liora/bedroom)
 "eSa" = (
-/obj/structure/window/reinforced/fulltile,
 /obj/structure/curtain/bounty,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/centcom/biodome/homes/casa_de_silver/bedroom)
 "eSi" = (
@@ -4153,6 +4179,12 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"eTY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/teleporter,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/science)
 "eWh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4548,6 +4580,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/library,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
 "foZ" = (
@@ -4661,6 +4694,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/light/cold/directional/north,
+/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/white/diagonal,
 /area/centcom/biodome/homes/casa_de_silver/bathroom)
 "fwr" = (
@@ -4690,8 +4724,7 @@
 	},
 /obj/structure/sign/directions/supply{
 	pixel_y = 7;
-	pixel_x = -13;
-	dir = 1
+	pixel_x = -13
 	},
 /obj/structure/sign/directions/engineering{
 	pixel_y = 7;
@@ -4745,16 +4778,16 @@
 /obj/structure/sign/directions/engineering{
 	pixel_y = 7;
 	pixel_x = 13;
-	dir = 5
+	dir = 4
 	},
 /obj/structure/sign/directions/supply{
 	pixel_y = -5;
-	pixel_x = -13
+	pixel_x = -13;
+	dir = 4
 	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 1;
-	pixel_x = 13;
-	dir = 6
+	pixel_x = 13
 	},
 /obj/structure/sign/directions/vault{
 	pixel_y = 1;
@@ -4853,6 +4886,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination/dorms,
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 8
 	},
@@ -5276,6 +5310,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver/bedroom)
 "gfq" = (
@@ -5556,6 +5591,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
 	dir = 8
 	},
+/obj/effect/landmark/navigate_destination/atmos,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
 "gxr" = (
@@ -5715,6 +5751,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/research,
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "gDY" = (
@@ -5976,12 +6013,10 @@
 "gRj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible,
-/obj/machinery/atmospherics/components/trinary/mixer/flipped/layer4{
-	dir = 8;
+/obj/machinery/atmospherics/components/trinary/mixer/airmix/flipped/inverse{
+	piping_layer = 5;
 	name = "Heating Pad Mixer";
-	node1_concentration = 0.3;
-	node2_concentration = 0.7;
-	piping_layer = 5
+	dir = 8
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
@@ -6168,7 +6203,7 @@
 /obj/structure/sign/directions/arrival{
 	pixel_y = 7;
 	pixel_x = -13;
-	dir = 8
+	dir = 1
 	},
 /obj/structure/sign/directions/supply{
 	pixel_y = 1;
@@ -6911,6 +6946,12 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"hSj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/sec,
+/turf/open/floor/iron/dark/smooth_large,
+/area/centcom/biodome/security)
 "hSF" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/homes/casa_de_seld/bath)
@@ -7089,6 +7130,10 @@
 /area/centcom/biodome/voxbox{
 	name = "Hakit's Meth Lab"
 	})
+"icX" = (
+/obj/effect/landmark/navigate_destination/cargo,
+/turf/open/floor/iron/textured,
+/area/centcom/biodome/cargo)
 "idg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -7199,8 +7244,7 @@
 	},
 /obj/structure/sign/directions/security{
 	pixel_x = 13;
-	pixel_y = 1;
-	dir = 9
+	pixel_y = 1
 	},
 /obj/structure/sign/directions/science{
 	pixel_y = -5;
@@ -7646,6 +7690,7 @@
 /obj/machinery/door/airlock/service/glass{
 	name = "Kitchen"
 	},
+/obj/effect/landmark/navigate_destination/kitchen,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
 "iIL" = (
@@ -9104,7 +9149,7 @@
 /obj/structure/sign/directions/arrival{
 	pixel_y = 7;
 	pixel_x = 13;
-	dir = 4
+	dir = 1
 	},
 /obj/structure/sign/directions/engineering{
 	pixel_y = -5;
@@ -9391,6 +9436,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/chemfactory,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
 "kIu" = (
@@ -9577,6 +9623,14 @@
 /area/centcom/biodome/engineering)
 "kOP" = (
 /obj/structure/bonfire/grill_pre_attached,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
+"kOV" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Casa de Miyake"
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
 "kPm" = (
@@ -11199,7 +11253,6 @@
 /obj/item/food/grown/potato,
 /obj/item/food/grown/potato,
 /obj/item/food/grown/potato,
-/obj/item/storage/bag/plants/primitive,
 /turf/open/floor/plating/cobblestone,
 /area/centcom/biodome/interior)
 "mEy" = (
@@ -12205,7 +12258,7 @@
 /obj/structure/sign/directions/vault{
 	pixel_y = -5;
 	pixel_x = 13;
-	dir = 5
+	dir = 4
 	},
 /obj/structure/sign/directions/security{
 	pixel_x = -13;
@@ -12752,8 +12805,8 @@
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "oqK" = (
-/obj/structure/window/reinforced/fulltile,
 /obj/structure/curtain/bounty,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/centcom/biodome/homes/casa_de_silver)
 "orc" = (
@@ -12863,7 +12916,7 @@
 /obj/structure/sign/directions/science{
 	pixel_y = 1;
 	pixel_x = -13;
-	dir = 9
+	dir = 8
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
@@ -13469,6 +13522,9 @@
 /obj/machinery/door/airlock/ce/glass{
 	name = "Cinder's Office"
 	},
+/obj/effect/landmark/navigate_destination{
+	location = "Cinder's Office"
+	},
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/homes/cinder)
 "paE" = (
@@ -13600,18 +13656,17 @@
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/supply{
 	pixel_y = 7;
-	pixel_x = -13;
-	dir = 1
+	pixel_x = -13
 	},
 /obj/structure/sign/directions/engineering{
 	pixel_y = 1;
 	pixel_x = 13;
-	dir = 10
+	dir = 4
 	},
 /obj/structure/sign/directions/science{
 	pixel_y = 1;
 	pixel_x = -13;
-	dir = 9
+	dir = 8
 	},
 /obj/structure/sign/directions/vault{
 	pixel_y = -5;
@@ -13620,7 +13675,7 @@
 /obj/structure/sign/directions/arrival{
 	pixel_y = 7;
 	pixel_x = 13;
-	dir = 1
+	dir = 4
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
@@ -14363,6 +14418,9 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "SyndiCat's Dojo"
+	},
 /turf/open/floor/iron/dark/textured_half,
 /area/centcom/biodome/security/syndicat)
 "qbu" = (
@@ -14595,6 +14653,12 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"qjt" = (
+/obj/effect/landmark/navigate_destination{
+	location = "Casa De Silver"
+	},
+/turf/open/floor/plating/cobblestone,
+/area/centcom/biodome/interior)
 "qkf" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -14880,6 +14944,7 @@
 /obj/machinery/door/airlock/service/glass{
 	name = "Janitorial"
 	},
+/obj/effect/landmark/navigate_destination/janitor,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service)
 "qwO" = (
@@ -15202,6 +15267,10 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"qQz" = (
+/obj/effect/landmark/navigate_destination/dockarrival,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/arrivals)
 "qQT" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -15362,6 +15431,14 @@
 "rar" = (
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver/bedroom)
+"raD" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Casa de Korna"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "raR" = (
 /obj/structure/railing{
 	dir = 10
@@ -15991,6 +16068,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/bar,
 /turf/open/floor/iron,
 /area/centcom/biodome/service/bar)
 "rEl" = (
@@ -16076,7 +16154,7 @@
 /obj/structure/sign/directions/science{
 	pixel_y = -5;
 	pixel_x = -13;
-	dir = 9
+	dir = 8
 	},
 /obj/structure/sign/directions/command{
 	pixel_x = -13;
@@ -16105,6 +16183,9 @@
 	name = "Nakitamaki's Office"
 	},
 /obj/structure/fans/tiny,
+/obj/effect/landmark/navigate_destination{
+	location = "Nakitamaki's Office"
+	},
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 8
 	},
@@ -16118,6 +16199,13 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"rMF" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/obj/effect/landmark/navigate_destination/vault,
+/turf/open/floor/iron/textured,
+/area/centcom/biodome/cargo)
 "rMS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/r_chartreuse/visible{
 	dir = 8
@@ -16271,6 +16359,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
+/obj/effect/landmark/navigate_destination/tcomms,
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
@@ -16750,6 +16839,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver)
 "sqg" = (
@@ -17542,7 +17632,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/structure/aquarium,
+/obj/structure/aquarium/prefilled,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver)
 "tfN" = (
@@ -17806,6 +17896,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination/incinerator,
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering)
 "tyN" = (
@@ -18190,6 +18281,14 @@
 /obj/structure/table/reinforced/uraniumrglass,
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
+"tWH" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Haki & Strkka's Lab"
+	},
+/turf/open/floor/iron/dark/pavement,
+/area/centcom/biodome/interior)
 "tWI" = (
 /obj/structure/railing{
 	dir = 8
@@ -18243,7 +18342,10 @@
 	})
 "tZp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/layer_manifold/r_chartreuse/visible{
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
 	dir = 8
 	},
 /turf/open/floor/engine,
@@ -18873,7 +18975,6 @@
 /turf/open/floor/carpet/neon/simple/purple,
 /area/centcom/biodome/homes/casa_de_liora/office)
 "uDL" = (
-/obj/item/screwdriver,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/light/directional/south,
 /obj/machinery/button/door/directional/south{
@@ -18886,6 +18987,11 @@
 	name = "Window Shutters Control";
 	id = "pepper_front_window_shutter"
 	},
+/obj/item/gun_maintenance_supplies{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/item/screwdriver,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver)
 "uDP" = (
@@ -18904,6 +19010,12 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/pharmacy)
+"uFJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination/bridge,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/townhall)
 "uFO" = (
 /obj/structure/table/wood/fancy/red,
 /obj/structure/table/wood/fancy/red,
@@ -19252,6 +19364,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/gateway,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/science)
 "vaC" = (
@@ -19723,6 +19836,14 @@
 "vCd" = (
 /turf/open/floor/grass,
 /area/centcom/biodome/science/genetics)
+"vCt" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/landmark/navigate_destination{
+	location = "The Selderis house"
+	},
+/turf/open/floor/stone,
+/area/centcom/biodome/interior)
 "vDq" = (
 /obj/structure/chair/sofa/corp{
 	dir = 8
@@ -19771,6 +19892,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/trinary/filter/on/layer4{
 	filter_type = list(/datum/gas/oxygen)
+	},
+/obj/effect/landmark/navigate_destination{
+	location = "Nuvi's Ship"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/interior)
@@ -19977,6 +20101,18 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/office)
+"vOb" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Casa de Garner"
+	},
+/turf/open/floor/iron/dark/textured_large{
+	planetary_atmos = 1;
+	has_gravity = 1
+	},
+/area/centcom/biodome/interior)
 "vOF" = (
 /obj/machinery/computer/camera_advanced/syndie,
 /turf/open/floor/iron/dark/small,
@@ -20312,11 +20448,6 @@
 	},
 /area/centcom/biodome/homes/casa_de_garner)
 "wjU" = (
-/obj/machinery/space_heater/wall_mounted/directional/east,
-/obj/machinery/space_heater/wall_mounted/directional/east,
-/obj/machinery/space_heater/wall_mounted/directional/east,
-/obj/machinery/space_heater/wall_mounted/directional/east,
-/obj/machinery/space_heater/wall_mounted/directional/east,
 /obj/machinery/space_heater/wall_mounted/directional/east,
 /obj/structure/window/unanchored{
 	dir = 1
@@ -21556,11 +21687,19 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
+"xAI" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination{
+	location = "Casa de Iko"
+	},
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "xAP" = (
-/obj/structure/window/reinforced/fulltile,
 /obj/machinery/door/poddoor/shutters/colony_fabricator/preopen{
 	id = "pepper_front_window_shutter"
 	},
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/centcom/biodome/homes/casa_de_silver)
 "xAQ" = (
@@ -21774,12 +21913,12 @@
 /obj/structure/sign/directions/dorms{
 	pixel_x = 13;
 	pixel_y = 7;
-	dir = 4
+	dir = 5
 	},
 /obj/structure/sign/directions/command{
 	pixel_x = -13;
 	pixel_y = 7;
-	dir = 8
+	dir = 9
 	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 1;
@@ -21787,8 +21926,7 @@
 	},
 /obj/structure/sign/directions/security{
 	pixel_x = -13;
-	pixel_y = 1;
-	dir = 9
+	pixel_y = 1
 	},
 /obj/structure/sign/directions/engineering{
 	pixel_y = -5;
@@ -40838,7 +40976,7 @@ nIp
 fcU
 wgt
 wgt
-aLV
+kOV
 wgt
 wgt
 iUz
@@ -40863,7 +41001,7 @@ iUz
 iUz
 wgt
 wgt
-aLV
+raD
 wgt
 wgt
 iUz
@@ -40886,7 +41024,7 @@ vLz
 vLz
 kpZ
 kpZ
-soC
+vOb
 kpZ
 kpZ
 vLz
@@ -48802,7 +48940,7 @@ xwa
 xwa
 rFz
 bUe
-fJR
+hSj
 fJR
 fJR
 nCl
@@ -48885,7 +49023,7 @@ pua
 pua
 iqw
 tLg
-tLg
+eTY
 tLg
 tLg
 iVv
@@ -50570,7 +50708,7 @@ pFL
 kJj
 kJj
 kJj
-hfK
+uFJ
 kJj
 kJj
 kJj
@@ -54914,7 +55052,7 @@ hFX
 hFX
 xGl
 jrT
-vIB
+qQz
 vIB
 vIB
 vIB
@@ -54995,7 +55133,7 @@ mda
 oGn
 tIi
 bDH
-qgb
+bbk
 hlA
 laE
 laE
@@ -55096,7 +55234,7 @@ veP
 sIz
 wkb
 qwO
-qwO
+icX
 pWK
 cWX
 nEH
@@ -56638,7 +56776,7 @@ khE
 sAj
 mxv
 jjB
-snl
+rMF
 fgN
 khE
 ldQ
@@ -57641,7 +57779,7 @@ xlF
 xlF
 xlF
 aLV
-aLV
+xAI
 nnM
 omi
 ier
@@ -61126,7 +61264,7 @@ sdG
 sdG
 sdG
 iKq
-dJm
+tWH
 dJm
 dJm
 tOp
@@ -63033,7 +63171,7 @@ hiL
 pWQ
 wgt
 wgt
-aLV
+duj
 wgt
 nqo
 iUz
@@ -63959,7 +64097,7 @@ sic
 rbQ
 cbh
 cbh
-cbh
+rbQ
 cbh
 rbQ
 rbQ
@@ -64467,7 +64605,7 @@ tEd
 wRP
 pCd
 oqK
-ntd
+qjt
 efe
 sHc
 rbQ
@@ -69648,7 +69786,7 @@ rTs
 rTs
 bxC
 xAT
-aXy
+vCt
 aXy
 xlF
 xlF
