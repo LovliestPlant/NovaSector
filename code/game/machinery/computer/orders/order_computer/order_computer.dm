@@ -208,7 +208,7 @@ GLOBAL_LIST_EMPTY(order_console_products)
 	return TRUE
 
 /**
- * Checks if an ID card is able to afford the total cost of the current console's groceries
+ * Checks if an ID card is able to afford the total cost of the current console's grocieries
  * and deducts the cost if they can.
  * Args:
  * card - The ID card we check for balance

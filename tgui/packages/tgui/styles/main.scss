@@ -66,7 +66,6 @@
 @include meta.load-css('./interfaces/NtosMessenger.scss');
 @include meta.load-css('./interfaces/NtosNotepad.scss');
 @include meta.load-css('./interfaces/NuclearBomb.scss');
-@include meta.load-css('./interfaces/Orbit.scss');
 @include meta.load-css('./interfaces/Paper.scss');
 @include meta.load-css('./interfaces/PersonalCrafting.scss');
 @include meta.load-css('./interfaces/PreferencesMenu.scss');
@@ -78,10 +77,10 @@
 @include meta.load-css('./interfaces/Trophycase.scss');
 @include meta.load-css('./interfaces/Uplink.scss');
 @include meta.load-css('./interfaces/UtilityModulesPane.scss');
-// NOVA EDIT ADDITION START
+// SKYRAT ADDITION START
 @include meta.load-css('./interfaces/ClockworkResearch.scss');
 @include meta.load-css('./interfaces/ClockworkSlab.scss');
-// NOVA EDIT ADDITION END
+// SKYRAT ADDITION END
 
 // Layouts
 @include meta.load-css('./layouts/Layout.scss');

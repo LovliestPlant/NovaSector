@@ -71,8 +71,6 @@
 	var/current_zoom_x = 0
 	var/current_zoom_y = 0
 
-	var/obj/projectile/beam/beam_rifle/hitscan/aiming_beam/trace = null
-
 /obj/item/gun/energy/beam_rifle/apply_fantasy_bonuses(bonus)
 	. = ..()
 	delay = modify_fantasy_variable("delay", delay, -bonus * 2)
@@ -194,19 +192,16 @@
 	if(diff < AIMING_BEAM_ANGLE_CHANGE_THRESHOLD && !force_update)
 		return
 	aiming_lastangle = lastangle
-	// ONLY ONE at once (since fire can sleep)
-	if(trace)
-		QDEL_NULL(trace)
-	trace = new
-	trace.gun = src
-	trace.wall_pierce_amount = wall_pierce_amount
-	trace.structure_pierce_amount = structure_piercing
-	trace.do_pierce = projectile_setting_pierce
+	var/obj/projectile/beam/beam_rifle/hitscan/aiming_beam/P = new
+	P.gun = src
+	P.wall_pierce_amount = wall_pierce_amount
+	P.structure_pierce_amount = structure_piercing
+	P.do_pierce = projectile_setting_pierce
 	if(aiming_time)
 		var/percent = ((100/aiming_time)*aiming_time_left)
-		trace.color = rgb(255 * percent,255 * ((100 - percent) / 100),0)
+		P.color = rgb(255 * percent,255 * ((100 - percent) / 100),0)
 	else
-		trace.color = rgb(0, 255, 0)
+		P.color = rgb(0, 255, 0)
 	var/turf/curloc = get_turf(src)
 
 	var/atom/target_atom = current_user.client.mouse_object_ref?.resolve()
@@ -216,9 +211,8 @@
 			return
 		targloc = get_turf_in_angle(lastangle, curloc, 10)
 	var/mouse_modifiers = params2list(current_user.client.mouseParams)
-	trace.preparePixelProjectile(targloc, current_user, mouse_modifiers, 0)
-	trace.fire(lastangle)
-	trace = null
+	P.preparePixelProjectile(targloc, current_user, mouse_modifiers, 0)
+	P.fire(lastangle)
 
 /obj/item/gun/energy/beam_rifle/process()
 	if(!aiming)
@@ -265,7 +259,6 @@
 	aiming_time_left = aiming_time
 	aiming = FALSE
 	QDEL_LIST(current_tracers)
-	QDEL_NULL(trace)
 	stop_zooming(user)
 
 /obj/item/gun/energy/beam_rifle/proc/set_user(mob/user)

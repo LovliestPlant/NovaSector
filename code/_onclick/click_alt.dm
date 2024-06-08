@@ -11,10 +11,7 @@
 		return
 
 	// Is it visible (and we're not wearing it (our clothes are invisible))?
-	if(!CAN_I_SEE(target))
-		return
-
-	if(is_blind() && !IN_GIVEN_RANGE(src, target, 1))
+	if(!(src in viewers(7, target)) && !CanReach(target))
 		return
 
 	var/turf/tile = get_turf(target)
@@ -24,14 +21,8 @@
 		client.loot_panel.open(tile)
 		return
 
-	var/can_use_click_action = FALSE
-	if(isturf(target))
-		// Turfs are special because they can't be used with can_perform_action
-		can_use_click_action = can_perform_turf_action(target)
-	else
-		can_use_click_action = can_perform_action(target, (target.interaction_flags_click | SILENT_ADJACENCY))
-
-	if(can_use_click_action)
+	// Turfs don't have a click_alt currently, so this saves some time.
+	if(!isturf(target) && can_perform_action(target, (target.interaction_flags_click | SILENT_ADJACENCY)))
 		// If it has a signal handler that returns a click action, done.
 		if(SEND_SIGNAL(target, COMSIG_CLICK_ALT, src) & CLICK_ACTION_ANY)
 			return
@@ -43,13 +34,6 @@
 	// No alt clicking to view turf from beneath
 	if(HAS_TRAIT(src, TRAIT_MOVE_VENTCRAWLING))
 		return
-
-	/// No loot panel if it's on our person
-	if(isobj(target) && isliving(src))
-		var/mob/living/user = src
-		if(target in user.get_all_gear())
-			to_chat(user, span_warning("You can't search for this item, it's already in your inventory! Take it off first."))
-			return
 
 	client.loot_panel.open(tile)
 
@@ -84,15 +68,3 @@
 /atom/proc/click_alt(mob/user)
 	SHOULD_CALL_PARENT(FALSE)
 	return NONE
-
-
-/// Helper proc to validate turfs. Used because can_perform_action does not support turfs.
-/mob/proc/can_perform_turf_action(turf/target)
-	if(!CanReach(target)) // No error message for parity with SILENT_ADJACENCY
-		return FALSE
-
-	if(incapacitated())
-		to_chat(src, span_warning("You can't use this!"))
-		return FALSE
-
-	return TRUE

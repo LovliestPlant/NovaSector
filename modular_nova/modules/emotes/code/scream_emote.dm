@@ -5,16 +5,7 @@
 /datum/emote/living/scream/get_sound(mob/living/user)
 	if(user.is_muzzled())
 		return
-	if(issilicon(user))
-		var/mob/living/silicon/silicon_user = user
-		var/datum/scream_type/selected_scream = silicon_user.selected_scream
-		if(isnull(selected_scream))
-			return 'modular_nova/modules/emotes/sound/voice/scream_silicon.ogg'
-		if(user.gender == FEMALE && LAZYLEN(selected_scream.female_screamsounds))
-			return pick(selected_scream.female_screamsounds)
-		else
-			return pick(selected_scream.male_screamsounds)
-	if(issilicon(user))
+	if(iscyborg(user))
 		return 'modular_nova/modules/emotes/sound/voice/scream_silicon.ogg'
 	if(ismonkey(user))
 		return 'modular_nova/modules/emotes/sound/voice/scream_monkey.ogg'
@@ -22,6 +13,11 @@
 		return 'sound/creatures/gorilla.ogg'
 	if(isalien(user))
 		return 'sound/voice/hiss6.ogg'
+	if(ishuman(user))
+		var/datum/emote/living/carbon/human/scream/human_scream = new
+		. = human_scream.get_sound(user)
+		qdel(human_scream)
+		return
 
 /datum/emote/living/scream/can_run_emote(mob/living/user, status_check, intentional)
 	if(iscyborg(user))
@@ -45,7 +41,7 @@
 		if(prob(1))
 			return 'sound/voice/human/wilhelm_scream.ogg'
 		return user.dna.species.get_scream_sound(user)
-	if(user.gender == FEMALE && LAZYLEN(user.selected_scream.female_screamsounds))
+	if(user.physique == FEMALE && LAZYLEN(user.selected_scream.female_screamsounds))
 		return pick(user.selected_scream.female_screamsounds)
 	else
 		return pick(user.selected_scream.male_screamsounds)

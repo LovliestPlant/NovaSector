@@ -156,7 +156,6 @@
 				/obj/item/clothing/under/costume/nova/bathrobe = 5,
 				/obj/item/clothing/mask/gas/respirator = 5,
 				/obj/item/clothing/mask/surgical/greyscale = 5,
-				/obj/item/clothing/glasses/blindfold/color = 5,
 			)
 		)
 	)

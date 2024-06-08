@@ -119,13 +119,12 @@
 	who_can_purchase = null
 
 /datum/map_template/shuttle/cargo/nova
-	name = "Supply Shuttle (Cargo)"
+	name = "NLV Consign (Cargo)"
 	prefix = "_maps/shuttles/nova/"
 	port_id = "cargo"
 	suffix = "nova"
 
 /datum/map_template/shuttle/cargo/nova/delta
-	name = "Supply Shuttle (Delta)"
 	prefix = "_maps/shuttles/nova/"
 	suffix = "nova_delta"	//I hate this. Delta station is one tile different docking-wise, which fucks it ALL up unless we either a) change the map (this would be nonmodular and also press the engine against disposals) or b) this (actually easy, just dumb)
 
@@ -137,7 +136,6 @@
 	suffix = "blueshift"
 
 /datum/map_template/shuttle/cargo/nova/ouroboros
-	name = "Supply Shuttle (Ouroboros)"
 	suffix = "ouroboros"
 
 /datum/map_template/shuttle/whiteship/ouroboros

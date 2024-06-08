@@ -580,10 +580,10 @@
 		. = ..()
 		var/mob/living/mobtarget = target
 		if(mobtarget.move_resist == MOVE_FORCE_OVERPOWERING) //No megafauna or bolted AIs, please.
-			balloon_alert(source, "too strong!")
+			to_chat(source, "[span_warning("[src] is unable to lift [mobtarget].")]")
 			return
 		if(secmech.cargo_hold.contents.len >= secmech.cargo_hold.cargo_capacity)
-			balloon_alert(source, "no room!")
+			to_chat(source, "[icon2html(src, source)][span_warning("Not enough room in cargo compartment!")]")
 			return
 
 		playsound(chassis, clampsound, 50, FALSE, -6)

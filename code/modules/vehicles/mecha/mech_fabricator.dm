@@ -260,23 +260,22 @@
  *
  * Returns FALSE is the machine cannot dispense the part on the appropriate turf.
  * Return TRUE if the part was successfully dispensed.
- * * dispensed_design - Design datum to attempt to dispense.
+ * * D - Design datum to attempt to dispense.
  */
-/obj/machinery/mecha_part_fabricator/proc/dispense_built_part(datum/design/dispensed_design)
-	var/obj/item/built_part = new dispensed_design.build_path(src)
-	SSblackbox.record_feedback("nested tally", "lathe_printed_items", 1, list("[type]", "[built_part.type]"))
+/obj/machinery/mecha_part_fabricator/proc/dispense_built_part(datum/design/D)
+	var/obj/item/I = new D.build_path(src)
 
 	being_built = null
 
 	var/turf/exit = get_step(src,(dir))
 	if(exit.density)
 		say("Error! The part outlet is obstructed.")
-		desc = "It's trying to dispense the fabricated [dispensed_design.name], but the part outlet is obstructed."
-		stored_part = built_part
+		desc = "It's trying to dispense the fabricated [D.name], but the part outlet is obstructed."
+		stored_part = I
 		return FALSE
 
-	say("The fabrication of [built_part] is now complete.")
-	built_part.forceMove(exit)
+	say("The fabrication of [I] is now complete.")
+	I.forceMove(exit)
 
 	top_job_id += 1
 

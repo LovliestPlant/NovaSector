@@ -1,4 +1,5 @@
 ADMIN_VERB(lorecaster_story_manager, R_ADMIN, "Lorecaster Stories", "Open the Lorecaster Story Manager.", ADMIN_CATEGORY_EVENTS)
+/client/proc/lorecaster_story_manager()
 	var/datum/story_manager_interface/ui = new(usr)
 	ui.ui_interact(usr)
 

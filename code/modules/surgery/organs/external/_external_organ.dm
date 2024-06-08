@@ -64,10 +64,6 @@
 	receiver.update_body_parts()
 
 /obj/item/organ/external/Remove(mob/living/carbon/organ_owner, special, movement_flags)
-	// NOVA EDIT ADDITION START
-	if(mutantpart_key)
-		transfer_mutantpart_info(organ_owner, special)
-	// NOVA EDIT ADDITION END
 	. = ..()
 	if(!special)
 		organ_owner.update_body_parts()
@@ -81,15 +77,10 @@
 	if(!.)
 		return
 
-	// NOVA EDIT ADDITION START
-	if(mutantpart_key)
-		copy_to_mutant_bodyparts(receiver, special)
-	// NOVA EDIT ADDITION END
 	if(bodypart_overlay.imprint_on_next_insertion) //We only want this set *once*
 		var/feature_name = receiver.dna.features[bodypart_overlay.feature_key]
 		if (isnull(feature_name))
-			if(!bodypart_overlay.set_appearance_from_dna(receiver.dna)) // NOVA EDIT CHANGE - ORIGINAL: feature_name = receiver.dna.species.external_organs[type]
-				bodypart_overlay.set_appearance_from_name(receiver.dna.species.external_organs[type]) // NOVA EDIT ADDITION
+			bodypart_overlay.set_appearance_from_dna(receiver.dna) // NOVA EDIT CHANGE - ORIGINAL: feature_name = receiver.dna.species.external_organs[type]
 		// NOVA EDIT CHANGE START - Puts the following line in an else block
 		else
 			bodypart_overlay.set_appearance_from_name(feature_name)

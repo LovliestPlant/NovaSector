@@ -166,10 +166,7 @@
 	name = "Bone Armor"
 	result = /obj/item/clothing/suit/armor/bone
 	time = 3 SECONDS
-	reqs = list(
-		/obj/item/stack/sheet/bone = 6,
-		/obj/item/stack/sheet/animalhide/goliath_hide = 3,
-	)
+	reqs = list(/obj/item/stack/sheet/bone = 6)
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/bonetalisman
@@ -247,9 +244,10 @@
 	result = /obj/item/clothing/suit/hooded/cloak/goliath
 	time = 5 SECONDS
 	reqs = list(
-		/obj/item/stack/sheet/sinew = 3,
-		/obj/item/stack/sheet/animalhide/goliath_hide = 9,
-	)
+		/obj/item/stack/sheet/leather = 2,
+		/obj/item/stack/sheet/sinew = 2,
+		/obj/item/stack/sheet/animalhide/goliath_hide = 2,
+	) //it takes 4 goliaths to make 1 cloak if the plates are skinned
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/drakecloak

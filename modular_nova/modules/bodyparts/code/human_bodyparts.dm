@@ -1,4 +1,4 @@
-//Nova's version of basic (human) limbs.
+//Skyrat's version of basic (human) limbs.
 
 /obj/item/bodypart/head
 	icon_greyscale = BODYPART_ICON_HUMAN

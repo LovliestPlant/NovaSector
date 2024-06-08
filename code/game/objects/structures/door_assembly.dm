@@ -61,6 +61,9 @@
 
 /obj/structure/door_assembly/examine(mob/user)
 	. = ..()
+	var/doorname = ""
+	if(created_name)
+		doorname = ", written on it is '[created_name]'"
 	switch(state)
 		if(AIRLOCK_ASSEMBLY_NEEDS_WIRES)
 			if(anchored)
@@ -77,8 +80,8 @@
 		. += span_notice("There are <i>empty</i> slots for mineral covers.")
 	else if(!glass && !noglass)
 		. += span_notice("There are <i>empty</i> slots for glass windows.")
-	if(created_name)
-		. += span_notice("There is a small <i>paper</i> placard on the assembly, written on it is '[created_name]'.")
+	if(doorname)
+		. += span_notice("There is a small <i>paper</i> placard on the assembly labelled \"[doorname]\".")
 
 /obj/structure/door_assembly/attackby(obj/item/W, mob/living/user, params)
 	if(istype(W, /obj/item/pen) && !user.combat_mode)

@@ -1,4 +1,4 @@
-// NOVA PLAQUES
+//SKYRAT PLAQUES
 
 //Current stations
 

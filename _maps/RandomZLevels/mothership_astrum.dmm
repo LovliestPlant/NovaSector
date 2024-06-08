@@ -190,9 +190,23 @@
 /obj/structure/alien/weeds/creature,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/deck4)
+"dk" = (
+/obj/structure/alien/weeds/creature,
+/mob/living/basic/alien/sentinel{
+	faction = list("Abductor")
+	},
+/turf/open/floor/plating/abductor2,
+/area/awaymission/mothership_astrum/deck4)
 "dC" = (
 /obj/structure/alien/weeds/creature,
 /obj/structure/glowshroom/single,
+/turf/open/floor/plating/abductor2,
+/area/awaymission/mothership_astrum/deck4)
+"dG" = (
+/obj/structure/alien/weeds,
+/mob/living/basic/alien/sentinel{
+	faction = list("Abductor")
+	},
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/deck4)
 "dV" = (
@@ -400,13 +414,6 @@
 /obj/effect/spawner/random/engineering/material_rare,
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
-"hd" = (
-/obj/structure/alien/weeds/creature,
-/mob/living/basic/alien/queen/large{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/deck4)
 "hj" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/membrane,
@@ -466,13 +473,13 @@
 /obj/item/storage/medkit/expeditionary,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
-"iL" = (
+"iF" = (
 /obj/structure/alien/weeds,
 /mob/living/basic/alien/drone{
 	faction = list("Abductor")
 	},
-/turf/open/floor/mineral/abductor,
-/area/awaymission/mothership_astrum/halls)
+/turf/open/floor/plating/abductor2,
+/area/awaymission/mothership_astrum/deck4)
 "iM" = (
 /obj/structure/table/abductor,
 /obj/structure/window/spawner/directional/south,
@@ -486,6 +493,13 @@
 /obj/effect/spawner/random/decoration/material,
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
+"iS" = (
+/obj/structure/alien/weeds/creature,
+/mob/living/basic/alien/drone{
+	faction = list("Abductor")
+	},
+/turf/open/floor/plating/abductor2,
+/area/awaymission/mothership_astrum/deck4)
 "iU" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/bar,
@@ -534,18 +548,19 @@
 /obj/item/storage/backpack/duffelbag/syndie/surgery,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
-"jm" = (
-/obj/structure/alien/weeds,
-/mob/living/basic/alien/sentinel{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/deck4)
 "jB" = (
 /turf/open/misc/beach/sand{
 	dir = 6
 	},
 /area/awaymission/mothership_astrum/deck5)
+"jH" = (
+/mob/living/basic/alien/sentinel{
+	faction = list("Abductor")
+	},
+/obj/structure/alien/weeds,
+/obj/structure/window/reinforced/spawner/directional/north,
+/turf/open/floor/mineral/abductor,
+/area/awaymission/mothership_astrum/halls)
 "jL" = (
 /obj/structure/table/abductor,
 /obj/machinery/button/door{
@@ -636,6 +651,11 @@
 /obj/structure/glowshroom/single,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/deck4)
+"ll" = (
+/obj/structure/table/abductor,
+/obj/item/knife/combat/marksman,
+/turf/open/floor/plating/abductor,
+/area/awaymission/mothership_astrum/halls)
 "lu" = (
 /obj/structure/sign/poster/contraband/eat/directional/north,
 /turf/open/floor/wood,
@@ -898,9 +918,10 @@
 /obj/structure/window/spawner/directional/south,
 /turf/open/floor/plating/abductor,
 /area/awaymission/mothership_astrum/halls)
-"pA" = (
-/obj/structure/table/abductor,
-/obj/item/knife/combat/throwing,
+"pz" = (
+/mob/living/basic/alien/drone{
+	faction = list("Abductor")
+	},
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
 "pC" = (
@@ -946,25 +967,12 @@
 /obj/item/storage/medkit/fire,
 /turf/open/floor/wood,
 /area/awaymission/mothership_astrum/deck3)
-"qn" = (
-/obj/structure/table/abductor,
-/obj/item/knife/combat/throwing,
-/turf/open/floor/plating/abductor,
-/area/awaymission/mothership_astrum/halls)
 "qq" = (
 /mob/living/basic/trooper/syndicate/ranged/shotgun{
 	faction = list("Abductor")
 	},
 /turf/open/floor/wood,
 /area/awaymission/mothership_astrum/deck3)
-"qv" = (
-/mob/living/basic/alien/sentinel{
-	faction = list("Abductor")
-	},
-/obj/structure/alien/weeds,
-/obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/mineral/abductor,
-/area/awaymission/mothership_astrum/halls)
 "qE" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/mineral/abductor,
@@ -1140,13 +1148,6 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15"
 	},
 /area/awaymission/mothership_astrum/deck3)
-"tn" = (
-/obj/structure/alien/weeds/creature,
-/mob/living/basic/alien/drone{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/deck4)
 "to" = (
 /turf/closed/indestructible/fakeglass,
 /area/awaymission/mothership_astrum/deck5)
@@ -1396,6 +1397,7 @@
 "xb" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood,
+/obj/item/ammo_casing/c14mm,
 /obj/effect/mob_spawn/corpse/human/assistant{
 	brute_damage = 70;
 	desc = null;
@@ -1514,23 +1516,11 @@
 /obj/structure/table/abductor,
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
-"zv" = (
-/mob/living/basic/alien/drone{
-	faction = list("Abductor")
-	},
-/obj/structure/alien/weeds,
-/turf/open/floor/mineral/abductor,
-/area/awaymission/mothership_astrum/halls)
 "zw" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
-"zA" = (
-/obj/structure/table/wood,
-/obj/item/knife/combat/throwing,
-/turf/open/floor/wood,
-/area/awaymission/mothership_astrum/deck3)
 "zD" = (
 /obj/structure/table/abductor,
 /obj/item/clothing/head/helmet/astrum,
@@ -1590,13 +1580,6 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /turf/open/floor/grass,
 /area/awaymission/mothership_astrum/halls)
-"AS" = (
-/obj/structure/alien/weeds,
-/mob/living/basic/alien/drone{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/deck4)
 "AU" = (
 /obj/item/toy/seashell{
 	pixel_y = -5
@@ -1782,6 +1765,12 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/mothership_astrum/deck5)
+"CN" = (
+/obj/structure/closet/abductor,
+/obj/effect/spawner/random/exotic/technology,
+/obj/item/knife/combat/marksman,
+/turf/open/floor/mineral/abductor,
+/area/awaymission/mothership_astrum/halls)
 "CU" = (
 /mob/living/basic/trooper/pirate/melee{
 	faction = list("Abductor");
@@ -2128,7 +2117,9 @@
 "GK" = (
 /obj/machinery/porta_turret/syndicate/pod{
 	faction = list("Abductor");
+	lethal_projectile = /obj/projectile/bullet/c14mm;
 	max_integrity = 120;
+	stun_projectile = /obj/projectile/bullet/c14mm
 	},
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
@@ -2257,13 +2248,6 @@
 /mob/living/basic/abductor/agent,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
-"HX" = (
-/obj/structure/alien/weeds/creature,
-/mob/living/basic/alien/sentinel{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/deck4)
 "Ie" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/item/ammo_casing/a357,
@@ -2300,6 +2284,11 @@
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
+"IC" = (
+/obj/structure/table/wood,
+/obj/item/knife/combat/marksman,
+/turf/open/floor/wood,
+/area/awaymission/mothership_astrum/deck3)
 "II" = (
 /obj/structure/alien/weeds/creature,
 /obj/effect/mob_spawn/corpse/human/miner/explorer,
@@ -2351,6 +2340,11 @@
 /obj/structure/window/spawner/directional/north,
 /turf/open/floor/wood,
 /area/awaymission/mothership_astrum/deck2)
+"Jn" = (
+/obj/structure/table/abductor,
+/obj/item/knife/combat/marksman,
+/turf/open/floor/mineral/abductor,
+/area/awaymission/mothership_astrum/halls)
 "Jo" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
@@ -2512,6 +2506,13 @@
 	dir = 4
 	},
 /turf/open/floor/plating/abductor,
+/area/awaymission/mothership_astrum/halls)
+"LT" = (
+/obj/structure/alien/weeds,
+/mob/living/basic/alien/drone{
+	faction = list("Abductor")
+	},
+/turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
 "LV" = (
 /obj/structure/table/optable/abductor,
@@ -2886,6 +2887,13 @@
 	},
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
+"PI" = (
+/mob/living/basic/alien/drone{
+	faction = list("Abductor")
+	},
+/obj/structure/alien/weeds,
+/turf/open/floor/mineral/abductor,
+/area/awaymission/mothership_astrum/halls)
 "PO" = (
 /obj/effect/turf_decal/sand,
 /obj/structure/table/wood,
@@ -3054,6 +3062,11 @@
 	},
 /turf/open/floor/iron,
 /area/awaymission/mothership_astrum/deck2)
+"Ru" = (
+/obj/structure/closet/abductor,
+/obj/item/knife/combat/marksman,
+/turf/open/floor/mineral/abductor,
+/area/awaymission/mothership_astrum/halls)
 "RG" = (
 /obj/effect/spawner/structure/window,
 /obj/machinery/door/poddoor/preopen{
@@ -3070,6 +3083,13 @@
 "RI" = (
 /turf/open/floor/iron,
 /area/awaymission/mothership_astrum/deck2)
+"RJ" = (
+/obj/structure/alien/weeds/creature,
+/mob/living/basic/alien/queen/large{
+	faction = list("Abductor")
+	},
+/turf/open/floor/plating/abductor2,
+/area/awaymission/mothership_astrum/deck4)
 "RQ" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /obj/effect/decal/cleanable/blood/footprints,
@@ -3079,10 +3099,11 @@
 /obj/effect/turf_decal/vg_decals/department/bar,
 /turf/open/floor/iron,
 /area/awaymission/mothership_astrum/deck2)
-"Sb" = (
-/obj/structure/closet/abductor,
-/obj/item/knife/combat/throwing,
-/turf/open/floor/mineral/abductor,
+"Se" = (
+/mob/living/basic/alien/drone{
+	faction = list("Abductor")
+	},
+/turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
 "Sf" = (
 /obj/structure/flora/tree/palm{
@@ -3408,12 +3429,6 @@
 /obj/effect/spawner/random/exotic/technology,
 /turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
-"Wi" = (
-/mob/living/basic/alien/drone{
-	faction = list("Abductor")
-	},
-/turf/open/floor/mineral/abductor,
-/area/awaymission/mothership_astrum/halls)
 "Wj" = (
 /obj/structure/table/abductor,
 /obj/item/shield/riot,
@@ -3426,12 +3441,6 @@
 /obj/structure/table/abductor,
 /obj/item/cautery/alien,
 /turf/open/floor/plating/abductor,
-/area/awaymission/mothership_astrum/halls)
-"Wr" = (
-/mob/living/basic/alien/drone{
-	faction = list("Abductor")
-	},
-/turf/open/floor/plating/abductor2,
 /area/awaymission/mothership_astrum/halls)
 "Wt" = (
 /obj/structure/table/abductor,
@@ -3692,12 +3701,6 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/plating/abductor2,
-/area/awaymission/mothership_astrum/halls)
-"ZE" = (
-/obj/structure/closet/abductor,
-/obj/effect/spawner/random/exotic/technology,
-/obj/item/knife/combat/throwing,
-/turf/open/floor/mineral/abductor,
 /area/awaymission/mothership_astrum/halls)
 "ZH" = (
 /obj/structure/table/abductor,
@@ -19041,7 +19044,7 @@ ee
 ee
 oA
 Km
-qn
+ll
 Zp
 Zp
 fZ
@@ -27541,7 +27544,7 @@ bV
 bV
 ee
 ee
-ZE
+CN
 zt
 ee
 ee
@@ -29782,7 +29785,7 @@ om
 oc
 oc
 oc
-zA
+IC
 og
 Vc
 nx
@@ -29796,7 +29799,7 @@ bV
 Vh
 Vh
 bV
-Sb
+Ru
 ee
 wb
 Vh
@@ -36204,7 +36207,7 @@ ee
 ee
 ee
 ud
-iL
+LT
 ud
 od
 bV
@@ -36694,7 +36697,7 @@ dj
 dC
 gw
 hu
-tn
+iS
 db
 hu
 dj
@@ -36722,7 +36725,7 @@ ud
 ud
 ud
 zt
-qv
+jH
 ee
 ee
 Tu
@@ -37194,7 +37197,7 @@ bV
 bV
 Vh
 Vh
-Wi
+pz
 bV
 ee
 dj
@@ -37445,7 +37448,7 @@ ee
 ee
 VJ
 kZ
-qn
+ll
 Zp
 od
 bV
@@ -37712,7 +37715,7 @@ bV
 bV
 ee
 db
-HX
+dk
 db
 db
 ep
@@ -37961,7 +37964,7 @@ Vh
 Vh
 Vh
 Zp
-Wi
+pz
 bV
 Vh
 Vh
@@ -39030,7 +39033,7 @@ Md
 od
 ud
 ud
-Wi
+pz
 bV
 bV
 bV
@@ -39260,7 +39263,7 @@ gU
 gw
 db
 dj
-HX
+dk
 db
 db
 ep
@@ -39526,7 +39529,7 @@ db
 dj
 hz
 dj
-tn
+iS
 hk
 dj
 dj
@@ -39764,7 +39767,7 @@ bV
 bV
 Vh
 Vh
-Wi
+pz
 bV
 ee
 dW
@@ -40316,7 +40319,7 @@ ee
 ee
 ee
 ee
-Wi
+pz
 bV
 bV
 bV
@@ -40539,14 +40542,14 @@ bV
 bV
 ee
 db
-jm
+dG
 dj
 ep
 db
 db
 db
 db
-hd
+RJ
 dj
 hk
 gU
@@ -40815,7 +40818,7 @@ db
 db
 dj
 dj
-AS
+iF
 db
 ee
 bV
@@ -41090,7 +41093,7 @@ bV
 bV
 ud
 bV
-Wi
+pz
 bV
 ee
 ee
@@ -41319,7 +41322,7 @@ db
 GC
 db
 db
-AS
+iF
 db
 ep
 dj
@@ -41589,7 +41592,7 @@ db
 db
 ee
 ee
-Wi
+pz
 ud
 Un
 Un
@@ -41601,7 +41604,7 @@ ee
 ee
 Lo
 bV
-Wi
+pz
 bV
 bV
 od
@@ -41850,7 +41853,7 @@ ud
 TY
 Py
 Un
-zv
+PI
 bV
 ee
 ee
@@ -42873,7 +42876,7 @@ Vh
 Vh
 Vh
 Vh
-Wr
+Se
 Vh
 bV
 bV
@@ -45195,7 +45198,7 @@ ko
 bV
 bV
 bV
-pA
+Jn
 ee
 ee
 Tu

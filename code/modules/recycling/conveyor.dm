@@ -40,7 +40,8 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 /obj/machinery/conveyor/Initialize(mapload, new_dir, new_id)
 	. = ..()
 	AddElement(/datum/element/footstep_override, priority = STEP_SOUND_CONVEYOR_PRIORITY)
-	AddElement(/datum/element/give_turf_traits, string_list(list(TRAIT_TURF_IGNORE_SLOWDOWN)))
+	var/static/list/give_turf_traits = list(TRAIT_TURF_IGNORE_SLOWDOWN)
+	AddElement(/datum/element/give_turf_traits, give_turf_traits)
 	register_context()
 
 	if(new_dir)
@@ -445,33 +446,17 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	else
 		position = CONVEYOR_OFF
 
-/obj/machinery/conveyor_switch/proc/on_user_activation(mob/user, direction)
+/// Called when a user clicks on this switch with an open hand.
+/obj/machinery/conveyor_switch/attack_hand(mob/living/user, list/modifiers)
 	add_fingerprint(user)
-	update_position(direction)
+	if(LAZYACCESS(modifiers, RIGHT_CLICK))
+		update_position(CONVEYOR_BACKWARDS)
+	else
+		update_position(CONVEYOR_FORWARD)
 	update_appearance()
 	update_linked_conveyors()
 	update_linked_switches()
-
-/// Called when a user clicks on this switch with an open hand.
-/obj/machinery/conveyor_switch/attack_hand(mob/user, list/modifiers)
-	. = ..()
-	on_user_activation(user, CONVEYOR_FORWARD)
-
-/obj/machinery/conveyor_switch/attack_hand_secondary(mob/user, list/modifiers)
-	on_user_activation(user, CONVEYOR_BACKWARDS)
-	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-
-/obj/machinery/conveyor_switch/attack_ai(mob/user)
-	return attack_hand(user)
-
-/obj/machinery/conveyor_switch/attack_ai_secondary(mob/user, list/modifiers)
-	return attack_hand_secondary(user, modifiers)
-
-/obj/machinery/conveyor_switch/attack_robot(mob/user)
-	return attack_hand(user)
-
-/obj/machinery/conveyor_switch/attack_robot_secondary(mob/user, list/modifiers)
-	return attack_hand_secondary(user, modifiers)
+	return TRUE
 
 /obj/machinery/conveyor_switch/attackby(obj/item/attacking_item, mob/user, params)
 	if(is_wire_tool(attacking_item))

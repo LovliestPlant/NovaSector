@@ -1,4 +1,5 @@
 import { BooleanLike } from 'common/react';
+import { multiline } from 'common/string';
 import { ReactNode } from 'react';
 
 import { useBackend, useLocalState } from '../backend';
@@ -339,7 +340,7 @@ const Loadouts = (props) => {
             name="The Classic Wizard"
             icon="fire"
             author="Archchancellor Gray"
-            blurb={`
+            blurb={multiline`
                 This is the classic wizard, crazy popular in
                 the 2550's. Comes with Fireball, Magic Missile,
                 Ei Nath, and Ethereal Jaunt. The key here is that
@@ -352,7 +353,7 @@ const Loadouts = (props) => {
             loadoutId="loadout_hammer"
             loadoutColor="green"
             author="Jegudiel Worldshaker"
-            blurb={`
+            blurb={multiline`
                 The power of the mighty Mjolnir! Best not to lose it.
                 This loadout has Summon Item, Mutate, Blink, Force Wall,
                 Tesla Blast, and Mjolnir. Mutate is your utility in this case:
@@ -369,7 +370,7 @@ const Loadouts = (props) => {
             loadoutId="loadout_army"
             loadoutColor="yellow"
             author="Prospero Spellstone"
-            blurb={`
+            blurb={multiline`
                 Why kill when others will gladly do it for you?
                 Embrace chaos with your kit: Soulshards, Staff of Change,
                 Necro Stone, Teleport, and Jaunt! Remember, no offense spells!
@@ -381,7 +382,7 @@ const Loadouts = (props) => {
             loadoutId="loadout_tap"
             loadoutColor="white"
             author="Tom the Empty"
-            blurb={`
+            blurb={multiline`
                 Embrace the dark, and tap into your soul.
                 You can recharge very long recharge spells
                 like Ei Nath by jumping into new bodies with

@@ -81,9 +81,6 @@
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/blackmarket_burst)
 "mP" = (
@@ -117,10 +114,12 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/blackmarket_burst)
 "pM" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/blackmarket_burst)
 "rE" = (
@@ -171,6 +170,22 @@
 	dir = 1
 	},
 /obj/item/storage/toolbox/mechanical,
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/blackmarket_burst)
+"wE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 2
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/shuttle/cargo,
+/area/shuttle/blackmarket_burst)
+"xQ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/shuttle/cargo,
 /area/shuttle/blackmarket_burst)
 "yt" = (
@@ -236,8 +251,8 @@
 /turf/open/floor/engine,
 /area/shuttle/blackmarket_burst)
 "EO" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/blackmarket_burst)
 "Fr" = (
@@ -304,7 +319,7 @@
 /turf/template_noop,
 /area/template_noop)
 "NC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/shuttle/ferry,
 /area/shuttle/blackmarket_burst)
 "Ov" = (
@@ -391,6 +406,9 @@
 "VZ" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/shuttle/ferry,
@@ -493,10 +511,10 @@ ZW
 GO
 pM
 RP
-Tk
+xQ
 Gs
 Tk
-Tk
+wE
 Tk
 OB
 zH

@@ -250,11 +250,6 @@
 	icon_state = "succubus"
 	color_src = USE_MATRIXED_COLORS
 
-/datum/sprite_accessory/wings/mammal/manta
-	name = "Manta Ray"
-	icon_state = "manta"
-	color_src = USE_MATRIXED_COLORS
-
 /datum/sprite_accessory/wings/mammal/tiny
 	color_src = USE_ONE_COLOR
 

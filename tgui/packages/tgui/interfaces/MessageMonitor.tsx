@@ -1,7 +1,6 @@
 import { BooleanLike } from 'common/react';
-import { Dispatch, SetStateAction, useState } from 'react';
 
-import { useBackend } from '../backend';
+import { useBackend, useLocalState } from '../backend';
 import {
   Box,
   Button,
@@ -161,12 +160,13 @@ const HackedScreen = (props) => {
   );
 };
 
-const MainScreenAuth = (props: AuthScreenProps) => {
-  const { auth_password, setPassword } = props;
-
+const MainScreenAuth = (props) => {
   const { act, data } = useBackend<Data>();
-  const { status, is_malf } = data;
-
+  const { status, is_malf, password } = data;
+  const [auth_password, setPassword] = useLocalState(
+    'input_password',
+    password,
+  );
   return (
     <>
       <Stack.Item>
@@ -260,15 +260,13 @@ const MainScreenAuth = (props: AuthScreenProps) => {
   );
 };
 
-type AuthScreenProps = {
-  auth_password: string;
-  setPassword: Dispatch<SetStateAction<string>>;
-};
-
-const MainScreenNotAuth = (props: AuthScreenProps) => {
-  const { auth_password, setPassword } = props;
+const MainScreenNotAuth = (props) => {
   const { act, data } = useBackend<Data>();
-  const { status, is_malf } = data;
+  const { status, is_malf, password } = data;
+  const [auth_password, setPassword] = useLocalState(
+    'input_password',
+    password,
+  );
 
   return (
     <>
@@ -321,24 +319,11 @@ const MainScreenNotAuth = (props: AuthScreenProps) => {
 };
 
 const MainScreen = (props) => {
-  const { data } = useBackend<Data>();
-  const { auth, password } = data;
-
-  const [auth_password, setPassword] = useState(password);
-
+  const { act, data } = useBackend<Data>();
+  const { auth } = data;
   return (
     <Stack fill vertical>
-      {auth ? (
-        <MainScreenAuth
-          auth_password={auth_password}
-          setPassword={setPassword}
-        />
-      ) : (
-        <MainScreenNotAuth
-          auth_password={auth_password}
-          setPassword={setPassword}
-        />
-      )}
+      {auth ? <MainScreenAuth /> : <MainScreenNotAuth />}
     </Stack>
   );
 };

@@ -6,7 +6,7 @@ MODULE ID: STATION_TRAITS
 
 ### Description:
 
-Nova changes to the roundstart station traits
+Skyrat changes to the roundstart station traits
 
 ### TG Proc Changes:
 

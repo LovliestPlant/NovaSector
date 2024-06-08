@@ -60,9 +60,6 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	var/datum/spawners_menu/spawners_menu
 	var/datum/minigames_menu/minigames_menu
 
-	/// The POI we're orbiting (orbit menu)
-	var/orbiting_ref
-
 /mob/dead/observer/Initialize(mapload)
 	set_invisibility(GLOB.observer_default_invisibility)
 
@@ -92,10 +89,15 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 		gender = body.gender
 		if(body.mind && body.mind.name)
-			name = body.mind.ghostname || body.mind.name
+			if(body.mind.ghostname)
+				name = body.mind.ghostname
+			else
+				name = body.mind.name
 		else
-			name = body.real_name || generate_random_mob_name(gender)
-
+			if(body.real_name)
+				name = body.real_name
+			else
+				name = random_unique_name(gender)
 
 		mind = body.mind //we don't transfer the mind but we keep a reference to it.
 
@@ -123,8 +125,8 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 	abstract_move(T)
 
-	//To prevent nameless ghosts
-	name ||= generate_random_mob_name(FALSE)
+	if(!name) //To prevent nameless ghosts
+		name = random_unique_name(gender)
 	real_name = name
 
 	if(!fun_verbs)
@@ -850,7 +852,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	client.prefs.apply_character_randomization_prefs()
 
 	var/species_type = client.prefs.read_preference(/datum/preference/choiced/species)
-	var/datum/species/species = GLOB.species_prototypes[species_type]
+	var/datum/species/species = new species_type
 	if(species.check_head_flags(HEAD_HAIR))
 		hairstyle = client.prefs.read_preference(/datum/preference/choiced/hairstyle)
 		hair_color = ghostify_color(client.prefs.read_preference(/datum/preference/color/hair_color))
@@ -858,6 +860,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(species.check_head_flags(HEAD_FACIAL_HAIR))
 		facial_hairstyle = client.prefs.read_preference(/datum/preference/choiced/facial_hairstyle)
 		facial_hair_color = ghostify_color(client.prefs.read_preference(/datum/preference/color/facial_hair_color))
+
+	qdel(species)
 
 	update_appearance()
 
@@ -1094,10 +1098,3 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!prefs || (client?.combo_hud_enabled && prefs.toggles & COMBOHUD_LIGHTING))
 		return ..()
 	return GLOB.ghost_lighting_options[prefs.read_preference(/datum/preference/choiced/ghost_lighting)]
-
-
-/// Called when we exit the orbiting state
-/mob/dead/observer/proc/on_deorbit(datum/source)
-	SIGNAL_HANDLER
-
-	orbiting_ref = null

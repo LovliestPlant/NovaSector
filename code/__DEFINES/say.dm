@@ -30,9 +30,9 @@
 #define MODE_WHISPER "whisper"
 #define MODE_WHISPER_CRIT "whispercrit"
 
-//NOVA custom verb
+//SKYRAT custom verb
 #define MODE_CUSTOM_SAY "custom_say"
-//NOVA custom sayverb end.
+//SKYRAT custom sayverb end.
 
 #define MODE_DEPARTMENT "department"
 #define MODE_KEY_DEPARTMENT "h"

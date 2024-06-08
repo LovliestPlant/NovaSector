@@ -29,7 +29,7 @@
 		"snout" = list("Sharp + Light", TRUE),
 		"spines" = list("None", FALSE),
 		"frills" = list("None", FALSE),
-		"horns" = list("Curled", FALSE),
+		"horns" = list("Curled", TRUE),
 		"body_markings" = list("Smooth Belly", TRUE),
 		"legs" = list("Normal Legs", FALSE),
 	)

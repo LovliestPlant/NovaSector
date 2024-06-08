@@ -344,7 +344,6 @@
 		"comp_get_column",
 		"comp_gps",
 		"comp_health",
-		"comp_health_state",
 		"comp_hear",
 		"comp_id_access_reader",
 		"comp_id_getter",
@@ -369,7 +368,6 @@
 		"comp_not",
 		"comp_ntnet_receive",
 		"comp_ntnet_send",
-		"comp_ntnet_send_list_literal",
 		"comp_pinpointer",
 		"comp_pressuresensor",
 		"comp_radio",
@@ -388,7 +386,6 @@
 		"comp_tempsensor",
 		"comp_textcase",
 		"comp_timepiece",
-		"comp_toggle",
 		"comp_tonumber",
 		"comp_tostring",
 		"comp_trigonometry",
@@ -507,18 +504,6 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
 	discount_experiments = list(/datum/experiment/scanning/random/cytology = 3000) //Big discount to reinforce doing it.
-
-/datum/techweb_node/marine_util
-	id = "marine_util"
-	display_name = "Marine Utility"
-	description = "Fish are nice to look at and all, but they can be put to use."
-	prereq_ids = list("bio_process")
-	design_ids = list(
-		"bioelec_gen",
-	)
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4000)
-	// only available if you've done the first fishing experiment (thus unlocking fishing tech), but not a strict requirement to get the tech
-	discount_experiments = list(/datum/experiment/scanning/fish/second = 3000)
 
 /////////////////////////Advanced Surgery/////////////////////////
 
@@ -1112,7 +1097,6 @@
 		"maintain_module",
 		"liveandletlive_module",
 		"reporter_module",
-		"yesman_module",
 		"hulkamania_module",
 		"peacekeeper_module",
 		"overlord_module",

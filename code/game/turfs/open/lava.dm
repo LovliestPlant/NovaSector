@@ -42,7 +42,6 @@
 	var/fish_source_type = /datum/fish_source/lavaland
 	/// The color we use for our immersion overlay
 	var/immerse_overlay_color = "#a15e1b"
-	rust_resistance = RUST_RESISTANCE_ABSOLUTE
 
 /turf/open/lava/Initialize(mapload)
 	. = ..()
@@ -168,6 +167,9 @@
 	if(rcd_data["[RCD_DESIGN_MODE]"] == RCD_TURF && rcd_data["[RCD_DESIGN_PATH]"] == /turf/open/floor/plating/rcd)
 		place_on_top(/turf/open/floor/plating, flags = CHANGETURF_INHERIT_AIR)
 		return TRUE
+	return FALSE
+
+/turf/open/lava/rust_heretic_act()
 	return FALSE
 
 /turf/open/lava/singularity_act()

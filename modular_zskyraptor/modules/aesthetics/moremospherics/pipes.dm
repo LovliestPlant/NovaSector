@@ -39,8 +39,3 @@
 
 /obj/effect/overlay/cap_visual
 	icon = 'modular_zskyraptor/modules/aesthetics/moremospherics/icons/pipes/pipes_bitmask.dmi'
-
-/datum/asset/spritesheet/pipes/create_spritesheets()
-	///NAAKAS-LOUNGE EDIT: pipe_item redir to aestheticsmodule
-	for (var/each in list('modular_zskyraptor/modules/aesthetics/moremospherics/icons/pipes/pipe_item.dmi', 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/disposals/icons/disposals.dmi', 'icons/obj/pipes_n_cables/transit_tube.dmi', 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/hydrochem/fluid_ducts.dmi'))
-		InsertAll("", each, GLOB.alldirs)

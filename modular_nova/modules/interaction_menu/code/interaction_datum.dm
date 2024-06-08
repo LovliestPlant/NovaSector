@@ -32,17 +32,17 @@ GLOBAL_LIST_EMPTY_TYPED(interaction_instances, /datum/interaction)
 	var/list/user_required_parts = list()
 	/// What parts do they need(IMPORTANT TO GET IT TO THE CORRECT DEFINE, ORGAN SLOT)?
 	var/list/target_required_parts = list()
-	/// The amount of pleasure the target receives from this interaciton.
+	/// The amount of pleasure the target recieves from this interaciton.
 	var/target_pleasure = 0
-	/// The amount of arousal the target receives from this interaction.
+	/// The amount of arousal the target recieves from this interaction.
 	var/target_arousal = 0
-	/// The amount of pain the target receives.
+	/// The amount of pain the target recieves.
 	var/target_pain = 0
-	/// The amount of pleasure the user receives.
+	/// The amount of pleasure the user recieves.
 	var/user_pleasure = 0
-	/// The amount of arousal the user receives.
+	/// The amount of arousal the user recieves.
 	var/user_arousal = 0
-	/// The amount of pain the user receives.
+	/// The amount of pain the user recieves.
 	var/user_pain = 0
 	/// A list of possible sounds.
 	var/list/sound_possible = list()

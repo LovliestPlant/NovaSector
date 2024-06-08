@@ -236,16 +236,10 @@
 	if(isnull(reference))
 		sharpness = NONE
 		force = initial(force)
-		wound_bonus = 0
-		bare_wound_bonus = 0
-		armour_penetration = 0
 		hitsound = initial(hitsound)
 		usesound = initial(usesound)
 	else
 		force = initial(reference.force)
-		wound_bonus = reference::wound_bonus
-		bare_wound_bonus = reference::bare_wound_bonus
-		armour_penetration = reference::armour_penetration
 		sharpness = initial(reference.sharpness)
 		hitsound = initial(reference.hitsound)
 		usesound = initial(reference.usesound)
@@ -378,10 +372,10 @@
 	RemoveElement(/datum/element/eyestab)
 	switch(tool_behaviour)
 		if(TOOL_SCREWDRIVER)
-			reference = /obj/item/screwdriver
+			reference = /obj/item/crowbar
 			AddElement(/datum/element/eyestab)
 		if(TOOL_CROWBAR)
-			reference = /obj/item/crowbar
+			reference = /obj/item/surgicaldrill
 		if(TOOL_WRENCH)
 			reference = /obj/item/wrench
 		if(TOOL_WIRECUTTER)

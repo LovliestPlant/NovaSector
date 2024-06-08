@@ -97,6 +97,7 @@
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
 	damage = 6
+	weak_against_armour = TRUE
 
 /obj/item/ammo_casing/shotgun/rubbershot
 	name = "rubber shot"
@@ -108,6 +109,7 @@
 	harmful = FALSE
 
 /obj/projectile/bullet/pellet/shotgun_rubbershot
+	weak_against_armour = TRUE
 	stamina = 10
 
 /obj/item/ammo_casing/shotgun/magnum

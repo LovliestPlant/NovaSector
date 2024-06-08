@@ -4,6 +4,7 @@
 	name = "High-Functioning mutant"
 	id = SPECIES_MUTANT
 	meat = /obj/item/food/meat/slab/human/mutant/zombie
+	eyes_icon = 'modular_nova/modules/mutants/icons/mutant_eyes.dmi'
 	inherent_traits = list(
 		TRAIT_NOBLOOD,
 		TRAIT_NODISMEMBER,

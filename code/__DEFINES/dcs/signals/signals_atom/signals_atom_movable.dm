@@ -119,7 +119,3 @@
 
 /// Sent to movables when they are being stolen by a spy: (mob/living/spy, datum/spy_bounty/bounty)
 #define COMSIG_MOVABLE_SPY_STEALING "movable_spy_stealing"
-/// Called when something is pushed by a living mob bumping it: (mob/living/pusher, push force)
-#define COMSIG_MOVABLE_BUMP_PUSHED "movable_bump_pushed"
-	/// Stop it from moving
-	#define COMPONENT_NO_PUSH (1<<0)

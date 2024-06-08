@@ -41,33 +41,15 @@
 /turf/open/update_overlays()
 	if(isnull(damaged_dmi))
 		return ..()
-
 	. = ..()
-
 	if(broken)
-		var/mutable_appearance/broken_appearance = mutable_appearance(damaged_dmi, pick(broken_states()))
-
-		if(smoothing_flags && !(smoothing_flags & SMOOTH_BROKEN_TURF))
-			var/matrix/translation = new
-			translation.Translate(-LARGE_TURF_SMOOTHING_X_OFFSET, -LARGE_TURF_SMOOTHING_Y_OFFSET)
-			broken_appearance.transform = translation
-
-		. += broken_appearance
-
+		. += mutable_appearance(damaged_dmi, pick(broken_states()))
 	else if(burnt)
 		var/list/burnt_states = burnt_states()
-		var/mutable_appearance/burnt_appearance
 		if(burnt_states.len)
-			burnt_appearance = mutable_appearance(damaged_dmi, pick(burnt_states))
+			. += mutable_appearance(damaged_dmi, pick(burnt_states))
 		else
-			burnt_appearance = mutable_appearance(damaged_dmi, pick(broken_states()))
-
-		if(smoothing_flags && !(smoothing_flags & SMOOTH_BURNT_TURF))
-			var/matrix/translation = new
-			translation.Translate(-LARGE_TURF_SMOOTHING_X_OFFSET, -LARGE_TURF_SMOOTHING_Y_OFFSET)
-			burnt_appearance.transform = translation
-
-		. += burnt_appearance
+			. += mutable_appearance(damaged_dmi, pick(broken_states()))
 
 //direction is direction of travel of A
 /turf/open/zPassIn(direction)
@@ -315,7 +297,7 @@
 			I.AddElement(/datum/element/frozen)
 
 	for(var/mob/living/L in contents)
-		if(L.bodytemperature <= 50 && !HAS_TRAIT(L, TRAIT_RESISTCOLD))
+		if(L.bodytemperature <= 50)
 			L.apply_status_effect(/datum/status_effect/freon)
 	MakeSlippery(TURF_WET_PERMAFROST, 50)
 	return TRUE
