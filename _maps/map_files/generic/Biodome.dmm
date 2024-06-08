@@ -3560,6 +3560,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_silver/bedroom)
+"dJh" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/misc/beach/sand,
+/area/centcom/biodome/interior)
 "dJm" = (
 /obj/structure/rack/shelf{
 	dir = 4
@@ -15290,11 +15296,7 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
 "qjt" = (
-/obj/effect/landmark/navigate_destination{
-	location = "Casa De Silver"
-	},
-/turf/open/floor/plating/cobblestone,
-/area/centcom/biodome/interior)
+)
 "qkf" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -19120,8 +19122,8 @@
 /turf/open/floor/iron/smooth,
 /area/centcom/biodome/service/botany)
 "tWH" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
 /obj/effect/landmark/navigate_destination{
 	location = "Haki & Strkka's Lab"
 	},
@@ -56327,7 +56329,7 @@ veP
 sIz
 wkb
 qwO
-icX
+qjt
 pWK
 cWX
 nEH
@@ -65460,7 +65462,7 @@ dop
 dop
 psz
 sEm
-tOp
+tWH
 tOp
 itb
 tOp
@@ -68270,7 +68272,7 @@ qHQ
 qHQ
 mBs
 kfq
-nNR
+dJh
 rbQ
 cbh
 cbh
