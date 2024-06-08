@@ -7,6 +7,8 @@
 	should_draw_greyscale = TRUE
 	head_flags = HEAD_ALL_FEATURES
 
+	eyes_icon = 'modular_zskyraptor/modules/aesthetics/daedmoth/icons/eyes.dmi'
+
 /obj/item/bodypart/chest/moth/naakas
 	icon = null
 	icon_static = null
@@ -57,8 +59,6 @@
 		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/moth/naakas,
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/moth/naakas,
 	)
-
-	eyes_icon = 'modular_zskyraptor/modules/aesthetics/daedmoth/icons/eyes.dmi'
 
 // gonna migrate to using naakas-moth as a separate species
 /*/obj/item/organ/internal/eyes/moth/naakas
