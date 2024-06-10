@@ -1,4 +1,4 @@
-#define CHIP_MAX_STACK 15
+#define CHIP_MAX_STACK 10
 
 // MODULAR ADDITIONS
 /obj/item/toy/cards/deck
@@ -65,12 +65,12 @@
 				return
 			balloon_alert(user, "You add the chip to the stack.")
 			contents += chip
-			update_chip_overlays(chip)
+			update_chip_overlays(chip, contents.len)
 			if (chip.contents.len)
 				for(var/chip_content in chip.contents)
 					chip = chip_content
 					contents += chip
-					update_chip_overlays(chip)
+					update_chip_overlays(chip, contents.len)
 			chip = item
 			chip.contents.Cut()
 		return
@@ -79,11 +79,11 @@
 		return O.attackby(item, user, params)
 	..()
 
-/obj/item/toy/game_chip/proc/update_chip_overlays(obj/item/toy/game_chip/chip)
+/obj/item/toy/game_chip/proc/update_chip_overlays(obj/item/toy/game_chip/chip, index)
 	var/mutable_appearance/chip_visual = mutable_appearance(chip.icon, chip.icon_state)
 	chip_visual.pixel_x = 0
-	chip_visual.pixel_y = 2 * contents.len
-	chip_visual.layer = layer + (contents.len * 0.01)
+	chip_visual.pixel_y = 2 * index
+	chip_visual.layer = layer + (index * 0.01)
 	add_overlay(chip_visual)
 	update_appearance()
 
@@ -129,26 +129,32 @@
 	. = ..()
 	if(contents.len <= 0)
 		return ..()
+	cut_overlays()
+	var/index = 1
 	for(var/obj/item/toy/game_chip/chip in contents)
 		if(chip)
 			if(chip.icon_state == src.icon_state)
 				chip.set_greyscale(colors = src.greyscale_colors)
+				chip.update_appearance()
+				update_chip_overlays(chip, index)
+				index += 1
+	update_appearance()
 
 
 
 /obj/item/toy/game_chip/stack
-	name = "stack of 15 game chips"
+	name = "stack of 10 game chips"
 
 /obj/item/toy/game_chip/stack/Initialize(mapload)
 	. = ..()
 	update_appearance()
 
-	for(var/i in 0 to CHIP_MAX_STACK-2)
+	for(var/i in 1 to CHIP_MAX_STACK-1)
 		var/obj/item/toy/game_chip/chip = new /obj/item/toy/game_chip(src)
 		name = chip.name
 		chip.set_greyscale(colors = src.greyscale_colors)
 		contents += chip
-		update_chip_overlays(chip)
+		update_chip_overlays(chip, i)
 
 	update_appearance()
 

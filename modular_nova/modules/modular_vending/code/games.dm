@@ -4,8 +4,8 @@
 			"name" = "Cards",
 			"icon" = "diamond",
 			"products" = list(
-				/obj/item/toy/cards/deck/neon = 5,
-				/obj/item/toy/game_chip/stack = 20,
+				/obj/item/toy/cards/deck/neon = 10,
+				/obj/item/toy/game_chip/stack = 50,
 			),
 		), // NAAKAS-LOUNGE ADDITION END
 		list(
