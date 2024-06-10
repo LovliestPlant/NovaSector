@@ -15295,8 +15295,6 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"qjt" = (
-)
 "qkf" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -16449,6 +16447,26 @@
 /area/centcom/biodome/security)
 "rpa" = (
 /obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/toy/cards/deck/neon{
+	pixel_y = 2;
+	pixel_x = -5;
+	greyscale_colors = "#00AAFF#AA1100#FFAA00#AA00FF#00FFFF";
+	name = "meth deck"
+	},
+/obj/item/toy/game_chip/stack{
+	pixel_x = -4;
+	greyscale_colors = "#00AAFF"
+	},
+/obj/item/toy/game_chip/stack{
+	pixel_x = 2;
+	greyscale_colors = "#00AAFF";
+	pixel_y = 5
+	},
+/obj/item/toy/game_chip/stack{
+	pixel_x = 6;
+	greyscale_colors = "#FFAA00";
+	pixel_y = 1
+	},
 /turf/open/floor/iron/smooth_corner{
 	dir = 8;
 	initial_gas_mix = "n2=104;TEMP=293.15"
@@ -56329,7 +56347,7 @@ veP
 sIz
 wkb
 qwO
-qjt
+qwO
 pWK
 cWX
 nEH
