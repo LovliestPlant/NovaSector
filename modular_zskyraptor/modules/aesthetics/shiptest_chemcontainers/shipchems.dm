@@ -64,7 +64,7 @@
 	return ..()
 
 /// Adds alt-clicking to take the cap on or off
-/obj/item/reagent_containers/alt_click_secondary(mob/user)
+/obj/item/reagent_containers/click_alt_secondary(mob/user)
 	. = ..()
 	if(can_have_cap)
 		if(cap_on)

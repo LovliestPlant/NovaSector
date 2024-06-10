@@ -117,7 +117,7 @@
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	return ..()
 
-/obj/item/storage/hypospraykit/alt_click_secondary(mob/user)
+/obj/item/storage/hypospraykit/click_alt_secondary(mob/user)
 	if(attached_hypo != null)
 		if(user.put_in_hands(attached_hypo))
 			balloon_alert(user, "Removed [attached_hypo].")
