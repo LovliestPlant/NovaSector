@@ -171,7 +171,6 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 		RND_CATEGORY_CONSTRUCTION + RND_SUBCATEGORY_CONSTRUCTION_MATERIALS
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
-	maxstack = 50
 
 /datum/design/uraniumrglass_alloy
 	name = "Reinforced Uranium Glass"
@@ -183,7 +182,6 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 		RND_CATEGORY_CONSTRUCTION + RND_SUBCATEGORY_CONSTRUCTION_MATERIALS
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_CARGO | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
-	maxstack = 50
 
 /datum/techweb_node/base/New()
 	design_ids += list(
