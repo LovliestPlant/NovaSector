@@ -124,6 +124,14 @@
 	skin = ""
 	light_color = "#FFFF00"
 
+/obj/machinery/button/transport/tram
+	base_icon_state = "tramctrl"
+	icon_state = "tramctrl"
+	skin_raptsys = "tramctrl"
+	light_mask = "tram-light-mask"
+	skin = ""
+	light_color = "#FFFF00"
+
 /obj/machinery/elevator_control_panel
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/buttons/icons/buttons.dmi'
 	icon_state = "elevpanel_fixed"
