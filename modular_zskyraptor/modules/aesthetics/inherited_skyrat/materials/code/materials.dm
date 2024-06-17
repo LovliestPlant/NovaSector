@@ -84,7 +84,7 @@ GLOBAL_LIST_INIT(uglass_recipes, list ( \
 		return ..()
 
 
-GLOBAL_LIST_INIT(puglass_recipes, list ( \
+GLOBAL_LIST_INIT(urglass_recipes, list ( \
 	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/uranium/unanchored, time = 0.5 SECONDS, on_solid_ground = TRUE, check_direction = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/uranium/fulltile/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile diagonalizing reinforced window", /obj/structure/window/reinforced/uranium/fulltile/diagonal/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
@@ -97,8 +97,8 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 	name = "reinforced uranium glass"
 	desc = "A glass sheet made out of a uranium-silicate alloy and a rod matrix. It looks hopelessly tough and fire-proof!"
 	singular_name = "reinforced uranium glass sheet"
-	icon_state = "sheet-prglass"
-	inhand_icon_state = "sheet-prglass"
+	icon_state = "sheet-urglass"
+	inhand_icon_state = "sheet-urglass"
 	mats_per_unit = list(/datum/material/alloy/uraniumglass=SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.5)
 	armor_type = /datum/armor/sheet_uraniumrglass
 	resistance_flags = ACID_PROOF
@@ -119,7 +119,7 @@ GLOBAL_LIST_INIT(puglass_recipes, list ( \
 
 /obj/item/stack/sheet/uraniumrglass/get_main_recipes()
 	. = ..()
-	. += GLOB.puglass_recipes
+	. += GLOB.urglass_recipes
 
 
 
