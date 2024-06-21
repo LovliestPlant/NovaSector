@@ -445,6 +445,34 @@
 		return ..()
 
 /// Dominatrix time
+/obj/item/borg/apparatus/toy
+	name = "toy storage apparatus"
+	desc = "A special apparatus for storing and manipulating a wide range of toys found in Lustwish vendors."
+	icon_state = "borg_beaker_apparatus"
+	storable = list(
+		/obj/item/clothing/sextoy/,
+	)
+
+/obj/item/borg/apparatus/toy/Initialize(mapload)
+	update_appearance()
+	return ..()
+
+/obj/item/borg/apparatus/toy/update_overlays()
+	. = ..()
+	var/mutable_appearance/arm = mutable_appearance(icon = icon, icon_state = "borg_beaker_apparatus_arm")
+	if(stored)
+		stored.pixel_x = 0
+		stored.pixel_y = 0
+		var/mutable_appearance/stored_copy = new /mutable_appearance(stored)
+		if(istype(stored, /obj/item/clothing/sextoy/))
+			arm.pixel_y = arm.pixel_y - 3
+		stored_copy.layer = FLOAT_LAYER
+		stored_copy.plane = FLOAT_PLANE
+		. += stored_copy
+	else
+		arm.pixel_y = arm.pixel_y - 5
+	. += arm
+
 /obj/item/borg/upgrade/dominatrixmodule
 	name = "borg dominatrix module"
 	desc = "A module that greatly upgrades the ability of borgs to display affection."
@@ -472,6 +500,9 @@
 	var/obj/item/tickle_feather/tickler = new /obj/item/tickle_feather()
 	borg.model.basic_modules += tickler
 	borg.model.add_module(tickler, FALSE, TRUE)
+	var/obj/item/borg/apparatus/toy = new /obj/item/borg/apparatus/toy()
+	borg.model.basic_modules += toy
+	borg.model.add_module(toy, FALSE, TRUE)
 
 /obj/item/borg/upgrade/dominatrixmodule/deactivate(mob/living/silicon/robot/borg, user = usr)
 	. = ..()
@@ -486,3 +517,5 @@
 		borg.model.remove_module(spanker, TRUE)
 	for(var/obj/item/tickle_feather/tickler in borg.model.modules)
 		borg.model.remove_module(tickler, TRUE)
+	for(var/obj/item/borg/apparatus/toy in borg.model.modules)
+		borg.model.remove_module(toy, TRUE)
