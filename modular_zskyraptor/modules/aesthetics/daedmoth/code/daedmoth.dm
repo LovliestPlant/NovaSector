@@ -46,7 +46,6 @@
 	id = SPECIES_MOTH_NAAKAS
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS, /// NAAKAS-LOUNGE EDIT: we're forcing this to the top of the stack to try and avoid fuckery...
-		TRAIT_HAS_MARKINGS,
 		TRAIT_TACKLING_WINGED_ATTACKER,
 		TRAIT_ANTENNAE,
 	)
