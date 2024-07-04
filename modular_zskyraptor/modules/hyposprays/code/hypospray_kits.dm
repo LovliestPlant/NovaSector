@@ -6,13 +6,14 @@
 	worn_icon_state = "healthanalyzer" // Get a better sprite later
 	inhand_icon_state = "medkit"
 	greyscale_config = /datum/greyscale_config/hypokit
-	lefthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_l.dmi'
-	righthand_file = 'modular_zskyraptor/modules/aesthetics/oldnewsurgery/oldnewsurgery_inhand_r.dmi'
+	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
 	// Small hypokits can be pocketed, but don't have much storage.
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_BELT
 	throw_speed = 3
 	throw_range = 7
+	storage_type = /datum/storage/hypospray_kit
 	var/empty = FALSE
 	var/current_case = "firstaid"
 	var/static/list/case_designs
@@ -35,11 +36,6 @@
 	. = ..()
 	if(!length(case_designs))
 		populate_case_designs()
-	atom_storage.max_slots = 7
-	atom_storage.can_hold = typecacheof(list(
-		/obj/item/hypospray/mkii,
-		/obj/item/reagent_containers/cup/vial
-	))
 	update_icon_state()
 	update_icon()
 
@@ -103,9 +99,9 @@
 			var/mutable_appearance/hypo_overlay = mutable_appearance(initial(icon), attached_hypo.icon_state)
 			. += hypo_overlay
 
-/obj/item/storage/hypospraykit/item_interaction_secondary(mob/living/user, obj/item/tool, list/modifiers)
-	if(!istype(tool, /obj/item/hypospray/mkii))
-		return NONE
+/obj/item/storage/hypospraykit/tool_act(mob/living/user, obj/item/tool, list/modifiers)
+	if(!istype(tool, /obj/item/hypospray/mkii) || !LAZYACCESS(modifiers, RIGHT_CLICK))
+		return ..()
 	if(!isnull(attached_hypo))
 		balloon_alert(user, "Mount point full!  Remove [attached_hypo] first!")
 		return ITEM_INTERACT_BLOCKING
@@ -169,7 +165,7 @@
 	return TRUE
 
 
-/obj/item/storage/hypospraykit/click_ctrl_shift(mob/user, obj/item/I)
+/obj/item/storage/hypospraykit/click_ctrl_shift(mob/user)
 	case_menu(user)
 
 //END OF HYPOSPRAY CASE MENU CODE
@@ -190,11 +186,7 @@
 	current_case = "cmo"
 	is_xl = TRUE
 	w_class = WEIGHT_CLASS_NORMAL
-
-/obj/item/storage/hypospraykit/cmo/Initialize(mapload)
-	. = ..()
-	atom_storage.max_slots = 21
-	atom_storage.max_total_storage = 28 //keeps a wiggle room of 7 just in case size weirdness happens
+	storage_type = /datum/storage/hypospray_kit/cmo
 
 /obj/item/storage/hypospraykit/cmo/PopulateContents()
 	if(empty)
@@ -240,6 +232,55 @@
 	new /obj/item/reagent_containers/cup/vial/large/advomni(src)
 	new /obj/item/reagent_containers/cup/vial/large/numbing(src)
 
+/// Boxes of empty hypovials, coming in every style.
+/obj/item/storage/box/vials
+	name = "box of hypovials"
+
+/obj/item/storage/box/vials/PopulateContents()
+	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/small/style))
+		new vialpath(src)
+
+// Ditto, just large vials.
+/obj/item/storage/box/vials/deluxe
+	name = "box of deluxe hypovials"
+
+/obj/item/storage/box/vials/deluxe/PopulateContents()
+	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/large/style))
+		new vialpath(src)
+
+// A box of small hypospray kits, pre-skinned to each variant to remind people what styles are available.
+/obj/item/storage/box/hypospray
+	name = "box of hypospray kits"
+
+/obj/item/storage/box/hypospray/PopulateContents()
+	var/list/case_designs = list("firstaid", "brute", "burn", "toxin", "oxy", "advanced", "buffs")
+	for(var/label in case_designs)
+		var/obj/item/storage/hypospraykit/newkit = new /obj/item/storage/hypospraykit(src)
+		newkit.current_case = label
+		newkit.update_icon_state()
+
+/datum/storage/hypospray_kit
+	max_slots = 7
+
+/datum/storage/hypospray_kit/cmo
+	max_slots = 21
+	max_total_storage = 28 //keeps a wiggle room of 7 just in case size weirdness happens
+
+/datum/storage/hypospray_kit/New(
+	atom/parent,
+	max_slots = src.max_slots,
+	max_specific_storage = src.max_specific_storage,
+	max_total_storage = src.max_total_storage,
+)
+	. = ..()
+	var/static/list/hypokit_holdable = typecacheof(list(
+		/obj/item/hypospray/mkii,
+		/obj/item/reagent_containers/cup/vial
+	))
+	can_hold = hypokit_holdable
+
+
+
 /// Bespoke subtypes for Naaka's Lounge - the Biodome, specifically
 /obj/item/storage/hypospraykit/cmo/combat/naaka
 	name = "the ko's hypospray kit"
@@ -277,32 +318,7 @@
 	new /obj/item/reagent_containers/cup/vial/large/advomni(src)
 	new /obj/item/reagent_containers/cup/vial/large/meth(src)
 
-/// Boxes of empty hypovials, coming in every style.
-/obj/item/storage/box/vials
-	name = "box of hypovials"
 
-/obj/item/storage/box/vials/PopulateContents()
-	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/small/style))
-		new vialpath(src)
-
-// Ditto, just large vials.
-/obj/item/storage/box/vials/deluxe
-	name = "box of deluxe hypovials"
-
-/obj/item/storage/box/vials/deluxe/PopulateContents()
-	for(var/vialpath in subtypesof(/obj/item/reagent_containers/cup/vial/large/style))
-		new vialpath(src)
-
-// A box of small hypospray kits, pre-skinned to each variant to remind people what styles are available.
-/obj/item/storage/box/hypospray
-	name = "box of hypospray kits"
-
-/obj/item/storage/box/hypospray/PopulateContents()
-	var/list/case_designs = list("firstaid", "brute", "burn", "toxin", "oxy", "advanced", "buffs")
-	for(var/label in case_designs)
-		var/obj/item/storage/hypospraykit/newkit = new /obj/item/storage/hypospraykit(src)
-		newkit.current_case = label
-		newkit.update_icon_state()
 
 /datum/greyscale_config/hypokit
 	name = "Hypospray Kit"

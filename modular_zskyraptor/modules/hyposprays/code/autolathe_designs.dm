@@ -1,7 +1,7 @@
 /datum/design/hypovial
 	name = "Hypovial"
 	id = "hypovial"
-	build_type = AUTOLATHE | PROTOLATHE
+	build_type = AUTOLATHE | PROTOLATHE | AWAY_LATHE
 	materials = list(
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 0.5,
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.5,
@@ -13,7 +13,7 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/techweb_node/basic_medical/New()
+/datum/techweb_node/medbay_equip/New()
 	design_ids += list(
 		"hypovial",
 	)
@@ -30,9 +30,9 @@
 	build_path = /obj/item/reagent_containers/cup/vial/large
 
 /datum/design/hypokit
-	name = "Hypospray Kit"
+	name = "Hypospray Case"
 	id = "hypokit"
-	build_type = PROTOLATHE
+	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(
 		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 3,
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT,
@@ -44,16 +44,17 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/techweb_node/biotech/New()
+/datum/techweb_node/chem_synthesis/New()
 	design_ids += list(
 		"large_hypovial",
 		"hypokit",
+		"hypomkii",
 	)
 	return ..()
 
 /// Hyposprays
 /datum/design/hypokit/deluxe
-	name = "Deluxe Hypospray Kit"
+	name = "Deluxe Hypospray Case"
 	id = "hypokit_deluxe"
 	materials = list(
 		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 6,
@@ -63,9 +64,9 @@
 	build_path = /obj/item/storage/hypospraykit/cmo/empty
 
 /datum/design/hypomkii
-	name = "MkII Hypospray"
+	name = "Hypospray Mk. II"
 	id = "hypomkii"
-	build_type = PROTOLATHE
+	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(
 		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 3,
@@ -78,17 +79,17 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/techweb_node/adv_biotech/New()
+/datum/techweb_node/medbay_equip_adv/New()
 	design_ids += list(
 		"hypokit_deluxe",
-		"hypomkii",
+		"hypomkii_advanced",
 	)
 	return ..()
 
 /datum/design/hypomkii/deluxe
-	name = "MkII Hypospray Upgrade Kit"
+	name = "Hypospray Mk. II Deluxe Upgrade"
 	id = "hypomkii_deluxe"
-	build_type = PROTOLATHE
+	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(
 		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 8,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 4,
@@ -97,13 +98,39 @@
 	build_path = /obj/item/device/custom_kit/deluxe_hypo2
 	category = list(
 		RND_CATEGORY_INITIAL,
-		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MEDICAL,
+		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MEDICAL_ADVANCED,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/techweb_node/alien_bio/New()
+/datum/techweb_node/alien_surgery/New()
 	design_ids += list(
 		"hypomkii_deluxe",
+		"hypomkii_advanced",
+	)
+	return ..()
+
+/datum/design/hypomkii/piercing
+	name = "Hypospray Mk. II Advanced"
+	id = "hypomkii_advanced"
+	build_type = PROTOLATHE | AWAY_LATHE
+	materials = list(
+		/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 3,
+		/datum/material/silver = SHEET_MATERIAL_AMOUNT,
+		/datum/material/titanium = SHEET_MATERIAL_AMOUNT,
+	)
+	build_path = /obj/item/hypospray/mkii/piercing
+	category = list(
+		RND_CATEGORY_INITIAL,
+		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MEDICAL_ADVANCED,
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
+
+// Tarkon and similar get enough to work with, but if they want deluxe kits/hypos they still need to trade with the station for 'em.
+/datum/techweb_node/oldstation_surgery/New()
+	design_ids += list(
+		"hypokit",
+		"hypomkii",
 	)
 	return ..()
 
@@ -114,7 +141,7 @@
 /datum/design/pen
 	name = "Pen"
 	id = "pen"
-	build_type = AUTOLATHE
+	build_type = AUTOLATHE | AWAY_LATHE
 	materials = list(
 		/datum/material/iron = SMALL_MATERIAL_AMOUNT,
 		/datum/material/glass = SMALL_MATERIAL_AMOUNT,

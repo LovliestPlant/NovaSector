@@ -38,7 +38,7 @@
 	. = ..()
 	. += span_notice("Ctrl-Shift-Click to reskin or set a custom color.")
 
-/obj/item/reagent_containers/cup/vial/click_ctrl_shift(mob/user, obj/item/I)
+/obj/item/reagent_containers/cup/vial/click_ctrl_shift(mob/user)
 	current_skin = null
 	icon_state = initial(icon_state)
 	icon = initial(icon)
@@ -204,11 +204,6 @@
 	icon_state = "hypoviallarge-generic"
 	list_reagents = list(/datum/reagent/medicine/mine_salve = 50, /datum/reagent/medicine/morphine = 50)
 
-/obj/item/reagent_containers/cup/vial/large/meth
-	name = "Meth"
-	icon_state = "hypoviallarge"
-	list_reagents = list(/datum/reagent/drug/methamphetamine = 40, /datum/reagent/medicine/mannitol = 60)
-
 //Some bespoke helper types for preloaded paramedic kits.
 /obj/item/reagent_containers/cup/vial/small/libital
 	name = "brute hypovial (libital)"
@@ -249,6 +244,13 @@
 /obj/item/reagent_containers/cup/vial/small/atropine/Initialize(mapload)
 	. = ..()
 	reagents.add_reagent(reagent_type = /datum/reagent/medicine/atropine, amount = 50, added_purity = 1)
+
+
+
+/obj/item/reagent_containers/cup/vial/large/meth
+	name = "Meth"
+	icon_state = "hypoviallarge"
+	list_reagents = list(/datum/reagent/drug/methamphetamine = 40, /datum/reagent/medicine/mannitol = 60)
 
 /datum/greyscale_config/hypovial
 	name = "Hypovial"
