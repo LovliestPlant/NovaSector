@@ -312,7 +312,6 @@
 /obj/item/repainting_kit/pre_attack(atom/attacked_atom, mob/living/user, params)
 	repainting_item = null //force it to null if needed
 	regreyscale_item = null
-	var/rval = ..()
 	if(!istype(attacked_atom, /obj/item/))
 		return ..()
 	if(istype(attacked_atom, /obj/item/mod/control))
@@ -334,7 +333,10 @@
 			starting_colors=initial(fake_atom.greyscale_colors)
 		)
 		menu.ui_interact(user)
-	return rval
+		return TRUE
+	else
+		return ..()
+	return ..()
 
 /obj/item/repainting_kit/proc/recolor_gags(datum/greyscale_modify_menu/menu)
 	regreyscale_item.set_greyscale(menu.split_colors)
@@ -346,7 +348,7 @@
 		return ..()
 	var/obj/item/smacked_item = attacked_atom
 	if(repainting_item)
-		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+		repainting_item = NULL
 	repainting_item = smacked_item
 
 	proxy_view = new()
