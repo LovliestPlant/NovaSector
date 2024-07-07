@@ -348,7 +348,7 @@
 		return ..()
 	var/obj/item/smacked_item = attacked_atom
 	if(repainting_item)
-		repainting_item = NULL
+		repainting_item = null
 	repainting_item = smacked_item
 
 	proxy_view = new()
