@@ -74,7 +74,7 @@
 			"blend_mode": "overlay",
 			"color_ids": [ 2 ]
 		}
-	]
+	],
 	"hypo2_tactical": [
 		{
 			"type": "icon_state",
