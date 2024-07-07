@@ -76,6 +76,14 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko)
+"agi" = (
+/obj/machinery/door/airlock/hatch{
+	name = "Nuvi's Abode"
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/nuviship)
 "ahc" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1785,6 +1793,16 @@
 /obj/effect/spawner/liquids_spawner,
 /turf/open/floor/iron/pool,
 /area/centcom/biodome/apartments/apartment2)
+"bNv" = (
+/obj/structure/mineral_door/wood{
+	name = "Casa de Formes"
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/fans/tiny,
+/turf/open/floor/wood/large,
+/area/centcom/biodome/homes/casa_de_formes)
 "bNI" = (
 /obj/structure/window/plasma/fulltile,
 /obj/structure/grille,
@@ -5405,13 +5423,19 @@
 "fTi" = (
 /obj/structure/table/wood,
 /obj/item/food/baked_kiri{
-	pixel_x = -5
+	pixel_x = -8
+	},
+/obj/item/food/baked_kiri,
+/obj/item/food/baked_kiri{
+	pixel_y = 4;
+	pixel_x = -4
 	},
 /obj/item/food/baked_kiri{
-	pixel_x = 5
+	pixel_x = 8
 	},
 /obj/item/food/baked_kiri{
-	pixel_y = 4
+	pixel_y = 4;
+	pixel_x = 4
 	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
@@ -6067,6 +6091,11 @@
 	},
 /turf/open/misc/grass/planet,
 /area/centcom/biodome/interior)
+"gBF" = (
+/obj/machinery/light/directional/south,
+/obj/machinery/flatpacker,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/science/robotics)
 "gBU" = (
 /obj/structure/flora/tree/jungle/style_random,
 /obj/structure/flora/tree/jungle/style_random,
@@ -6394,6 +6423,39 @@
 /area/centcom/biodome/science/genetics)
 "gSq" = (
 /obj/structure/table/wood,
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 9
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 9;
+	pixel_x = 7
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 9;
+	pixel_x = -7
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 4;
+	pixel_x = -7
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 4
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = 4;
+	pixel_x = 7
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = -1;
+	pixel_x = -7
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = -1
+	},
+/obj/item/food/kiri_jellypuff{
+	pixel_y = -1;
+	pixel_x = 7
+	},
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
 "gSG" = (
@@ -7211,8 +7273,20 @@
 /area/centcom/biodome/science/genetics)
 "hKo" = (
 /obj/structure/table/wood,
-/obj/item/food/bluefeather_crisps_and_dip{
-	pixel_y = 4
+/obj/item/food/baked_muli{
+	pixel_x = -8
+	},
+/obj/item/food/baked_muli,
+/obj/item/food/baked_muli{
+	pixel_x = 8
+	},
+/obj/item/food/baked_muli{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/food/baked_muli{
+	pixel_x = 4;
+	pixel_y = 3
 	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/centcom/biodome/service/diner)
@@ -7286,6 +7360,17 @@
 /area/centcom/biodome/homes/casa_de_tchiko/bed2)
 "hNs" = (
 /obj/structure/table/wood,
+/obj/item/food/sweet_piru_noodles{
+	pixel_y = 13;
+	pixel_x = -8
+	},
+/obj/item/food/sweet_piru_noodles{
+	pixel_y = 13;
+	pixel_x = 8
+	},
+/obj/item/food/sweet_piru_noodles{
+	pixel_y = 7
+	},
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -3
 	},
@@ -16964,13 +17049,24 @@
 "rDY" = (
 /obj/machinery/airalarm/directional/east,
 /obj/structure/table/wood,
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/item/food/stuffed_muli_pod{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/food/stuffed_muli_pod{
+	pixel_y = 11
+	},
+/obj/item/food/stuffed_muli_pod{
+	pixel_y = 11;
+	pixel_x = 8
+	},
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -3
 	},
 /obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = 3
 	},
-/obj/effect/mapping_helpers/airalarm/all_access,
 /turf/open/floor/iron/cafeteria,
 /area/centcom/biodome/service/diner)
 "rEa" = (
@@ -17562,7 +17658,9 @@
 /turf/open/floor/iron,
 /area/centcom/biodome/arrivals/pad2)
 "sfa" = (
-/obj/machinery/door/airlock/mining,
+/obj/machinery/door/airlock/mining{
+	name = "Casa de Korna-Rengo"
+	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/bamboo,
@@ -18464,6 +18562,14 @@
 "sTX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/table/wood,
+/obj/item/food/kiri_curry{
+	pixel_y = 13;
+	pixel_x = -8
+	},
+/obj/item/food/kiri_curry{
+	pixel_y = 13;
+	pixel_x = 8
+	},
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -3
 	},
@@ -22114,17 +22220,17 @@
 	pixel_y = 12;
 	pixel_x = -6
 	},
-/obj/item/storage/backpack/duffelbag/deforest_paramedic{
-	pixel_y = 8;
-	pixel_x = 3
+/obj/item/storage/backpack/duffelbag/deforest_paramedic/stocked{
+	pixel_x = 3;
+	pixel_y = 8
 	},
 /obj/item/storage/backpack/duffelbag/deforest_medkit/stocked{
-	pixel_y = 3;
+	pixel_y = 4;
 	pixel_x = -6
 	},
-/obj/item/storage/backpack/duffelbag/deforest_paramedic{
-	pixel_y = -1;
-	pixel_x = 3
+/obj/item/storage/backpack/duffelbag/deforest_paramedic/stocked{
+	pixel_x = 3;
+	pixel_y = 0
 	},
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical)
@@ -46225,7 +46331,7 @@ eZU
 uJj
 uJj
 gAe
-xsG
+bNv
 uZD
 uZD
 rxY
@@ -46257,7 +46363,7 @@ tcQ
 hLI
 wgb
 wgb
-nwM
+gBF
 oGq
 qXg
 cXj
@@ -67299,7 +67405,7 @@ eem
 wgt
 xLw
 oPQ
-vka
+agi
 xLw
 xLw
 wgt
