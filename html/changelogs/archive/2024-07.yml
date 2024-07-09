@@ -413,3 +413,161 @@
   zeroisthebiggay:
   - bugfix: the warm and heart sweater now have `body_parts_covered = CHEST|ARMS`
       so your boobs don't hang out
+2024-07-07:
+  CandleJaxx:
+  - rscadd: Hairstylists across the Frontier have figured out how to use their trimmers
+      more effectively!
+  NovaBot13:
+  - bugfix: Fixed the augmented organs experiment
+  - bugfix: 'Techweb: Moved upgraded cyber organs to tier 3 from tier 4'
+  - qol: 'Techweb: Added fully augmented android scan discount experiment for Advanced
+      Cybernetic Organs techweb node'
+  - rscadd: Added Pipe Scrubber portable atmos machine
+  - bugfix: fixed ninja's adrenaline boost module not being rechargable
+  - bugfix: Firefighting backpack tank nozzle can be used to hit objects and destroy
+      atmos resin again.
+  - rscadd: Added flatpacker & multitool to all R&D labs
+  - bugfix: 'Fixed the following shuttles flying in unexpected directions: Pubby escape
+      pod,  Humpback emergency shuttle, Pubby monastery shuttle, Birdboat emergency
+      shuttle, Birdshot emergency shuttle'
+  - bugfix: you can craft the singulo hammer with either a supermatter engine/shard
+      again
+  - bugfix: fixed Birdshot bar and surrounding areas not properly connected to the
+      power grid.
+  - qol: portable scubber, pump and pipe scrubber are buildable as any other machines
+  Sosmaster9000:
+  - balance: 'Xenobiologists now have a BZ-filled containment pen. Don''t breathe
+      that!
+
+      balance:Some items which either cannot be printed elsewhere or are part of game
+      progression (e.g. teleporter endpoints and, of course, Nanners) have been moved.
+      Alien Spawnpoints are in the same spot.'
+  vinylspiders:
+  - bugfix: fixes rodstoppers leaving a permanent (inert) bag of holding tear effect
+  - qol: flashbangs will now give a warning if you attempt to trigger them during
+      green alert as sec/command. Company policy forbids their use below blue alert
+      but you can CTRL+Click to blatantly disobey this and face IC consequences. There
+      is a hotkey for this as well, CTRL+Z.
+  - bugfix: fixed detective's id not imprinting onto pda at roundstart, same with
+      bouncer and departmental security officers
+  wivernshy:
+  - rscadd: '2 new (alt) hairstyles: Fluffy Bangs and Diagonal Bangs Alt'
+  yooriss:
+  - balance: Characters now start with 10 paychecks in their bank account instead
+      of 5, functionally doubling the credits people enter the round with.
+  - balance: It is no longer possible to sell materials to the Galactic Materials
+      Market. Purchasing remains untouched.
+  - rscadd: The crates of 50 iron, 50 glass, and 20/50 plasteel have returned to cargo
+      terminals to help cover materials shortages during low population rounds and
+      facilitate construction projects for the rest of the crew.
+  - code_imp: Price minimum/maximum magic numbers in the GMM subsystem have been pulled
+      out into defines to make tweaking buy/sell prices easier in the future.
+2024-07-08:
+  CliffracerX:
+  - image: tiny adjustment to GAGS hyposprays - buttons on color 1
+  Jolly:
+  - rscadd: '[Ouroboros] Something writhes deep within Ouroboros.. but what is it?'
+  - bugfix: Our maps (Ouroboros, Blueshift, Voidraptor) now have pipe scrubbers in
+      atmos and ordnance!
+  LT3:
+  - balance: Advanced Medbay Equipment research node lowered to tier 3
+  - balance: Advanced Medbay Equipment now requires haloperidol scan experiment
+  - balance: Haloperidol and cryostylane experiments can be performed roundstart
+  - balance: Cryostasis research node raised to tier 4
+  - balance: Cryostasis now has Fusion instead of Controlled Plasma as a prerequisite
+  - balance: Cryostasis cryostylane scan is now a discount experiment
+  - balance: Crystallizer moved from Controlled Plasma to Fusion
+  Melbert:
+  - qol: Vending Machines have a search bar
+  NovaBot13:
+  - bugfix: You require breathing once more.
+  - bugfix: raptors don't easily stress out in lavaland environments
+  - bugfix: ' Birdshot botany is resized. bar is also smaller.'
+  - bugfix: Birdshot public shrine now uses the correct dirt. (Goodbye chasms)
+  - bugfix: defibrillator no longer has an abstract cell
+  - code_imp: defibrillator attackby replaced with item_interaction
+  - rscadd: 12% chance of a ouija board spawning in the chaplain office. Wawastation
+      always has one.
+  - bugfix: Fixed the bluescreen while setting a custom font in tgui panel
+  - rscadd: Added the designer EVA suit, a unique pirate hardsuit for Silverscales.
+  - balance: Increased the equipment available to Silverscales
+  - image: Sprites for the designer EVA suit
+  - bugfix: Fixes hacker alias name preference not working.
+  - bugfix: ' Examining a fishing spot twice with sufficiently high fishing skill
+      (or the skillchip) will get you a list of fishes that can ACTUALLY be caught'
+  - bugfix: Fixed the orbit icons scrolling sometimes
+  - qol: Mood more promptly reacts to the beauty of an area as it changes, and not
+      just when changing areas.
+  - rscadd: Coroners (and potentially other mobs with the morbid trait), now like
+      degradated-looking rooms.
+  - spellcheck: Renamed the organ thrower module to the 'organizer'
+  - spellcheck: Made its description more accurate. Did you know it instantly replaces
+      up to 5 organs in active surgery?
+  - balance: All jetpacks are now modsuit jetpack speed
+  - rscdel: Adv. Ion Jetpack module has been removed
+  - bugfix: Knight helmets no longer burn as though made of cloth.
+  - bugfix: Hoverboards properly dysfunction in space without any kind of support
+      underneath them.
+  - rscadd: There's a previously undiscovered variant of a nullrod, recently revealed
+      from the depths of the skating rink..
+  - balance: You can only stun someone with a shove if they have been shoved into
+      objects or people, or have been hit by telescopic batons, contractor batons
+      or the Mansus Grasp.
+  - balance: If someone is knocked to the floor, however, you can still disarm them
+      of any object with a shove.
+  - bugfix: Added a forgotten firelock on second floor of wawa
+  - refactor: Vat grower is a normal machine now that doesn't need plumbing
+  - qol: Cytology petri dish smartfridge starts with 3 random samples
+  - rscadd: Added protein powder condiment bottle, available in the cytology supplies
+      locker and the cargo pack
+  - rscdel: Removed science variant of plumbing RCD
+  - bugfix: Fixed a bug when machines without stock parts didn't spawn frames on deconstruction
+  - bugfix: Fixed vat grower not growing
+  - rscadd: Aquariums now influence the beauty score of an area based on their contents.
+  - rscadd: Morbid people now get a positive moodlet when admiring an aquarium full
+      of dead fish, and a negative one when fish are alive.
+  - bugfix: you may now use a legion core on an elite tumor
+  Rhials:
+  - admin: Quiet-announce random events still announce to admins and can therefore
+      be rerolled.
+  lorwp:
+  - rscadd: using 'skibidi' as a chaplain deity now gives you brain damage
+2024-07-09:
+  NovaBot13:
+  - qol: You can now copy blast door controller IDs directly onto shutters/blast doors,
+      avoiding the need to open a menu for each one. Additionally, this lets you fix
+      sets of roundstart shutters without needing to change the IDs on all of the
+      ones in that set.
+  - admin: Added a config that regulares random spawners weights.
+  - refactor: refactored `GetExactComponent` to be 1641 compatible
+  - bugfix: Fixed space heater heating power and power consumption
+  - balance: 'Demon: bloodcrawl now deal damage when you using it.'
+  - balance: 'Demon: demon can eat only carbon human beings.'
+  - qol: the path to the wawastation chemsat is more clear now
+  - code_imp: Added the subtype vendor which lets admins and coders vend subtypes
+      of a path
+  - code_imp: Added the vendor and both varieties of omnitool to runtime station
+  - rscadd: Night vision goggles now subtly tint your screen.
+  - rscadd: You can turn your night vision goggles off. Doing so removes the tint
+      and the eye protection malus.
+  - bugfix: Fixed glass shards generated from falling vending machines or tackling
+      windows not being able to embed into anyone.
+  - refactor: Refactored embedding code to use datums instead of bespoke elements
+      and ugly associated lists.
+  - bugfix: Grass turfs will render properly now. Reworked how floors render, please
+      report any bugs!
+  - bugfix: Cameras now properly capture lighting
+  - bugfix: The layering seen in photos should better match the actual game
+  - qol: blood bros get a hud to see eachother
+  - code_imp: teambased antagonists may not see the HUDs of other teams
+  - image: You can now flip your security helmet's visor up with alt-click! However,
+      doing so will (obviously) expose your eyes.
+  - bugfix: Fixed missing wires leading to the port hallway APC on Birdshot.
+  - balance: Bait quality now influences the probabilities of getting a rarer fish
+      compared to the most common one(s)
+  - bugfix: paintings can be sponsored again
+  Rhials:
+  - admin: Narrate verbs will now allow you to pick what text formatting span you
+      want to use before you send them, if any.
+  grungussuss:
+  - sound: scalpel cutting sound now has a clean sound.
