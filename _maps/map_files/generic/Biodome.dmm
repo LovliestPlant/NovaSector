@@ -5000,6 +5000,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/light_switch/directional/east,
+/obj/structure/mold/resin/test,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/homes/critterden)
 "fvt" = (
@@ -16071,6 +16072,7 @@
 	icon_state = "pillow_4_t";
 	pixel_x = 6
 	},
+/obj/structure/mold/resin/test,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/homes/critterden)
 "qHE" = (
@@ -16164,6 +16166,7 @@
 	pixel_y = -2
 	},
 /obj/machinery/airalarm/directional/east,
+/obj/structure/mold/resin/test,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/homes/critterden)
 "qMu" = (
@@ -22823,6 +22826,7 @@
 	pixel_y = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/mold/resin/test,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/homes/critterden)
 "xoC" = (

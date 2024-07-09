@@ -8512,6 +8512,7 @@
 #include "modular_zskyraptor\modules\lounge_pets\code\syndicat.dm"
 #include "modular_zskyraptor\modules\lounge_toys\code\plushies.dm"
 #include "modular_zskyraptor\modules\loungemaps\code\lounge_areas.dm"
+#include "modular_zskyraptor\modules\loungemaps\code\lounge_areas_space.dm"
 #include "modular_zskyraptor\modules\loungemaps\code\lounge_lights.dm"
 #include "modular_zskyraptor\modules\loungemaps\code\lounge_machines.dm"
 #include "modular_zskyraptor\modules\neoncards\code\neoncards.dm"
