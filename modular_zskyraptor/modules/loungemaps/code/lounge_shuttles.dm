@@ -14,8 +14,7 @@
 ///on post_load use our variables to change shuttle events
 /datum/map_template/shuttle/biodome/post_load(obj/docking_port/mobile/mobile)
 	. = ..()
-	if(!events)
-		return
+	//no events, we probably don't need this here but WOOP
 
 /datum/map_template/shuttle/biodome/naakatest
 	suffix = "naakatest"
