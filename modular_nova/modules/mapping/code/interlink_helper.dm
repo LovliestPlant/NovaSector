@@ -8,6 +8,7 @@
 	var/list/FailedZsRat = list()
 	LoadGroup(FailedZsRat, "The Interlink", "map_files/generic", "CentCom_nova_z2.dmm", default_traits = ZTRAITS_CENTCOM)
 	LoadGroup(FailedZsRat, "Talon IV-a: The Biodome", "map_files/generic", "Biodome.dmm", default_traits = ZTRAITS_BIODOME) /// NAAKAS-LOUNGE ADDITION
+	LoadGroup(FailedZsRat, "Talon IV-a Orbital", "map_files/generic", "TalonOrbital.dmm", default_traits = ZTRAITS_STATION) /// NAAKAS-LOUNGE ADDITION
 	if(LAZYLEN(FailedZsRat)) //but seriously, unless the server's filesystem is messed up this will never happen
 		var/msg = "RED ALERT! The following map files failed to load: [FailedZsRat[1]]"
 		if(FailedZsRat.len > 1)
