@@ -6,7 +6,8 @@
 	var/door_open_sound = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/blast_door/sound/shutters_open.ogg'
 	var/door_close_sound = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/blast_door/sound/shutters_close.ogg'
 
-/obj/machinery/door/poddoor/shutters/do_animate(animation)
+/obj/machinery/door/poddoor/shutters/update_icon_state()
+	. = ..()
 	switch(animation)
 		if("opening")
 			flick("opening", src)
