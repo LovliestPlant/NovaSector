@@ -8488,7 +8488,6 @@
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\airlock\code\airlock.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\airlock_machines\airlock_machines.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\apc\code\apc.dm"
-#include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\blast_door\code\blast_door.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\bureaucracy\bureaucracy.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\buttons\code\buttons.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\camera\code\camera.dm"

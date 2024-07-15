@@ -92,6 +92,7 @@
 /area/station/biodome_tinystation)
 "jp" = (
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/biodome_tinystation/engineering)
 "jw" = (
@@ -422,7 +423,6 @@
 /turf/open/floor/engine/o2,
 /area/station/biodome_tinystation/engineering)
 "NP" = (
-/obj/structure/cable,
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -30688,11 +30688,11 @@ ca
 ca
 ca
 ca
-ca
 KL
-ca
-ca
-ca
+KL
+KL
+KL
+KL
 KL
 ca
 ca
@@ -31202,7 +31202,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -31459,7 +31459,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -31473,7 +31473,7 @@ TD
 lI
 gN
 Bg
-Hg
+Mr
 Mr
 Mr
 Ei
@@ -31716,7 +31716,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -31730,7 +31730,7 @@ yH
 yH
 hg
 vQ
-Hg
+Mr
 Mr
 Mr
 Mr
@@ -31973,7 +31973,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -32230,7 +32230,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -32487,7 +32487,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -32744,7 +32744,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -33001,7 +33001,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -33258,7 +33258,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -33272,7 +33272,7 @@ yH
 yH
 Ss
 no
-Mr
+Hg
 Mr
 Mr
 Mr
@@ -33515,7 +33515,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -33529,7 +33529,7 @@ ra
 lI
 gN
 Xz
-Mr
+Hg
 Mr
 Mr
 Mr
@@ -33772,7 +33772,7 @@ ca
 ca
 ca
 ca
-ca
+KL
 gR
 JH
 JH
@@ -34286,11 +34286,11 @@ ca
 ca
 ca
 ca
-ca
 KL
-ca
-ca
-ca
+KL
+KL
+KL
+KL
 KL
 ca
 ca

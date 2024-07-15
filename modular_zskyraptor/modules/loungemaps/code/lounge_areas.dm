@@ -532,3 +532,54 @@
 	icon_state = "biohome_pepper_bathroom"
 	name = "Casa de Silver: Bathroom"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/// EVERSEEN'S SHIP
+/area/centcom/biodome/homes/evership
+	icon_state = "biohome_evership"
+	name = "The Evership"
+	ambience_index = AMBIENCE_HOLY
+	sound_environment = SOUND_AREA_WOODFLOOR
+
+/area/centcom/biodome/homes/evership/engine
+	icon_state = "biohome_evership_engine"
+	name = "The Evership: Engineering"
+	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+
+/area/centcom/biodome/homes/evership/medical
+	icon_state = "biohome_evership_medical"
+	name = "The Evership: Medical"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/evership/botany
+	icon_state = "biohome_evership_botany"
+	name = "The Evership: Botany"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/evership/bar
+	icon_state = "biohome_evership_bar"
+	name = "The Evership: Bar"
+
+/area/centcom/biodome/homes/evership/armory
+	icon_state = "biohome_evership_armory"
+	name = "The Evership: Armory"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/evership/medical
+	icon_state = "biohome_evership_medical"
+	name = "The Evership: Medical"
+	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+
+/area/centcom/biodome/homes/evership/library
+	icon_state = "biohome_evership_library"
+	name = "The Evership: Library"
+
+/area/centcom/biodome/homes/evership/lounge
+	icon_state = "biohome_evership_lounge"
+	name = "The Evership: Lounge"
+
+/area/centcom/biodome/homes/evership/bridge
+	icon_state = "biohome_evership_bridge"
+	name = "The Evership: Bridge"
+	ambientsounds = list(
+		'sound/ambience/signal.ogg',
+		)
