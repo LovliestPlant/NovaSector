@@ -467,3 +467,59 @@
 #undef MODPAINT_MIN_SECTION_COLORS
 #undef MODPAINT_MAX_OVERALL_COLORS
 #undef MODPAINT_MIN_OVERALL_COLORS
+
+
+
+/// Dirty fix until TG gets the fucking attack chains in order
+/obj/item/repainting_kit/melee_attack_chain(mob/user, atom/target, params)
+	//Proxy replaces src cause it returns an atom that will attack the target on our behalf
+	var/obj/item/source_atom = get_proxy_attacker_for(target, user)
+	if(source_atom != src) //if we are someone else then call that attack chain else we can proceed with the usual stuff
+		return source_atom.melee_attack_chain(user, target, params)
+
+	var/list/modifiers = params2list(params)
+	var/is_right_clicking = LAZYACCESS(modifiers, RIGHT_CLICK)
+
+	// At this point it means we're not doing a non-combat interaction so let's just try to bash it
+
+	var/pre_attack_result
+	if (is_right_clicking)
+		switch (pre_attack_secondary(target, user, params))
+			if (SECONDARY_ATTACK_CALL_NORMAL)
+				pre_attack_result = pre_attack(target, user, params)
+			if (SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
+				return TRUE
+			if (SECONDARY_ATTACK_CONTINUE_CHAIN)
+				EMPTY_BLOCK_GUARD // Normal behavior
+			else
+				CRASH("pre_attack_secondary must return an SECONDARY_ATTACK_* define, please consult code/__DEFINES/combat.dm")
+	else
+		pre_attack_result = pre_attack(target, user, params)
+
+	if(pre_attack_result)
+		return TRUE
+
+	// At this point the attack is really about to happen
+
+	var/attackby_result
+	if (is_right_clicking)
+		switch (target.attackby_secondary(src, user, params))
+			if (SECONDARY_ATTACK_CALL_NORMAL)
+				attackby_result = target.attackby(src, user, params)
+			if (SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
+				return TRUE
+			if (SECONDARY_ATTACK_CONTINUE_CHAIN)
+				EMPTY_BLOCK_GUARD // Normal behavior
+			else
+				CRASH("attackby_secondary must return an SECONDARY_ATTACK_* define, please consult code/__DEFINES/combat.dm")
+	else
+		attackby_result = target.attackby(src, user, params)
+
+	if (attackby_result)
+		// This means the attack failed or was handled for whatever reason
+		return TRUE
+
+	// At this point it means the attack was "successful", or at least unhandled, in some way
+	// This can mean nothing happened, this can mean the target took damage, etc.
+
+	return TRUE
