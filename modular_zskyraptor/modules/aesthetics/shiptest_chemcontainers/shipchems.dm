@@ -30,12 +30,12 @@
 		CRASH("Cannot change cap status of reagent container that disallows caps!")
 	if(value_to_set)
 		if(cap_on != value_to_set)
-			playsound(src, pick(cap_open_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
+			playsound(src, pick(cap_close_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
 		cap_on = TRUE
 		spillable = FALSE
 	else
 		if(cap_on != value_to_set)
-			playsound(src, pick(cap_close_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
+			playsound(src, pick(cap_open_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
 		cap_on = FALSE
 		spillable = TRUE
 	update_icon()
