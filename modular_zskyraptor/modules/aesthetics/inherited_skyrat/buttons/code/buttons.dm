@@ -14,6 +14,11 @@
 	///The light mask used in the icon file for emissive layer
 	var/light_mask = "button-light-mask"
 
+/obj/machinery/button/delam_scram
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/buttons/icons/scram.dmi'
+	base_icon_state = "button"
+	icon_state = "button"
+
 /obj/machinery/button/update_icon_state()
 	. = ..()
 	if(panel_open)
