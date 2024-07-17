@@ -1,3 +1,15 @@
+/obj/item/stack/sheet/bluespace_crystal
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/materials/icons/materials.dmi'
+
+/obj/item/stack/ore/bluespace_crystal
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/materials/icons/materials.dmi'
+
+/obj/item/stack/rods
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/materials/icons/materials.dmi'
+
+
+// == URANIUM GLASS SUPPORT ==
+
 /obj/item/shard/uranium
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/materials/icons/materials.dmi'
 	name = "green shard"

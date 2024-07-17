@@ -9,6 +9,8 @@
 	/// Whether the container has a cap on. Do not set directly at runtime; use set_cap_status().
 	VAR_PROTECTED/cap_on = FALSE
 	VAR_PRIVATE/mutable_appearance/cap_overlay = null
+	var/list/cap_open_sounds = list('modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/lid_open1.ogg', 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/lid_open2.ogg')
+	var/list/cap_close_sounds = list('modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/lid_close1.ogg', 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/lid_close2.ogg')
 
 /// Adds code to initialization for the caps
 /obj/item/reagent_containers/Initialize(mapload, vol)
@@ -27,9 +29,13 @@
 	if(!can_have_cap)
 		CRASH("Cannot change cap status of reagent container that disallows caps!")
 	if(value_to_set)
+		if(cap_on != value_to_set)
+			playsound(src, pick(cap_open_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
 		cap_on = TRUE
 		spillable = FALSE
 	else
+		if(cap_on != value_to_set)
+			playsound(src, pick(cap_close_sounds), PICKUP_SOUND_VOLUME, ignore_walls = FALSE)
 		cap_on = FALSE
 		spillable = TRUE
 	update_icon()
@@ -158,8 +164,10 @@
 
 /// test tubes need some bespoke work to add caps and get them in-line with our current style, this is a TODO
 /obj/item/reagent_containers/cup/tube
-	fill_icon = 'icons/obj/medical/reagent_fillings.dmi'
 	icon = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/shipchems.dmi'
+	fill_icon = 'modular_zskyraptor/modules/aesthetics/shiptest_chemcontainers/reagentfillings.dmi'
+	cap_on = TRUE
+	can_have_cap = TRUE
 	cap_icon_state = "test_tube_cap"
 
 
