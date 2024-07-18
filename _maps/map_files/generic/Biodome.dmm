@@ -72,7 +72,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "adY" = (
 /obj/machinery/door/airlock/bathroom{
 	name = "Restroom"
@@ -80,7 +82,9 @@
 /obj/machinery/duct,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "aeb" = (
 /obj/machinery/light/cold/directional/east{
 	dir = 8
@@ -102,7 +106,9 @@
 /area/centcom/biodome/homes/casa_de_tchiko)
 "afx" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "aga" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -116,7 +122,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "agi" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Nuvi's Abode"
@@ -206,7 +214,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "ajd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -564,7 +574,9 @@
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/stack/sheet/mineral/wood/fifty,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "aFj" = (
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/service/lounge)
@@ -668,7 +680,9 @@
 	freqlock = 1
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "aJC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -713,14 +727,18 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "aLv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "aLO" = (
 /obj/machinery/vending/wardrobe/robo_wardrobe,
 /turf/open/floor/iron,
@@ -775,7 +793,9 @@
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "aMV" = (
 /obj/structure/marker_beacon/olive,
 /obj/effect/turf_decal/stripes/line{
@@ -875,7 +895,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "aQY" = (
 /obj/machinery/suit_storage_unit/medical,
 /obj/structure/extinguisher_cabinet/directional/west,
@@ -1012,7 +1034,9 @@
 /area/centcom/biodome/medical)
 "aXw" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "aXy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1062,7 +1086,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "aZo" = (
 /obj/machinery/mecha_part_fabricator{
 	req_access = list("robotics")
@@ -1152,7 +1178,9 @@
 /obj/structure/cable,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "bco" = (
 /obj/machinery/light/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1357,13 +1385,17 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "bjA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "bjM" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/stack/sheet/plastic/fifty{
@@ -1475,7 +1507,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "bma" = (
 /obj/machinery/oven/range_frontier,
 /obj/machinery/microwave/frontier_printed{
@@ -1538,14 +1572,18 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "boq" = (
 /obj/machinery/requests_console/auto_name/directional/east,
 /obj/structure/closet/emcloset/wall{
 	pixel_y = -32
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "bpr" = (
 /obj/structure/chair/comfy/lime{
 	dir = 1
@@ -1598,7 +1636,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "brk" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -1611,7 +1651,9 @@
 /obj/structure/cable,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "brX" = (
 /obj/structure/flora/rock/pile/jungle/style_random{
 	icon_state = "rock3"
@@ -1645,15 +1687,21 @@
 	},
 /obj/machinery/cell_charger_multi/wall_mounted/directional/east,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "bta" = (
 /obj/structure/bookcase/random/reference,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "btw" = (
 /obj/structure/bookcase/random/reference,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "btK" = (
 /obj/structure/toilet{
 	dir = 4
@@ -1721,7 +1769,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "bwK" = (
 /obj/structure/table/wood/fancy/black,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -1754,7 +1804,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "bxC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1807,7 +1859,9 @@
 "bAG" = (
 /turf/closed/indestructible/titanium/nodiagonal,
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "bAO" = (
 /turf/open/floor/wood/large{
 	planetary_atmos = 1
@@ -1926,13 +1980,17 @@
 	dir = 6
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "bGX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "bHi" = (
 /obj/machinery/computer/shuttle/syndicate{
 	req_access = list("syndicate")
@@ -1959,7 +2017,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "bIn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/chair/wood/wings{
@@ -1983,7 +2043,9 @@
 	dir = 9
 	},
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "bID" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/reagent_containers/spray/cleaner{
@@ -2072,7 +2134,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "bMI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/green,
@@ -2316,7 +2380,9 @@
 	},
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "bXm" = (
 /obj/machinery/computer/atmos_alert,
 /turf/open/floor/iron/dark/small,
@@ -2347,7 +2413,9 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "bYR" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2407,7 +2475,9 @@
 	pixel_y = 7
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "cdd" = (
 /obj/machinery/quantum_server,
 /turf/open/floor/iron/textured,
@@ -2439,7 +2509,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "ceD" = (
 /obj/structure/closet/secure_closet/cytology,
 /turf/open/floor/iron/white,
@@ -2460,7 +2532,9 @@
 "cfw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "cfC" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/visible{
 	dir = 9
@@ -2539,7 +2613,9 @@
 /obj/machinery/light/directional/north,
 /obj/item/storage/box/emergencytank,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "ckh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2620,7 +2696,6 @@
 	pixel_y = 16;
 	pixel_x = 6
 	},
-/obj/structure/table/wood/shuttle_bar,
 /obj/item/reagent_containers/cup/rag{
 	pixel_x = -5;
 	pixel_y = 13
@@ -2633,8 +2708,11 @@
 	pixel_x = -6;
 	pixel_y = -12
 	},
+/obj/structure/table/wood,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "cot" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -2738,7 +2816,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "csw" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
@@ -2870,7 +2950,9 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "czL" = (
 /obj/effect/turf_decal/arrows{
 	dir = 4
@@ -2920,7 +3002,9 @@
 	},
 /obj/structure/table/reinforced/titaniumglass,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "cAI" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -2968,7 +3052,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "cBt" = (
 /turf/open/floor/iron/recharge_floor,
 /area/centcom/biodome/science/robotics)
@@ -2980,7 +3066,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "cCM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8;
@@ -3086,7 +3174,9 @@
 /area/centcom/biodome/homes/casa_de_korna/bed1)
 "cHL" = (
 /turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "cJf" = (
 /obj/effect/turf_decal/siding/dark_red,
 /obj/effect/turf_decal/siding/dark_red/corner{
@@ -3150,7 +3240,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "cLg" = (
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/brute,
@@ -3194,7 +3286,9 @@
 /area/centcom/biodome/security/cell2)
 "cLJ" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "cLW" = (
 /obj/structure/chair/office/tactical,
 /turf/open/floor/mineral/plastitanium/red,
@@ -3244,12 +3338,16 @@
 	},
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "cNB" = (
 /obj/structure/bookcase/random/reference,
 /obj/item/book/granter/sign_language,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "cQj" = (
 /obj/machinery/vending/hydroseeds,
 /turf/open/floor/iron/smooth,
@@ -3305,7 +3403,9 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "cRX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3397,14 +3497,18 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "cVx" = (
 /obj/structure/closet/crate/cargo,
 /obj/item/stack/telecrystal/five,
 /obj/item/stack/wrapping_paper/small,
 /obj/item/storage/box/shipping,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "cVG" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -3466,7 +3570,9 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "cXi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3550,7 +3656,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "cYI" = (
 /obj/item/bdsm_candle{
 	start_lit = 1
@@ -3613,7 +3721,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "daI" = (
 /obj/structure/flora/bush/snow/style_random,
 /turf/open/misc/asteroid/snow/icemoon/do_not_chasm,
@@ -3708,6 +3818,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/landmark/navigate_destination/engineering,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "ddY" = (
@@ -3721,7 +3832,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "deF" = (
 /obj/item/food/meat/slab/synthmeat,
 /obj/item/food/meat/slab/synthmeat,
@@ -3750,7 +3863,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "dfb" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
@@ -3773,7 +3888,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "dfy" = (
 /obj/structure/table/optable,
 /obj/effect/turf_decal/trimline/blue/line{
@@ -3784,7 +3901,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "dfA" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -3795,7 +3914,9 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "dgy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
@@ -3838,7 +3959,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "djo" = (
 /obj/structure/railing/wooden_fencing{
 	name = "Crib Wall";
@@ -3888,7 +4011,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "dms" = (
 /obj/structure/window/fulltile,
 /obj/structure/grille,
@@ -3978,7 +4103,9 @@
 /area/centcom/biodome/service/diner)
 "dqs" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "dqR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/warm/directional/south{
@@ -4031,7 +4158,9 @@
 	},
 /obj/effect/turf_decal/trimline/white/corner,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "drT" = (
 /obj/machinery/vending/autodrobe/all_access,
 /turf/open/floor/iron/dark,
@@ -4061,7 +4190,9 @@
 	freqlock = 1
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "dty" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/bamboo,
@@ -4120,7 +4251,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "dwB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
@@ -4155,6 +4288,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/office)
+"dxN" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "dye" = (
 /obj/structure/chair/wood/wings{
 	dir = 4
@@ -4171,7 +4310,9 @@
 	},
 /obj/effect/turf_decal/trimline/blue/mid_joiner,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "dyZ" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -4238,7 +4379,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "dCX" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/centcom/biodome/medical/surgery)
@@ -4282,7 +4425,9 @@
 "dGj" = (
 /obj/effect/turf_decal/trimline/blue/corner,
 /turf/open/floor/iron/white/smooth_corner,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "dGo" = (
 /turf/open/floor/iron/smooth_corner{
 	dir = 1;
@@ -4321,7 +4466,9 @@
 "dHs" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "dHO" = (
 /obj/structure/cable,
 /turf/open/floor/wood/parquet{
@@ -4380,7 +4527,9 @@
 /area/centcom/biodome/voxbox/apartment2)
 "dJA" = (
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "dJI" = (
 /obj/structure/closet/secure_closet/personal/cabinet{
 	dir = 8;
@@ -4450,7 +4599,9 @@
 /area/centcom/biodome/apartments)
 "dLm" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "dLx" = (
 /obj/machinery/hydroponics/constructable,
 /obj/structure/window/spawner/directional/west,
@@ -4459,7 +4610,9 @@
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "dLN" = (
 /turf/open/floor/iron,
 /area/centcom/biodome/service/lounge)
@@ -4469,10 +4622,14 @@
 /area/centcom/biodome/service/lounge)
 "dMX" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "dNG" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "dOl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/r_navy/visible{
@@ -4568,7 +4725,9 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "dTF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
 	dir = 1;
@@ -4594,7 +4753,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "dUQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -4677,7 +4838,9 @@
 "dXI" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "dXM" = (
 /turf/open/floor/wood/large{
 	planetary_atmos = 1
@@ -4688,7 +4851,9 @@
 	dir = 10
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "dYI" = (
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/bed1)
@@ -4768,7 +4933,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "ecm" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/misc/grass/planet,
@@ -4852,7 +5019,9 @@
 /obj/item/book/manual/wiki/experimentor,
 /obj/item/book/manual/wiki/cytology,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "efQ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
@@ -4884,7 +5053,9 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "eim" = (
 /obj/structure/chair/sofa/right{
 	dir = 8
@@ -4969,7 +5140,9 @@
 "eqo" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "eqA" = (
 /obj/machinery/iv_drip,
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -4984,7 +5157,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "erg" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
@@ -5055,7 +5230,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "evs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -5065,18 +5242,24 @@
 "evt" = (
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "evC" = (
 /obj/structure/chair/sofa/left/maroon{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "evX" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "ewr" = (
 /obj/structure/chair/sofa/corp/corner,
 /turf/open/floor/carpet/green,
@@ -5092,7 +5275,9 @@
 /obj/effect/turf_decal/trimline/red/real_red/line,
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "ewW" = (
 /obj/structure/rack,
 /obj/item/clothing/gloves/krav_maga/combatglovesplus,
@@ -5115,7 +5300,9 @@
 	},
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "exe" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -5194,14 +5381,18 @@
 "eEC" = (
 /obj/machinery/porta_turret/centcom_shuttle,
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "eFF" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/centcom/biodome/interior)
 "eFX" = (
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "eGu" = (
 /obj/structure/closet/secure_closet/freezer/fridge/all_access,
 /obj/item/food/meat/slab/monkey,
@@ -5313,7 +5504,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "eLr" = (
 /obj/machinery/shower/directional/west,
 /obj/effect/turf_decal/siding/white{
@@ -5366,7 +5559,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "eNt" = (
 /obj/structure/chair/wood/wings{
 	dir = 1
@@ -5389,7 +5584,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "ePL" = (
 /obj/machinery/telecomms/message_server/preset,
 /obj/machinery/light/directional/east,
@@ -5447,7 +5644,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "eSa" = (
 /obj/structure/curtain/bounty,
 /obj/effect/spawner/structure/window/reinforced,
@@ -5481,7 +5680,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "eTJ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /turf/open/floor/wood/tile{
@@ -5583,7 +5784,9 @@
 	},
 /obj/item/seeds/tea,
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "eYA" = (
 /obj/structure/drain,
 /obj/machinery/shower{
@@ -5695,7 +5898,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "fbI" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/bag/tray{
@@ -5733,7 +5938,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fdW" = (
 /obj/structure/sink/directional/west,
 /obj/machinery/door/window/survival_pod{
@@ -5763,7 +5970,9 @@
 	desc = "Contains every modkit and trophy presently known."
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "ffd" = (
 /obj/structure/fake_stairs{
 	dir = 1
@@ -5870,7 +6079,9 @@
 "fkf" = (
 /obj/item/antag_granter/heretic,
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "fkm" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -5940,7 +6151,9 @@
 "flP" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "fna" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -5969,7 +6182,9 @@
 /obj/effect/turf_decal/trimline/red/real_red/line,
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "fnJ" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
@@ -5996,7 +6211,9 @@
 	},
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "foh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -6032,7 +6249,9 @@
 /area/centcom/biodome/security/cell1)
 "fpu" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fpV" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -6064,7 +6283,9 @@
 	pixel_y = 33
 	},
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "frD" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
 	dir = 8
@@ -6074,7 +6295,9 @@
 /area/centcom/biodome/engineering)
 "frE" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "frT" = (
 /obj/machinery/light/directional/west,
 /obj/structure/chair/comfy/black{
@@ -6145,7 +6368,9 @@
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "fuc" = (
 /obj/machinery/light/cold/directional/east,
 /turf/open/floor/carpet/black,
@@ -6160,7 +6385,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "fvg" = (
 /obj/structure/spider/stickyweb/genetic{
 	icon_state = "stickyweb2"
@@ -6221,7 +6448,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fxx" = (
 /turf/open/floor/iron/diagonal,
 /area/centcom/biodome/homes/casa_de_silver)
@@ -6426,7 +6655,9 @@
 /obj/structure/table/reinforced/titaniumglass,
 /obj/structure/bedsheetbin,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "fHz" = (
 /obj/machinery/door/window,
 /turf/open/floor/iron/white/small,
@@ -6472,7 +6703,9 @@
 	pixel_y = 7
 	},
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fJR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -6510,8 +6743,11 @@
 /obj/effect/turf_decal/trimline/red/real_red/warning{
 	dir = 6
 	},
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "fLE" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating,
@@ -6529,13 +6765,17 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fNF" = (
 /obj/machinery/oven/range,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "fOl" = (
 /obj/machinery/vending/boozeomat{
 	req_access = list("bar")
@@ -6620,12 +6860,14 @@
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/icu)
 "fRH" = (
-/obj/structure/table/wood/shuttle_bar,
 /obj/item/paper_bin{
 	pixel_y = 3
 	},
+/obj/structure/table/wood,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "fRR" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/centcom/biodome/voxbox/apartment2)
@@ -6796,11 +7038,15 @@
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "fZN" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "fZR" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /obj/machinery/air_sensor/nitrogen_tank{
@@ -6917,6 +7163,12 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"gdA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
 "gdB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/hydroponics/constructable,
@@ -6966,7 +7218,9 @@
 /obj/machinery/light/small/directional/south,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "gfq" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/kirbyplants/organic/plant1{
@@ -7013,8 +7267,11 @@
 /obj/effect/turf_decal/trimline/yellow/mid_joiner{
 	dir = 1
 	},
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gii" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/carpet/stellar,
@@ -7063,7 +7320,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "glZ" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -7122,7 +7381,9 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/material,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "goY" = (
 /obj/machinery/light/directional/south,
 /obj/structure/table/reinforced/uraniumrglass,
@@ -7157,7 +7418,9 @@
 	id = "everseenscrubblast"
 	},
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gpm" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on,
 /obj/machinery/light/directional/north,
@@ -7188,7 +7451,9 @@
 /obj/structure/cable,
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "gqo" = (
 /obj/machinery/button/door/directional/north{
 	id = "biodome_haki_ailock";
@@ -7222,6 +7487,12 @@
 "gsA" = (
 /turf/open/chasm/jungle,
 /area/centcom/biodome/engineering/atmos)
+"gsR" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "gta" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 8
@@ -7238,7 +7509,9 @@
 	},
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gtW" = (
 /obj/structure/toilet{
 	dir = 8
@@ -7432,7 +7705,9 @@
 "gBm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gBx" = (
 /obj/structure/bookcase/random/reference,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7445,7 +7720,9 @@
 /obj/item/book/granter/crafting_recipe/regal_condor,
 /obj/item/book/granter/crafting_recipe/trash_cannon,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "gBF" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/flatpacker,
@@ -7491,7 +7768,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "gDL" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
@@ -7512,6 +7791,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/landmark/navigate_destination/research,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "gDY" = (
@@ -7542,7 +7822,9 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "gEc" = (
 /obj/machinery/light/cold/directional/south,
 /obj/structure/chair/comfy/lime{
@@ -7564,7 +7846,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "gFf" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -7601,7 +7885,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gHw" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -7675,7 +7961,9 @@
 	dir = 1
 	},
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gLk" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/machinery/pollution_scrubber{
@@ -7700,7 +7988,9 @@
 	pixel_y = -15
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "gLm" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/multi_tile/public/glass{
@@ -7726,7 +8016,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "gMp" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/structure/railing{
@@ -7787,7 +8079,9 @@
 "gOd" = (
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "gOj" = (
 /obj/machinery/photocopier,
 /turf/open/floor/wood/tile,
@@ -7857,10 +8151,14 @@
 "gRB" = (
 /obj/effect/turf_decal/trimline/yellow/corner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "gRO" = (
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "gSd" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -7974,7 +8272,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "gWC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
@@ -8095,7 +8395,9 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/small/dim/directional/west,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "hcu" = (
 /obj/machinery/igniter/incinerator_atmos{
 	id = "biodome_turbine_igniter"
@@ -8138,7 +8440,9 @@
 /obj/structure/cable,
 /obj/machinery/power/port_gen/pacman,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "hdU" = (
 /obj/structure/window/uranium/fulltile,
 /obj/structure/curtain/bounty,
@@ -8194,7 +8498,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
 /turf/open/floor/iron/large,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "hiz" = (
 /obj/structure/chair/comfy/lime{
 	dir = 8
@@ -8351,7 +8657,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "hno" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -8367,7 +8675,9 @@
 "hnK" = (
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "hnN" = (
 /turf/open/floor/iron,
 /area/centcom/biodome/arrivals/pad2)
@@ -8517,7 +8827,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "hsJ" = (
 /obj/structure/closet/secure_closet/freezer/fridge{
 	req_access = null
@@ -8547,7 +8859,9 @@
 /obj/machinery/airalarm/directional/south,
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "htv" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
@@ -8594,7 +8908,9 @@
 /area/centcom/biodome/homes/casa_de_silver)
 "hyI" = (
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "hyP" = (
 /obj/structure/dresser,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8603,7 +8919,9 @@
 "hzy" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "hzW" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment4)
@@ -8820,7 +9138,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "hKq" = (
 /obj/structure/table/wood/fancy/blue,
 /turf/open/floor/bamboo,
@@ -8955,7 +9275,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "hPC" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/chemistry)
@@ -8964,7 +9286,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "hPZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8976,7 +9300,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "hQE" = (
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/homes/nuviship/lounge)
@@ -8986,7 +9312,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "hRz" = (
 /obj/machinery/griddle,
 /obj/machinery/microwave/engineering/cell_included{
@@ -9040,7 +9368,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "hSP" = (
 /obj/machinery/griddle/frontier_tabletop{
 	pixel_y = 5
@@ -9081,7 +9411,9 @@
 	},
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "hWr" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer,
@@ -9304,7 +9636,9 @@
 /obj/item/tank/internals/plasma/full,
 /obj/item/tank/internals/oxygen,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "ifJ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/hidden,
 /turf/open/floor/iron/white,
@@ -9333,7 +9667,9 @@
 	},
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "igK" = (
 /obj/item/folder/white{
 	pixel_y = 4
@@ -9364,7 +9700,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/trimline/dark_blue/corner,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "ihV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -9431,7 +9769,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "ijq" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/command{
@@ -9532,13 +9872,17 @@
 	amount = 50
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "inB" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "inE" = (
 /obj/structure/bed/pod{
 	dir = 4
@@ -9558,7 +9902,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "inK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -9603,12 +9949,14 @@
 "ioJ" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "ioL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment{
-	dir = 9
+/obj/structure/disposalpipe/junction/yjunction{
+	dir = 1
 	},
 /turf/open/floor/iron/dark/pavement{
 	dir = 4
@@ -9754,7 +10102,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/sink/kitchen/directional/south,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "iwU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -9783,11 +10133,15 @@
 "iys" = (
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "iyL" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "iyT" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/dark,
@@ -9887,7 +10241,9 @@
 	id = "everbedroomcurtains"
 	},
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "iDR" = (
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 10
@@ -9895,7 +10251,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "iER" = (
 /obj/structure/closet/cabinet{
 	name = "Alois Closet";
@@ -9940,7 +10298,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "iFR" = (
 /obj/structure/railing{
 	dir = 4
@@ -10094,7 +10454,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "iMN" = (
 /obj/structure/dresser{
 	density = 0
@@ -10104,7 +10466,9 @@
 "iNm" = (
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "iON" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/chem_master,
@@ -10157,6 +10521,14 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/toolcloset)
+"iRx" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
 "iRI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -10243,7 +10615,9 @@
 /obj/effect/turf_decal/trimline/white/line,
 /obj/effect/turf_decal/trimline/white/mid_joiner,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "iVv" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light/directional/south,
@@ -10293,7 +10667,9 @@
 /obj/item/book/granter/crafting_recipe/cooking_sweets_101,
 /obj/item/book/granter/crafting_recipe/death_sandwich,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "iZu" = (
 /obj/structure/window/reinforced/plasma/spawner/directional/south,
 /obj/structure/table/reinforced/plasmarglass,
@@ -10358,7 +10734,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "jbF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -10422,7 +10800,9 @@
 /area/centcom/biodome/medical/lobby)
 "jgh" = (
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "jgY" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light_switch/directional/south,
@@ -10490,7 +10870,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "jkI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -10595,6 +10977,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
+"jqL" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "jqU" = (
 /obj/structure/chair/sofa/middle{
 	color = "#6927c5";
@@ -10769,7 +11155,9 @@
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "jwb" = (
 /obj/machinery/door/window/survival_pod,
 /obj/machinery/power/smes/engineering,
@@ -10801,7 +11189,9 @@
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "jwZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -10832,7 +11222,9 @@
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "jzG" = (
 /obj/structure/streetlamp{
 	base_color = "#FFBFFF"
@@ -11067,7 +11459,9 @@
 /obj/item/seeds/kudzu,
 /obj/item/seeds/cherry/bomb,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "jHn" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -11105,7 +11499,9 @@
 	},
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "jIN" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/structure/curtain/bounty,
@@ -11179,7 +11575,9 @@
 /obj/effect/turf_decal/trimline/dark_blue/line,
 /obj/effect/turf_decal/trimline/dark_blue/mid_joiner,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "jMJ" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
@@ -11231,7 +11629,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "jQV" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/light_switch/directional/north,
@@ -11263,7 +11663,9 @@
 /area/centcom/biodome/security)
 "jSO" = (
 /turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "jSS" = (
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/cafeteria,
@@ -11299,7 +11701,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "jVP" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -11351,7 +11755,9 @@
 	pixel_y = 2
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "jYe" = (
 /obj/structure/toilet{
 	dir = 4
@@ -11379,7 +11785,9 @@
 /obj/structure/bookcase/random/religion,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "jZh" = (
 /obj/machinery/syndicatebomb/empty,
 /obj/machinery/light_switch/directional/north,
@@ -11396,7 +11804,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "kaB" = (
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 5
@@ -11468,7 +11878,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "kbZ" = (
 /obj/structure/destructible/cult/item_dispenser/archives/library,
 /obj/item/book/codex_gigas,
@@ -11521,7 +11933,9 @@
 /obj/item/storage/box/shibari_stand,
 /obj/item/stack/shibari_rope/full,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "kdb" = (
 /obj/machinery/light/warm/directional/west,
 /turf/open/floor/wood/parquet,
@@ -11645,7 +12059,9 @@
 	dir = 5
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "khE" = (
 /turf/closed/wall,
 /area/centcom/biodome/cargo)
@@ -11679,7 +12095,9 @@
 "kjj" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "kjD" = (
 /obj/machinery/autolathe/hacked,
 /turf/open/floor/iron/textured,
@@ -11704,7 +12122,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "klm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -11814,7 +12234,9 @@
 /obj/item/melee/sickly_blade/void,
 /obj/effect/heretic_rune/big,
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "kqT" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/storage/toolbox/electrical{
@@ -11834,7 +12256,9 @@
 "krN" = (
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "ksA" = (
 /obj/machinery/power/apc/auto_name/directional/east{
 	cell_type = /obj/item/stock_parts/power_store/cell/bluespace
@@ -11842,7 +12266,9 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "ktd" = (
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/biodome/homes/casa_de_liora/bedroom)
@@ -11970,7 +12396,9 @@
 /obj/machinery/light/small/directional/south,
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "kyY" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron/white,
@@ -12093,13 +12521,17 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "kFA" = (
 /obj/effect/turf_decal/trimline/red/real_red/corner{
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "kFS" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/checker,
@@ -12120,7 +12552,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "kGG" = (
 /obj/structure/window/reinforced/uranium/spawner/directional/north,
 /obj/machinery/hydroponics/constructable,
@@ -12133,7 +12567,9 @@
 "kHc" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "kHA" = (
 /obj/structure/alien/weeds,
 /obj/structure/spider/stickyweb/genetic{
@@ -12278,7 +12714,9 @@
 	dir = 5
 	},
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "kML" = (
 /obj/structure/fireplace{
 	dir = 1
@@ -12388,7 +12826,9 @@
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "kQc" = (
 /obj/structure/window/reinforced/plasma/fulltile,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -12635,7 +13075,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "laz" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/towel{
@@ -12706,7 +13148,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "lds" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/machinery/airalarm/directional/north,
@@ -12772,7 +13216,9 @@
 /area/centcom/biodome/homes/nuviship/cargo)
 "lfQ" = (
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "lgW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -12936,7 +13382,9 @@
 	},
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "lpc" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -12969,7 +13417,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "lpT" = (
 /obj/structure/altar_of_gods,
 /turf/open/floor/circuit/green/anim,
@@ -13013,7 +13463,9 @@
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "lsE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -13046,7 +13498,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "ltC" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -13079,19 +13533,25 @@
 "lur" = (
 /obj/structure/kitchenspike,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "lut" = (
 /obj/machinery/light_switch/directional/west{
 	pixel_x = -36;
 	pixel_y = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "luz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "luF" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -13116,6 +13576,7 @@
 "lxL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
 "lyd" = (
@@ -13138,7 +13599,9 @@
 	req_access = list("library")
 	},
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "lyU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -13208,7 +13671,9 @@
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "lDd" = (
 /obj/structure/table/wood,
 /obj/machinery/airalarm/directional/south,
@@ -13388,7 +13853,9 @@
 /obj/machinery/light/directional/west,
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "lNg" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/black/double,
@@ -13470,7 +13937,9 @@
 	widenet = 1
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "lQk" = (
 /obj/structure/fans/tiny,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -13480,7 +13949,9 @@
 /obj/machinery/photocopier,
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "lRp" = (
 /obj/structure/chair/sofa/right{
 	color = 222B27;
@@ -13491,7 +13962,9 @@
 "lRT" = (
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "lRX" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/command{
@@ -13703,7 +14176,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "mge" = (
 /obj/structure/chair/sofa/left{
 	dir = 8
@@ -13890,7 +14365,9 @@
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "mop" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -14005,7 +14482,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "mtk" = (
 /obj/machinery/conveyor{
 	dir = 1;
@@ -14141,7 +14620,9 @@
 "mAt" = (
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "mAz" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Haki & Strkka's Lab"
@@ -14168,13 +14649,17 @@
 	freqlock = 1
 	},
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "mAO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "mAX" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/processor{
@@ -14311,7 +14796,9 @@
 /obj/item/storage/box/nri_survival_pack,
 /obj/item/storage/box/colonial_rations,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "mFO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14407,7 +14894,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "mKl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
@@ -14456,7 +14945,9 @@
 	dir = 4
 	},
 /turf/open/floor/plating/snowed/icemoon,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "mLQ" = (
 /obj/machinery/anesthetic_machine,
 /obj/machinery/light_switch/directional/north,
@@ -14470,7 +14961,9 @@
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "mMd" = (
 /obj/machinery/computer/rdconsole,
 /turf/open/floor/iron,
@@ -14496,7 +14989,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "mNi" = (
 /obj/structure/closet/secure_closet/evidence{
 	req_one_access = null
@@ -14624,7 +15119,9 @@
 	name = "Hull Blast Doors"
 	},
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "mVp" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/window/right/directional/south{
@@ -14697,7 +15194,9 @@
 "mXl" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "mYq" = (
 /obj/machinery/oven/range,
 /turf/open/floor/iron/kitchen,
@@ -14801,6 +15300,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "ndO" = (
@@ -14882,7 +15384,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "ngl" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
@@ -14970,7 +15474,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "njI" = (
 /obj/machinery/door/airlock/science/glass{
 	name = "Biology"
@@ -14986,7 +15492,9 @@
 "njZ" = (
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "nkb" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	name = "Interlink Access"
@@ -15075,7 +15583,9 @@
 /area/centcom/biodome/voxbox/apartment4)
 "nme" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "nmR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15144,7 +15654,9 @@
 	dir = 10
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "nqN" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /obj/structure/flora/bush/flowers_yw/style_random,
@@ -15180,7 +15692,9 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "nsa" = (
 /obj/structure/dresser,
 /obj/machinery/light_switch/directional/north,
@@ -15285,7 +15799,9 @@
 /area/centcom/biodome/homes/nuviship/cargo)
 "nxl" = (
 /turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "nxp" = (
 /obj/item/kirbyplants/synthetic/plant29,
 /turf/open/floor/iron/dark/small,
@@ -15312,7 +15828,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "nyo" = (
 /obj/structure/window/reinforced/uranium/fulltile,
 /obj/structure/grille,
@@ -15350,7 +15868,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "nzE" = (
 /turf/open/floor/circuit/green/telecomms,
 /area/centcom/biodome/science)
@@ -15425,7 +15945,9 @@
 /area/centcom/biodome/homes/nuviship/cargo)
 "nEv" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "nEC" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/flipped/co2{
 	dir = 4
@@ -15479,7 +16001,9 @@
 	dir = 6
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "nHS" = (
 /obj/structure/window/reinforced/tinted/frosted/spawner/directional/east,
 /obj/machinery/light_switch/directional/north,
@@ -15496,7 +16020,9 @@
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "nIm" = (
 /obj/machinery/light/directional/north,
 /obj/structure/dresser,
@@ -15519,7 +16045,9 @@
 /area/centcom/biodome/voxbox/apartment2)
 "nIY" = (
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "nJo" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/science{
@@ -15611,7 +16139,9 @@
 /obj/item/camera_film,
 /obj/item/camera_film,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "nMe" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -15688,7 +16218,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "nPW" = (
 /obj/machinery/conveyor{
 	id = "QMLoad"
@@ -15745,7 +16277,9 @@
 /obj/item/lightreplacer,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "nSJ" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/iron/white,
@@ -15801,7 +16335,9 @@
 /turf/open/floor/iron/corner{
 	dir = 4
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "nWN" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15834,7 +16370,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "nYI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/dark/textured_large,
@@ -16144,7 +16682,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "onX" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -16269,7 +16809,9 @@
 	},
 /obj/effect/turf_decal/trimline/blue/mid_joiner,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "osj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -16291,6 +16833,19 @@
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
+"osY" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "otA" = (
 /obj/structure/streetlamp{
 	base_color = "#BFBFFF"
@@ -16399,7 +16954,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "ozx" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 1
@@ -16428,7 +16985,9 @@
 	pixel_y = 3
 	},
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "oBj" = (
 /obj/machinery/shower/directional/west,
 /obj/effect/spawner/liquids_spawner,
@@ -16566,7 +17125,9 @@
 	dir = 10
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "oFN" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_bldorng/visible{
 	dir = 10
@@ -16733,7 +17294,9 @@
 /obj/structure/bookcase/random/reference,
 /obj/item/book/granter/chuunibyou,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "oNo" = (
 /obj/machinery/door/airlock/multi_tile/public/glass{
 	dir = 8;
@@ -16762,7 +17325,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "oNT" = (
 /obj/machinery/iv_drip{
 	icon_state = "iv_drip_injectidle";
@@ -16846,7 +17411,9 @@
 /obj/item/book/manual/wiki/engineering_hacking,
 /obj/item/book/manual/wiki/tcomms,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "oQg" = (
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/iron/dark/textured,
@@ -16873,7 +17440,9 @@
 	dir = 9
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "oRA" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
@@ -16932,7 +17501,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "oVa" = (
 /obj/structure/bookcase/random/nonfiction{
 	pixel_y = 0;
@@ -16951,7 +17522,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "oVu" = (
 /obj/machinery/light/warm/directional/north{
 	bulb_colour = "#666699"
@@ -16975,7 +17548,9 @@
 	pixel_x = 7
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "oWc" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/structure/table/wood,
@@ -17062,7 +17637,9 @@
 /obj/structure/drain,
 /obj/structure/window/reinforced/tinted/spawner/directional/east,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "oZg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17092,7 +17669,9 @@
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "oZE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17110,7 +17689,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "pae" = (
 /obj/machinery/biogenerator,
 /obj/effect/turf_decal/trimline/green/line{
@@ -17119,10 +17700,13 @@
 /obj/effect/turf_decal/trimline/green/mid_joiner{
 	dir = 8
 	},
+/obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "paj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -17193,7 +17777,9 @@
 /turf/open/floor/iron/edge{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "pdE" = (
 /obj/structure/dresser,
 /turf/open/floor/wood/large,
@@ -17213,7 +17799,9 @@
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "pfw" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/light_switch/directional/north,
@@ -17225,7 +17813,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "pgE" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/hydroponics/constructable,
@@ -17238,7 +17828,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "phm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -17257,7 +17849,9 @@
 /turf/open/floor/iron/corner{
 	dir = 4
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "piN" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -17266,7 +17860,9 @@
 /area/centcom/biodome/medical/lobby)
 "pjv" = (
 /turf/closed/wall/mineral/wood,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "pjA" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -17329,7 +17925,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "png" = (
 /obj/structure/streetlamp,
 /obj/structure/sign/directions/supply{
@@ -17444,7 +18042,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "psX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17519,7 +18119,9 @@
 "pvA" = (
 /obj/structure/table/glass,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "pwd" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment3)
@@ -17539,7 +18141,9 @@
 	dir = 8
 	},
 /turf/open/floor/iron/half,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "pxw" = (
 /obj/structure/closet/firecloset/wall{
 	pixel_y = 32
@@ -17554,7 +18158,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "pxB" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -17612,7 +18218,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "pAo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -17696,7 +18304,9 @@
 /area/centcom/biodome/homes/casa_de_silver)
 "pCe" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "pCG" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/carpet/black,
@@ -17707,7 +18317,9 @@
 	pixel_y = 10
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "pDP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/mix_output{
 	dir = 1;
@@ -17874,7 +18486,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "pKc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -17981,6 +18595,14 @@
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/centcom/biodome/medical/lobby)
+"pRE" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "pRS" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -18013,7 +18635,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "pTp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -18126,7 +18750,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "pWO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
@@ -18161,7 +18787,9 @@
 /area/centcom/biodome/homes/casa_de_ko/bed2)
 "pXJ" = (
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "pYb" = (
 /obj/structure/fireplace{
 	dir = 1
@@ -18224,7 +18852,9 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "qaD" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -18379,14 +19009,18 @@
 	pixel_x = -5
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "qfz" = (
 /obj/machinery/computer/shuttle/white_ship/bridge,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "qgb" = (
 /turf/open/floor/iron/white,
 /area/centcom/biodome/medical/lobby)
@@ -18507,7 +19141,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "qkf" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -18526,7 +19162,9 @@
 /obj/effect/spawner/random/techstorage/rnd_all,
 /obj/item/storage/box/disks,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "qkC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -18624,7 +19262,9 @@
 /obj/structure/cable,
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "qlc" = (
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/stasis{
@@ -18661,7 +19301,9 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "qma" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/snowed/icemoon,
@@ -18802,7 +19444,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "qtz" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp{
@@ -18848,7 +19492,9 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "qtK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -19082,7 +19728,9 @@
 /obj/effect/turf_decal/trimline/yellow/line,
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "qFG" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -19270,7 +19918,9 @@
 "qNL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "qOX" = (
 /obj/machinery/door/airlock/service/glass,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -19306,7 +19956,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "qQT" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -19337,7 +19989,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "qSj" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood/tile,
@@ -19389,7 +20043,9 @@
 	widenet = 1
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "qVJ" = (
 /obj/structure/chair/pew/right{
 	dir = 8
@@ -19407,6 +20063,9 @@
 /area/centcom/biodome/homes/casa_de_ko/lounge)
 "qWN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_chartreuse/visible,
+/obj/machinery/computer/atmos_alert{
+	dir = 8
+	},
 /turf/open/floor/engine,
 /area/centcom/biodome/engineering/atmos)
 "qXg" = (
@@ -19478,7 +20137,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "qZl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/pavement,
@@ -19519,7 +20180,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "raD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -19554,7 +20217,9 @@
 "rcl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "rcC" = (
 /obj/structure/mineral_door/wood,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -19611,7 +20276,9 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "rev" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -19748,7 +20415,9 @@
 /obj/item/stack/medical/suture/medicated,
 /obj/item/stack/medical/suture/medicated,
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "rii" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/iron/smooth,
@@ -19771,7 +20440,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "rjw" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -19838,7 +20509,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "rme" = (
 /obj/machinery/light/directional/south,
 /obj/structure/table/reinforced/uraniumrglass,
@@ -19859,6 +20532,9 @@
 /obj/item/storage/belt/utility{
 	pixel_y = -4;
 	pixel_x = 5
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
@@ -19923,7 +20599,9 @@
 	id = "everentranceblast"
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "rpa" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/toy/cards/deck/neon{
@@ -19986,7 +20664,9 @@
 	pixel_y = -32
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "rqc" = (
 /obj/structure/flora/bush/flowers_br/style_random{
 	icon_state = "brflowers_2"
@@ -20000,7 +20680,9 @@
 /obj/structure/table/glass,
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "rqz" = (
 /obj/machinery/door/airlock/hydroponics/glass{
 	name = "Hydroponics"
@@ -20158,8 +20840,9 @@
 /turf/open/floor/iron/checker,
 /area/centcom/biodome/homes/casa_de_formes/bar)
 "rxV" = (
-/obj/machinery/computer/atmos_alert{
-	dir = 1
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
@@ -20266,7 +20949,9 @@
 /obj/item/book/manual/wiki/chemistry,
 /obj/item/book/manual/wiki/barman_recipes,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "rCr" = (
 /obj/machinery/biogenerator/food_replicator,
 /turf/open/floor/iron/smooth,
@@ -20383,7 +21068,9 @@
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "rId" = (
 /obj/structure/closet/cabinet{
 	pixel_y = 25;
@@ -20492,7 +21179,9 @@
 	name = "RS-04 Wanderlust radio"
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "rMf" = (
 /obj/machinery/door/airlock/shuttle{
 	name = "Bedroom";
@@ -20503,7 +21192,9 @@
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "rMh" = (
 /obj/structure/plaque/static_plaque{
 	desc = "Here lies a monument to the Flaming Fist, shattered by grief, the meddling of a once-dear friend's fall from grace, and her sister-in-time's failure.  A note at the bottom reads 'Forgive me, my sister, for I have failed you.  May you one day find peace among the stars again.'";
@@ -20534,7 +21225,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "rNH" = (
 /obj/structure/cable,
 /obj/machinery/microwave/engineering/cell_included{
@@ -20607,7 +21300,9 @@
 /obj/item/book/codex_gigas,
 /obj/item/book/bible,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "rRN" = (
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_y = 5;
@@ -20658,7 +21353,9 @@
 /turf/open/floor/iron/corner{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "rSu" = (
 /obj/machinery/door/airlock/bathroom{
 	name = "Bathroom";
@@ -20742,7 +21439,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "rUv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -20810,7 +21509,9 @@
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "rWZ" = (
 /obj/machinery/mechpad,
 /obj/machinery/light/directional/west,
@@ -20853,7 +21554,9 @@
 	},
 /obj/machinery/duct,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "rYc" = (
 /obj/machinery/light_switch/directional/south,
 /turf/open/floor/wood/large/birch,
@@ -20938,7 +21641,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/half,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "saU" = (
 /obj/structure/chair/office/light{
 	dir = 1
@@ -20961,6 +21666,13 @@
 /turf/open/floor/iron/dark/textured,
 /area/centcom/biodome/apartments/apartment1)
 "sbX" = (
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
+"sce" = (
+/obj/machinery/light/directional/south,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "scV" = (
@@ -21032,7 +21744,9 @@
 /obj/item/storage/box/ingredients/seafood,
 /obj/item/storage/box/ingredients/vegetarian,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "sej" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Eastern Landing Pad"
@@ -21202,7 +21916,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "smw" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/smooth_edge{
@@ -21222,7 +21938,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "snl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -21271,7 +21989,9 @@
 /obj/machinery/light/directional/north,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "spx" = (
 /obj/structure/bed/double{
 	dir = 1
@@ -21374,7 +22094,9 @@
 "stf" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "stj" = (
 /obj/structure/streetlamp{
 	base_color = "#EAFFBF"
@@ -21384,7 +22106,9 @@
 "stx" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "stD" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/button/door/directional/west{
@@ -21451,6 +22175,9 @@
 /area/centcom/biodome/service/diner)
 "svn" = (
 /obj/machinery/light_switch/directional/south,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
 "svC" = (
@@ -21471,14 +22198,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/trimline/red/real_red/corner,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "svU" = (
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/lounge)
 "swh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "swN" = (
 /obj/structure/rack/wooden,
 /obj/item/knife/butcher,
@@ -21724,7 +22455,9 @@
 	pixel_x = -9
 	},
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "sFi" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -21744,7 +22477,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "sFx" = (
 /mob/living/carbon/human/species/monkey,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -21798,7 +22533,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "sGZ" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -21917,7 +22654,9 @@
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "sPf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -22024,9 +22763,11 @@
 	})
 "sTj" = (
 /obj/machinery/light_switch/directional/north,
-/obj/machinery/light/small/blacklight/directional/east,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "sTI" = (
 /obj/machinery/teleport/hub,
 /obj/machinery/light/directional/north,
@@ -22088,7 +22829,9 @@
 /obj/structure/bookcase/random/religion,
 /obj/item/book/bible/syndicate,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "sXa" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/visible,
@@ -22246,7 +22989,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "tfr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/checker,
@@ -22256,7 +23001,9 @@
 /obj/effect/turf_decal/trimline/yellow/warning,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "tfB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /turf/open/floor/iron/dark{
@@ -22293,7 +23040,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "tfX" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
@@ -22415,7 +23164,9 @@
 "tlv" = (
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "tlC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
 /turf/open/floor/engine{
@@ -22496,7 +23247,9 @@
 /obj/structure/dresser,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "trf" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -22570,7 +23323,9 @@
 "txn" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "typ" = (
 /obj/structure/sink/kitchen/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -22652,7 +23407,9 @@
 	dir = 9
 	},
 /turf/open/floor/iron/white,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "tCI" = (
 /turf/closed/wall/mineral/sandstone{
 	planetary_atmos = 1
@@ -22799,7 +23556,9 @@
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "tIy" = (
 /obj/structure/chair/sofa/right{
 	color = "#6927c5";
@@ -22813,7 +23572,9 @@
 	name = "CondiMaster Neo"
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "tKd" = (
 /turf/open/floor/iron/kitchen/small,
 /area/centcom/biodome/homes/casa_de_tchiko/bath)
@@ -22837,7 +23598,9 @@
 /area/centcom/biodome/science)
 "tLB" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "tLO" = (
 /obj/structure/mineral_door/wood,
 /obj/structure/fans/tiny,
@@ -22927,7 +23690,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "tSQ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
 	dir = 6
@@ -23009,10 +23774,14 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "tVb" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "tVc" = (
 /obj/effect/turf_decal/bot_white/left,
 /turf/open/floor/iron/dark/textured,
@@ -23088,7 +23857,9 @@
 /area/centcom/biodome/homes/critterden)
 "tWX" = (
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "tXd" = (
 /obj/structure/sink/directional/west,
 /obj/structure/mirror/directional/east,
@@ -23134,7 +23905,9 @@
 "tZm" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "tZp" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
@@ -23179,7 +23952,9 @@
 "ubf" = (
 /obj/item/storage/box/xstand_kit,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "ubI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/cold/directional/south,
@@ -23350,7 +24125,9 @@
 /area/centcom/biodome/security/syndicat)
 "uin" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "uit" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
@@ -23410,7 +24187,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white/smooth_large,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "ujI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -23521,7 +24300,9 @@
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "umM" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 8
@@ -23545,6 +24326,12 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
+"unm" = (
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "uno" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -23559,7 +24346,9 @@
 "unF" = (
 /obj/item/restraints/legcuffs/beartrap/prearmed,
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "unH" = (
 /turf/open/misc/sandy_dirt/icemoon,
 /area/centcom/biodome/exterior)
@@ -23630,7 +24419,9 @@
 	dir = 1
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "uoW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_bldorng/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/r_navy/hidden/layer4,
@@ -23766,7 +24557,9 @@
 "uuO" = (
 /obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "uvb" = (
 /obj/machinery/air_sensor/nitrogen_tank{
 	chamber_id = "biodome_n2"
@@ -23808,7 +24601,9 @@
 "uyQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "uAd" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/structure/railing/corner/end/flip{
@@ -23923,7 +24718,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "uIu" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/machinery/reagentgrinder{
@@ -23935,7 +24732,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "uIv" = (
 /obj/structure/table/wood/fancy,
 /turf/open/floor/iron/dark/small,
@@ -24003,7 +24802,9 @@
 	dir = 8
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "uMB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -24158,7 +24959,9 @@
 	dir = 4
 	},
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "uQC" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -24191,7 +24994,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "uTa" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
@@ -24230,7 +25035,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "uXe" = (
 /turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
@@ -24253,7 +25060,9 @@
 	pixel_y = -10
 	},
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "uXM" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
@@ -24295,7 +25104,9 @@
 /obj/item/stock_parts/power_store/cell/bluespace/empty,
 /obj/item/stock_parts/power_store/cell/super/empty,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "uZh" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/flashlight/lamp,
@@ -24304,7 +25115,9 @@
 "uZs" = (
 /turf/closed/indestructible/titanium/nodiagonal,
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "uZB" = (
 /obj/structure/sink/directional/north,
 /obj/effect/turf_decal/trimline/dark_blue/corner{
@@ -24315,7 +25128,9 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "uZD" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/homes/casa_de_formes/lounge)
@@ -24344,7 +25159,9 @@
 "uZZ" = (
 /obj/structure/bookcase/random/religion,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "vaC" = (
 /obj/structure/cable,
 /turf/open/floor/wood/large,
@@ -24424,8 +25241,13 @@
 /turf/closed/wall,
 /area/centcom/biodome/cargo)
 "vfT" = (
-/turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/bar)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
 "vgb" = (
 /obj/structure/rack{
 	icon = 'icons/obj/fluff/general.dmi';
@@ -24535,7 +25357,9 @@
 	pixel_y = 3
 	},
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "vlf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -24693,7 +25517,9 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vtA" = (
 /obj/machinery/light/floor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -24731,7 +25557,9 @@
 "vvf" = (
 /obj/machinery/smartfridge/food,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "vvU" = (
 /obj/machinery/light/directional,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -24787,7 +25615,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vyx" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -24813,10 +25643,14 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/iron/large,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "vzD" = (
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vzF" = (
 /obj/machinery/door/airlock/silver{
 	name = "Treatment 1"
@@ -24843,7 +25677,9 @@
 	pixel_y = -1
 	},
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "vzZ" = (
 /obj/structure/closet/cabinet{
 	dir = 4
@@ -24860,12 +25696,16 @@
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 1
 	},
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "vAt" = (
-/obj/structure/table/wood/shuttle_bar,
 /obj/item/storage/bag/books,
+/obj/structure/table/wood,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "vAJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -24898,7 +25738,9 @@
 /obj/structure/closet/crate/large,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vCd" = (
 /turf/open/floor/grass,
 /area/centcom/biodome/science/genetics)
@@ -24967,7 +25809,9 @@
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vEp" = (
 /obj/structure/chair/comfy/lime{
 	dir = 4
@@ -25204,7 +26048,9 @@
 	dir = 8
 	},
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "vOb" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -25231,7 +26077,9 @@
 	},
 /obj/effect/mapping_helpers/apc/unlocked,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "vPw" = (
 /obj/structure/window/reinforced/plasma/spawner/directional/north,
 /obj/structure/table/reinforced/plasmarglass,
@@ -25251,8 +26099,11 @@
 /obj/effect/turf_decal/trimline/yellow/mid_joiner{
 	dir = 4
 	},
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vPZ" = (
 /obj/machinery/chem_mass_spec{
 	dir = 4;
@@ -25270,7 +26121,9 @@
 "vQc" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "vQk" = (
 /obj/structure/sink/directional/east,
 /obj/structure/mirror/directional/west,
@@ -25374,7 +26227,9 @@
 	},
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "vVr" = (
 /obj/machinery/rnd/production/protolathe/department/science,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -25382,7 +26237,9 @@
 /area/centcom/biodome/homes/casa_de_formes/toolcloset)
 "vVU" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "vXG" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -25390,7 +26247,9 @@
 /obj/machinery/power/shuttle_engine/heater,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /turf/open/floor/plating/airless,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "vXI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large/birch,
@@ -25406,7 +26265,9 @@
 "vYJ" = (
 /turf/closed/indestructible/titanium/nodiagonal,
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "vYO" = (
 /turf/open/floor/carpet/purple{
 	planetary_atmos = 1
@@ -25492,7 +26353,9 @@
 	},
 /obj/machinery/duct,
 /turf/open/floor/iron/large,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "waG" = (
 /obj/structure/table/optable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -25548,7 +26411,9 @@
 /obj/machinery/airalarm/directional/west,
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "wck" = (
 /obj/structure/chair/comfy/lime{
 	dir = 1
@@ -25565,7 +26430,9 @@
 /obj/effect/turf_decal/trimline/yellow/mid_joiner,
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "wdf" = (
 /obj/structure/window/reinforced/shuttle,
 /obj/structure/curtain/cloth{
@@ -25587,7 +26454,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "weR" = (
 /obj/machinery/modular_computer/preset/curator{
 	dir = 1
@@ -25596,7 +26465,9 @@
 	dir = 9
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "wfg" = (
 /obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
 	dir = 8
@@ -25611,7 +26482,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "wfv" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/machinery/shower/directional/south,
@@ -25969,8 +26842,11 @@
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner{
 	dir = 1
 	},
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "wvu" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/iron/white,
@@ -26075,7 +26951,9 @@
 	pixel_y = 25
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "wBg" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/recharger{
@@ -26129,7 +27007,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "wCY" = (
 /obj/structure/alien/weeds,
 /obj/structure/spider/stickyweb/genetic{
@@ -26164,7 +27044,9 @@
 /obj/item/camera_film,
 /obj/item/camera_film,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "wDD" = (
 /obj/machinery/light/cold/directional/south,
 /obj/structure/table/optable,
@@ -26345,13 +27227,17 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "wNM" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/trimline/white/line,
 /obj/effect/turf_decal/trimline/white/mid_joiner,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "wNO" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
 	chamber_id = "biodome_n2"
@@ -26482,7 +27368,9 @@
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/armory)
+/area/centcom/biodome/homes/evership/armory{
+	name = "The Wanderlust: Armory"
+	})
 "wSE" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1
@@ -26547,7 +27435,9 @@
 /area/centcom/biodome/science/genetics)
 "wVc" = (
 /turf/closed/indestructible/titanium/nodiagonal,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "wVn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -26601,7 +27491,9 @@
 "wYQ" = (
 /obj/machinery/washing_machine,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "wZc" = (
 /obj/structure/closet/secure_closet/personal/cabinet{
 	dir = 4;
@@ -26614,7 +27506,9 @@
 /obj/machinery/duct,
 /obj/structure/cable,
 /turf/open/floor/iron/large,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "wZj" = (
 /obj/structure/window/reinforced/uranium/fulltile/diagonal,
 /turf/open/misc/sandy_dirt/planet,
@@ -26647,7 +27541,9 @@
 /obj/item/construction/rld,
 /obj/item/weldingtool/electric/arc_welder,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "wZR" = (
 /obj/machinery/door/airlock/bathroom{
 	name = "Restroom";
@@ -26655,7 +27551,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xau" = (
 /obj/machinery/vending/security/noaccess,
 /turf/open/floor/iron/dark/smooth_large,
@@ -26764,7 +27662,9 @@
 	dir = 8
 	},
 /turf/closed/wall/mineral/titanium,
-/area/centcom/biodome/homes/evership/medical)
+/area/centcom/biodome/homes/evership/medical{
+	name = "The Wanderlust: Medical"
+	})
 "xgs" = (
 /obj/structure/closet/secure_closet/medical3{
 	req_access = null
@@ -26784,7 +27684,9 @@
 /obj/effect/mapping_helpers/airalarm/unlocked,
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xgH" = (
 /obj/structure/shipping_container/kahraman,
 /turf/open/misc/grass/planet,
@@ -26848,7 +27750,9 @@
 "xjL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xkq" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -26903,7 +27807,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xnr" = (
 /obj/machinery/light/floor,
 /turf/open/floor/iron/cafeteria,
@@ -26911,13 +27817,17 @@
 "xnx" = (
 /obj/machinery/light_switch/directional/east,
 /turf/open/floor/iron/freezer,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xnX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "xnY" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/effect/turf_decal/siding/dark{
@@ -27024,12 +27934,16 @@
 /obj/machinery/griddle,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plastic,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "xpm" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xpq" = (
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/tile,
@@ -27067,7 +27981,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "xrw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -27137,7 +28053,9 @@
 /obj/item/storage/box/syndie_kit/romerol,
 /obj/item/melee/cultblade/dagger,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "xtU" = (
 /obj/structure/chair/office/tactical,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -27179,7 +28097,9 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "xvh" = (
 /obj/item/surgery_tray/full{
 	dir = 1
@@ -27219,7 +28139,9 @@
 "xwJ" = (
 /obj/item/gun/magic/hook,
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "xwX" = (
 /obj/machinery/shower/directional/west,
 /obj/structure/fans/tiny{
@@ -27262,7 +28184,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xxS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -27277,7 +28201,9 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "xym" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -27356,7 +28282,9 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "xBz" = (
 /obj/structure/bed/double{
 	dir = 4
@@ -27389,7 +28317,9 @@
 /obj/item/book/manual/wargame_rules/examples,
 /obj/item/book/manual/wiki/tgc,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "xCU" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/coffeemaker{
@@ -27426,7 +28356,9 @@
 	pixel_x = -5
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "xEC" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/light/floor,
@@ -27512,7 +28444,9 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "xGl" = (
 /turf/closed/wall/mineral/wood,
 /area/centcom/biodome/arrivals)
@@ -27584,10 +28518,18 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/centcom/biodome/homes/evership/botany)
+/area/centcom/biodome/homes/evership/botany{
+	name = "The Wanderlust: Botany"
+	})
 "xLw" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/centcom/biodome/homes/nuviship)
+"xMa" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "xMl" = (
 /obj/structure/closet{
 	dir = 4
@@ -27619,7 +28561,9 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "xMM" = (
 /obj/structure/table/greyscale{
 	color = "#bb8e53";
@@ -27741,9 +28685,12 @@
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/cinder)
 "xQK" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership)
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "xQL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -27867,7 +28814,9 @@
 "xVt" = (
 /obj/structure/bookcase/random/fiction,
 /turf/open/floor/wood/tile,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "xVK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -27883,7 +28832,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "xWl" = (
 /obj/structure/closet/secure_closet/freezer/fridge{
 	req_access = null
@@ -27931,7 +28882,6 @@
 	},
 /area/centcom/biodome/homes/casa_de_garner/bed1)
 "xXm" = (
-/obj/structure/table/wood/shuttle_bar,
 /obj/item/pen/fountain{
 	pixel_x = -6;
 	pixel_y = -2
@@ -27945,8 +28895,11 @@
 	pixel_x = -5;
 	pixel_y = 10
 	},
+/obj/structure/table/wood,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/lounge)
+/area/centcom/biodome/homes/evership{
+	name = "The Wanderlust: Bedroom"
+	})
 "xXD" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/effect/turf_decal/stripes/line{
@@ -27966,7 +28919,9 @@
 /obj/item/stack/sheet/rglass/fifty,
 /obj/item/stack/rods/fifty,
 /turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/engine)
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "xZW" = (
 /obj/structure/bed/double{
 	dir = 4
@@ -28074,7 +29029,9 @@
 /obj/item/book/granter/action/spell/mime/mimery,
 /obj/item/book/granter/martial/cqc,
 /turf/open/floor/wood/large,
-/area/centcom/biodome/homes/evership/library)
+/area/centcom/biodome/homes/evership/library{
+	name = "The Wanderlust: Library"
+	})
 "yeI" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/flashlight/lamp,
@@ -28158,7 +29115,9 @@
 /area/centcom/biodome/homes/casa_de_liora/lounge)
 "yjk" = (
 /turf/open/floor/cult,
-/area/centcom/biodome/homes/evership/bridge)
+/area/centcom/biodome/homes/evership/bridge{
+	name = "The Wanderlust: Bridge"
+	})
 "yjL" = (
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/iron/dark/textured,
@@ -28224,7 +29183,9 @@
 /obj/effect/turf_decal/siding/thinplating_new,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/smooth,
-/area/centcom/biodome/homes/evership/bar)
+/area/centcom/biodome/homes/evership/bar{
+	name = "The Wanderlust: Bar"
+	})
 "ylN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -31695,7 +32656,7 @@ kZH
 hyI
 umG
 wVc
-hyI
+unm
 flP
 kHc
 wVc
@@ -34001,7 +34962,7 @@ aiU
 tWX
 rNm
 ewW
-vVU
+tLB
 gkF
 lut
 bxu
@@ -34258,16 +35219,16 @@ tSD
 tWX
 inB
 fnC
-vVU
+tLB
 fZN
-vfT
+lfQ
 bxu
-vfT
+lfQ
 qke
 cKW
 aLv
-xQK
-xQK
+uyQ
+uyQ
 drP
 uSR
 dmb
@@ -34772,9 +35733,9 @@ fpu
 csk
 wSx
 dMX
-fpu
+pXJ
 oFG
-vfT
+lfQ
 tfU
 cRi
 tLB
@@ -35026,13 +35987,13 @@ dHs
 jgh
 xpk
 fpu
-vVU
-vVU
-fpu
+tLB
+tLB
+pXJ
 eRK
 mMD
 oFG
-vfT
+lfQ
 ePJ
 tLB
 tLB
@@ -53611,7 +54572,7 @@ iUz
 hEt
 aLO
 pua
-sbX
+xQK
 hEt
 vuq
 wJq
@@ -53868,7 +54829,7 @@ gAI
 hEt
 dPR
 pua
-eQp
+sce
 hEt
 oQg
 fjl
@@ -54382,7 +55343,7 @@ gAI
 sWI
 hgx
 pua
-sbX
+gsR
 hEt
 hEt
 hEt
@@ -54627,7 +55588,7 @@ jst
 iUz
 iUz
 rbQ
-juX
+ttE
 rbQ
 cbh
 cbh
@@ -54884,19 +55845,19 @@ iUz
 iUz
 iUz
 rbQ
-juX
-mqq
-xlF
-xlF
-xlF
-xlF
-lkd
-lkd
-lkd
+iRx
+gdA
+fle
+fle
+fle
+fle
+tSU
+tSU
+tSU
 gDT
-pua
-pua
-pua
+dxN
+dxN
+pRE
 iqw
 tLg
 eTY
@@ -55141,7 +56102,7 @@ iUz
 jst
 iUz
 rbQ
-juX
+ttE
 rbQ
 cbh
 cbh
@@ -55398,7 +56359,7 @@ iUz
 rUh
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -55655,7 +56616,7 @@ jst
 iUz
 ikN
 llh
-nAi
+jFb
 llh
 nJo
 iUz
@@ -55912,7 +56873,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 jst
 iUz
@@ -56169,7 +57130,7 @@ iUz
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -56181,7 +57142,7 @@ iUz
 hEt
 nwP
 pua
-sbX
+jqL
 hEt
 cUi
 cWH
@@ -56426,7 +57387,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 ecm
 iUz
@@ -56683,7 +57644,7 @@ xlF
 xlF
 xlF
 mzs
-nAi
+jFb
 llh
 iUz
 iUz
@@ -56940,7 +57901,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 jst
@@ -57197,7 +58158,7 @@ jst
 iUz
 ecm
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -57454,7 +58415,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -57711,7 +58672,7 @@ iUz
 iUz
 ikN
 llh
-nAi
+jFb
 llh
 ikN
 iUz
@@ -57968,7 +58929,7 @@ iUz
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -58225,7 +59186,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -58482,7 +59443,7 @@ iUz
 jst
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 ecm
@@ -58739,7 +59700,7 @@ iUz
 njN
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -58996,7 +59957,7 @@ iUz
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 jst
 iUz
@@ -59253,7 +60214,7 @@ iUz
 iUz
 rUh
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -59510,7 +60471,7 @@ iUz
 jst
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -59767,7 +60728,7 @@ ecm
 jst
 ikN
 llh
-nAi
+jFb
 llh
 ikN
 iUz
@@ -60024,7 +60985,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -60281,7 +61242,7 @@ iUz
 rUh
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 rUh
@@ -60538,7 +61499,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -60795,7 +61756,7 @@ cbh
 cbh
 cbh
 rbQ
-juX
+ttE
 rbQ
 cbh
 cbh
@@ -61052,7 +62013,7 @@ xlF
 xlF
 xlF
 mqq
-juX
+ttE
 mqq
 xlF
 xlF
@@ -61309,7 +62270,7 @@ cbh
 cbh
 cbh
 rbQ
-juX
+ttE
 rbQ
 cbh
 cbh
@@ -61566,7 +62527,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -61823,7 +62784,7 @@ iUz
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -62080,7 +63041,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 jst
@@ -62337,7 +63298,7 @@ iUz
 njN
 png
 llh
-nAi
+jFb
 llh
 ikN
 ecm
@@ -62594,7 +63555,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -62851,7 +63812,7 @@ jst
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -63108,7 +64069,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -63365,7 +64326,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -63622,7 +64583,7 @@ rUh
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -63879,7 +64840,7 @@ jst
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -64136,7 +65097,7 @@ iUz
 njN
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 ecm
@@ -64393,7 +65354,7 @@ iUz
 ecm
 ikN
 llh
-nAi
+jFb
 llh
 ikN
 iUz
@@ -64650,7 +65611,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -64907,7 +65868,7 @@ ecm
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 jst
@@ -65164,7 +66125,7 @@ iUz
 rUh
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -65421,7 +66382,7 @@ iUz
 jst
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -65678,7 +66639,7 @@ iUz
 jst
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -65935,7 +66896,7 @@ iUz
 iUz
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 jst
@@ -66192,7 +67153,7 @@ iUz
 ecm
 iUz
 llh
-nAi
+jFb
 llh
 fFP
 iUz
@@ -66449,7 +67410,7 @@ iUz
 iUz
 ikN
 llh
-nAi
+jFb
 llh
 ikN
 iUz
@@ -66706,7 +67667,7 @@ ecm
 njN
 iUz
 llh
-nAi
+jFb
 llh
 iUz
 iUz
@@ -66963,7 +67924,7 @@ iUz
 iUz
 iUz
 rbQ
-juX
+ttE
 rbQ
 cbh
 cbh
@@ -67220,18 +68181,18 @@ xlF
 xlF
 xlF
 mqq
-juX
-juX
-kPt
-kPt
-kPt
-kPt
-iAI
-iAI
-iAI
+vfT
+huU
+xSW
+xSW
+xSW
+xSW
+xMa
+xMa
+xMa
 ddW
 lxL
-iAF
+osY
 rme
 kER
 lCo
