@@ -3327,7 +3327,6 @@
 /obj/structure/rack,
 /obj/item/melee/energy/sword/saber/red,
 /obj/item/shield/energy/advanced,
-/obj/item/energy_katana,
 /obj/item/soulscythe,
 /obj/item/storage/box/syndie_kit/throwing_weapons,
 /obj/effect/turf_decal/trimline/red/real_red/line{
@@ -3337,6 +3336,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/red/real_red/mid_joiner,
+/obj/item/melee/energy/sword/pirate,
 /turf/open/floor/engine,
 /area/centcom/biodome/homes/evership/armory{
 	name = "The Wanderlust: Armory"
@@ -4288,12 +4288,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/homes/casa_de_tchiko/office)
-"dxN" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
 "dye" = (
 /obj/structure/chair/wood/wings{
 	dir = 4
@@ -7163,12 +7157,6 @@
 	},
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"gdA" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron/dark/herringbone,
-/area/centcom/biodome/interior)
 "gdB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/hydroponics/constructable,
@@ -7487,12 +7475,6 @@
 "gsA" = (
 /turf/open/chasm/jungle,
 /area/centcom/biodome/engineering/atmos)
-"gsR" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
 "gta" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 8
@@ -8925,6 +8907,19 @@
 "hzW" = (
 /turf/closed/wall,
 /area/centcom/biodome/apartments/apartment4)
+"hAj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark,
+/area/centcom/biodome/engineering)
 "hAO" = (
 /obj/machinery/smartfridge/chemistry/preloaded{
 	dir = 4
@@ -10521,14 +10516,6 @@
 /obj/machinery/chem_dispenser,
 /turf/open/floor/wood,
 /area/centcom/biodome/homes/casa_de_formes/toolcloset)
-"iRx" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/disposalpipe/junction/flip{
-	dir = 8
-	},
-/turf/open/floor/iron/dark/herringbone,
-/area/centcom/biodome/interior)
 "iRI" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -10977,10 +10964,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/townhall/meeting)
-"jqL" = (
-/obj/structure/table/reinforced/plasmarglass,
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
 "jqU" = (
 /obj/structure/chair/sofa/middle{
 	color = "#6927c5";
@@ -12295,6 +12278,12 @@
 	dir = 8
 	},
 /turf/open/floor/iron/textured_large,
+/area/centcom/biodome/interior)
+"kus" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark/herringbone,
 /area/centcom/biodome/interior)
 "kuQ" = (
 /obj/structure/chair/sofa/corp/right,
@@ -15197,6 +15186,14 @@
 /area/centcom/biodome/homes/evership/library{
 	name = "The Wanderlust: Library"
 	})
+"mXq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
 "mYq" = (
 /obj/machinery/oven/range,
 /turf/open/floor/iron/kitchen,
@@ -15638,6 +15635,12 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/apartment2)
+"npZ" = (
+/obj/machinery/light_switch/directional/north,
+/turf/open/floor/engine,
+/area/centcom/biodome/homes/evership/engine{
+	name = "The Wanderlust: Engineering"
+	})
 "nqo" = (
 /obj/machinery/button/door/directional/east{
 	id = "biodome_critter";
@@ -16833,19 +16836,6 @@
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/biodome/security)
-"osY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/r_chartreuse/visible{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer5{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron/dark,
-/area/centcom/biodome/engineering)
 "otA" = (
 /obj/structure/streetlamp{
 	base_color = "#BFBFFF"
@@ -18108,6 +18098,10 @@
 	},
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/casa_de_liora/lounge)
+"puU" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "puW" = (
 /obj/machinery/door/airlock/silver/glass{
 	name = "Storage"
@@ -18595,14 +18589,6 @@
 /obj/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/centcom/biodome/medical/lobby)
-"pRE" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
 "pRS" = (
 /obj/machinery/light/cold/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -19966,6 +19952,14 @@
 	},
 /turf/open/floor/iron/white/small,
 /area/centcom/biodome/apartments/apartment4)
+"qRo" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 8
+	},
+/turf/open/floor/iron/dark/herringbone,
+/area/centcom/biodome/interior)
 "qRs" = (
 /turf/open/floor/carpet/neon/simple/purple,
 /area/centcom/biodome/homes/casa_de_liora/bedroom)
@@ -21668,13 +21662,6 @@
 "sbX" = (
 /turf/open/floor/iron,
 /area/centcom/biodome/science)
-"sce" = (
-/obj/machinery/light/directional/south,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
 "scV" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -21854,6 +21841,12 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/centcom/biodome/voxbox/atmos/overseer)
+"sjq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron/dark/textured_large,
+/area/centcom/biodome/interior)
 "sjE" = (
 /obj/structure/closet/ammunitionlocker,
 /turf/open/floor/carpet/neon/simple/purple,
@@ -24326,12 +24319,6 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/wood/large,
 /area/centcom/biodome/service/library)
-"unm" = (
-/obj/machinery/light_switch/directional/north,
-/turf/open/floor/engine,
-/area/centcom/biodome/homes/evership/engine{
-	name = "The Wanderlust: Engineering"
-	})
 "uno" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 8
@@ -24599,11 +24586,12 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/centcom/biodome/homes/casa_de_silver)
 "uyQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/mineral/plastitanium,
-/area/centcom/biodome/homes/evership/lounge{
-	name = "The Wanderlust: Lounge"
-	})
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "uAd" = (
 /obj/effect/spawner/liquids_spawner,
 /obj/structure/railing/corner/end/flip{
@@ -25038,6 +25026,13 @@
 /area/centcom/biodome/homes/evership/bar{
 	name = "The Wanderlust: Bar"
 	})
+"uWx" = (
+/obj/machinery/light/directional/south,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "uXe" = (
 /turf/open/floor/engine/vacuum,
 /area/centcom/biodome/engineering/atmos)
@@ -25240,14 +25235,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall,
 /area/centcom/biodome/cargo)
-"vfT" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+"vfp" = (
 /obj/structure/disposalpipe/segment{
-	dir = 10
+	dir = 4
 	},
-/turf/open/floor/iron/dark/herringbone,
-/area/centcom/biodome/interior)
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
+"vfT" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "vgb" = (
 /obj/structure/rack{
 	icon = 'icons/obj/fluff/general.dmi';
@@ -26281,6 +26280,14 @@
 /obj/item/reagent_containers/hypospray/medipen/deforest/lepoturi,
 /turf/open/floor/iron/dark,
 /area/centcom/biodome/engineering)
+"vZd" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/turf/open/floor/iron,
+/area/centcom/biodome/science)
 "vZA" = (
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/all_access,
@@ -28524,12 +28531,6 @@
 "xLw" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/centcom/biodome/homes/nuviship)
-"xMa" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron/dark/textured_large,
-/area/centcom/biodome/interior)
 "xMl" = (
 /obj/structure/closet{
 	dir = 4
@@ -28685,12 +28686,11 @@
 /turf/open/floor/wood/tile,
 /area/centcom/biodome/homes/cinder)
 "xQK" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/centcom/biodome/science)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/mineral/plastitanium,
+/area/centcom/biodome/homes/evership/lounge{
+	name = "The Wanderlust: Lounge"
+	})
 "xQL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -32656,7 +32656,7 @@ kZH
 hyI
 umG
 wVc
-unm
+npZ
 flP
 kHc
 wVc
@@ -35227,8 +35227,8 @@ lfQ
 qke
 cKW
 aLv
-uyQ
-uyQ
+xQK
+xQK
 drP
 uSR
 dmb
@@ -35477,8 +35477,8 @@ kFA
 svS
 fLz
 dCW
-uyQ
-uyQ
+xQK
+xQK
 bxu
 dXI
 tLB
@@ -54572,7 +54572,7 @@ iUz
 hEt
 aLO
 pua
-xQK
+uyQ
 hEt
 vuq
 wJq
@@ -54829,7 +54829,7 @@ gAI
 hEt
 dPR
 pua
-sce
+uWx
 hEt
 oQg
 fjl
@@ -55298,7 +55298,7 @@ iUz
 iUz
 iUz
 nyv
-dbn
+dny
 bNI
 wse
 rcU
@@ -55343,7 +55343,7 @@ gAI
 sWI
 hgx
 pua
-gsR
+vfp
 hEt
 hEt
 hEt
@@ -55555,7 +55555,7 @@ jst
 iUz
 iUz
 nyv
-dny
+dbn
 bNI
 gpw
 bRJ
@@ -55845,8 +55845,8 @@ iUz
 iUz
 iUz
 rbQ
-iRx
-gdA
+qRo
+kus
 fle
 fle
 fle
@@ -55855,9 +55855,9 @@ tSU
 tSU
 tSU
 gDT
-dxN
-dxN
-pRE
+vfT
+vfT
+vZd
 iqw
 tLg
 eTY
@@ -57142,7 +57142,7 @@ iUz
 hEt
 nwP
 pua
-jqL
+puU
 hEt
 cUi
 cWH
@@ -68181,18 +68181,18 @@ xlF
 xlF
 xlF
 mqq
-vfT
+mXq
 huU
 xSW
 xSW
 xSW
 xSW
-xMa
-xMa
-xMa
+sjq
+sjq
+sjq
 ddW
 lxL
-osY
+hAj
 rme
 kER
 lCo

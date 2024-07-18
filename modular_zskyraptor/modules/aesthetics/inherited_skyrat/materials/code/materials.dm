@@ -42,7 +42,7 @@
 GLOBAL_LIST_INIT(uglass_recipes, list ( \
 	new/datum/stack_recipe("directional window", /obj/structure/window/uranium/unanchored, time = 0.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_CHECK_DIRECTION, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile window", /obj/structure/window/uranium/fulltile/unanchored, 2, time =  1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_IS_FULLTILE, category = CAT_WINDOWS), \
-	new/datum/stack_recipe("fulltile diagonalizing window", /obj/structure/window/uranium/fulltile/diagonal/unanchored, 2, time =  1 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
+	new/datum/stack_recipe("fulltile diagonalizing window", /obj/structure/window/uranium/fulltile/diagonal/unanchored, 2, time =  1 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_IS_FULLTILE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard/uranium, time = 0, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_MISC), \
 	new/datum/stack_recipe("glass tile", /obj/item/stack/tile/glass/uranium, 1, 4, 20, category = CAT_TILES) \
 ))
@@ -99,7 +99,7 @@ GLOBAL_LIST_INIT(uglass_recipes, list ( \
 GLOBAL_LIST_INIT(urglass_recipes, list ( \
 	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/reinforced/uranium/unanchored, time = 0.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_CHECK_DIRECTION, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/reinforced/uranium/fulltile/unanchored, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_IS_FULLTILE, category = CAT_WINDOWS), \
-	new/datum/stack_recipe("fulltile diagonalizing reinforced window", /obj/structure/window/reinforced/uranium/fulltile/diagonal/unanchored, 2, time = 2 SECONDS, on_solid_ground = TRUE, is_fulltile = TRUE, category = CAT_WINDOWS), \
+	new/datum/stack_recipe("fulltile diagonalizing reinforced window", /obj/structure/window/reinforced/uranium/fulltile/diagonal/unanchored, 2, time = 2 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND | CRAFT_IS_FULLTILE, category = CAT_WINDOWS), \
 	new/datum/stack_recipe("glass shard", /obj/item/shard/uranium, time = 10, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ON_SOLID_GROUND, category = CAT_MISC), \
 	new/datum/stack_recipe("reinforced glass tile", /obj/item/stack/tile/rglass/uranium, 1, 4, 20, category = CAT_TILES) \
 ))
