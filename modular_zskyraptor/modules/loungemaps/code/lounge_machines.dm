@@ -1,6 +1,7 @@
 /obj/item/storage/part_replacer/bluespace/tier4/bst/biodome_upgrader/PopulateContents()
 	for(var/i in 1 to 50)
 		new /obj/item/stock_parts/scanning_module/triphasic(src)
+		new /obj/item/reagent_containers/cup/beaker/bluespace(src)
 	for(var/i in 1 to 150)
 		new /obj/item/stock_parts/capacitor/quadratic(src)
 		new /obj/item/stock_parts/servo/femto(src)

@@ -22,8 +22,9 @@
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/device/device.dmi'
 
 ///OTHER STUFF OUGH
-/obj/item/grenade/empgrenade
-	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/device/device.dmi'
+// who wrote this, why
+/*/obj/item/grenade/empgrenade
+	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/device/device.dmi'*/
 
 /obj/item/desynchronizer
 	icon = 'modular_zskyraptor/modules/aesthetics/inherited_skyrat/device/device.dmi'
