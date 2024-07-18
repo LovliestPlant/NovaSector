@@ -42,6 +42,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/station/biodome_tinystation)
+"fH" = (
+/obj/effect/landmark/start/lounge_upgrade_machine,
+/turf/open/space/basic,
+/area/space)
 "gf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -66087,5 +66091,5 @@ ca
 ca
 ca
 ca
-ca
+fH
 "}
