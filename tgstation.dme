@@ -8558,6 +8558,7 @@
 #include "modular_nova\modules\xenos_nova_redo\code\xeno_types\spitter.dm"
 #include "modular_nova\modules\xenos_nova_redo\code\xeno_types\warrior.dm"
 #include "modular_zskyraptor\modules\aesthetics\batong\batong.dm"
+#include "modular_zskyraptor\modules\aesthetics\clothing\code\bespoke.dm"
 #include "modular_zskyraptor\modules\aesthetics\daedmoth\code\daedmoth.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\abductor\abductor.dm"
 #include "modular_zskyraptor\modules\aesthetics\inherited_skyrat\airalarm\code\airalarm.dm"
